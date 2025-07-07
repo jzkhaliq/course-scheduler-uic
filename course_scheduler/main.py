@@ -78,6 +78,40 @@ def filter_by_semester(courses, offerings, semester):
     return filtered
 
 
+def load_course_credits(file_path):
+    credits = {}
+    with open(file_path, "r") as f:
+        for line in f:
+            parts = line.strip().split("\t")
+            if len(parts) != 2:
+                continue
+            course, credit_str = parts
+
+            # Handle variable credit values like "1,2,3"
+            if "," in credit_str:
+                credit_options = [int(c) for c in credit_str.split(",")]
+                credit = max(credit_options)  # use the maximum for now
+            else:
+                credit = int(credit_str)
+
+            credits[course] = credit
+    return credits
+
+
+def plan_semester(eligible_courses, credits_map, max_credits=15):
+    semester = []
+    total = 0
+
+    for course in eligible_courses:
+        course_credit = credits_map.get(course, 3)  # assume 3 if missing
+        if total + course_credit <= max_credits:
+            semester.append((course, course_credit))
+            total += course_credit
+
+    return semester
+
+
+
 
 
 
@@ -97,8 +131,16 @@ if __name__ == "__main__":
     eligible = get_eligible_courses(prereq_graph, completed)
     eligible_in_fall = filter_by_semester(eligible, offerings, "fall")
 
-    print("\nEligible Fall courses:")
-    for course in eligible_in_fall:
-        print(course)
+    #print("\nEligible Fall courses:")
+    #for course in eligible_in_fall:
+    #    print(course)
+
+    credits = load_course_credits("data/mastercourselist_cs.txt")
+    semester_plan = plan_semester(eligible_in_fall, credits)
+
+    print("\nPlanned Fall Semester:")
+    for course, credit in semester_plan:
+        print(f"{course} ({credit} credits)")
+
 
 
