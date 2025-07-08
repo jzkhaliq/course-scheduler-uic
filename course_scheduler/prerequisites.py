@@ -1,3 +1,4 @@
+# === prerequisites.py ===
 class PrerequisiteRule:
     def __init__(self):
         self.strict = []      # List[List[str]]: OR groups
