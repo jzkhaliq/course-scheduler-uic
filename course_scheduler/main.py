@@ -28,7 +28,11 @@ for course in test_courses:
     else:
         print(f"  {course}: No prerequisites")
 
-plan = planner.plan(["MATH_180"])
+user_input = input("📘 Enter completed course codes (comma-separated, e.g. CS___141,MATH_180):\n> ")
+completed_courses = [code.strip().upper() for code in user_input.split(",") if code.strip()]
+
+plan = planner.plan(completed_courses)
+
 
 print("\n📅 Full Semester Plan:\n")
 for i, semester in enumerate(plan, 1):

@@ -2,9 +2,6 @@
 from collections import deque
 import re
 
-from collections import deque
-import re
-
 class Planner:
     def __init__(self, catalog, max_credits=18, max_terms=8, config=None):
         self.catalog = catalog
@@ -12,37 +9,31 @@ class Planner:
         self.max_terms = max_terms
         self.config = config or {}
 
-
     def course_level(self, code):
         match = re.search(r"CS___(\d+)", code)
         return int(match.group(1)) if match else 999
 
     def is_course_allowed(self, code, completed, taken_intro):
-        """Check if a course should be scheduled"""
         course = self.catalog.courses.get(code)
         if not course:
             return False
 
-        # Skip 0-credit courses
-        if max(course.credits, default=0) == 0:
+        if code != "CS___499" and max(course.credits, default=0) == 0:
             return False
-
-        # Skip grad courses (5xx, 6xx)
         if code.startswith("CS___5") or code.startswith("CS___6"):
             return False
-
-        # Skip placeholder courses
-        if code.startswith("CS___XXX") or code == "CS___499":
+        if code.startswith("CS___XXX"):  # CS___499 handled separately
             return False
-
-        # Skip if already completed
         if code in completed:
             return False
 
-        # Intro course group logic - only allow one
         intro_or_group = {"CS___107", "CS___109", "CS___111", "CS___112", "CS___113"}
         if code in intro_or_group and taken_intro:
             return False
+        # If any intro course is completed, skip CS___100
+        if code == "CS___100" and taken_intro:
+            return False
+
 
         return True
 
@@ -60,7 +51,7 @@ class Planner:
             total_credits = 0
             scheduled_this_term = set()
 
-            # Pass 1 — strict prereqs only
+            # Pass 1 — strict prereqs
             for code in all_codes:
                 if not self.is_course_allowed(code, completed, taken_intro):
                     continue
@@ -69,17 +60,19 @@ class Planner:
                 if not course or not course.offerings.get(term, True):
                     continue
 
+                # 🛑 Defer CS___499 until final semester only
+                if code == "CS___499" and term_idx != self.max_terms - 1:
+                    continue
+
                 rule = self.catalog.prereqs.get(code)
                 is_variable_credit = len(course.credits) > 1
                 no_real_prereqs = rule is None or (not rule.strict and not rule.concurrent)
 
-                # 🛑 Skip variable-credit courses with no prereqs early on
                 if is_variable_credit and no_real_prereqs and term_idx < 4:
                     continue
 
                 if code in intro_or_group and taken_intro:
                     continue
-
                 if rule and not rule.strict_satisfied(completed):
                     continue
                 if rule and rule.concurrent and not rule.concurrent_satisfied(completed, set()):
@@ -97,7 +90,7 @@ class Planner:
                 if code in intro_or_group:
                     taken_intro = True
 
-            # Pass 2 — check for newly eligible courses due to concurrent prereqs
+            # Pass 2 — allow courses with concurrent prereqs now met
             for code in all_codes:
                 if code in scheduled_this_term or code in completed:
                     continue
@@ -106,6 +99,10 @@ class Planner:
 
                 course = self.catalog.courses.get(code)
                 if not course or not course.offerings.get(term, True):
+                    continue
+
+                # 🛑 Defer CS___499 until final semester only
+                if code == "CS___499" and term_idx != self.max_terms - 1:
                     continue
 
                 rule = self.catalog.prereqs.get(code)
@@ -117,7 +114,6 @@ class Planner:
 
                 if code in intro_or_group and taken_intro:
                     continue
-
                 if rule:
                     if not rule.strict_satisfied(completed):
                         continue
@@ -136,7 +132,6 @@ class Planner:
                 if code in intro_or_group:
                     taken_intro = True
 
-            # Finalize semester
             for code, _ in semester:
                 completed.add(code)
 
@@ -144,5 +139,21 @@ class Planner:
                 plan.append(semester)
             else:
                 break
+
+        # ✅ Check for missing required courses
+        required = set(self.config.get("required_courses", []))
+        equivalents = self.config.get("required_course_equivalents", {})
+        missing = set()
+
+        for course in required:
+            if course in completed:
+                continue
+            # If any equivalent is completed, treat it as satisfied
+            if any(eq in completed for eq in equivalents.get(course, [])):
+                continue
+            missing.add(course)
+
+        if missing:
+            print(f"\n⚠️ Warning: Required courses not scheduled: {sorted(missing)}\n")
 
         return plan
