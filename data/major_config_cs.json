@@ -1,0 +1,20 @@
+{
+    "major": "CS",
+    "course_prefix": "CS___",
+    "intro_courses": ["CS___107", "CS___109", "CS___111", "CS___112", "CS___113"],
+    "only_one_intro": true,
+    "placeholder_courses": ["CS___499", "CS___XXX"],
+    "exclude_levels": [500, 600],
+    "required_courses": [
+    "CS___100", "CS___107", "CS___141", "CS___151", "CS___211",
+    "CS___251", "CS___261", "CS___301", "CS___341", "CS___342",
+    "CS___361", "CS___362"
+    ]
+,
+    "data_paths": {
+      "credits": "data/mastercourselist_cs.txt",
+      "offerings": "data/courseofferings_cs.txt",
+      "prereqs": "data/prerequisites_cs.txt"
+    }
+  }
+  

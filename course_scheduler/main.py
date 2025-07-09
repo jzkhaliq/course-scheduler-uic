@@ -1,11 +1,19 @@
 # === main.py ===
 from catalog import CourseCatalog
 from planner import Planner
+from config import load_major_config
+
+config = load_major_config("data/major_config_cs.json")
 
 catalog = CourseCatalog()
-catalog.load_all_data("data/prerequisites_cs.txt", "data/courseofferings_cs.txt", "data/mastercourselist_cs.txt")
+catalog.load_all_data(
+    config["data_paths"]["prereqs"],
+    config["data_paths"]["offerings"],
+    config["data_paths"]["credits"]
+)
 
-planner = Planner(catalog)
+planner = Planner(catalog, config=config)
+plan = planner.plan(["MATH_180"])
 
 # Debug: Check prerequisites for some courses after fix
 test_courses = ["CS___141", "CS___211", "CS___251", "CS___294", "CS___394", "CS___491"]

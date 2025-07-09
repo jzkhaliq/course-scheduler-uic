@@ -6,10 +6,12 @@ from collections import deque
 import re
 
 class Planner:
-    def __init__(self, catalog, max_credits=18, max_terms=8):
+    def __init__(self, catalog, max_credits=18, max_terms=8, config=None):
         self.catalog = catalog
         self.max_credits = max_credits
         self.max_terms = max_terms
+        self.config = config or {}
+
 
     def course_level(self, code):
         match = re.search(r"CS___(\d+)", code)
