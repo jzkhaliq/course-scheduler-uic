@@ -5,6 +5,7 @@
     "only_one_intro": true,
     "placeholder_courses": ["CS___499", "CS___XXX"],
     "exclude_levels": [500, 600],
+    "min_total_credits": 128,
     "required_courses": [
       "CS___100",
       "CS___141", "CS___151", "CS___211",
@@ -16,6 +17,15 @@
       "CS___107": ["CS___111", "CS___109", "CS___112", "CS___113"],
       "CS___100": ["CS___107", "CS___111", "CS___109", "CS___112", "CS___113"]
     },
+    "elective_pool": {
+      "min_required": 5,
+      "courses": [
+        "CS___402", "CS___407", "CS___418", "CS___421", "CS___422",
+        "CS___423", "CS___440", "CS___441", "CS___442", "CS___450",
+        "CS___454", "CS___463", "CS___466", "CS___474", "CS___478"
+      ]
+    },
+
     "data_paths": {
       "credits": "data/mastercourselist_cs.txt",
       "offerings": "data/courseofferings_cs.txt",

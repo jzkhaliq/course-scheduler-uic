@@ -15,18 +15,7 @@ catalog.load_all_data(
 planner = Planner(catalog, config=config)
 plan = planner.plan(["MATH_180"])
 
-# Debug: Check prerequisites for some courses after fix
-test_courses = ["CS___141", "CS___211", "CS___251", "CS___294", "CS___394", "CS___491"]
-print(f"Prerequisite analysis after fix:")
-for course in test_courses:
-    if course in catalog.prereqs:
-        rule = catalog.prereqs[course]
-        print(f"  {course}:")
-        print(f"    Strict: {rule.strict}")
-        print(f"    Concurrent: {rule.concurrent}")
-        print(f"    Indegree: {catalog.indegree[course]}")
-    else:
-        print(f"  {course}: No prerequisites")
+
 
 user_input = input("📘 Enter completed course codes (comma-separated, e.g. CS___141,MATH_180):\n> ")
 completed_courses = [code.strip().upper() for code in user_input.split(",") if code.strip()]

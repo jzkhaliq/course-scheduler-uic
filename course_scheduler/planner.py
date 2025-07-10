@@ -155,5 +155,27 @@ class Planner:
 
         if missing:
             print(f"\n⚠️ Warning: Required courses not scheduled: {sorted(missing)}\n")
+        
+        # ✅ Elective pool check
+        elective_pool = set(self.config.get("elective_pool", {}).get("courses", []))
+        min_electives = self.config.get("elective_pool", {}).get("min_required", 0)
+        scheduled_electives = [c for c in completed if c in elective_pool]
+
+        if len(scheduled_electives) < min_electives:
+            missing_count = min_electives - len(scheduled_electives)
+            print(f"\n⚠️ Warning: Only {len(scheduled_electives)} electives taken from the required {min_electives}.")
+            print(f"Missing {missing_count} elective(s).")
+            print(f"Electives taken: {sorted(scheduled_electives)}")
+            print(f"Eligible electives: {sorted(elective_pool)}\n")
+
+        # ✅ Total credit check
+        min_credits = self.config.get("min_total_credits", 128)
+        total_credits = sum(credits for semester in plan for _, credits in semester)
+
+        if total_credits < min_credits:
+            print(f"\n⚠️ Warning: Only {total_credits} total credits scheduled — {min_credits} required to graduate.")
+        else:
+            print(f"\n✅ Total credits scheduled: {total_credits} / {min_credits}\n")
+
 
         return plan
