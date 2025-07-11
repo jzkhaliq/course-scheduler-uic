@@ -11,3 +11,11 @@ __pycache__/
 # Virtual environments
 venv/
 env/
+
+# Output files
+*.log
+*.txt
+!data/mastercourselist_cs.txt
+
+# Output folder (optional if you move outputs)
+outputs/
