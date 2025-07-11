@@ -2,6 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 import re
 from datetime import datetime
+from collections import defaultdict
 
 BASE_URLS = {
     "fall": "https://webcs7.osss.uic.edu/schedule-of-classes/static/schedules/fall-2024/",
@@ -13,121 +14,253 @@ CS_URLS = {
     "spring": BASE_URLS["spring"] + "CS.html"
 }
 
-OUTPUTS = {
-    "offering": [],
-    "timing": {},
-    "prereq": [],
-    "master": {}
+# Request headers to avoid being blocked
+HEADERS = {
+    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
 }
 
+master = {}
+offering_term = {}  # norm_code → "fall" or "spring"
+excluded_courses = set()  # courses seen in both terms
+timings = defaultdict(list)  # CS___XXX_CRN → [(crn, start, end)]
+prereqs = set()
 
-def load_master_course_list():
-    with open("data/mastercourselist_cs.txt") as f:
-        for line in f:
-            code, credits = line.strip().split("\t")
-            OUTPUTS["master"][code.replace("___", " ")] = credits
+
+def load_master():
+    try:
+        with open("data/mastercourselist_cs.txt") as f:
+            for line in f:
+                line = line.strip()
+                if not line or '\t' not in line:
+                    continue
+                code, credits = line.split("\t")
+                normalized = code.replace("___", " ")
+                master[normalized] = credits
+        print(f"Loaded {len(master)} courses from master list")
+    except FileNotFoundError:
+        print("Warning: mastercourselist_cs.txt not found")
+    except Exception as e:
+        print(f"Error loading master list: {e}")
 
 
 def minutes_from_monday(time_str, days_str):
+    """Convert time string and days to minutes from Monday midnight"""
     day_map = {'M': 0, 'T': 1, 'W': 2, 'R': 3, 'F': 4}
     if "ARRANGED" in time_str.upper() or not days_str.strip():
         return []
 
     try:
-        start, end = [datetime.strptime(t.strip(), '%I:%M %p') for t in time_str.split('-')]
-        return [
-            [
-                day_map[d] * 1440 + start.hour * 60 + start.minute,
-                day_map[d] * 1440 + end.hour * 60 + end.minute
-            ]
-            for d in days_str if d in day_map
-        ]
+        # Handle different time formats
+        if '-' not in time_str:
+            return []
+        
+        start_str, end_str = [t.strip() for t in time_str.split('-')]
+        
+        # Parse times - handle both 12-hour and 24-hour formats
+        try:
+            start = datetime.strptime(start_str, '%I:%M %p')
+            end = datetime.strptime(end_str, '%I:%M %p')
+        except ValueError:
+            try:
+                start = datetime.strptime(start_str, '%H:%M')
+                end = datetime.strptime(end_str, '%H:%M')
+            except ValueError:
+                return []
+        
+        results = []
+        for d in days_str:
+            if d in day_map:
+                start_minutes = day_map[d] * 24 * 60 + start.hour * 60 + start.minute
+                end_minutes = day_map[d] * 24 * 60 + end.hour * 60 + end.minute
+                results.append((start_minutes, end_minutes))
+        
+        return results
     except Exception as e:
-        print(f"Error parsing time or days: {e} — '{time_str}' / '{days_str}'")
+        print(f"Error parsing time: {time_str}, {days_str} — {e}")
         return []
 
 
 def parse_course_table(url, term):
-    print(f"[INFO] Fetching {term.capitalize()} CS page...")
-    soup = BeautifulSoup(requests.get(url).text, "html.parser")
-    courses = soup.find_all("div", class_="course")
-    print(f"[INFO] Found {len(courses)} course blocks for {term}")
-
-    for course in courses:
-        text = course.get_text(" ", strip=True)
-        match = re.search(r"(CS\s+\d{3})", text)
-        if not match:
-            continue
-        code = match.group(1)
-        code_title = text[:60]
-
-        OUTPUTS["prereq"].append(f"{code}\t???")
-
-        rows = course.find_all('tr')
-        found_lecture = False
-
-        for row in rows:
-            cols = row.find_all('td')
-            if len(cols) < 6:
+    """Parse course table from UIC schedule page"""
+    try:
+        print(f"Fetching {url}")
+        response = requests.get(url, headers=HEADERS, timeout=10)
+        response.raise_for_status()
+        
+        soup = BeautifulSoup(response.text, "html.parser")
+        
+        # Debug: Print page structure
+        print(f"Page title: {soup.title.string if soup.title else 'No title'}")
+        
+        # Try different selectors to find course information
+        courses = soup.find_all("div", class_="course")
+        if not courses:
+            # Try alternative selectors
+            courses = soup.find_all("div", class_="course-block")
+        if not courses:
+            courses = soup.find_all("table")
+        
+        print(f"Found {len(courses)} potential course containers in {term}")
+        
+        if not courses:
+            print("No courses found. Printing page structure:")
+            print(soup.prettify()[:1000])  # First 1000 chars
+            return
+        
+        for i, course in enumerate(courses):
+            try:
+                # Get all text from the course block
+                text = course.get_text(" ", strip=True)
+                
+                # Look for CS course codes
+                cs_match = re.search(r"CS\s+(\d{3})", text)
+                if not cs_match:
+                    continue
+                
+                course_number = cs_match.group(1)
+                code = f"CS {course_number}"
+                norm_code = code.replace(" ", "___")
+                
+                print(f"Processing course: {code}")
+                
+                # Find table rows within this course block
+                rows = course.find_all('tr')
+                if not rows:
+                    # If no table, try to parse text directly
+                    print(f"No table rows found for {code}, trying text parsing")
+                    continue
+                
+                found_lecture = False
+                
+                for row in rows:
+                    cols = row.find_all('td')
+                    if len(cols) < 6:
+                        continue
+                    
+                    # Extract column data
+                    col_texts = [col.get_text(strip=True) for col in cols]
+                    
+                    # Assuming column order: CRN, Type, Time, Days, Room, Building, ...
+                    if len(col_texts) >= 6:
+                        crn = col_texts[0]
+                        course_type = col_texts[1]
+                        time = col_texts[2]
+                        days = col_texts[3]
+                        room = col_texts[4]
+                        building = col_texts[5]
+                        
+                        # Only process lecture sections
+                        if not course_type.upper().startswith("LEC"):
+                            continue
+                        
+                        print(f"  Found lecture: CRN={crn}, Time={time}, Days={days}")
+                        
+                        # Parse timing
+                        time_blocks = minutes_from_monday(time, days)
+                        for start, end in time_blocks:
+                            timings[f"{norm_code}_{crn}"].append((crn, start, end))
+                        
+                        found_lecture = True
+                
+                if found_lecture:
+                    # Track which term this course is offered in
+                    if norm_code in offering_term:
+                        if offering_term[norm_code] != term:
+                            # Course offered in both terms
+                            excluded_courses.add(norm_code)
+                            if norm_code in offering_term:
+                                del offering_term[norm_code]
+                    elif norm_code not in excluded_courses:
+                        offering_term[norm_code] = term
+                        prereqs.add(norm_code)
+                        
+            except Exception as e:
+                print(f"Error processing course {i}: {e}")
                 continue
-
-            course_type = cols[1].text.strip()
-            if not course_type.startswith("LEC"):
-                continue
-
-            crn = cols[0].text.strip()
-            time = cols[2].text.strip()
-            days = cols[3].text.strip()
-            room = cols[4].text.strip()
-            building = cols[5].text.strip()
-            instructor = cols[6].text.strip()
-            location = f"{building} {room}".strip()
-            section_id = crn[-3:]
-
-            print(f"[MATCH] Looking for {code.replace(' ', '___')}")
-
-            credits = OUTPUTS["master"].get(code.replace(" ", "___"), "???")
-
-
-            OUTPUTS["offering"].append([
-                code, code_title, crn, section_id, instructor, days, time,
-                location, credits, "open", term
-            ])
-
-            mins = minutes_from_monday(time, days)
-            for pair in mins:
-                OUTPUTS["timing"][f"{code}-{section_id}"] = pair
-
-            found_lecture = True
-
-        # Optional: print only if course has a lecture
-        if found_lecture:
-            print(f"[DEBUG] Sections for {code_title}: {int(found_lecture)}")
+                
+    except requests.RequestException as e:
+        print(f"Failed to fetch {url}: {e}")
+        return
+    except Exception as e:
+        print(f"Error parsing {url}: {e}")
+        return
 
 
 def write_outputs():
-    with open("courseoffering_cs.txt", "w") as f:
-        for row in OUTPUTS["offering"]:
-            f.write("\t".join(row) + "\n")
+    """Write output files"""
+    try:
+        # Course offerings
+        with open("courseoffering_cs.txt", "w") as f:
+            for code in sorted(offering_term.keys()):
+                term = offering_term[code]
+                fall = 1 if term == "fall" else 0
+                spring = 1 if term == "spring" else 0
+                f.write(f"{code}\t{fall}\t{spring}\n")
+        print(f"Wrote {len(offering_term)} course offerings")
+        
+        # Course timings
+        with open("coursetiming_cs.txt", "w") as f:
+            for section_id, time_blocks in sorted(timings.items()):
+                f.write(f"{section_id}\t{len(time_blocks)}")
+                for crn, start, end in time_blocks:
+                    f.write(f"\t{crn}\t{start}\t{end}")
+                f.write("\n")
+        print(f"Wrote {len(timings)} course timings")
+        
+        # Prerequisites (placeholder)
+        with open("prerequisites_cs.txt", "w") as f:
+            for code in sorted(prereqs):
+                f.write(f"{code}\t???\n")
+        print(f"Wrote {len(prereqs)} prerequisite placeholders")
+        
+    except Exception as e:
+        print(f"Error writing output files: {e}")
 
-    with open("coursetiming_cs.txt", "w") as f:
-        for key, pair in OUTPUTS["timing"].items():
-            f.write(f"{key}\t{pair[0]}\t{pair[1]}\n")
 
-    with open("prerequisites_cs.txt", "w") as f:
-        for row in OUTPUTS["prereq"]:
-            f.write(row + "\n")
-
-
-    print(f"[INFO] Wrote {len(OUTPUTS['offering'])} to courseoffering_cs.txt")
-    print(f"[INFO] Wrote {len(OUTPUTS['timing'])} to coursetiming_cs.txt")
-    print(f"[INFO] Wrote {len(OUTPUTS['prereq'])} to prerequisites_cs.txt")
-    print(f"[INFO] Wrote {len(OUTPUTS['master'])} to mastercourselist_cs.txt")
+def debug_page_structure(url):
+    """Debug function to inspect page structure"""
+    try:
+        response = requests.get(url, headers=HEADERS, timeout=10)
+        response.raise_for_status()
+        soup = BeautifulSoup(response.text, "html.parser")
+        
+        print(f"\n=== Debug info for {url} ===")
+        print(f"Title: {soup.title.string if soup.title else 'No title'}")
+        
+        # Look for common class names
+        for class_name in ['course', 'course-block', 'course-info', 'class', 'section']:
+            elements = soup.find_all(class_=class_name)
+            if elements:
+                print(f"Found {len(elements)} elements with class '{class_name}'")
+        
+        # Look for tables
+        tables = soup.find_all('table')
+        print(f"Found {len(tables)} tables")
+        
+        # Print first few lines of page
+        print("\nFirst 500 characters of page:")
+        print(soup.get_text()[:500])
+        
+    except Exception as e:
+        print(f"Debug error: {e}")
 
 
 if __name__ == "__main__":
-    load_master_course_list()
+    load_master()
+    
+    # First, debug the page structure
+    print("=== Debugging page structure ===")
     for term in ["fall", "spring"]:
-        url = CS_URLS[term]
-        parse_course_table(url, term)
+        debug_page_structure(CS_URLS[term])
+    
+    print("\n=== Starting scraping ===")
+    for term in ["fall", "spring"]:
+        parse_course_table(CS_URLS[term], term)
+    
+    print(f"\nSummary:")
+    print(f"Courses found: {len(offering_term)}")
+    print(f"Excluded courses (both terms): {len(excluded_courses)}")
+    print(f"Timing records: {len(timings)}")
+    
     write_outputs()
+    print("Done!")
