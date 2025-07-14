@@ -29,6 +29,12 @@ seen_in_term = defaultdict(set)  # term → set of course codes seen in that ter
 timings = defaultdict(list)  # CS___XXX_CRN → [(crn, start, end)]
 prereqs = set()
 
+def frange(start, stop, step=1):
+    """Float range for handling decimal credit ranges."""
+    while start <= stop:
+        yield round(start, 2)
+        start += step
+
 
 def load_master():
     try:
@@ -132,6 +138,23 @@ def parse_course_table(url, term):
                 course_number = cs_match.group(1)
                 code = f"CS {course_number}"
                 norm_code = code.replace(" ", "___")
+                # Try to extract course credit from "... 3 hours." or "... 4.0 hours."
+                # Match variable range: "1 to 3 hours"
+                range_match = re.search(r"(\d+(?:\.\d+)?)\s+to\s+(\d+(?:\.\d+)?)\s+hours", text, re.IGNORECASE)
+                if range_match:
+                    start = float(range_match.group(1))
+                    end = float(range_match.group(2))
+                    # Build comma-separated range like "1,2,3"
+                    credit = ",".join(str(int(i)) if i.is_integer() else str(i)
+                                    for i in frange(start, end + 1))
+                else:
+                    # Fallback to single credit match: "3 hours"
+                    credit_match = re.search(r"(\d+(?:\.\d+)?)\s+hours", text, re.IGNORECASE)
+                    credit = credit_match.group(1) if credit_match else "???"
+
+                # Save scraped credit to master (overwrite or create)
+                master[code] = credit
+
                 seen_in_term[norm_code].add(term)
 
                 # Ensure the course is tracked even if no valid LEC time
@@ -314,6 +337,7 @@ if __name__ == "__main__":
     print(f"  Excluded (both terms): {len(excluded_courses)}")
     print(f"  Prerequisite stubs: {len(prereqs)}")
     print(f"  Timing entries: {len(timings)}")
+    
 
     write_outputs()
     print("Done!")
