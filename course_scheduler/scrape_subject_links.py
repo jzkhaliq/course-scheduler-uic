@@ -36,6 +36,8 @@ def frange(start, stop, step=1):
         start += step
 
 
+
+
 def load_master():
     try:
         with open("data/mastercourselist_cs.txt") as f:
@@ -45,7 +47,7 @@ def load_master():
                     continue
                 parts = line.split("\t")
                 if len(parts) != 2:
-                    print(f"[SKIP] Malformed line in mastercourselist: {line}")
+                    # print(f"[SKIP] Malformed line in mastercourselist: {line}")
                     continue  # Skip lines that don't have exactly 2 parts
                 code, credits = parts
                 normalized = code.replace("___", " ")
@@ -63,6 +65,7 @@ def minutes_from_monday(time_str, days_str):
     """Convert time string and days to minutes from Monday midnight"""
     day_map = {'M': 0, 'T': 1, 'W': 2, 'R': 3, 'F': 4}
     if "ARRANGED" in time_str.upper() or not days_str.strip():
+        # print(f"[SKIP] Unparsable time: '{time_str}' days: '{days_str}'")
         return []
 
     try:
@@ -81,6 +84,7 @@ def minutes_from_monday(time_str, days_str):
                 start = datetime.strptime(start_str, '%H:%M')
                 end = datetime.strptime(end_str, '%H:%M')
             except ValueError:
+                # print(f"[SKIP] Unparsable time: '{time_str}' days: '{days_str}'")
                 return []
         
         results = []
@@ -125,19 +129,31 @@ def parse_course_table(url, term):
         
         for i, course in enumerate(courses):
             try:
+                
                 # Get all text from the course block
                 text = course.get_text(" ", strip=True)
-                
+                                                
                 # Look for CS course codes
                 cs_match = re.search(r"CS\s+(\d{3})", text)
                 if not cs_match:
                     continue
-
-                
                 
                 course_number = cs_match.group(1)
+
                 code = f"CS {course_number}"
                 norm_code = code.replace(" ", "___")
+
+                # Always mark this course as seen, even if no table rows
+                seen_in_term[norm_code].add(term)
+
+                # Also try to extract credits here
+                credit_match = re.search(r"(\d+(?:\.\d+)?)(?:\s+to\s+\d+(?:\.\d+)?)?\s+hours", text, re.IGNORECASE)
+                if credit_match:
+                    master[code] = credit_match.group(1)
+                else:
+                    master[code] = "???"
+
+
                 # Try to extract course credit from "... 3 hours." or "... 4.0 hours."
                 # Match variable range: "1 to 3 hours"
                 range_match = re.search(r"(\d+(?:\.\d+)?)\s+to\s+(\d+(?:\.\d+)?)\s+hours", text, re.IGNORECASE)
@@ -178,6 +194,7 @@ def parse_course_table(url, term):
 
                 for row in rows:
                     cols = row.find_all('td')
+                    
                     if len(cols) < 6:
                         continue
                     
@@ -194,8 +211,16 @@ def parse_course_table(url, term):
                         building = col_texts[5]
                         
                         # Only process lecture sections
-                        if not course_type.upper().startswith("LEC"):
+                        keep_types = ["LEC", "LEC-DIS", "LEC/LAB", "LBD", "LCD"]
+                        if not any(t in course_type.upper() for t in keep_types):
                             continue
+
+
+                        ## print(f"[LEC] {norm_code} — CRN {crn}, Time: {time}, Days: {days}")
+
+
+                        ## if not time or not days:
+                        ##    print(f"[SKIP] {norm_code} CRN {crn} — missing time or days: '{time}', '{days}'")
 
                         if not representative_crn:
                             representative_crn = crn  # Save first valid lecture CRN
@@ -207,6 +232,8 @@ def parse_course_table(url, term):
                         time_blocks = minutes_from_monday(time, days)
                         for start, end in time_blocks:
                             timings[f"{norm_code}_{crn}"].append((crn, start, end))
+                        
+                        
                         
                         found_lecture = True
                 
@@ -230,7 +257,7 @@ def write_outputs():
     try:
         # Course offerings
         with open("courseoffering_cs.txt", "w") as f:
-            print(f"[DEBUG] Sample offering_term: {list(offering_term.items())[:3]}")
+            # print(f"[DEBUG] Sample offering_term: {list(offering_term.items())[:3]}")
             for code in sorted(offering_term.keys()):
                 term = offering_term[code]
                 fall = 1 if term in ["fall", "both"] else 0
@@ -279,8 +306,8 @@ def debug_page_structure(url):
         response.raise_for_status()
         soup = BeautifulSoup(response.text, "html.parser")
         
-        print(f"\n=== Debug info for {url} ===")
-        print(f"Title: {soup.title.string if soup.title else 'No title'}")
+        # print(f"\n=== Debug info for {url} ===")
+        # print(f"Title: {soup.title.string if soup.title else 'No title'}")
         
         # Look for common class names
         for class_name in ['course', 'course-block', 'course-info', 'class', 'section']:
@@ -293,8 +320,8 @@ def debug_page_structure(url):
         print(f"Found {len(tables)} tables")
         
         # Print first few lines of page
-        print("\nFirst 500 characters of page:")
-        print(soup.get_text()[:500])
+        ## print("\nFirst 500 characters of page:")
+        ## print(soup.get_text()[:500])
         
     except Exception as e:
         print(f"Debug error: {e}")
@@ -302,7 +329,7 @@ def debug_page_structure(url):
 
 if __name__ == "__main__":
     load_master()
-    
+
     # First, debug the page structure
     print("=== Debugging page structure ===")
     for term in ["fall", "spring"]:
