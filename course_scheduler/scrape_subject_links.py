@@ -1,8 +1,11 @@
+### scrape_subject_links.py
 import requests
 from bs4 import BeautifulSoup
 import re
 from datetime import datetime
 from collections import defaultdict
+
+
 
 BASE_URLS = {
     "fall": "https://webcs7.osss.uic.edu/schedule-of-classes/static/schedules/fall-2024/",
@@ -22,6 +25,7 @@ HEADERS = {
 master = {}
 offering_term = {}  # norm_code → "fall" or "spring"
 excluded_courses = set()  # courses seen in both terms
+seen_in_term = defaultdict(set)  # term → set of course codes seen in that term
 timings = defaultdict(list)  # CS___XXX_CRN → [(crn, start, end)]
 prereqs = set()
 
@@ -33,7 +37,11 @@ def load_master():
                 line = line.strip()
                 if not line or '\t' not in line:
                     continue
-                code, credits = line.split("\t")
+                parts = line.split("\t")
+                if len(parts) != 2:
+                    print(f"[SKIP] Malformed line in mastercourselist: {line}")
+                    continue  # Skip lines that don't have exactly 2 parts
+                code, credits = parts
                 normalized = code.replace("___", " ")
                 master[normalized] = credits
         print(f"Loaded {len(master)} courses from master list")
@@ -41,6 +49,8 @@ def load_master():
         print("Warning: mastercourselist_cs.txt not found")
     except Exception as e:
         print(f"Error loading master list: {e}")
+
+
 
 
 def minutes_from_monday(time_str, days_str):
@@ -90,7 +100,7 @@ def parse_course_table(url, term):
         soup = BeautifulSoup(response.text, "html.parser")
         
         # Debug: Print page structure
-        print(f"Page title: {soup.title.string if soup.title else 'No title'}")
+        ## print(f"Page title: {soup.title.string if soup.title else 'No title'}")
         
         # Try different selectors to find course information
         courses = soup.find_all("div", class_="course")
@@ -100,7 +110,7 @@ def parse_course_table(url, term):
         if not courses:
             courses = soup.find_all("table")
         
-        print(f"Found {len(courses)} potential course containers in {term}")
+        ## print(f"Found {len(courses)} potential course containers in {term}")
         
         if not courses:
             print("No courses found. Printing page structure:")
@@ -116,12 +126,21 @@ def parse_course_table(url, term):
                 cs_match = re.search(r"CS\s+(\d{3})", text)
                 if not cs_match:
                     continue
+
+                
                 
                 course_number = cs_match.group(1)
                 code = f"CS {course_number}"
                 norm_code = code.replace(" ", "___")
+                seen_in_term[norm_code].add(term)
+
+                # Ensure the course is tracked even if no valid LEC time
+                prereqs.add(norm_code)
                 
-                print(f"Processing course: {code}")
+
+
+                
+                ## print(f"Processing course: {code}")
                 
                 # Find table rows within this course block
                 rows = course.find_all('tr')
@@ -131,7 +150,9 @@ def parse_course_table(url, term):
                     continue
                 
                 found_lecture = False
-                
+
+                representative_crn = None
+
                 for row in rows:
                     cols = row.find_all('td')
                     if len(cols) < 6:
@@ -152,8 +173,12 @@ def parse_course_table(url, term):
                         # Only process lecture sections
                         if not course_type.upper().startswith("LEC"):
                             continue
+
+                        if not representative_crn:
+                            representative_crn = crn  # Save first valid lecture CRN
+
                         
-                        print(f"  Found lecture: CRN={crn}, Time={time}, Days={days}")
+                        ## print(f"  Found lecture: CRN={crn}, Time={time}, Days={days}")
                         
                         # Parse timing
                         time_blocks = minutes_from_monday(time, days)
@@ -162,17 +187,8 @@ def parse_course_table(url, term):
                         
                         found_lecture = True
                 
-                if found_lecture:
-                    # Track which term this course is offered in
-                    if norm_code in offering_term:
-                        if offering_term[norm_code] != term:
-                            # Course offered in both terms
-                            excluded_courses.add(norm_code)
-                            if norm_code in offering_term:
-                                del offering_term[norm_code]
-                    elif norm_code not in excluded_courses:
-                        offering_term[norm_code] = term
-                        prereqs.add(norm_code)
+                    
+
                         
             except Exception as e:
                 print(f"Error processing course {i}: {e}")
@@ -191,10 +207,11 @@ def write_outputs():
     try:
         # Course offerings
         with open("courseoffering_cs.txt", "w") as f:
+            print(f"[DEBUG] Sample offering_term: {list(offering_term.items())[:3]}")
             for code in sorted(offering_term.keys()):
                 term = offering_term[code]
-                fall = 1 if term == "fall" else 0
-                spring = 1 if term == "spring" else 0
+                fall = 1 if term in ["fall", "both"] else 0
+                spring = 1 if term in ["spring", "both"] else 0
                 f.write(f"{code}\t{fall}\t{spring}\n")
         print(f"Wrote {len(offering_term)} course offerings")
         
@@ -212,6 +229,21 @@ def write_outputs():
             for code in sorted(prereqs):
                 f.write(f"{code}\t???\n")
         print(f"Wrote {len(prereqs)} prerequisite placeholders")
+
+        # Rebuild master course list from offering_term and timings keys
+        with open("mastercourselist_cs.txt", "w") as f:
+            added = set()
+            all_seen = set(seen_in_term.keys()) | {key.rsplit("_", 1)[0] for key in timings.keys()}
+            for code in sorted(all_seen):
+                if code.count("___") == 1 and code not in added:
+                    credit = master.get(code.replace("___", " "), "???")
+                    f.write(f"{code}\t{credit}\n")
+                    added.add(code)
+
+
+
+        print(f"Wrote {len(added)} to mastercourselist_cs.txt")
+
         
     except Exception as e:
         print(f"Error writing output files: {e}")
@@ -257,10 +289,31 @@ if __name__ == "__main__":
     for term in ["fall", "spring"]:
         parse_course_table(CS_URLS[term], term)
     
+    # Postprocess offerings
+    for code, terms in seen_in_term.items():
+        if "fall" in terms and "spring" in terms:
+            excluded_courses.add(code)  # Exclude from offering file
+        elif "fall" in terms:
+            offering_term[code] = "fall"
+        elif "spring" in terms:
+            offering_term[code] = "spring"
+        
+        prereqs.add(code)  # Still add to prereq/master
+
+
+
+
+    
     print(f"\nSummary:")
     print(f"Courses found: {len(offering_term)}")
     print(f"Excluded courses (both terms): {len(excluded_courses)}")
     print(f"Timing records: {len(timings)}")
-    
+    print(f"\nStats:")
+    print(f"  Courses seen: {len(seen_in_term)}")
+    print(f"  Offering courses: {len(offering_term)}")
+    print(f"  Excluded (both terms): {len(excluded_courses)}")
+    print(f"  Prerequisite stubs: {len(prereqs)}")
+    print(f"  Timing entries: {len(timings)}")
+
     write_outputs()
     print("Done!")
