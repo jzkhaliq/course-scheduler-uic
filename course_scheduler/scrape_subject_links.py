@@ -1,4 +1,5 @@
 ### scrape_subject_links.py
+import os
 import requests
 from bs4 import BeautifulSoup
 import re
@@ -29,36 +30,12 @@ seen_in_term = defaultdict(set)  # term → set of course codes seen in that ter
 timings = defaultdict(list)  # CS___XXX_CRN → [(crn, start, end)]
 prereqs = set()
 
+
 def frange(start, stop, step=1):
     """Float range for handling decimal credit ranges."""
     while start <= stop:
         yield round(start, 2)
         start += step
-
-
-
-
-def load_master():
-    try:
-        with open("data/mastercourselist_cs.txt") as f:
-            for line in f:
-                line = line.strip()
-                if not line or '\t' not in line:
-                    continue
-                parts = line.split("\t")
-                if len(parts) != 2:
-                    # print(f"[SKIP] Malformed line in mastercourselist: {line}")
-                    continue  # Skip lines that don't have exactly 2 parts
-                code, credits = parts
-                normalized = code.replace("___", " ")
-                master[normalized] = credits
-        print(f"Loaded {len(master)} courses from master list")
-    except FileNotFoundError:
-        print("Warning: mastercourselist_cs.txt not found")
-    except Exception as e:
-        print(f"Error loading master list: {e}")
-
-
 
 
 def minutes_from_monday(time_str, days_str):
@@ -100,7 +77,7 @@ def minutes_from_monday(time_str, days_str):
         return []
 
 
-def parse_course_table(url, term):
+def parse_course_table(url, term, subject):
     """Parse course table from UIC schedule page"""
     try:
         print(f"Fetching {url}")
@@ -132,13 +109,17 @@ def parse_course_table(url, term):
                 
                 text = course.get_text(" ", strip=True)
 
-                cs_match = re.search(r"CS\s+(\d{3})", text)
-                if not cs_match:
+                match = re.search(rf"{subject}\s+(\d{{3}})", text)
+                if not match:
                     continue
 
-                course_number = cs_match.group(1)
-                code = f"CS {course_number}"
+                course_number = match.group(1)
+                code = f"{subject} {course_number}"
                 norm_code = code.replace(" ", "___")
+                seen_in_term[norm_code].add(term)
+                print(f"[SEEN_TERM] {norm_code} seen in {term}")
+
+
                 
                 # Extract prerequisite sentence (e.g., "Prerequisite(s): CS 111 and CS 151.")
                 prereq_match = re.search(r"Prerequisite\s*\(s\):\s*(.+)", text, re.IGNORECASE)
@@ -159,7 +140,7 @@ def parse_course_table(url, term):
                             if prereq_code == norm_code:
                                 continue
 
-                            if dept not in {"CS", "MATH", "ECE", "STAT", "PHYS"}:
+                            if dept not in VALID_SUBJECTS:
                                 continue
 
                             prereqs.add((prereq_code, norm_code, flag))
@@ -170,15 +151,14 @@ def parse_course_table(url, term):
                     ## print(f"[PREREQ RAW] {norm_code}: {prereq_text}")
 
                                                 
-                # Look for CS course codes
-                cs_match = re.search(r"CS\s+(\d{3})", text)
-                if not cs_match:
+                match = re.search(rf"{subject}\s+(\d{{3}})", text)
+                if not match:
                     continue
-                
-                course_number = cs_match.group(1)
 
-                code = f"CS {course_number}"
+                course_number = match.group(1)
+                code = f"{subject} {course_number}"
                 norm_code = code.replace(" ", "___")
+
 
                 # Always mark this course as seen, even if no table rows
                 seen_in_term[norm_code].add(term)
@@ -289,11 +269,15 @@ def parse_course_table(url, term):
         return
 
 
-def write_outputs():
+def write_outputs(subject):
+    # Create subfolder for this subject
+    major_dir = os.path.join("majors", subject)
+    os.makedirs(major_dir, exist_ok=True)
+
     """Write output files"""
     try:
         # Course offerings
-        with open("courseoffering_cs.txt", "w") as f:
+        with open(os.path.join(major_dir, f"courseoffering_{subject}.txt"), "w") as f:
             # print(f"[DEBUG] Sample offering_term: {list(offering_term.items())[:3]}")
             for code in sorted(offering_term.keys()):
                 term = offering_term[code]
@@ -303,7 +287,7 @@ def write_outputs():
         print(f"Wrote {len(offering_term)} course offerings")
         
         # Course timings
-        with open("coursetiming_cs.txt", "w") as f:
+        with open(os.path.join(major_dir, f"coursetiming_{subject}.txt"), "w") as f:
             for section_id, time_blocks in sorted(timings.items()):
                 f.write(f"{section_id}\t{len(time_blocks)}")
                 for crn, start, end in time_blocks:
@@ -323,12 +307,12 @@ def write_outputs():
             prereqs_cleaned,
             key=lambda x: (
                 int(x[1].split("___")[1]),  # course number (middle column)
-                int(x[0].split("___")[1]) if x[0].startswith("CS___") else 9999
+                int(x[0].split("___")[1])  # prereq number (left column)
             )
         )
 
         # Write prerequisites file
-        with open("prerequisites_cs.txt", "w") as f:
+        with open(os.path.join(major_dir, f"prerequisites_{subject}.txt"), "w") as f:
             for prereq, course, flag in prereqs_sorted:
                 f.write(f"{prereq}\t{course}\t{flag}\n")
 
@@ -337,7 +321,7 @@ def write_outputs():
         print(f"Wrote {len(prereqs)} prerequisite placeholders")
 
         # Rebuild master course list from offering_term and timings keys
-        with open("mastercourselist_cs.txt", "w") as f:
+        with open(os.path.join(major_dir, f"mastercourselist_{subject}.txt"), "w") as f:
             added = set()
             all_seen = set(seen_in_term.keys()) | {key.rsplit("_", 1)[0] for key in timings.keys()}
             for code in sorted(all_seen):
@@ -348,11 +332,43 @@ def write_outputs():
 
 
 
-        print(f"Wrote {len(added)} to mastercourselist_cs.txt")
+        print(f"Wrote {len(added)} to mastercourselist_{subject}.txt")
 
         
     except Exception as e:
         print(f"Error writing output files: {e}")
+
+
+
+def get_all_subjects():
+    base_url = "https://webcs7.osss.uic.edu/schedule-of-classes/static/schedules"
+    index_url = f"{base_url}/fall-2024/index.html"
+
+    try:
+        response = requests.get(index_url, headers=HEADERS, timeout=10)
+        response.raise_for_status()
+        soup = BeautifulSoup(response.text, "html.parser")
+
+        subject_map = {}
+
+        for a in soup.find_all("a", href=True):
+            href = a["href"]
+            match = re.match(r"([A-Z]{2,5})\.html$", href)
+            if match:
+                subject = match.group(1)
+                subject_map[subject] = {
+                    "fall": f"{base_url}/fall-2024/{subject}.html",
+                    "spring": f"{base_url}/spring-2025/{subject}.html"
+                }
+
+        print(f"[INFO] Found {len(subject_map)} subjects")
+        return subject_map
+
+    except Exception as e:
+        print(f"[ERROR] Failed to load subject list: {e}")
+        return {}
+
+
 
 
 def debug_page_structure(url):
@@ -384,45 +400,31 @@ def debug_page_structure(url):
 
 
 if __name__ == "__main__":
-    load_master()
+    subjects = get_all_subjects()
+    VALID_SUBJECTS = set(subjects)  # e.g., {"CS", "MATH", "ECE", ...}
 
-    # First, debug the page structure
-    print("=== Debugging page structure ===")
-    for term in ["fall", "spring"]:
-        debug_page_structure(CS_URLS[term])
-    
-    print("\n=== Starting scraping ===")
-    for term in ["fall", "spring"]:
-        parse_course_table(CS_URLS[term], term)
-    
-    # Postprocess offerings
-    for code, terms in seen_in_term.items():
-        if "fall" in terms and "spring" in terms:
-            excluded_courses.add(code)  # Exclude from offering file
-        elif "fall" in terms:
-            offering_term[code] = "fall"
-        elif "spring" in terms:
-            offering_term[code] = "spring"
+    for subject in ["CS", "MATH", "ECE"]:
+        if subject not in subjects:
+            print(f"[SKIP] {subject} not found in subject list")
+            continue
+
+        urls = subjects[subject]
+
+        print(f"\n=== Scraping {subject} ===")
+
+        # Clear data between subjects
+        master.clear()
+        offering_term.clear()
+        excluded_courses.clear()
         
-        ## prereqs.add(code)  # Still add to prereq/master
+        timings.clear()
+        prereqs.clear()
 
+        parse_course_table(urls["fall"], "fall", subject)
+        parse_course_table(urls["spring"], "spring", subject)
+        
+        print(f"[DEBUG] {subject}: {len(offering_term)} single-term offerings (excluded {len(excluded_courses)} both-term)")
 
+        write_outputs(subject)
 
-
-    
-    print(f"\nSummary:")
-    print(f"Courses found: {len(offering_term)}")
-    print(f"Excluded courses (both terms): {len(excluded_courses)}")
-    print(f"Timing records: {len(timings)}")
-    print(f"\nStats:")
-    print(f"  Courses seen: {len(seen_in_term)}")
-    print(f"  Offering courses: {len(offering_term)}")
-    print(f"  Excluded (both terms): {len(excluded_courses)}")
-    print(f"  Prerequisite stubs: {len(prereqs)}")
-    print(f"  Timing entries: {len(timings)}")
-    ## print(f"[DEBUG] Parsed {len(prereqs)} prerequisite links")
-
-
-
-    write_outputs()
-    print("Done!")
+        seen_in_term.clear()
