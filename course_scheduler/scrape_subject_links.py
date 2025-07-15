@@ -130,8 +130,45 @@ def parse_course_table(url, term):
         for i, course in enumerate(courses):
             try:
                 
-                # Get all text from the course block
                 text = course.get_text(" ", strip=True)
+
+                cs_match = re.search(r"CS\s+(\d{3})", text)
+                if not cs_match:
+                    continue
+
+                course_number = cs_match.group(1)
+                code = f"CS {course_number}"
+                norm_code = code.replace(" ", "___")
+                
+                # Extract prerequisite sentence (e.g., "Prerequisite(s): CS 111 and CS 151.")
+                prereq_match = re.search(r"Prerequisite\s*\(s\):\s*(.+)", text, re.IGNORECASE)
+                if prereq_match:
+                        
+                    prereq_text = prereq_match.group(1)
+                    
+                    # Split prereq sentence into chunks by ; or " and "
+                    chunks = re.split(r";|\band\b", prereq_text, flags=re.IGNORECASE)
+
+                    for chunk in chunks:
+                        flag = -1 if " or " in chunk.lower() else 0
+                        course_refs = re.findall(r"\b([A-Z]{2,4})\s+(\d{3})\b", chunk)
+
+                        for dept, num in course_refs:
+                            prereq_code = f"{dept}___{num}"
+
+                            if prereq_code == norm_code:
+                                continue
+
+                            if dept not in {"CS", "MATH", "ECE", "STAT", "PHYS"}:
+                                continue
+
+                            prereqs.add((prereq_code, norm_code, flag))
+
+
+
+
+                    ## print(f"[PREREQ RAW] {norm_code}: {prereq_text}")
+
                                                 
                 # Look for CS course codes
                 cs_match = re.search(r"CS\s+(\d{3})", text)
@@ -174,7 +211,7 @@ def parse_course_table(url, term):
                 seen_in_term[norm_code].add(term)
 
                 # Ensure the course is tracked even if no valid LEC time
-                prereqs.add(norm_code)
+                ## prereqs.add(norm_code)
                 
 
 
@@ -274,10 +311,29 @@ def write_outputs():
                 f.write("\n")
         print(f"Wrote {len(timings)} course timings")
         
-        # Prerequisites (placeholder)
+        # Clean and filter prereqs
+        prereqs_cleaned = [
+            (prereq, course, flag)
+            for prereq, course, flag in prereqs
+            if prereq != course and isinstance(prereq, str) and isinstance(course, str)
+        ]
+
+        # Sort: first by course (middle column), then by prereq (left column)
+        prereqs_sorted = sorted(
+            prereqs_cleaned,
+            key=lambda x: (
+                int(x[1].split("___")[1]),  # course number (middle column)
+                int(x[0].split("___")[1]) if x[0].startswith("CS___") else 9999
+            )
+        )
+
+        # Write prerequisites file
         with open("prerequisites_cs.txt", "w") as f:
-            for code in sorted(prereqs):
-                f.write(f"{code}\t???\n")
+            for prereq, course, flag in prereqs_sorted:
+                f.write(f"{prereq}\t{course}\t{flag}\n")
+
+
+
         print(f"Wrote {len(prereqs)} prerequisite placeholders")
 
         # Rebuild master course list from offering_term and timings keys
@@ -348,7 +404,7 @@ if __name__ == "__main__":
         elif "spring" in terms:
             offering_term[code] = "spring"
         
-        prereqs.add(code)  # Still add to prereq/master
+        ## prereqs.add(code)  # Still add to prereq/master
 
 
 
@@ -364,7 +420,9 @@ if __name__ == "__main__":
     print(f"  Excluded (both terms): {len(excluded_courses)}")
     print(f"  Prerequisite stubs: {len(prereqs)}")
     print(f"  Timing entries: {len(timings)}")
-    
+    ## print(f"[DEBUG] Parsed {len(prereqs)} prerequisite links")
+
+
 
     write_outputs()
     print("Done!")
