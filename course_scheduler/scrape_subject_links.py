@@ -117,7 +117,7 @@ def parse_course_table(url, term, subject):
                 code = f"{subject} {course_number}"
                 norm_code = code.replace(" ", "___")
                 seen_in_term[norm_code].add(term)
-                print(f"[SEEN_TERM] {norm_code} seen in {term}")
+                
 
 
                 
@@ -422,8 +422,17 @@ if __name__ == "__main__":
 
         parse_course_table(urls["fall"], "fall", subject)
         parse_course_table(urls["spring"], "spring", subject)
+
+        # Determine offering term for each course
+        for norm_code, terms in seen_in_term.items():
+            if "fall" in terms and "spring" in terms:
+                continue  # Skip both-term courses
+            elif "fall" in terms:
+                offering_term[norm_code] = "fall"
+            elif "spring" in terms:
+                offering_term[norm_code] = "spring"
+
         
-        print(f"[DEBUG] {subject}: {len(offering_term)} single-term offerings (excluded {len(excluded_courses)} both-term)")
 
         write_outputs(subject)
 
