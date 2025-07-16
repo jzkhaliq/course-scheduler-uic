@@ -10,6 +10,8 @@ class CourseCatalog:
         self.graph = defaultdict(list)
         self.reverse_graph = defaultdict(list)
         self.indegree = defaultdict(int)
+        self.timings = defaultdict(list)
+
 
     def load_credits(self, path):
         with open(path) as f:
@@ -72,7 +74,26 @@ class CourseCatalog:
             if groups["concurrent"]:
                 rule.concurrent.append(groups["concurrent"])
 
-    def load_all_data(self, prereq_path, offerings_path, credits_path):
+    def load_all_data(self, prereq_path, offerings_path, credits_path, timings_path=None):
         self.load_credits(credits_path)
         self.load_offerings(offerings_path)
         self.load_prereqs(prereq_path)
+        if timings_path:
+            self.load_timings(timings_path)
+
+
+    def load_timings(self, path):
+        self.timings = defaultdict(list)
+        with open(path) as f:
+            for line in f:
+                parts = line.strip().split("\t")
+                if len(parts) < 2:
+                    continue
+                course_key = parts[0]
+                num_sessions = int(parts[1])
+                for i in range(num_sessions):
+                    crn = parts[2 + i * 3]
+                    start = int(parts[3 + i * 3])
+                    end = int(parts[4 + i * 3])
+                    self.timings[course_key.split("_")[0]].append((start, end))  # key like CS___141
+

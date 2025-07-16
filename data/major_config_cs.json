@@ -1,35 +1,142 @@
 {
-    "major": "CS",
-    "course_prefix": "CS___",
-    "intro_courses": ["CS___107", "CS___109", "CS___111", "CS___112", "CS___113"],
-    "only_one_intro": true,
-    "placeholder_courses": ["CS___499", "CS___XXX"],
-    "exclude_levels": [500, 600],
-    "min_total_credits": 128,
-    "required_courses": [
-      "CS___100",
-      "CS___141", "CS___151", "CS___211",
-      "CS___251", "CS___261", "CS___301",
-      "CS___341", "CS___342", "CS___361", "CS___362",
-      "CS___499"
+  "major": "CS",
+  "course_prefix": "CS___",
+  "intro_courses": [
+    "CS___100",
+    "CS___107",
+    "CS___109",
+    "CS___111",
+    "CS___112",
+    "CS___141",
+    "CS___151",
+    "CS___194"
+  ],
+  "only_one_intro": true,
+  "placeholder_courses": [
+    "CS___499",
+    "CS___XXX"
+  ],
+  "exclude_levels": [
+    500,
+    600
+  ],
+  "min_total_credits": 128,
+  "required_courses": [
+    "CS___211",
+    "CS___251",
+    "CS___261",
+    "CS___277",
+    "CS___294",
+    "CS___301",
+    "CS___341",
+    "CS___342",
+    "CS___351",
+    "CS___361",
+    "CS___362",
+    "CS___377",
+    "CS___378",
+    "CS___394",
+    "CS___398",
+    "CS___499"
+  ],
+  "required_course_equivalents": {
+    "CS___100": [
+      "CS___107",
+      "CS___109",
+      "CS___111",
+      "CS___112",
+      "CS___141",
+      "CS___151",
+      "CS___194"
     ],
-    "required_course_equivalents": {
-      "CS___107": ["CS___111", "CS___109", "CS___112", "CS___113"],
-      "CS___100": ["CS___107", "CS___111", "CS___109", "CS___112", "CS___113"]
-    },
-    "elective_pool": {
-      "min_required": 5,
-      "courses": [
-        "CS___402", "CS___407", "CS___418", "CS___421", "CS___422",
-        "CS___423", "CS___440", "CS___441", "CS___442", "CS___450",
-        "CS___454", "CS___463", "CS___466", "CS___474", "CS___478"
-      ]
-    },
-
-    "data_paths": {
-      "credits": "data/mastercourselist_cs.txt",
-      "offerings": "data/courseofferings_cs.txt",
-      "prereqs": "data/prerequisites_cs.txt"
-    }
+    "CS___107": [
+      "CS___100",
+      "CS___109",
+      "CS___111",
+      "CS___112",
+      "CS___141",
+      "CS___151",
+      "CS___194"
+    ],
+    "CS___109": [
+      "CS___100",
+      "CS___107",
+      "CS___111",
+      "CS___112",
+      "CS___141",
+      "CS___151",
+      "CS___194"
+    ],
+    "CS___111": [
+      "CS___100",
+      "CS___107",
+      "CS___109",
+      "CS___112",
+      "CS___141",
+      "CS___151",
+      "CS___194"
+    ],
+    "CS___112": [
+      "CS___100",
+      "CS___107",
+      "CS___109",
+      "CS___111",
+      "CS___141",
+      "CS___151",
+      "CS___194"
+    ],
+    "CS___141": [
+      "CS___100",
+      "CS___107",
+      "CS___109",
+      "CS___111",
+      "CS___112",
+      "CS___151",
+      "CS___194"
+    ],
+    "CS___151": [
+      "CS___100",
+      "CS___107",
+      "CS___109",
+      "CS___111",
+      "CS___112",
+      "CS___141",
+      "CS___194"
+    ],
+    "CS___194": [
+      "CS___100",
+      "CS___107",
+      "CS___109",
+      "CS___111",
+      "CS___112",
+      "CS___141",
+      "CS___151"
+    ]
+  },
+  "elective_pool": {
+    "min_required": 5,
+    "courses": [
+      "CS___401",
+      "CS___402",
+      "CS___407",
+      "CS___411",
+      "CS___412",
+      "CS___415",
+      "CS___418",
+      "CS___421",
+      "CS___422",
+      "CS___423",
+      "CS___424",
+      "CS___425",
+      "CS___426",
+      "CS___427",
+      "CS___428"
+    ]
+  },
+  "data_paths": {
+    "credits": "majors/CS/mastercourselist_CS.txt",
+    "offerings": "majors/CS/courseoffering_CS.txt",
+    "prereqs": "majors/CS/prerequisites_CS.txt",
+    "timings": "majors/CS/coursetiming_CS.txt"
   }
-  
+}

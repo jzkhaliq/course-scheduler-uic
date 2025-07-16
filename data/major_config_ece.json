@@ -1,0 +1,73 @@
+{
+  "major": "ECE",
+  "course_prefix": "ECE___",
+  "intro_courses": [
+    "ECE___115"
+  ],
+  "only_one_intro": true,
+  "placeholder_courses": [
+    "ECE___499",
+    "ECE___XXX"
+  ],
+  "exclude_levels": [
+    500,
+    600
+  ],
+  "min_total_credits": 128,
+  "required_courses": [
+    "ECE___210",
+    "ECE___225",
+    "ECE___265",
+    "ECE___266",
+    "ECE___267",
+    "ECE___294",
+    "ECE___310",
+    "ECE___311",
+    "ECE___317",
+    "ECE___322",
+    "ECE___333",
+    "ECE___340",
+    "ECE___341",
+    "ECE___342",
+    "ECE___346",
+    "ECE___347",
+    "ECE___350",
+    "ECE___366",
+    "ECE___367",
+    "ECE___391",
+    "ECE___392",
+    "ECE___394",
+    "ECE___396",
+    "ECE___397",
+    "ECE___499"
+  ],
+  "required_course_equivalents": {
+    "ECE___115": []
+  },
+  "elective_pool": {
+    "min_required": 5,
+    "courses": [
+      "ECE___407",
+      "ECE___410",
+      "ECE___412",
+      "ECE___415",
+      "ECE___417",
+      "ECE___418",
+      "ECE___421",
+      "ECE___424",
+      "ECE___432",
+      "ECE___434",
+      "ECE___436",
+      "ECE___437",
+      "ECE___440",
+      "ECE___445",
+      "ECE___448"
+    ]
+  },
+  "data_paths": {
+    "credits": "majors/ECE/mastercourselist_ECE.txt",
+    "offerings": "majors/ECE/courseoffering_ECE.txt",
+    "prereqs": "majors/ECE/prerequisites_ECE.txt",
+    "timings": "majors/ECE/coursetiming_ECE.txt"
+  }
+}

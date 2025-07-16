@@ -14,8 +14,10 @@ env/
 
 # Output files
 *.log
-*.txt
-!data/mastercourselist_cs.txt
+
+# Ignore specific outputs instead of all .txt files
+data/*.txt
+
 
 # Output folder (optional if you move outputs)
 outputs/

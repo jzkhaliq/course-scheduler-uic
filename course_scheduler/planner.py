@@ -9,6 +9,7 @@ class Planner:
         self.max_terms = max_terms
         self.config = config or {}
 
+
     def course_level(self, code):
         match = re.search(r"CS___(\d+)", code)
         return int(match.group(1)) if match else 999
@@ -18,24 +19,30 @@ class Planner:
         if not course:
             return False
 
-        if code != "CS___499" and max(course.credits, default=0) == 0:
+        prefix = self.config.get("course_prefix", "")
+        intro_courses = set(self.config.get("intro_courses", []))
+        placeholder_courses = set(self.config.get("placeholder_courses", []))
+        excluded_levels = set(self.config.get("exclude_levels", []))
+
+        # Skip placeholders like XXX or 499
+        if code in placeholder_courses:
             return False
-        if code.startswith("CS___5") or code.startswith("CS___6"):
-            return False
-        if code.startswith("CS___XXX"):  # CS___499 handled separately
-            return False
+
+        # Skip excluded levels (500, 600, etc.)
+        for level in excluded_levels:
+            if code.startswith(f"{prefix}{level}"):
+                return False
+
+        # Skip if already completed
         if code in completed:
             return False
 
-        intro_or_group = {"CS___107", "CS___109", "CS___111", "CS___112", "CS___113"}
-        if code in intro_or_group and taken_intro:
+        # Only one intro course allowed
+        if code in intro_courses and taken_intro:
             return False
-        # If any intro course is completed, skip CS___100
-        if code == "CS___100" and taken_intro:
-            return False
-
 
         return True
+
 
     def plan(self, starting_courses):
         completed = set(starting_courses)
@@ -78,6 +85,10 @@ class Planner:
                 if rule and rule.concurrent and not rule.concurrent_satisfied(completed, set()):
                     continue
 
+                if self.has_conflict(code, current_courses):
+                    continue
+
+
                 credits = max(course.credits)
                 if total_credits + credits > self.max_credits:
                     continue
@@ -119,6 +130,10 @@ class Planner:
                         continue
                     if not rule.concurrent_satisfied(completed, current_courses):
                         continue
+
+                if self.has_conflict(code, current_courses):
+                    continue
+
 
                 credits = max(course.credits)
                 if total_credits + credits > self.max_credits:
@@ -179,3 +194,13 @@ class Planner:
 
 
         return plan
+    
+    def has_conflict(self, code, current_courses):
+        for other in current_courses:
+            for s1, e1 in self.catalog.timings.get(code, []):
+                for s2, e2 in self.catalog.timings.get(other, []):
+                    if s1 < e2 and s2 < e1:
+                        return True
+        return False
+
+
