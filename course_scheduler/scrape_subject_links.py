@@ -271,7 +271,7 @@ def parse_course_table(url, term, subject):
 
 def write_outputs(subject):
     # Create subfolder for this subject
-    major_dir = os.path.join("majors", subject)
+    major_dir = os.path.join("subjects", subject)
     os.makedirs(major_dir, exist_ok=True)
 
     """Write output files"""
@@ -416,7 +416,7 @@ if __name__ == "__main__":
     subjects = get_all_subjects()
     VALID_SUBJECTS = set(subjects)  # e.g., {"CS", "MATH", "ECE", ...}
 
-    for subject in ["CS", "MATH", "ECE"]:
+    for subject in sorted(subjects):
         if subject not in subjects:
             print(f"[SKIP] {subject} not found in subject list")
             continue
