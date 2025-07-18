@@ -286,14 +286,27 @@ def write_outputs(subject):
                 f.write(f"{code}\t{fall}\t{spring}\n")
         print(f"Wrote {len(offering_term)} course offerings")
         
-        # Course timings
+        # Course timings (one line per CRN, with total section count at front)
+        crn_grouped = defaultdict(lambda: defaultdict(list))  # course → crn → [(start, end)]
+
+        for section_id, time_blocks in timings.items():
+            if "_" not in section_id:
+                continue
+            course_code, crn = section_id.rsplit("_", 1)
+            for _, start, end in time_blocks:
+                crn_grouped[course_code][crn].append((start, end))
+
         with open(os.path.join(major_dir, f"coursetiming_{subject}.txt"), "w") as f:
-            for section_id, time_blocks in sorted(timings.items()):
-                f.write(f"{section_id}\t{len(time_blocks)}")
-                for crn, start, end in time_blocks:
-                    f.write(f"\t{crn}\t{start}\t{end}")
-                f.write("\n")
-        print(f"Wrote {len(timings)} course timings")
+            for course_code in sorted(crn_grouped.keys()):
+                all_crns = crn_grouped[course_code]
+                num_sections = len(all_crns)
+                for crn in sorted(all_crns.keys()):
+                    sessions = all_crns[crn]
+                    f.write(f"{course_code}\t{num_sections}\t{len(sessions)}")
+                    for start, end in sessions:
+                        f.write(f"\t{crn}\t{start}\t{end}")
+                    f.write("\n")
+
         
         # Clean and filter prereqs
         prereqs_cleaned = [
