@@ -3,287 +3,287 @@
   "subject_code": "ACTG",
   "min_total_credits": 120,
   "courses": {
-    "ACTG___210": {
+    "ACTG_210": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "ACTG___211": {
+    "ACTG_211": {
       "credits": 3.0,
       "prerequisites": [
-        "ACTG___210"
+        "ACTG_210"
       ]
     },
-    "ACTG___315": {
+    "ACTG_315": {
       "credits": 3.0,
       "prerequisites": [
-        "ACTG___210",
-        "ACTG___211",
-        "ACTG___211"
+        "ACTG_210",
+        "ACTG_211",
+        "ACTG_211"
       ]
     },
-    "ACTG___316": {
+    "ACTG_316": {
       "credits": 3.0,
       "prerequisites": [
-        "ACTG___315",
-        "ACTG___315"
+        "ACTG_315",
+        "ACTG_315"
       ]
     },
-    "ACTG___326": {
+    "ACTG_326": {
       "credits": 3.0,
       "prerequisites": [
-        "ACTG___210",
-        "ACTG___211"
+        "ACTG_210",
+        "ACTG_211"
       ]
     },
-    "ACTG___355": {
+    "ACTG_355": {
       "credits": 3.0,
       "prerequisites": [
-        "ACTG___211"
+        "ACTG_211"
       ]
     },
-    "ACTG___392": {
+    "ACTG_392": {
       "credits": 3.0,
       "prerequisites": [
-        "ACTG___210",
-        "ACTG___211",
-        "IDS___270"
+        "ACTG_210",
+        "ACTG_211",
+        "IDS__270"
       ]
     },
-    "ACTG___396": {
+    "ACTG_396": {
       "credits": null,
       "prerequisites": [
-        "ACTG___316",
-        "ACTG___326"
+        "ACTG_316",
+        "ACTG_326"
       ]
     },
-    "ACTG___417": {
+    "ACTG_417": {
       "credits": 4.0,
       "prerequisites": [
-        "ACTG___316"
+        "ACTG_316"
       ]
     },
-    "ACTG___435": {
+    "ACTG_435": {
       "credits": 4.0,
       "prerequisites": [
-        "ACTG___315"
+        "ACTG_315"
       ]
     },
-    "ACTG___444": {
+    "ACTG_444": {
       "credits": 3.0,
       "prerequisites": [
-        "ACTG___210"
+        "ACTG_210"
       ]
     },
-    "ACTG___445": {
+    "ACTG_445": {
       "credits": 4.0,
       "prerequisites": [
-        "ACTG___315"
+        "ACTG_315"
       ]
     },
-    "ACTG___446": {
+    "ACTG_446": {
       "credits": 4.0,
       "prerequisites": [
-        "ACTG___445"
+        "ACTG_445"
       ]
     },
-    "ACTG___456": {
+    "ACTG_456": {
       "credits": 4.0,
       "prerequisites": [
-        "ACTG___355"
+        "ACTG_355"
       ]
     },
-    "ACTG___465": {
+    "ACTG_465": {
       "credits": 4.0,
       "prerequisites": [
-        "ACTG___316"
+        "ACTG_316"
       ]
     },
-    "ACTG___470": {
+    "ACTG_470": {
       "credits": 4.0,
       "prerequisites": [
-        "ACTG___211"
+        "ACTG_211"
       ]
     },
-    "ACTG___474": {
+    "ACTG_474": {
       "credits": 4.0,
       "prerequisites": [
-        "IDS___200",
-        "ACTG___210",
-        "ACTG___211"
+        "IDS__200",
+        "ACTG_210",
+        "ACTG_211"
       ]
     },
-    "ACTG___475": {
+    "ACTG_475": {
       "credits": 4.0,
       "prerequisites": [
-        "IDS___200",
-        "ACTG___211"
+        "IDS__200",
+        "ACTG_211"
       ]
     },
-    "ACTG___476": {
+    "ACTG_476": {
       "credits": 4.0,
       "prerequisites": [
-        "IDS___331",
-        "ACTG___475"
+        "IDS__331",
+        "ACTG_475"
       ]
     },
-    "ACTG___484": {
+    "ACTG_484": {
       "credits": 4.0,
       "prerequisites": [
-        "ACTG___316"
+        "ACTG_316"
       ]
     },
-    "ACTG___485": {
+    "ACTG_485": {
       "credits": 4.0,
       "prerequisites": [
-        "FIN___300",
-        "ACTG___315"
+        "FIN__300",
+        "ACTG_315"
       ]
     },
-    "ACTG___492": {
+    "ACTG_492": {
       "credits": 4.0,
       "prerequisites": [
-        "ACTG___315",
-        "ACTG___326",
-        "ACTG___435",
-        "ACTG___474",
-        "ACTG___476",
-        "ACTG___500"
+        "ACTG_315",
+        "ACTG_326",
+        "ACTG_435",
+        "ACTG_474",
+        "ACTG_476",
+        "ACTG_500"
       ]
     },
-    "ACTG___493": {
+    "ACTG_493": {
       "credits": 4.0,
       "prerequisites": [
-        "ACTG___316"
+        "ACTG_316"
       ]
     },
-    "ACTG___494": {
+    "ACTG_494": {
       "credits": null,
       "prerequisites": [
-        "ACTG___211",
-        "FIN___300",
-        "IDS___494",
-        "MGMT___494"
+        "ACTG_211",
+        "FIN__300",
+        "IDS__494",
+        "MGMT_494"
       ]
     },
-    "ACTG___495": {
+    "ACTG_495": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "ACTG___500": {
+    "ACTG_500": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "ACTG___502": {
+    "ACTG_502": {
       "credits": 4.0,
       "prerequisites": [
-        "ACTG___500"
+        "ACTG_500"
       ]
     },
-    "ACTG___503": {
+    "ACTG_503": {
       "credits": 4.0,
       "prerequisites": [
-        "ACTG___500",
-        "ACTG___502"
+        "ACTG_500",
+        "ACTG_502"
       ]
     },
-    "ACTG___506": {
+    "ACTG_506": {
       "credits": 4.0,
       "prerequisites": [
-        "ACTG___500"
+        "ACTG_500"
       ]
     },
-    "ACTG___508": {
+    "ACTG_508": {
       "credits": 4.0,
       "prerequisites": [
-        "ACTG___502"
+        "ACTG_502"
       ]
     },
-    "ACTG___509": {
+    "ACTG_509": {
       "credits": 4.0,
       "prerequisites": [
-        "ACTG___500"
+        "ACTG_500"
       ]
     },
-    "ACTG___510": {
+    "ACTG_510": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "ACTG___516": {
+    "ACTG_516": {
       "credits": 4.0,
       "prerequisites": [
-        "ACTG___502"
+        "ACTG_502"
       ]
     },
-    "ACTG___525": {
+    "ACTG_525": {
       "credits": 4.0,
       "prerequisites": [
-        "ACTG___506"
+        "ACTG_506"
       ]
     },
-    "ACTG___534": {
+    "ACTG_534": {
       "credits": 4.0,
       "prerequisites": [
-        "ACTG___502",
-        "ACTG___503"
+        "ACTG_502",
+        "ACTG_503"
       ]
     },
-    "ACTG___535": {
+    "ACTG_535": {
       "credits": 4.0,
       "prerequisites": [
-        "ACTG___435"
+        "ACTG_435"
       ]
     },
-    "ACTG___537": {
+    "ACTG_537": {
       "credits": 4.0,
       "prerequisites": [
-        "ACTG___474",
-        "ACTG___502"
+        "ACTG_474",
+        "ACTG_502"
       ]
     },
-    "ACTG___565": {
+    "ACTG_565": {
       "credits": 4.0,
       "prerequisites": [
-        "ACTG___503"
+        "ACTG_503"
       ]
     },
-    "ACTG___570": {
+    "ACTG_570": {
       "credits": 4.0,
       "prerequisites": [
-        "ACTG___502"
+        "ACTG_502"
       ]
     },
-    "ACTG___585": {
+    "ACTG_585": {
       "credits": 4.0,
       "prerequisites": [
-        "ACTG___502",
-        "FIN___510",
-        "FIN___520"
+        "ACTG_502",
+        "FIN__510",
+        "FIN__520"
       ]
     },
-    "ACTG___590": {
+    "ACTG_590": {
       "credits": 4.0,
       "prerequisites": [
-        "ACTG___503"
+        "ACTG_503"
       ]
     },
-    "ACTG___593": {
+    "ACTG_593": {
       "credits": 4.0,
       "prerequisites": [
-        "ACTG___502"
+        "ACTG_502"
       ]
     },
-    "ACTG___594": {
+    "ACTG_594": {
       "credits": null,
       "prerequisites": []
     },
-    "ACTG___596": {
+    "ACTG_596": {
       "credits": null,
       "prerequisites": [
-        "ACTG___515",
-        "ACTG___525"
+        "ACTG_515",
+        "ACTG_525"
       ]
     },
-    "ACTG___599": {
+    "ACTG_599": {
       "credits": null,
       "prerequisites": []
     }

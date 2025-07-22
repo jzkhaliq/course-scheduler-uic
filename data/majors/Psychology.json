@@ -3,607 +3,607 @@
   "subject_code": "PSCH",
   "min_total_credits": 120,
   "courses": {
-    "PSCH___100": {
+    "PSCH_100": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "PSCH___184": {
+    "PSCH_184": {
       "credits": 1.0,
       "prerequisites": []
     },
-    "PSCH___210": {
+    "PSCH_210": {
       "credits": 3.0,
       "prerequisites": [
-        "PSCH___100"
+        "PSCH_100"
       ]
     },
-    "PSCH___231": {
+    "PSCH_231": {
       "credits": 3.0,
       "prerequisites": [
-        "PSCH___100"
+        "PSCH_100"
       ]
     },
-    "PSCH___242": {
+    "PSCH_242": {
       "credits": 3.0,
       "prerequisites": [
-        "PSCH___100"
+        "PSCH_100"
       ]
     },
-    "PSCH___262": {
+    "PSCH_262": {
       "credits": 3.0,
       "prerequisites": [
-        "PSCH___100"
+        "PSCH_100"
       ]
     },
-    "PSCH___270": {
+    "PSCH_270": {
       "credits": 3.0,
       "prerequisites": [
-        "PSCH___100"
+        "PSCH_100"
       ]
     },
-    "PSCH___271": {
+    "PSCH_271": {
       "credits": 3.0,
       "prerequisites": [
-        "PSCH___100"
+        "PSCH_100"
       ]
     },
-    "PSCH___303": {
+    "PSCH_303": {
       "credits": 3.0,
       "prerequisites": [
-        "MATH___090",
-        "MATH___118",
-        "ENGL___161",
-        "PSCH___242"
+        "MATH_090",
+        "MATH_118",
+        "ENGL_161",
+        "PSCH_242"
       ]
     },
-    "PSCH___312": {
+    "PSCH_312": {
       "credits": 3.0,
       "prerequisites": [
-        "PSCH___242"
+        "PSCH_242"
       ]
     },
-    "PSCH___313": {
+    "PSCH_313": {
       "credits": 3.0,
       "prerequisites": [
-        "PSCH___312",
-        "PSCH___343"
+        "PSCH_312",
+        "PSCH_343"
       ]
     },
-    "PSCH___315": {
+    "PSCH_315": {
       "credits": 3.0,
       "prerequisites": [
-        "PSCH___242"
+        "PSCH_242"
       ]
     },
-    "PSCH___320": {
+    "PSCH_320": {
       "credits": 3.0,
       "prerequisites": [
-        "PSCH___242"
+        "PSCH_242"
       ]
     },
-    "PSCH___321": {
+    "PSCH_321": {
       "credits": 3.0,
       "prerequisites": [
-        "PSCH___320",
-        "PSCH___343"
+        "PSCH_320",
+        "PSCH_343"
       ]
     },
-    "PSCH___324": {
+    "PSCH_324": {
       "credits": 3.0,
       "prerequisites": [
-        "PSCH___100",
-        "PSCH___242"
+        "PSCH_100",
+        "PSCH_242"
       ]
     },
-    "PSCH___331": {
+    "PSCH_331": {
       "credits": 3.0,
       "prerequisites": [
-        "PSCH___231",
-        "PSCH___343"
+        "PSCH_231",
+        "PSCH_343"
       ]
     },
-    "PSCH___333": {
+    "PSCH_333": {
       "credits": 3.0,
       "prerequisites": [
-        "PSCH___210",
-        "PSCH___270",
-        "PSCH___343"
+        "PSCH_210",
+        "PSCH_270",
+        "PSCH_343"
       ]
     },
-    "PSCH___340": {
+    "PSCH_340": {
       "credits": 3.0,
       "prerequisites": [
-        "PSCH___242"
+        "PSCH_242"
       ]
     },
-    "PSCH___343": {
+    "PSCH_343": {
       "credits": 4.0,
       "prerequisites": [
-        "MATH___105",
-        "ENGL___161",
-        "PSCH___242"
+        "MATH_105",
+        "ENGL_161",
+        "PSCH_242"
       ]
     },
-    "PSCH___350": {
+    "PSCH_350": {
       "credits": 3.0,
       "prerequisites": [
-        "PSCH___242"
+        "PSCH_242"
       ]
     },
-    "PSCH___351": {
+    "PSCH_351": {
       "credits": 3.0,
       "prerequisites": [
-        "PSCH___343",
-        "PSCH___350"
+        "PSCH_343",
+        "PSCH_350"
       ]
     },
-    "PSCH___352": {
+    "PSCH_352": {
       "credits": 3.0,
       "prerequisites": [
-        "PSCH___242"
+        "PSCH_242"
       ]
     },
-    "PSCH___353": {
+    "PSCH_353": {
       "credits": 3.0,
       "prerequisites": [
-        "PSCH___343",
-        "PSCH___352"
+        "PSCH_343",
+        "PSCH_352"
       ]
     },
-    "PSCH___354": {
+    "PSCH_354": {
       "credits": 3.0,
       "prerequisites": [
-        "PSCH___242"
+        "PSCH_242"
       ]
     },
-    "PSCH___360": {
+    "PSCH_360": {
       "credits": 3.0,
       "prerequisites": [
-        "PSCH___242"
+        "PSCH_242"
       ]
     },
-    "PSCH___361": {
+    "PSCH_361": {
       "credits": 3.0,
       "prerequisites": [
-        "PSCH___343",
-        "PSCH___360"
+        "PSCH_343",
+        "PSCH_360"
       ]
     },
-    "PSCH___363": {
+    "PSCH_363": {
       "credits": 3.0,
       "prerequisites": [
-        "PSCH___262",
-        "BIOS___286",
-        "PSCH___343"
+        "PSCH_262",
+        "BIOS_286",
+        "PSCH_343"
       ]
     },
-    "PSCH___366": {
+    "PSCH_366": {
       "credits": 3.0,
       "prerequisites": [
-        "PSCH___242"
+        "PSCH_242"
       ]
     },
-    "PSCH___367": {
+    "PSCH_367": {
       "credits": 3.0,
       "prerequisites": [
-        "PSCH___343",
-        "PSCH___350",
-        "PSCH___366"
+        "PSCH_343",
+        "PSCH_350",
+        "PSCH_366"
       ]
     },
-    "PSCH___381": {
+    "PSCH_381": {
       "credits": 3.0,
       "prerequisites": [
-        "PSCH___210",
-        "PSCH___231",
-        "PSCH___242",
-        "PSCH___270",
-        "PSCH___271",
-        "PSCH___312"
+        "PSCH_210",
+        "PSCH_231",
+        "PSCH_242",
+        "PSCH_270",
+        "PSCH_271",
+        "PSCH_312"
       ]
     },
-    "PSCH___382": {
+    "PSCH_382": {
       "credits": 3.0,
       "prerequisites": [
-        "PSCH___210",
-        "PSCH___231",
-        "PSCH___242",
-        "PSCH___270",
-        "PSCH___312"
+        "PSCH_210",
+        "PSCH_231",
+        "PSCH_242",
+        "PSCH_270",
+        "PSCH_312"
       ]
     },
-    "PSCH___384": {
+    "PSCH_384": {
       "credits": 3.0,
       "prerequisites": [
-        "PSCH___210",
-        "PSCH___231",
-        "PSCH___242",
-        "PSCH___312"
+        "PSCH_210",
+        "PSCH_231",
+        "PSCH_242",
+        "PSCH_312"
       ]
     },
-    "PSCH___385": {
+    "PSCH_385": {
       "credits": 6.0,
       "prerequisites": [
-        "PSCH___340",
-        "PSCH___343",
-        "PSCH___381",
-        "PSCH___382",
-        "PSCH___386"
+        "PSCH_340",
+        "PSCH_343",
+        "PSCH_381",
+        "PSCH_382",
+        "PSCH_386"
       ]
     },
-    "PSCH___386": {
+    "PSCH_386": {
       "credits": 3.0,
       "prerequisites": [
-        "PSCH___210",
-        "PSCH___231",
-        "PSCH___242",
-        "PSCH___270"
+        "PSCH_210",
+        "PSCH_231",
+        "PSCH_242",
+        "PSCH_270"
       ]
     },
-    "PSCH___387": {
+    "PSCH_387": {
       "credits": 1.0,
       "prerequisites": [
-        "PSCH___386"
+        "PSCH_386"
       ]
     },
-    "PSCH___394": {
+    "PSCH_394": {
       "credits": null,
       "prerequisites": [
-        "PSCH___100",
-        "PSCH___242"
+        "PSCH_100",
+        "PSCH_242"
       ]
     },
-    "PSCH___396": {
+    "PSCH_396": {
       "credits": null,
       "prerequisites": [
-        "PSCH___242"
+        "PSCH_242"
       ]
     },
-    "PSCH___397": {
+    "PSCH_397": {
       "credits": null,
       "prerequisites": [
-        "PSCH___343"
+        "PSCH_343"
       ]
     },
-    "PSCH___399": {
+    "PSCH_399": {
       "credits": null,
       "prerequisites": [
-        "PSCH___343"
+        "PSCH_343"
       ]
     },
-    "PSCH___411": {
+    "PSCH_411": {
       "credits": 3.0,
       "prerequisites": [
-        "PSCH___242"
+        "PSCH_242"
       ]
     },
-    "PSCH___415": {
+    "PSCH_415": {
       "credits": 3.0,
       "prerequisites": [
-        "PSCH___270"
+        "PSCH_270"
       ]
     },
-    "PSCH___417": {
+    "PSCH_417": {
       "credits": 3.0,
       "prerequisites": [
-        "PSCH___312"
+        "PSCH_312"
       ]
     },
-    "PSCH___422": {
+    "PSCH_422": {
       "credits": 3.0,
       "prerequisites": [
-        "PSCH___100",
-        "EPSY___210",
-        "PSCH___259",
-        "PSCH___320"
+        "PSCH_100",
+        "EPSY_210",
+        "PSCH_259",
+        "PSCH_320"
       ]
     },
-    "PSCH___423": {
+    "PSCH_423": {
       "credits": 3.0,
       "prerequisites": [
-        "EPSY___210",
-        "EPSY___255",
+        "EPSY_210",
+        "EPSY_255",
         "ED___421",
         "ED___422"
       ]
     },
-    "PSCH___424": {
+    "PSCH_424": {
       "credits": 4.0,
       "prerequisites": [
-        "PSCH___343"
+        "PSCH_343"
       ]
     },
-    "PSCH___429": {
+    "PSCH_429": {
       "credits": 3.0,
       "prerequisites": [
-        "EPSY___255",
+        "EPSY_255",
         "ED___422",
-        "EPSY___426"
+        "EPSY_426"
       ]
     },
-    "PSCH___443": {
+    "PSCH_443": {
       "credits": 3.0,
       "prerequisites": [
-        "PSCH___343"
+        "PSCH_343"
       ]
     },
-    "PSCH___459": {
+    "PSCH_459": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "PSCH___483": {
+    "PSCH_483": {
       "credits": 4.0,
       "prerequisites": [
-        "PSCH___262",
-        "BIOS___272",
-        "BIOS___286",
-        "BIOS___325"
+        "PSCH_262",
+        "BIOS_272",
+        "BIOS_286",
+        "BIOS_325"
       ]
     },
-    "PSCH___484": {
+    "PSCH_484": {
       "credits": 3.0,
       "prerequisites": [
-        "PSCH___262",
-        "BIOS___286"
+        "PSCH_262",
+        "BIOS_286"
       ]
     },
-    "PSCH___485": {
+    "PSCH_485": {
       "credits": 3.0,
       "prerequisites": [
-        "PSCH___262",
-        "BIOS___286"
+        "PSCH_262",
+        "BIOS_286"
       ]
     },
-    "PSCH___494": {
+    "PSCH_494": {
       "credits": null,
       "prerequisites": []
     },
-    "PSCH___505": {
+    "PSCH_505": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "PSCH___507": {
+    "PSCH_507": {
       "credits": 1.0,
       "prerequisites": []
     },
-    "PSCH___508": {
+    "PSCH_508": {
       "credits": 1.0,
       "prerequisites": []
     },
-    "PSCH___512": {
+    "PSCH_512": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "PSCH___513": {
+    "PSCH_513": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "PSCH___516": {
+    "PSCH_516": {
       "credits": 3.0,
       "prerequisites": [
-        "PSCH___512",
-        "PSCH___513",
-        "PSCH___514"
+        "PSCH_512",
+        "PSCH_513",
+        "PSCH_514"
       ]
     },
-    "PSCH___518": {
+    "PSCH_518": {
       "credits": null,
       "prerequisites": []
     },
-    "PSCH___519": {
+    "PSCH_519": {
       "credits": 1.0,
       "prerequisites": []
     },
-    "PSCH___522": {
+    "PSCH_522": {
       "credits": 4.0,
       "prerequisites": [
         "CS___422"
       ]
     },
-    "PSCH___525": {
+    "PSCH_525": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "PSCH___526": {
+    "PSCH_526": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "PSCH___531": {
+    "PSCH_531": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "PSCH___533": {
+    "PSCH_533": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "PSCH___537": {
+    "PSCH_537": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "PSCH___538": {
+    "PSCH_538": {
       "credits": null,
       "prerequisites": []
     },
-    "PSCH___539": {
+    "PSCH_539": {
       "credits": 1.0,
       "prerequisites": []
     },
-    "PSCH___540": {
+    "PSCH_540": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "PSCH___541": {
+    "PSCH_541": {
       "credits": 1.0,
       "prerequisites": []
     },
-    "PSCH___542": {
+    "PSCH_542": {
       "credits": 3.0,
       "prerequisites": [
-        "PSCH___543",
-        "PSCH___545"
+        "PSCH_543",
+        "PSCH_545"
       ]
     },
-    "PSCH___543": {
+    "PSCH_543": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "PSCH___544": {
+    "PSCH_544": {
       "credits": 3.0,
       "prerequisites": [
-        "PSCH___543",
-        "PSCH___545"
+        "PSCH_543",
+        "PSCH_545"
       ]
     },
-    "PSCH___545": {
+    "PSCH_545": {
       "credits": 4.0,
       "prerequisites": [
-        "PSCH___543"
+        "PSCH_543"
       ]
     },
-    "PSCH___547": {
+    "PSCH_547": {
       "credits": 3.0,
       "prerequisites": [
-        "PSCH___543",
-        "PSCH___545"
+        "PSCH_543",
+        "PSCH_545"
       ]
     },
-    "PSCH___550": {
+    "PSCH_550": {
       "credits": 2.0,
       "prerequisites": []
     },
-    "PSCH___551": {
+    "PSCH_551": {
       "credits": 4.0,
       "prerequisites": [
-        "EPSY___500"
+        "EPSY_500"
       ]
     },
-    "PSCH___552": {
+    "PSCH_552": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "PSCH___553": {
+    "PSCH_553": {
       "credits": 3.0,
       "prerequisites": [
-        "PSCH___352"
+        "PSCH_352"
       ]
     },
-    "PSCH___554": {
+    "PSCH_554": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "PSCH___555": {
+    "PSCH_555": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "PSCH___557": {
+    "PSCH_557": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "PSCH___558": {
+    "PSCH_558": {
       "credits": null,
       "prerequisites": []
     },
-    "PSCH___559": {
+    "PSCH_559": {
       "credits": 1.0,
       "prerequisites": []
     },
-    "PSCH___562": {
+    "PSCH_562": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "PSCH___564": {
+    "PSCH_564": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "PSCH___566": {
+    "PSCH_566": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "PSCH___568": {
+    "PSCH_568": {
       "credits": null,
       "prerequisites": []
     },
-    "PSCH___569": {
+    "PSCH_569": {
       "credits": 1.0,
       "prerequisites": []
     },
-    "PSCH___570": {
+    "PSCH_570": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "PSCH___571": {
+    "PSCH_571": {
       "credits": 3.0,
       "prerequisites": [
-        "PSCH___570"
+        "PSCH_570"
       ]
     },
-    "PSCH___574": {
+    "PSCH_574": {
       "credits": 3.0,
       "prerequisites": [
-        "PSCH___571"
+        "PSCH_571"
       ]
     },
-    "PSCH___577": {
+    "PSCH_577": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "PSCH___579": {
+    "PSCH_579": {
       "credits": 1.0,
       "prerequisites": []
     },
-    "PSCH___581": {
+    "PSCH_581": {
       "credits": 2.0,
       "prerequisites": []
     },
-    "PSCH___582": {
+    "PSCH_582": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "PSCH___583": {
+    "PSCH_583": {
       "credits": 4.0,
       "prerequisites": [
-        "PSCH___574"
+        "PSCH_574"
       ]
     },
-    "PSCH___584": {
+    "PSCH_584": {
       "credits": null,
       "prerequisites": []
     },
-    "PSCH___586": {
+    "PSCH_586": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "PSCH___587": {
+    "PSCH_587": {
       "credits": 6.0,
       "prerequisites": [
-        "PSCH___586"
+        "PSCH_586"
       ]
     },
-    "PSCH___588": {
+    "PSCH_588": {
       "credits": null,
       "prerequisites": []
     },
-    "PSCH___591": {
+    "PSCH_591": {
       "credits": null,
       "prerequisites": []
     },
-    "PSCH___594": {
+    "PSCH_594": {
       "credits": null,
       "prerequisites": []
     },
-    "PSCH___595": {
+    "PSCH_595": {
       "credits": 2.0,
       "prerequisites": []
     },
-    "PSCH___596": {
+    "PSCH_596": {
       "credits": null,
       "prerequisites": []
     },
-    "PSCH___598": {
+    "PSCH_598": {
       "credits": null,
       "prerequisites": []
     },
-    "PSCH___599": {
+    "PSCH_599": {
       "credits": null,
       "prerequisites": []
     }

@@ -3,238 +3,238 @@
   "subject_code": "GLAS",
   "min_total_credits": 120,
   "courses": {
-    "GLAS___100": {
+    "GLAS_100": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "GLAS___105": {
+    "GLAS_105": {
       "credits": 1.0,
       "prerequisites": []
     },
-    "GLAS___109": {
+    "GLAS_109": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "GLAS___120": {
+    "GLAS_120": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "GLAS___123": {
+    "GLAS_123": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "GLAS___125": {
+    "GLAS_125": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "GLAS___200": {
+    "GLAS_200": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "GLAS___209": {
+    "GLAS_209": {
       "credits": 3.0,
       "prerequisites": [
-        "CHIN___104",
-        "CHIN___112"
+        "CHIN_104",
+        "CHIN_112"
       ]
     },
-    "GLAS___210": {
+    "GLAS_210": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "GLAS___215": {
+    "GLAS_215": {
       "credits": 3.0,
       "prerequisites": [
-        "GLAS___100"
+        "GLAS_100"
       ]
     },
-    "GLAS___217": {
+    "GLAS_217": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "GLAS___219": {
+    "GLAS_219": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "GLAS___223": {
+    "GLAS_223": {
       "credits": 3.0,
       "prerequisites": [
-        "GLAS___100"
+        "GLAS_100"
       ]
     },
-    "GLAS___224": {
+    "GLAS_224": {
       "credits": 3.0,
       "prerequisites": [
-        "ANTH___101",
-        "ANTH___102"
+        "ANTH_101",
+        "ANTH_102"
       ]
     },
-    "GLAS___229": {
+    "GLAS_229": {
       "credits": 3.0,
       "prerequisites": [
-        "ENGL___161"
+        "ENGL_161"
       ]
     },
-    "GLAS___230": {
+    "GLAS_230": {
       "credits": 3.0,
       "prerequisites": [
-        "GLAS___120"
+        "GLAS_120"
       ]
     },
-    "GLAS___231": {
+    "GLAS_231": {
       "credits": 3.0,
       "prerequisites": [
-        "POLS___130"
+        "POLS_130"
       ]
     },
-    "GLAS___232": {
+    "GLAS_232": {
       "credits": 3.0,
       "prerequisites": [
-        "POLS___130"
+        "POLS_130"
       ]
     },
-    "GLAS___242": {
+    "GLAS_242": {
       "credits": 3.0,
       "prerequisites": [
-        "ENGL___161"
+        "ENGL_161"
       ]
     },
-    "GLAS___244": {
+    "GLAS_244": {
       "credits": 3.0,
       "prerequisites": [
-        "ENGL___161"
+        "ENGL_161"
       ]
     },
-    "GLAS___248": {
+    "GLAS_248": {
       "credits": 3.0,
       "prerequisites": [
-        "ENGL___161"
+        "ENGL_161"
       ]
     },
-    "GLAS___250": {
+    "GLAS_250": {
       "credits": 3.0,
       "prerequisites": [
-        "GLAS___120"
+        "GLAS_120"
       ]
     },
-    "GLAS___252": {
+    "GLAS_252": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "GLAS___255": {
+    "GLAS_255": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "GLAS___263": {
+    "GLAS_263": {
       "credits": 3.0,
       "prerequisites": [
-        "GWS___101",
-        "GWS___102",
-        "GLAS___120",
-        "GLAS___123"
+        "GWS__101",
+        "GWS__102",
+        "GLAS_120",
+        "GLAS_123"
       ]
     },
-    "GLAS___271": {
+    "GLAS_271": {
       "credits": 3.0,
       "prerequisites": [
-        "ENGL___161"
+        "ENGL_161"
       ]
     },
-    "GLAS___272": {
+    "GLAS_272": {
       "credits": 3.0,
       "prerequisites": [
-        "ENGL___161"
+        "ENGL_161"
       ]
     },
-    "GLAS___275": {
+    "GLAS_275": {
       "credits": 3.0,
       "prerequisites": [
-        "ENGL___161"
+        "ENGL_161"
       ]
     },
-    "GLAS___276": {
+    "GLAS_276": {
       "credits": 3.0,
       "prerequisites": [
-        "ENGL___161"
+        "ENGL_161"
       ]
     },
-    "GLAS___279": {
+    "GLAS_279": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "GLAS___290": {
+    "GLAS_290": {
       "credits": null,
       "prerequisites": []
     },
-    "GLAS___300": {
+    "GLAS_300": {
       "credits": 3.0,
       "prerequisites": [
-        "GLAS___100"
+        "GLAS_100"
       ]
     },
-    "GLAS___328": {
+    "GLAS_328": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "GLAS___390": {
+    "GLAS_390": {
       "credits": 3.0,
       "prerequisites": [
-        "GLAS___120"
+        "GLAS_120"
       ]
     },
-    "GLAS___394": {
+    "GLAS_394": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "GLAS___428": {
+    "GLAS_428": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "GLAS___437": {
+    "GLAS_437": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "GLAS___438": {
+    "GLAS_438": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "GLAS___458": {
+    "GLAS_458": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "GLAS___463": {
+    "GLAS_463": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "GLAS___465": {
+    "GLAS_465": {
       "credits": 4.0,
       "prerequisites": [
-        "GLAS___100",
-        "HIST___161",
-        "HIST___264"
+        "GLAS_100",
+        "HIST_161",
+        "HIST_264"
       ]
     },
-    "GLAS___471": {
+    "GLAS_471": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "GLAS___473": {
+    "GLAS_473": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "GLAS___479": {
+    "GLAS_479": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "GLAS___490": {
+    "GLAS_490": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "GLAS___494": {
+    "GLAS_494": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "GLAS___495": {
+    "GLAS_495": {
       "credits": null,
       "prerequisites": []
     }

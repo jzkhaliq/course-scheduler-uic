@@ -3,25 +3,25 @@
   "subject_code": "IDEA",
   "min_total_credits": 120,
   "courses": {
-    "IDEA___110": {
+    "IDEA_110": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "IDEA___120": {
+    "IDEA_120": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "IDEA___130": {
+    "IDEA_130": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "IDEA___322": {
+    "IDEA_322": {
       "credits": 4.0,
       "prerequisites": [
-        "DES___222"
+        "DES__222"
       ]
     },
-    "IDEA___410": {
+    "IDEA_410": {
       "credits": 4.0,
       "prerequisites": []
     }

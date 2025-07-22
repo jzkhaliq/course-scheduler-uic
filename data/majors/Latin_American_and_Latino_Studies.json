@@ -3,321 +3,321 @@
   "subject_code": "LALS",
   "min_total_credits": 120,
   "courses": {
-    "LALS___101": {
+    "LALS_101": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "LALS___102": {
+    "LALS_102": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "LALS___103": {
+    "LALS_103": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "LALS___104": {
+    "LALS_104": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "LALS___105": {
+    "LALS_105": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "LALS___107": {
+    "LALS_107": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "LALS___109": {
+    "LALS_109": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "LALS___110": {
+    "LALS_110": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "LALS___127": {
+    "LALS_127": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "LALS___192": {
+    "LALS_192": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "LALS___200": {
+    "LALS_200": {
       "credits": 1.0,
       "prerequisites": []
     },
-    "LALS___220": {
+    "LALS_220": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "LALS___223": {
+    "LALS_223": {
       "credits": 3.0,
       "prerequisites": [
-        "ANTH___102"
+        "ANTH_102"
       ]
     },
-    "LALS___225": {
+    "LALS_225": {
       "credits": 3.0,
       "prerequisites": [
-        "SOC___100"
+        "SOC__100"
       ]
     },
-    "LALS___229": {
+    "LALS_229": {
       "credits": 3.0,
       "prerequisites": [
-        "SOC___100",
-        "LALS___102",
-        "LALS___103",
-        "SOC___105"
+        "SOC__100",
+        "LALS_102",
+        "LALS_103",
+        "SOC__105"
       ]
     },
-    "LALS___239": {
+    "LALS_239": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "LALS___240": {
+    "LALS_240": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "LALS___242": {
+    "LALS_242": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "LALS___256": {
+    "LALS_256": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "LALS___257": {
+    "LALS_257": {
       "credits": 3.0,
       "prerequisites": [
-        "ANTH___102"
+        "ANTH_102"
       ]
     },
-    "LALS___258": {
+    "LALS_258": {
       "credits": 3.0,
       "prerequisites": [
-        "ANTH___102"
+        "ANTH_102"
       ]
     },
-    "LALS___260": {
+    "LALS_260": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "LALS___261": {
+    "LALS_261": {
       "credits": 3.0,
       "prerequisites": [
-        "ENGL___161"
+        "ENGL_161"
       ]
     },
-    "LALS___262": {
+    "LALS_262": {
       "credits": 3.0,
       "prerequisites": [
-        "ENGL___161"
+        "ENGL_161"
       ]
     },
-    "LALS___263": {
+    "LALS_263": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "LALS___266": {
+    "LALS_266": {
       "credits": 3.0,
       "prerequisites": [
-        "ENGL___161"
+        "ENGL_161"
       ]
     },
-    "LALS___267": {
+    "LALS_267": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "LALS___270": {
+    "LALS_270": {
       "credits": 3.0,
       "prerequisites": [
-        "ENGL___161"
+        "ENGL_161"
       ]
     },
-    "LALS___275": {
+    "LALS_275": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "LALS___276": {
+    "LALS_276": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "LALS___277": {
+    "LALS_277": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "LALS___278": {
+    "LALS_278": {
       "credits": 4.0,
       "prerequisites": [
-        "LALS___101",
-        "LALS___102",
-        "LALS___109",
-        "LALS___110"
+        "LALS_101",
+        "LALS_102",
+        "LALS_109",
+        "LALS_110"
       ]
     },
-    "LALS___283": {
+    "LALS_283": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "LALS___286": {
+    "LALS_286": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "LALS___288": {
+    "LALS_288": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "LALS___289": {
+    "LALS_289": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "LALS___290": {
+    "LALS_290": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "LALS___291": {
+    "LALS_291": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "LALS___292": {
+    "LALS_292": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "LALS___295": {
+    "LALS_295": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "LALS___299": {
+    "LALS_299": {
       "credits": null,
       "prerequisites": []
     },
-    "LALS___301": {
+    "LALS_301": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "LALS___302": {
+    "LALS_302": {
       "credits": 3.0,
       "prerequisites": [
-        "LALS___301"
+        "LALS_301"
       ]
     },
-    "LALS___304": {
+    "LALS_304": {
       "credits": 3.0,
       "prerequisites": [
-        "SPAN___204",
-        "SPAN___210"
+        "SPAN_204",
+        "SPAN_210"
       ]
     },
-    "LALS___382": {
-      "credits": 3.0,
-      "prerequisites": []
-    },
-    "LALS___385": {
-      "credits": 3.0,
-      "prerequisites": [
-        "LALS___102"
-      ]
-    },
-    "LALS___391": {
+    "LALS_382": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "LALS___395": {
+    "LALS_385": {
+      "credits": 3.0,
+      "prerequisites": [
+        "LALS_102"
+      ]
+    },
+    "LALS_391": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "LALS___403": {
+    "LALS_395": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "LALS_403": {
       "credits": 4.0,
       "prerequisites": [
-        "LALS___301",
-        "LALS___302",
-        "LALS___501"
+        "LALS_301",
+        "LALS_302",
+        "LALS_501"
       ]
     },
-    "LALS___408": {
+    "LALS_408": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "LALS___427": {
+    "LALS_427": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "LALS___433": {
+    "LALS_433": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "LALS___461": {
+    "LALS_461": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "LALS___465": {
+    "LALS_465": {
       "credits": 4.0,
       "prerequisites": [
-        "GLAS___100",
-        "HIST___161",
-        "HIST___264"
+        "GLAS_100",
+        "HIST_161",
+        "HIST_264"
       ]
     },
-    "LALS___467": {
+    "LALS_467": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "LALS___491": {
+    "LALS_491": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "LALS___495": {
+    "LALS_495": {
       "credits": 4.0,
       "prerequisites": [
-        "MUSE___400",
-        "MUSE___400",
-        "SOC___476",
-        "COMM___494",
-        "COMM___494"
+        "MUSE_400",
+        "MUSE_400",
+        "SOC__476",
+        "COMM_494",
+        "COMM_494"
       ]
     },
-    "LALS___497": {
+    "LALS_497": {
       "credits": 4.0,
       "prerequisites": [
-        "LALS___403",
-        "LALS___498"
+        "LALS_403",
+        "LALS_498"
       ]
     },
-    "LALS___499": {
+    "LALS_499": {
       "credits": null,
       "prerequisites": []
     },
-    "LALS___500": {
+    "LALS_500": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "LALS___501": {
+    "LALS_501": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "LALS___502": {
+    "LALS_502": {
       "credits": 4.0,
       "prerequisites": [
-        "SPAN___523"
+        "SPAN_523"
       ]
     },
-    "LALS___504": {
+    "LALS_504": {
       "credits": 1.0,
       "prerequisites": [
-        "LALS___501",
-        "LALS___502"
+        "LALS_501",
+        "LALS_502"
       ]
     },
-    "LALS___590": {
+    "LALS_590": {
       "credits": null,
       "prerequisites": [
-        "LALS___501",
-        "LALS___502"
+        "LALS_501",
+        "LALS_502"
       ]
     },
-    "LALS___596": {
+    "LALS_596": {
       "credits": null,
       "prerequisites": []
     }

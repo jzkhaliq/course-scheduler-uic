@@ -100,7 +100,7 @@ major_to_subject = {
 }
 
 def generate_config_for_major(major_name, subject_code, major_credit_requirements):
-    subject_dir = os.path.join("subjects", subject_code)
+    subject_dir = os.path.join("data/subjects", subject_code)
     
     if not os.path.isdir(subject_dir):
         return None
@@ -139,12 +139,43 @@ def generate_config_for_major(major_name, subject_code, major_credit_requirement
             prereq, course, _ = parts
             prereq_map[course].append(prereq)
 
-    # 3. Build course data - simplified structure
+    # 3. Build course data - simplified structure with exactly 8-character formatting
     courses = {}
     for course_code in sorted(credits_map.keys()):
-        courses[course_code] = {
+        # Normalize to exactly 8 characters
+        parts = course_code.split("___")
+        if len(parts) == 2:
+            subject, number = parts
+            # Create 8-character format: pad subject with underscores to make total = 8
+            base_code = f"{subject}_{number}"
+            if len(base_code) < 8:
+                # Add extra underscores after subject to reach 8 characters
+                underscores_needed = 8 - len(subject) - len(number) - 1
+                formatted_code = f"{subject}{'_' * underscores_needed}_{number}"
+            else:
+                formatted_code = base_code[:8]  # truncate if too long
+        else:
+            formatted_code = course_code[:8].ljust(8, '_')  # ensure 8 chars
+        
+        # Format prerequisites to exactly 8 characters too
+        formatted_prereqs = []
+        for prereq in prereq_map.get(course_code, []):
+            prereq_parts = prereq.split("___")
+            if len(prereq_parts) == 2:
+                prereq_subject, prereq_number = prereq_parts
+                prereq_base = f"{prereq_subject}_{prereq_number}"
+                if len(prereq_base) < 8:
+                    underscores_needed = 8 - len(prereq_subject) - len(prereq_number) - 1
+                    formatted_prereq = f"{prereq_subject}{'_' * underscores_needed}_{prereq_number}"
+                else:
+                    formatted_prereq = prereq_base[:8]
+                formatted_prereqs.append(formatted_prereq)
+            else:
+                formatted_prereqs.append(prereq[:8].ljust(8, '_'))
+        
+        courses[formatted_code] = {
             "credits": credits_map[course_code],
-            "prerequisites": prereq_map.get(course_code, [])
+            "prerequisites": formatted_prereqs
         }
 
     # 4. Get total credit requirement

@@ -67,7 +67,7 @@
         "HN___196",
         "KN___230",
         "KN___231",
-        "CHEM___352"
+        "CHEM_352"
       ]
     },
     "HN___309": {
@@ -138,16 +138,16 @@
       "credits": 2.0,
       "prerequisites": [
         "HN___110",
-        "ENGL___160",
-        "ENGL___161",
+        "ENGL_160",
+        "ENGL_161",
         "HN___196"
       ]
     },
     "HN___410": {
       "credits": 4.0,
       "prerequisites": [
-        "BIOS___350",
-        "BIOS___351"
+        "BIOS_350",
+        "BIOS_351"
       ]
     },
     "HN___414": {
@@ -197,7 +197,7 @@
     "HN___510": {
       "credits": 3.0,
       "prerequisites": [
-        "PHYB___341",
+        "PHYB_341",
         "HN___410"
       ]
     },

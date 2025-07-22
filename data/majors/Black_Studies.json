@@ -3,225 +3,225 @@
   "subject_code": "BLST",
   "min_total_credits": 120,
   "courses": {
-    "BLST___100": {
+    "BLST_100": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "BLST___101": {
+    "BLST_101": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "BLST___103": {
+    "BLST_103": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "BLST___104": {
+    "BLST_104": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "BLST___105": {
+    "BLST_105": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "BLST___110": {
+    "BLST_110": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "BLST___111": {
+    "BLST_111": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "BLST___125": {
+    "BLST_125": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "BLST___191": {
+    "BLST_191": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "BLST___206": {
+    "BLST_206": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "BLST___207": {
+    "BLST_207": {
       "credits": 3.0,
       "prerequisites": [
-        "ENGL___160",
-        "ENGL___161"
+        "ENGL_160",
+        "ENGL_161"
       ]
     },
-    "BLST___221": {
+    "BLST_221": {
       "credits": 3.0,
       "prerequisites": [
-        "ENGL___161"
+        "ENGL_161"
       ]
     },
-    "BLST___225": {
+    "BLST_225": {
       "credits": 3.0,
       "prerequisites": [
-        "SOC___100"
+        "SOC__100"
       ]
     },
-    "BLST___229": {
+    "BLST_229": {
       "credits": 3.0,
       "prerequisites": [
-        "BLST___100",
-        "BLST___101"
+        "BLST_100",
+        "BLST_101"
       ]
     },
-    "BLST___246": {
+    "BLST_246": {
       "credits": 3.0,
       "prerequisites": [
-        "BLST___100"
+        "BLST_100"
       ]
     },
-    "BLST___247": {
+    "BLST_247": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "BLST___248": {
+    "BLST_248": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "BLST___249": {
+    "BLST_249": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "BLST___250": {
+    "BLST_250": {
       "credits": 3.0,
       "prerequisites": [
-        "ENGL___161"
+        "ENGL_161"
       ]
     },
-    "BLST___252": {
+    "BLST_252": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "BLST___258": {
+    "BLST_258": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "BLST___261": {
+    "BLST_261": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "BLST___262": {
+    "BLST_262": {
       "credits": 3.0,
       "prerequisites": [
-        "BLST___100"
+        "BLST_100"
       ]
     },
-    "BLST___264": {
+    "BLST_264": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "BLST___266": {
+    "BLST_266": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "BLST___271": {
+    "BLST_271": {
       "credits": 3.0,
       "prerequisites": [
-        "BLST___100",
-        "SOC___100",
-        "CLJ___101"
+        "SOC__100",
+        "BLST_100",
+        "CLJ__101"
       ]
     },
-    "BLST___272": {
+    "BLST_272": {
       "credits": 3.0,
       "prerequisites": [
-        "ENGL___161"
+        "ENGL_161"
       ]
     },
-    "BLST___294": {
+    "BLST_294": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "BLST___306": {
+    "BLST_306": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "BLST___351": {
+    "BLST_351": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "BLST___356": {
+    "BLST_356": {
       "credits": 3.0,
       "prerequisites": [
-        "BLST___100",
-        "GWS___101",
-        "POLS___101",
-        "BLST___103",
-        "POLS___112"
+        "BLST_100",
+        "GWS__101",
+        "POLS_101",
+        "BLST_103",
+        "POLS_112"
       ]
     },
-    "BLST___358": {
+    "BLST_358": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "BLST___394": {
+    "BLST_394": {
       "credits": 3.0,
       "prerequisites": [
-        "BLST___100"
+        "BLST_100"
       ]
     },
-    "BLST___398": {
+    "BLST_398": {
       "credits": null,
       "prerequisites": []
     },
-    "BLST___406": {
+    "BLST_406": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "BLST___407": {
+    "BLST_407": {
       "credits": 4.0,
       "prerequisites": [
-        "BLST___207",
-        "SOC___207",
-        "SOC___225",
-        "LALS___225",
-        "BLST___225"
+        "SOC__207",
+        "BLST_207",
+        "LALS_225",
+        "BLST_225",
+        "SOC__225"
       ]
     },
-    "BLST___408": {
+    "BLST_408": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "BLST___410": {
+    "BLST_410": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "BLST___490": {
+    "BLST_490": {
       "credits": 4.0,
       "prerequisites": [
-        "BLST___100"
+        "BLST_100"
       ]
     },
-    "BLST___492": {
+    "BLST_492": {
       "credits": 4.0,
       "prerequisites": [
-        "BLST___100"
+        "BLST_100"
       ]
     },
-    "BLST___494": {
+    "BLST_494": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "BLST___501": {
+    "BLST_501": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "BLST___502": {
+    "BLST_502": {
       "credits": 1.0,
       "prerequisites": [
-        "BLST___501"
+        "BLST_501"
       ]
     },
-    "BLST___503": {
+    "BLST_503": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "BLST___596": {
+    "BLST_596": {
       "credits": null,
       "prerequisites": []
     }

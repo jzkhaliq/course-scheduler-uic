@@ -3,327 +3,327 @@
   "subject_code": "PHAR",
   "min_total_credits": 120,
   "courses": {
-    "PHAR___200": {
+    "PHAR_200": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "PHAR___201": {
+    "PHAR_201": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "PHAR___410": {
+    "PHAR_410": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "PHAR___411": {
+    "PHAR_411": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "PHAR___412": {
+    "PHAR_412": {
       "credits": 2.0,
       "prerequisites": [
-        "PHAR___411",
-        "PHAR___431"
+        "PHAR_411",
+        "PHAR_431"
       ]
     },
-    "PHAR___413": {
+    "PHAR_413": {
       "credits": 2.0,
       "prerequisites": [
-        "PHAR___411",
-        "PHAR___431"
+        "PHAR_411",
+        "PHAR_431"
       ]
     },
-    "PHAR___414": {
+    "PHAR_414": {
       "credits": 2.0,
       "prerequisites": [
-        "PHAR___412",
-        "PHAR___413"
+        "PHAR_412",
+        "PHAR_413"
       ]
     },
-    "PHAR___422": {
+    "PHAR_422": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "PHAR___423": {
+    "PHAR_423": {
       "credits": 4.0,
       "prerequisites": [
-        "PHAR___422"
+        "PHAR_422"
       ]
     },
-    "PHAR___431": {
+    "PHAR_431": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "PHAR___432": {
+    "PHAR_432": {
       "credits": 2.0,
       "prerequisites": []
     },
-    "PHAR___433": {
+    "PHAR_433": {
       "credits": 2.0,
       "prerequisites": [
-        "PHAR___432"
+        "PHAR_432"
       ]
     },
-    "PHAR___434": {
+    "PHAR_434": {
       "credits": 2.0,
       "prerequisites": [
-        "PHAR___433"
+        "PHAR_433"
       ]
     },
-    "PHAR___435": {
+    "PHAR_435": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "PHAR___438": {
+    "PHAR_438": {
       "credits": 1.0,
       "prerequisites": []
     },
-    "PHAR___439": {
+    "PHAR_439": {
       "credits": 1.0,
       "prerequisites": []
     },
-    "PHAR___440": {
+    "PHAR_440": {
       "credits": 2.0,
       "prerequisites": [
-        "PHAR___438",
-        "PHAR___439"
+        "PHAR_438",
+        "PHAR_439"
       ]
     },
-    "PHAR___461": {
+    "PHAR_461": {
       "credits": 2.0,
       "prerequisites": []
     },
-    "PHAR___462": {
+    "PHAR_462": {
       "credits": 2.0,
       "prerequisites": []
     },
-    "PHAR___463": {
+    "PHAR_463": {
       "credits": 2.0,
       "prerequisites": [
-        "PHAR___461"
+        "PHAR_461"
       ]
     },
-    "PHAR___464": {
+    "PHAR_464": {
       "credits": 1.0,
       "prerequisites": []
     },
-    "PHAR___465": {
+    "PHAR_465": {
       "credits": 0.0,
       "prerequisites": []
     },
-    "PHAR___466": {
+    "PHAR_466": {
       "credits": 0.0,
       "prerequisites": []
     },
-    "PHAR___467": {
+    "PHAR_467": {
       "credits": 0.0,
       "prerequisites": [
-        "PHAR___465",
-        "PHAR___466"
+        "PHAR_465",
+        "PHAR_466"
       ]
     },
-    "PHAR___468": {
+    "PHAR_468": {
       "credits": 0.0,
       "prerequisites": [
-        "PHAR___465",
-        "PHAR___466"
+        "PHAR_465",
+        "PHAR_466"
       ]
     },
-    "PHAR___469": {
+    "PHAR_469": {
       "credits": 0.0,
       "prerequisites": [
-        "PHAR___467",
-        "PHAR___468"
+        "PHAR_467",
+        "PHAR_468"
       ]
     },
-    "PHAR___470": {
+    "PHAR_470": {
       "credits": 0.0,
       "prerequisites": [
-        "PHAR___467",
-        "PHAR___468"
+        "PHAR_467",
+        "PHAR_468"
       ]
     },
-    "PHAR___471": {
+    "PHAR_471": {
       "credits": 0.0,
       "prerequisites": [
-        "PHAR___469",
-        "PHAR___470"
+        "PHAR_469",
+        "PHAR_470"
       ]
     },
-    "PHAR___472": {
+    "PHAR_472": {
       "credits": 0.0,
       "prerequisites": [
-        "PHAR___469",
-        "PHAR___470"
+        "PHAR_469",
+        "PHAR_470"
       ]
     },
-    "PHAR___501": {
+    "PHAR_501": {
       "credits": 3.0,
       "prerequisites": [
-        "PHAR___410",
-        "PHAR___422",
-        "PHAR___435"
+        "PHAR_410",
+        "PHAR_422",
+        "PHAR_435"
       ]
     },
-    "PHAR___502": {
+    "PHAR_502": {
       "credits": 3.0,
       "prerequisites": [
-        "PHAR___410",
-        "PHAR___422",
-        "PHAR___435"
+        "PHAR_410",
+        "PHAR_422",
+        "PHAR_435"
       ]
     },
-    "PHAR___503": {
+    "PHAR_503": {
       "credits": 3.0,
       "prerequisites": [
-        "PHAR___410",
-        "PHAR___422",
-        "PHAR___423",
-        "PHAR___435",
-        "PHAR___501",
-        "PHAR___502"
+        "PHAR_410",
+        "PHAR_422",
+        "PHAR_423",
+        "PHAR_435",
+        "PHAR_501",
+        "PHAR_502"
       ]
     },
-    "PHAR___504": {
+    "PHAR_504": {
       "credits": 4.0,
       "prerequisites": [
-        "PHAR___410",
-        "PHAR___422",
-        "PHAR___423",
-        "PHAR___435",
-        "PHAR___501",
-        "PHAR___502"
+        "PHAR_410",
+        "PHAR_422",
+        "PHAR_423",
+        "PHAR_435",
+        "PHAR_501",
+        "PHAR_502"
       ]
     },
-    "PHAR___505": {
+    "PHAR_505": {
       "credits": 4.0,
       "prerequisites": [
-        "PHAR___410",
-        "PHAR___422",
-        "PHAR___423",
-        "PHAR___435"
+        "PHAR_410",
+        "PHAR_422",
+        "PHAR_423",
+        "PHAR_435"
       ]
     },
-    "PHAR___506": {
+    "PHAR_506": {
       "credits": 4.0,
       "prerequisites": [
-        "PHAR___410",
-        "PHAR___422",
-        "PHAR___423",
-        "PHAR___435",
-        "PHAR___504"
+        "PHAR_410",
+        "PHAR_422",
+        "PHAR_423",
+        "PHAR_435",
+        "PHAR_504"
       ]
     },
-    "PHAR___507": {
+    "PHAR_507": {
       "credits": 4.0,
       "prerequisites": [
-        "PHAR___410",
-        "PHAR___422",
-        "PHAR___423",
-        "PHAR___435",
-        "PHAR___501",
-        "PHAR___502",
-        "PHAR___503",
-        "PHAR___504",
-        "PHAR___505",
-        "PHAR___506"
+        "PHAR_410",
+        "PHAR_422",
+        "PHAR_423",
+        "PHAR_435",
+        "PHAR_501",
+        "PHAR_502",
+        "PHAR_503",
+        "PHAR_504",
+        "PHAR_505",
+        "PHAR_506"
       ]
     },
-    "PHAR___508": {
+    "PHAR_508": {
       "credits": 3.0,
       "prerequisites": [
-        "PHAR___410",
-        "PHAR___422",
-        "PHAR___423",
-        "PHAR___435",
-        "PHAR___501",
-        "PHAR___502",
-        "PHAR___503",
-        "PHAR___504",
-        "PHAR___505",
-        "PHAR___506"
+        "PHAR_410",
+        "PHAR_422",
+        "PHAR_423",
+        "PHAR_435",
+        "PHAR_501",
+        "PHAR_502",
+        "PHAR_503",
+        "PHAR_504",
+        "PHAR_505",
+        "PHAR_506"
       ]
     },
-    "PHAR___509": {
+    "PHAR_509": {
       "credits": 3.0,
       "prerequisites": [
-        "PHAR___410",
-        "PHAR___422",
-        "PHAR___423",
-        "PHAR___435"
+        "PHAR_410",
+        "PHAR_422",
+        "PHAR_423",
+        "PHAR_435"
       ]
     },
-    "PHAR___510": {
+    "PHAR_510": {
       "credits": 3.0,
       "prerequisites": [
-        "PHAR___440",
-        "PHAR___501",
-        "PHAR___502",
-        "PHAR___503",
-        "PHAR___504",
-        "PHAR___505",
-        "PHAR___506",
-        "PHAR___507",
-        "PHAR___508",
-        "PHAR___520"
+        "PHAR_440",
+        "PHAR_501",
+        "PHAR_502",
+        "PHAR_503",
+        "PHAR_504",
+        "PHAR_505",
+        "PHAR_506",
+        "PHAR_507",
+        "PHAR_508",
+        "PHAR_520"
       ]
     },
-    "PHAR___515": {
+    "PHAR_515": {
       "credits": 2.0,
       "prerequisites": [
-        "PHAR___414",
-        "PHAR___501",
-        "PHAR___502",
-        "PHAR___503",
-        "PHAR___504",
-        "PHAR___505",
-        "PHAR___506"
+        "PHAR_414",
+        "PHAR_501",
+        "PHAR_502",
+        "PHAR_503",
+        "PHAR_504",
+        "PHAR_505",
+        "PHAR_506"
       ]
     },
-    "PHAR___516": {
+    "PHAR_516": {
       "credits": 2.0,
       "prerequisites": [
-        "PHAR___414",
-        "PHAR___501",
-        "PHAR___502",
-        "PHAR___503",
-        "PHAR___504",
-        "PHAR___505",
-        "PHAR___506"
+        "PHAR_414",
+        "PHAR_501",
+        "PHAR_502",
+        "PHAR_503",
+        "PHAR_504",
+        "PHAR_505",
+        "PHAR_506"
       ]
     },
-    "PHAR___520": {
+    "PHAR_520": {
       "credits": 3.0,
       "prerequisites": [
-        "PHAR___434",
-        "PHAR___435"
+        "PHAR_434",
+        "PHAR_435"
       ]
     },
-    "PHAR___565": {
-      "credits": 2.0,
-      "prerequisites": []
-    },
-    "PHAR___566": {
+    "PHAR_565": {
       "credits": 2.0,
       "prerequisites": []
     },
-    "PHAR___567": {
+    "PHAR_566": {
+      "credits": 2.0,
+      "prerequisites": []
+    },
+    "PHAR_567": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "PHAR___601": {
+    "PHAR_601": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "PHAR___602": {
+    "PHAR_602": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "PHAR___603": {
+    "PHAR_603": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "PHAR___604": {
+    "PHAR_604": {
       "credits": 4.0,
       "prerequisites": []
     }

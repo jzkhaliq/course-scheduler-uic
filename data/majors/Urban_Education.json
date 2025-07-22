@@ -58,7 +58,7 @@
     "ED___210": {
       "credits": 3.0,
       "prerequisites": [
-        "EPSY___210"
+        "EPSY_210"
       ]
     },
     "ED___217": {
@@ -100,8 +100,8 @@
     "ED___374": {
       "credits": 3.0,
       "prerequisites": [
-        "CLJ___101",
-        "CLJ___373"
+        "CLJ__101",
+        "CLJ__373"
       ]
     },
     "ED___394": {
@@ -131,22 +131,22 @@
     "ED___421": {
       "credits": 3.0,
       "prerequisites": [
-        "EPSY___210"
+        "EPSY_210"
       ]
     },
     "ED___422": {
       "credits": 3.0,
       "prerequisites": [
-        "PSCH___100",
-        "EPSY___210",
-        "PSCH___259",
-        "PSCH___320"
+        "PSCH_100",
+        "EPSY_210",
+        "PSCH_259",
+        "PSCH_320"
       ]
     },
     "ED___424": {
       "credits": 4.0,
       "prerequisites": [
-        "PSCH___343"
+        "PSCH_343"
       ]
     },
     "ED___425": {
@@ -154,7 +154,7 @@
       "prerequisites": [
         "ED___200",
         "ED___210",
-        "SPED___410"
+        "SPED_410"
       ]
     },
     "ED___432": {
@@ -167,7 +167,7 @@
     "ED___445": {
       "credits": 3.0,
       "prerequisites": [
-        "EPSY___210"
+        "EPSY_210"
       ]
     },
     "ED___450": {
@@ -198,7 +198,7 @@
       "credits": 3.0,
       "prerequisites": [
         "ED___461",
-        "SPED___461"
+        "SPED_461"
       ]
     },
     "ED___502": {

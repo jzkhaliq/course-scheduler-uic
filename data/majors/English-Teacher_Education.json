@@ -3,629 +3,629 @@
   "subject_code": "ENGL",
   "min_total_credits": 120,
   "courses": {
-    "ENGL___060": {
+    "ENGL_060": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "ENGL___101": {
+    "ENGL_101": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "ENGL___103": {
+    "ENGL_103": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "ENGL___104": {
+    "ENGL_104": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "ENGL___105": {
+    "ENGL_105": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "ENGL___118": {
+    "ENGL_118": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "ENGL___119": {
+    "ENGL_119": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "ENGL___123": {
+    "ENGL_123": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "ENGL___131": {
+    "ENGL_131": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "ENGL___132": {
+    "ENGL_132": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "ENGL___135": {
+    "ENGL_135": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "ENGL___150": {
+    "ENGL_150": {
       "credits": 3.0,
       "prerequisites": [
-        "ENGL___060"
+        "ENGL_060"
       ]
     },
-    "ENGL___151": {
+    "ENGL_151": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "ENGL___153": {
+    "ENGL_153": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "ENGL___154": {
+    "ENGL_154": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "ENGL___158": {
+    "ENGL_158": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "ENGL___159": {
+    "ENGL_159": {
       "credits": 1.0,
       "prerequisites": [
-        "ENGL___071",
-        "ENGL___160"
+        "ENGL_071",
+        "ENGL_160"
       ]
     },
-    "ENGL___160": {
+    "ENGL_160": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "ENGL___161": {
+    "ENGL_161": {
       "credits": 3.0,
       "prerequisites": [
-        "ENGL___060",
-        "ENGL___070",
-        "ENGL___071",
-        "ENGL___160"
+        "ENGL_060",
+        "ENGL_070",
+        "ENGL_071",
+        "ENGL_160"
       ]
     },
-    "ENGL___175": {
+    "ENGL_175": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "ENGL___198": {
+    "ENGL_198": {
       "credits": null,
       "prerequisites": []
     },
-    "ENGL___203": {
+    "ENGL_203": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "ENGL___207": {
+    "ENGL_207": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "ENGL___208": {
+    "ENGL_208": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "ENGL___209": {
+    "ENGL_209": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "ENGL___213": {
+    "ENGL_213": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "ENGL___223": {
+    "ENGL_223": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "ENGL___229": {
+    "ENGL_229": {
       "credits": 3.0,
       "prerequisites": [
-        "ENGL___161"
+        "ENGL_161"
       ]
     },
-    "ENGL___230": {
+    "ENGL_230": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "ENGL___232": {
+    "ENGL_232": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "ENGL___233": {
+    "ENGL_233": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "ENGL___234": {
+    "ENGL_234": {
       "credits": 3.0,
       "prerequisites": [
-        "ENGL___160",
-        "ENGL___161"
+        "ENGL_160",
+        "ENGL_161"
       ]
     },
-    "ENGL___236": {
+    "ENGL_236": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "ENGL___237": {
+    "ENGL_237": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "ENGL___238": {
+    "ENGL_238": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "ENGL___243": {
+    "ENGL_243": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "ENGL___245": {
+    "ENGL_245": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "ENGL___247": {
+    "ENGL_247": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "ENGL___251": {
+    "ENGL_251": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "ENGL___253": {
+    "ENGL_253": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "ENGL___258": {
+    "ENGL_258": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "ENGL___260": {
+    "ENGL_260": {
       "credits": 3.0,
       "prerequisites": [
-        "ENGL___161"
+        "ENGL_161"
       ]
     },
-    "ENGL___261": {
+    "ENGL_261": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "ENGL___262": {
+    "ENGL_262": {
       "credits": 3.0,
       "prerequisites": [
-        "BLST___100"
+        "BLST_100"
       ]
     },
-    "ENGL___264": {
+    "ENGL_264": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "ENGL___265": {
+    "ENGL_265": {
       "credits": 3.0,
       "prerequisites": [
-        "BLST___100",
-        "BLST___110",
-        "BLST___111"
+        "BLST_100",
+        "BLST_110",
+        "BLST_111"
       ]
     },
-    "ENGL___266": {
+    "ENGL_266": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "ENGL___267": {
+    "ENGL_267": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "ENGL___269": {
+    "ENGL_269": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "ENGL___270": {
+    "ENGL_270": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "ENGL___280": {
+    "ENGL_280": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "ENGL___282": {
+    "ENGL_282": {
       "credits": 3.0,
       "prerequisites": [
-        "ENGL___161"
+        "ENGL_161"
       ]
     },
-    "ENGL___290": {
+    "ENGL_290": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "ENGL___291": {
+    "ENGL_291": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "ENGL___292": {
+    "ENGL_292": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "ENGL___295": {
+    "ENGL_295": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "ENGL___297": {
+    "ENGL_297": {
       "credits": 3.0,
       "prerequisites": [
         "CL___102"
       ]
     },
-    "ENGL___303": {
+    "ENGL_303": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "ENGL___305": {
+    "ENGL_305": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "ENGL___311": {
+    "ENGL_311": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "ENGL___312": {
+    "ENGL_312": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "ENGL___313": {
+    "ENGL_313": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "ENGL___315": {
+    "ENGL_315": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "ENGL___316": {
+    "ENGL_316": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "ENGL___317": {
+    "ENGL_317": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "ENGL___319": {
+    "ENGL_319": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "ENGL___322": {
+    "ENGL_322": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "ENGL___324": {
+    "ENGL_324": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "ENGL___325": {
+    "ENGL_325": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "ENGL___328": {
+    "ENGL_328": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "ENGL___331": {
+    "ENGL_331": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "ENGL___335": {
+    "ENGL_335": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "ENGL___345": {
+    "ENGL_345": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "ENGL___351": {
+    "ENGL_351": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "ENGL___378": {
+    "ENGL_378": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "ENGL___379": {
+    "ENGL_379": {
       "credits": null,
       "prerequisites": []
     },
-    "ENGL___380": {
+    "ENGL_380": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "ENGL___382": {
+    "ENGL_382": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "ENGL___383": {
+    "ENGL_383": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "ENGL___384": {
+    "ENGL_384": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "ENGL___388": {
+    "ENGL_388": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "ENGL___389": {
+    "ENGL_389": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "ENGL___406": {
+    "ENGL_406": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "ENGL___409": {
+    "ENGL_409": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "ENGL___411": {
+    "ENGL_411": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "ENGL___413": {
+    "ENGL_413": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "ENGL___422": {
+    "ENGL_422": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "ENGL___424": {
+    "ENGL_424": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "ENGL___425": {
+    "ENGL_425": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "ENGL___430": {
+    "ENGL_430": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "ENGL___435": {
+    "ENGL_435": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "ENGL___441": {
+    "ENGL_441": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "ENGL___443": {
+    "ENGL_443": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "ENGL___444": {
+    "ENGL_444": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "ENGL___446": {
+    "ENGL_446": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "ENGL___452": {
+    "ENGL_452": {
       "credits": 4.0,
       "prerequisites": [
-        "ENGL___160",
-        "ENGL___161"
+        "ENGL_160",
+        "ENGL_161"
       ]
     },
-    "ENGL___453": {
+    "ENGL_453": {
       "credits": 4.0,
       "prerequisites": [
-        "ENGL___160",
-        "ENGL___161",
-        "ENGL___161"
+        "ENGL_160",
+        "ENGL_161",
+        "ENGL_161"
       ]
     },
-    "ENGL___466": {
+    "ENGL_466": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "ENGL___467": {
+    "ENGL_467": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "ENGL___473": {
+    "ENGL_473": {
       "credits": 4.0,
       "prerequisites": [
-        "BLST___100"
+        "BLST_100"
       ]
     },
-    "ENGL___480": {
+    "ENGL_480": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "ENGL___482": {
+    "ENGL_482": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "ENGL___484": {
+    "ENGL_484": {
       "credits": null,
       "prerequisites": []
     },
-    "ENGL___486": {
+    "ENGL_486": {
       "credits": 4.0,
       "prerequisites": [
-        "ENGL___480"
+        "ENGL_480"
       ]
     },
-    "ENGL___487": {
+    "ENGL_487": {
       "credits": 4.0,
       "prerequisites": [
-        "ENGL___480"
+        "ENGL_480"
       ]
     },
-    "ENGL___488": {
+    "ENGL_488": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "ENGL___490": {
+    "ENGL_490": {
       "credits": 4.0,
       "prerequisites": [
-        "ENGL___290"
+        "ENGL_290"
       ]
     },
-    "ENGL___491": {
+    "ENGL_491": {
       "credits": 4.0,
       "prerequisites": [
-        "ENGL___291"
+        "ENGL_291"
       ]
     },
-    "ENGL___492": {
+    "ENGL_492": {
       "credits": 4.0,
       "prerequisites": [
-        "ENGL___292"
+        "ENGL_292"
       ]
     },
-    "ENGL___493": {
+    "ENGL_493": {
       "credits": null,
       "prerequisites": [
-        "ENGL___280"
+        "ENGL_280"
       ]
     },
-    "ENGL___496": {
+    "ENGL_496": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "ENGL___497": {
+    "ENGL_497": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "ENGL___498": {
+    "ENGL_498": {
       "credits": 6.0,
       "prerequisites": []
     },
-    "ENGL___499": {
+    "ENGL_499": {
       "credits": 6.0,
       "prerequisites": [
-        "ENGL___498"
+        "ENGL_498"
       ]
     },
-    "ENGL___500": {
+    "ENGL_500": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "ENGL___503": {
+    "ENGL_503": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "ENGL___507": {
+    "ENGL_507": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "ENGL___517": {
+    "ENGL_517": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "ENGL___520": {
+    "ENGL_520": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "ENGL___525": {
+    "ENGL_525": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "ENGL___527": {
+    "ENGL_527": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "ENGL___537": {
+    "ENGL_537": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "ENGL___540": {
+    "ENGL_540": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "ENGL___541": {
+    "ENGL_541": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "ENGL___545": {
+    "ENGL_545": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "ENGL___547": {
+    "ENGL_547": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "ENGL___554": {
+    "ENGL_554": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "ENGL___555": {
+    "ENGL_555": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "ENGL___557": {
+    "ENGL_557": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "ENGL___570": {
+    "ENGL_570": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "ENGL___571": {
+    "ENGL_571": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "ENGL___572": {
+    "ENGL_572": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "ENGL___573": {
+    "ENGL_573": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "ENGL___574": {
+    "ENGL_574": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "ENGL___580": {
+    "ENGL_580": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "ENGL___583": {
+    "ENGL_583": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "ENGL___585": {
+    "ENGL_585": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "ENGL___588": {
+    "ENGL_588": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "ENGL___590": {
+    "ENGL_590": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "ENGL___591": {
+    "ENGL_591": {
       "credits": null,
       "prerequisites": []
     },
-    "ENGL___592": {
+    "ENGL_592": {
       "credits": null,
       "prerequisites": []
     },
-    "ENGL___596": {
+    "ENGL_596": {
       "credits": null,
       "prerequisites": []
     },
-    "ENGL___597": {
+    "ENGL_597": {
       "credits": null,
       "prerequisites": []
     },
-    "ENGL___599": {
+    "ENGL_599": {
       "credits": null,
       "prerequisites": []
     }

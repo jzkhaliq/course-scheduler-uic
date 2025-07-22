@@ -3,11 +3,11 @@
   "subject_code": "LIB",
   "min_total_credits": 120,
   "courses": {
-    "LIB___399": {
+    "LIB__399": {
       "credits": null,
       "prerequisites": []
     },
-    "LIB___573": {
+    "LIB__573": {
       "credits": 1.0,
       "prerequisites": []
     }

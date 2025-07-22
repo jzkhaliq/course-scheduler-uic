@@ -3,344 +3,344 @@
   "subject_code": "PHIL",
   "min_total_credits": 120,
   "courses": {
-    "PHIL___100": {
+    "PHIL_100": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "PHIL___101": {
+    "PHIL_101": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "PHIL___102": {
+    "PHIL_102": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "PHIL___103": {
+    "PHIL_103": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "PHIL___104": {
+    "PHIL_104": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "PHIL___105": {
+    "PHIL_105": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "PHIL___106": {
+    "PHIL_106": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "PHIL___107": {
+    "PHIL_107": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "PHIL___108": {
+    "PHIL_108": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "PHIL___109": {
+    "PHIL_109": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "PHIL___110": {
+    "PHIL_110": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "PHIL___111": {
+    "PHIL_111": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "PHIL___112": {
+    "PHIL_112": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "PHIL___113": {
+    "PHIL_113": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "PHIL___115": {
+    "PHIL_115": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "PHIL___116": {
+    "PHIL_116": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "PHIL___131": {
+    "PHIL_131": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "PHIL___184": {
+    "PHIL_184": {
       "credits": 1.0,
       "prerequisites": []
     },
-    "PHIL___201": {
+    "PHIL_201": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "PHIL___202": {
+    "PHIL_202": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "PHIL___203": {
+    "PHIL_203": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "PHIL___204": {
+    "PHIL_204": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "PHIL___206": {
+    "PHIL_206": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "PHIL___210": {
+    "PHIL_210": {
       "credits": 3.0,
       "prerequisites": [
-        "PHIL___102"
+        "PHIL_102"
       ]
     },
-    "PHIL___211": {
+    "PHIL_211": {
       "credits": 3.0,
       "prerequisites": [
-        "PHIL___102"
+        "PHIL_102"
       ]
     },
-    "PHIL___220": {
+    "PHIL_220": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "PHIL___223": {
+    "PHIL_223": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "PHIL___224": {
+    "PHIL_224": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "PHIL___225": {
+    "PHIL_225": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "PHIL___226": {
+    "PHIL_226": {
       "credits": 3.0,
       "prerequisites": [
-        "PHIL___102"
+        "PHIL_102"
       ]
     },
-    "PHIL___227": {
+    "PHIL_227": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "PHIL___230": {
+    "PHIL_230": {
       "credits": 3.0,
       "prerequisites": [
-        "PHIL___103",
-        "PHIL___109",
-        "PHIL___112",
-        "PHIL___116"
+        "PHIL_103",
+        "PHIL_109",
+        "PHIL_112",
+        "PHIL_116"
       ]
     },
-    "PHIL___232": {
+    "PHIL_232": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "PHIL___234": {
+    "PHIL_234": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "PHIL___241": {
+    "PHIL_241": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "PHIL___299": {
+    "PHIL_299": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "PHIL___300": {
+    "PHIL_300": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "PHIL___390": {
+    "PHIL_390": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "PHIL___399": {
+    "PHIL_399": {
       "credits": null,
       "prerequisites": []
     },
-    "PHIL___402": {
+    "PHIL_402": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "PHIL___403": {
+    "PHIL_403": {
       "credits": 4.0,
       "prerequisites": [
-        "PHIL___102"
+        "PHIL_102"
       ]
     },
-    "PHIL___404": {
+    "PHIL_404": {
       "credits": 4.0,
       "prerequisites": [
-        "PHIL___102"
+        "PHIL_102"
       ]
     },
-    "PHIL___406": {
+    "PHIL_406": {
       "credits": 4.0,
       "prerequisites": [
-        "PHIL___102"
+        "PHIL_102"
       ]
     },
-    "PHIL___410": {
+    "PHIL_410": {
       "credits": 4.0,
       "prerequisites": [
-        "PHIL___210"
+        "PHIL_210"
       ]
     },
-    "PHIL___422": {
+    "PHIL_422": {
       "credits": null,
       "prerequisites": []
     },
-    "PHIL___423": {
+    "PHIL_423": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "PHIL___424": {
+    "PHIL_424": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "PHIL___426": {
+    "PHIL_426": {
       "credits": 4.0,
       "prerequisites": [
-        "PHIL___102"
+        "PHIL_102"
       ]
     },
-    "PHIL___427": {
+    "PHIL_427": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "PHIL___428": {
+    "PHIL_428": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "PHIL___429": {
+    "PHIL_429": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "PHIL___432": {
+    "PHIL_432": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "PHIL___433": {
+    "PHIL_433": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "PHIL___484": {
+    "PHIL_484": {
       "credits": 3.0,
       "prerequisites": [
-        "PSCH___262",
-        "BIOS___286"
+        "PSCH_262",
+        "BIOS_286"
       ]
     },
-    "PHIL___485": {
+    "PHIL_485": {
       "credits": 3.0,
       "prerequisites": [
-        "PSCH___262",
-        "BIOS___286"
+        "PSCH_262",
+        "BIOS_286"
       ]
     },
-    "PHIL___500": {
+    "PHIL_500": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "PHIL___501": {
+    "PHIL_501": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "PHIL___503": {
+    "PHIL_503": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "PHIL___504": {
+    "PHIL_504": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "PHIL___505": {
+    "PHIL_505": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "PHIL___508": {
+    "PHIL_508": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "PHIL___509": {
+    "PHIL_509": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "PHIL___510": {
+    "PHIL_510": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "PHIL___526": {
+    "PHIL_526": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "PHIL___528": {
+    "PHIL_528": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "PHIL___530": {
+    "PHIL_530": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "PHIL___532": {
+    "PHIL_532": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "PHIL___534": {
+    "PHIL_534": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "PHIL___536": {
+    "PHIL_536": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "PHIL___538": {
+    "PHIL_538": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "PHIL___540": {
+    "PHIL_540": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "PHIL___542": {
+    "PHIL_542": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "PHIL___562": {
+    "PHIL_562": {
       "credits": 4.0,
       "prerequisites": [
-        "MATH___430"
+        "MATH_430"
       ]
     },
-    "PHIL___590": {
+    "PHIL_590": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "PHIL___591": {
+    "PHIL_591": {
       "credits": 1.0,
       "prerequisites": []
     },
-    "PHIL___593": {
+    "PHIL_593": {
       "credits": null,
       "prerequisites": []
     },
-    "PHIL___596": {
+    "PHIL_596": {
       "credits": null,
       "prerequisites": []
     },
-    "PHIL___599": {
+    "PHIL_599": {
       "credits": null,
       "prerequisites": []
     }

@@ -42,13 +42,13 @@
     "KN___200": {
       "credits": 3.0,
       "prerequisites": [
-        "MATH___121"
+        "MATH_121"
       ]
     },
     "KN___230": {
       "credits": 3.0,
       "prerequisites": [
-        "BIOS___110"
+        "BIOS_110"
       ]
     },
     "KN___231": {
@@ -97,7 +97,7 @@
     "KN___253": {
       "credits": 4.0,
       "prerequisites": [
-        "BIOS___110"
+        "BIOS_110"
       ]
     },
     "KN___254": {
@@ -188,16 +188,16 @@
     "KN___361": {
       "credits": 3.0,
       "prerequisites": [
-        "MATH___121",
-        "PHYS___131",
+        "MATH_121",
+        "PHYS_131",
         "KN___261"
       ]
     },
     "KN___362": {
       "credits": 3.0,
       "prerequisites": [
-        "MATH___121",
-        "PHYS___131"
+        "MATH_121",
+        "PHYS_131"
       ]
     },
     "KN___372": {

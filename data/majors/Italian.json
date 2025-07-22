@@ -3,102 +3,102 @@
   "subject_code": "ITAL",
   "min_total_credits": 120,
   "courses": {
-    "ITAL___101": {
+    "ITAL_101": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "ITAL___102": {
+    "ITAL_102": {
       "credits": 4.0,
       "prerequisites": [
-        "ITAL___101"
+        "ITAL_101"
       ]
     },
-    "ITAL___103": {
+    "ITAL_103": {
       "credits": 4.0,
       "prerequisites": [
-        "ITAL___102",
-        "ITAL___102",
-        "ITAL___140"
+        "ITAL_102",
+        "ITAL_102",
+        "ITAL_140"
       ]
     },
-    "ITAL___104": {
+    "ITAL_104": {
       "credits": 4.0,
       "prerequisites": [
-        "ITAL___103"
+        "ITAL_103"
       ]
     },
-    "ITAL___196": {
+    "ITAL_196": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "ITAL___200": {
+    "ITAL_200": {
       "credits": 3.0,
       "prerequisites": [
-        "ITAL___104"
+        "ITAL_104"
       ]
     },
-    "ITAL___201": {
+    "ITAL_201": {
       "credits": 3.0,
       "prerequisites": [
-        "ITAL___104"
+        "ITAL_104"
       ]
     },
-    "ITAL___210": {
+    "ITAL_210": {
       "credits": 3.0,
       "prerequisites": [
-        "ITAL___104"
+        "ITAL_104"
       ]
     },
-    "ITAL___230": {
+    "ITAL_230": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "ITAL___270": {
+    "ITAL_270": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "ITAL___280": {
+    "ITAL_280": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "ITAL___293": {
+    "ITAL_293": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "ITAL___300": {
+    "ITAL_300": {
       "credits": 3.0,
       "prerequisites": [
-        "ITAL___200",
-        "ITAL___201",
-        "ITAL___210"
+        "ITAL_200",
+        "ITAL_201",
+        "ITAL_210"
       ]
     },
-    "ITAL___301": {
+    "ITAL_301": {
       "credits": 3.0,
       "prerequisites": [
-        "ITAL___200",
-        "ITAL___201",
-        "ITAL___210",
-        "ITAL___280"
+        "ITAL_200",
+        "ITAL_201",
+        "ITAL_210",
+        "ITAL_280"
       ]
     },
-    "ITAL___302": {
+    "ITAL_302": {
       "credits": 3.0,
       "prerequisites": [
-        "ITAL___200",
-        "ITAL___201",
-        "ITAL___210"
+        "ITAL_200",
+        "ITAL_201",
+        "ITAL_210"
       ]
     },
-    "ITAL___303": {
+    "ITAL_303": {
       "credits": 3.0,
       "prerequisites": [
-        "ITAL___200",
-        "ITAL___201",
-        "ITAL___210"
+        "ITAL_200",
+        "ITAL_201",
+        "ITAL_210"
       ]
     },
-    "ITAL___399": {
+    "ITAL_399": {
       "credits": null,
       "prerequisites": []
     }

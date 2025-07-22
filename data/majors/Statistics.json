@@ -3,188 +3,188 @@
   "subject_code": "STAT",
   "min_total_credits": 120,
   "courses": {
-    "STAT___101": {
+    "STAT_101": {
       "credits": 4.0,
       "prerequisites": [
-        "MATH___090",
-        "MATH___108"
+        "MATH_090",
+        "MATH_108"
       ]
     },
-    "STAT___130": {
+    "STAT_130": {
       "credits": 4.0,
       "prerequisites": [
-        "MATH___110"
+        "MATH_110"
       ]
     },
-    "STAT___361": {
+    "STAT_361": {
       "credits": 2.0,
       "prerequisites": [
-        "MATH___181"
+        "MATH_181"
       ]
     },
-    "STAT___362": {
+    "STAT_362": {
       "credits": 2.0,
       "prerequisites": [
         "IE___342",
-        "STAT___361",
-        "STAT___381"
+        "STAT_361",
+        "STAT_381"
       ]
     },
-    "STAT___381": {
+    "STAT_381": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "STAT___382": {
+    "STAT_382": {
       "credits": 3.0,
       "prerequisites": [
-        "ECE___341",
+        "ECE__341",
         "IE___342",
-        "STAT___381"
+        "STAT_381"
       ]
     },
-    "STAT___385": {
+    "STAT_385": {
       "credits": 3.0,
       "prerequisites": [
-        "STAT___382",
-        "IDS___462"
+        "STAT_382",
+        "IDS__462"
       ]
     },
-    "STAT___401": {
+    "STAT_401": {
       "credits": 4.0,
       "prerequisites": [
-        "MATH___210"
+        "MATH_210"
       ]
     },
-    "STAT___411": {
+    "STAT_411": {
       "credits": 4.0,
       "prerequisites": [
-        "STAT___401"
+        "STAT_401"
       ]
     },
-    "STAT___431": {
+    "STAT_431": {
       "credits": 4.0,
       "prerequisites": [
-        "STAT___411",
-        "STAT___481"
+        "STAT_411",
+        "STAT_481"
       ]
     },
-    "STAT___451": {
+    "STAT_451": {
       "credits": 4.0,
       "prerequisites": [
-        "STAT___411"
+        "STAT_411"
       ]
     },
-    "STAT___461": {
+    "STAT_461": {
       "credits": 4.0,
       "prerequisites": [
-        "STAT___401"
+        "STAT_401"
       ]
     },
-    "STAT___471": {
+    "STAT_471": {
       "credits": 4.0,
       "prerequisites": [
-        "MATH___310"
+        "MATH_310"
       ]
     },
-    "STAT___473": {
+    "STAT_473": {
       "credits": 4.0,
       "prerequisites": [
-        "ECON___270",
-        "STAT___381"
+        "ECON_270",
+        "STAT_381"
       ]
     },
-    "STAT___475": {
+    "STAT_475": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "STAT___481": {
+    "STAT_481": {
       "credits": 4.0,
       "prerequisites": [
-        "ECE___341",
+        "ECE__341",
         "IE___342",
-        "STAT___381"
+        "STAT_381"
       ]
     },
-    "STAT___485": {
+    "STAT_485": {
       "credits": 4.0,
       "prerequisites": [
-        "STAT___385",
-        "STAT___411",
-        "STAT___481"
+        "STAT_385",
+        "STAT_411",
+        "STAT_481"
       ]
     },
-    "STAT___486": {
+    "STAT_486": {
       "credits": 4.0,
       "prerequisites": [
-        "STAT___411",
-        "STAT___481"
+        "STAT_411",
+        "STAT_481"
       ]
     },
-    "STAT___494": {
+    "STAT_494": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "STAT___496": {
+    "STAT_496": {
       "credits": null,
       "prerequisites": []
     },
-    "STAT___501": {
+    "STAT_501": {
       "credits": 4.0,
       "prerequisites": [
-        "MATH___414"
+        "MATH_414"
       ]
     },
-    "STAT___511": {
+    "STAT_511": {
       "credits": 4.0,
       "prerequisites": [
-        "STAT___411"
+        "STAT_411"
       ]
     },
-    "STAT___512": {
+    "STAT_512": {
       "credits": 4.0,
       "prerequisites": [
-        "STAT___511"
+        "STAT_511"
       ]
     },
-    "STAT___521": {
+    "STAT_521": {
       "credits": 4.0,
       "prerequisites": [
-        "STAT___411"
+        "STAT_411"
       ]
     },
-    "STAT___522": {
+    "STAT_522": {
       "credits": 4.0,
       "prerequisites": [
-        "STAT___521"
+        "STAT_521"
       ]
     },
-    "STAT___536": {
+    "STAT_536": {
       "credits": 4.0,
       "prerequisites": [
-        "STAT___535"
+        "STAT_535"
       ]
     },
-    "STAT___591": {
+    "STAT_591": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "STAT___593": {
+    "STAT_593": {
       "credits": 1.0,
       "prerequisites": []
     },
-    "STAT___595": {
+    "STAT_595": {
       "credits": 1.0,
       "prerequisites": []
     },
-    "STAT___596": {
+    "STAT_596": {
       "credits": null,
       "prerequisites": []
     },
-    "STAT___598": {
+    "STAT_598": {
       "credits": null,
       "prerequisites": []
     },
-    "STAT___599": {
+    "STAT_599": {
       "credits": null,
       "prerequisites": []
     }

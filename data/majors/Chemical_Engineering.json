@@ -3,246 +3,246 @@
   "subject_code": "CHE",
   "min_total_credits": 128,
   "courses": {
-    "CHE___150": {
+    "CHE__150": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "CHE___201": {
+    "CHE__201": {
       "credits": 3.0,
       "prerequisites": [
-        "PHYS___141",
-        "MATH___181"
+        "PHYS_141",
+        "MATH_181"
       ]
     },
-    "CHE___205": {
+    "CHE__205": {
       "credits": 3.0,
       "prerequisites": [
-        "CHE___201",
-        "MATH___210"
+        "CHE__201",
+        "MATH_210"
       ]
     },
-    "CHE___210": {
+    "CHE__210": {
       "credits": 4.0,
       "prerequisites": [
-        "CHE___201",
-        "CHE___205"
+        "CHE__201",
+        "CHE__205"
       ]
     },
-    "CHE___230": {
+    "CHE__230": {
       "credits": 3.0,
       "prerequisites": [
-        "CHEM___232"
+        "CHEM_232"
       ]
     },
-    "CHE___301": {
+    "CHE__301": {
       "credits": 3.0,
       "prerequisites": [
-        "CHE___201",
-        "CHE___205"
+        "CHE__201",
+        "CHE__205"
       ]
     },
-    "CHE___311": {
+    "CHE__311": {
       "credits": 3.0,
       "prerequisites": [
-        "CHE___205",
-        "CHE___210",
-        "MATH___220"
+        "CHE__205",
+        "CHE__210",
+        "MATH_220"
       ]
     },
-    "CHE___312": {
+    "CHE__312": {
       "credits": 3.0,
       "prerequisites": [
-        "CHE___311"
+        "CHE__311"
       ]
     },
-    "CHE___313": {
+    "CHE__313": {
       "credits": 3.0,
       "prerequisites": [
-        "CHE___301"
+        "CHE__301"
       ]
     },
-    "CHE___321": {
+    "CHE__321": {
       "credits": 3.0,
       "prerequisites": [
-        "CHE___210",
-        "MATH___220",
-        "CHE___301"
+        "CHE__210",
+        "MATH_220",
+        "CHE__301"
       ]
     },
-    "CHE___330": {
+    "CHE__330": {
       "credits": 3.0,
       "prerequisites": [
-        "CHE___230",
-        "CHEM___232",
-        "CME___260"
+        "CHE__230",
+        "CHEM_232",
+        "CME__260"
       ]
     },
-    "CHE___341": {
+    "CHE__341": {
       "credits": 3.0,
       "prerequisites": [
-        "MATH___220",
-        "CHE___312",
-        "CHE___313",
-        "CHE___321"
+        "MATH_220",
+        "CHE__312",
+        "CHE__313",
+        "CHE__321"
       ]
     },
-    "CHE___381": {
+    "CHE__381": {
       "credits": 2.0,
       "prerequisites": [
-        "CHE___312"
+        "CHE__312"
       ]
     },
-    "CHE___382": {
+    "CHE__382": {
       "credits": 2.0,
       "prerequisites": [
-        "CHE___313",
-        "CHE___381"
+        "CHE__313",
+        "CHE__381"
       ]
     },
-    "CHE___391": {
+    "CHE__391": {
       "credits": 1.0,
       "prerequisites": []
     },
-    "CHE___392": {
+    "CHE__392": {
       "credits": null,
       "prerequisites": []
     },
-    "CHE___396": {
+    "CHE__396": {
       "credits": 4.0,
       "prerequisites": [
-        "CHE___312",
-        "CHE___313",
-        "CHE___321"
+        "CHE__312",
+        "CHE__313",
+        "CHE__321"
       ]
     },
-    "CHE___397": {
+    "CHE__397": {
       "credits": 4.0,
       "prerequisites": [
-        "CHE___396"
+        "CHE__396"
       ]
     },
-    "CHE___425": {
+    "CHE__425": {
       "credits": 4.0,
       "prerequisites": [
-        "CHE___301",
-        "CHE___311",
-        "CHE___312"
+        "CHE__301",
+        "CHE__311",
+        "CHE__312"
       ]
     },
-    "CHE___427": {
+    "CHE__427": {
       "credits": null,
       "prerequisites": []
     },
-    "CHE___433": {
+    "CHE__433": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "CHE___438": {
+    "CHE__438": {
       "credits": 4.0,
       "prerequisites": [
-        "CHE___301"
+        "CHE__301"
       ]
     },
-    "CHE___451": {
+    "CHE__451": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "CHE___453": {
+    "CHE__453": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "CHE___454": {
+    "CHE__454": {
       "credits": 4.0,
       "prerequisites": [
-        "CHE___330"
+        "CHE__330"
       ]
     },
-    "CHE___455": {
+    "CHE__455": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "CHE___457": {
+    "CHE__457": {
       "credits": 4.0,
       "prerequisites": [
-        "CHE___301",
-        "CHE___312"
+        "CHE__301",
+        "CHE__312"
       ]
     },
-    "CHE___494": {
+    "CHE__494": {
       "credits": null,
       "prerequisites": []
     },
-    "CHE___496": {
+    "CHE__496": {
       "credits": null,
       "prerequisites": []
     },
-    "CHE___499": {
+    "CHE__499": {
       "credits": 0.0,
       "prerequisites": []
     },
-    "CHE___501": {
+    "CHE__501": {
       "credits": 4.0,
       "prerequisites": [
-        "MATH___220"
+        "MATH_220"
       ]
     },
-    "CHE___502": {
+    "CHE__502": {
       "credits": 4.0,
       "prerequisites": [
-        "CHE___301"
+        "CHE__301"
       ]
     },
-    "CHE___511": {
+    "CHE__511": {
       "credits": 4.0,
       "prerequisites": [
-        "CHE___410"
+        "CHE__410"
       ]
     },
-    "CHE___520": {
+    "CHE__520": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "CHE___524": {
+    "CHE__524": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "CHE___527": {
+    "CHE__527": {
       "credits": 4.0,
       "prerequisites": [
-        "CHE___321"
+        "CHE__321"
       ]
     },
-    "CHE___531": {
+    "CHE__531": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "CHE___545": {
+    "CHE__545": {
       "credits": 4.0,
       "prerequisites": [
-        "MATH___220"
+        "MATH_220"
       ]
     },
-    "CHE___592": {
+    "CHE__592": {
       "credits": null,
       "prerequisites": []
     },
-    "CHE___594": {
+    "CHE__594": {
       "credits": null,
       "prerequisites": []
     },
-    "CHE___595": {
+    "CHE__595": {
       "credits": 1.0,
       "prerequisites": []
     },
-    "CHE___597": {
+    "CHE__597": {
       "credits": null,
       "prerequisites": []
     },
-    "CHE___598": {
+    "CHE__598": {
       "credits": null,
       "prerequisites": []
     },
-    "CHE___599": {
+    "CHE__599": {
       "credits": null,
       "prerequisites": []
     }

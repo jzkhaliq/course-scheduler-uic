@@ -3,381 +3,381 @@
   "subject_code": "BME",
   "min_total_credits": 128,
   "courses": {
-    "BME___101": {
+    "BME__101": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "BME___102": {
+    "BME__102": {
       "credits": 1.0,
       "prerequisites": []
     },
-    "BME___205": {
+    "BME__205": {
       "credits": 3.0,
       "prerequisites": [
-        "PHYS___141"
+        "PHYS_141"
       ]
     },
-    "BME___240": {
+    "BME__240": {
       "credits": 3.0,
       "prerequisites": [
         "CS___109",
-        "BIOS___110",
-        "MATH___180"
+        "BIOS_110",
+        "MATH_180"
       ]
     },
-    "BME___250": {
+    "BME__250": {
       "credits": 3.0,
       "prerequisites": [
-        "BME___101",
-        "BME___102"
+        "BME__101",
+        "BME__102"
       ]
     },
-    "BME___310": {
+    "BME__310": {
       "credits": 3.0,
       "prerequisites": [
-        "MATH___220",
-        "BME___240",
-        "MATH___310"
+        "MATH_220",
+        "BME__240",
+        "MATH_310"
       ]
     },
-    "BME___325": {
+    "BME__325": {
       "credits": 3.0,
       "prerequisites": [
-        "BIOS___110",
-        "BME___205",
-        "MATH___220"
+        "BIOS_110",
+        "BME__205",
+        "MATH_220"
       ]
     },
-    "BME___332": {
+    "BME__332": {
       "credits": 3.0,
       "prerequisites": [
-        "BIOS___110",
-        "ECE___210"
+        "BIOS_110",
+        "ECE__210"
       ]
     },
-    "BME___333": {
+    "BME__333": {
       "credits": 2.0,
       "prerequisites": [
-        "BME___332"
+        "BME__332"
       ]
     },
-    "BME___339": {
+    "BME__339": {
       "credits": 3.0,
       "prerequisites": [
         "CS___109",
-        "MATH___210"
+        "MATH_210"
       ]
     },
-    "BME___391": {
+    "BME__391": {
       "credits": 1.0,
       "prerequisites": []
     },
-    "BME___394": {
+    "BME__394": {
       "credits": null,
       "prerequisites": []
     },
-    "BME___396": {
+    "BME__396": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "BME___397": {
+    "BME__397": {
       "credits": 3.0,
       "prerequisites": [
-        "BME___396"
+        "BME__396"
       ]
     },
-    "BME___398": {
+    "BME__398": {
       "credits": null,
       "prerequisites": []
     },
-    "BME___399": {
+    "BME__399": {
       "credits": 0.0,
       "prerequisites": []
     },
-    "BME___402": {
+    "BME__402": {
       "credits": 3.0,
       "prerequisites": [
-        "BME___250"
+        "BME__250"
       ]
     },
-    "BME___403": {
+    "BME__403": {
       "credits": 3.0,
       "prerequisites": [
-        "BME___250"
+        "BME__250"
       ]
     },
-    "BME___407": {
+    "BME__407": {
       "credits": 4.0,
       "prerequisites": [
-        "BME___339",
-        "ECE___341",
+        "BME__339",
+        "ECE__341",
         "IE___342",
-        "STAT___381"
+        "STAT_381"
       ]
     },
-    "BME___408": {
+    "BME__408": {
       "credits": 3.0,
       "prerequisites": [
-        "BME___250"
+        "BME__250"
       ]
     },
-    "BME___410": {
+    "BME__410": {
       "credits": 4.0,
       "prerequisites": [
-        "BME___250"
+        "BME__250"
       ]
     },
-    "BME___415": {
+    "BME__415": {
       "credits": 4.0,
       "prerequisites": [
-        "BME___310"
+        "BME__310"
       ]
     },
-    "BME___421": {
+    "BME__421": {
       "credits": 4.0,
       "prerequisites": [
-        "MATH___220",
-        "MATH___310"
+        "MATH_220",
+        "MATH_310"
       ]
     },
-    "BME___422": {
+    "BME__422": {
       "credits": 4.0,
       "prerequisites": [
-        "BME___310",
-        "ECE___310"
+        "ECE__310",
+        "BME__310"
       ]
     },
-    "BME___423": {
+    "BME__423": {
       "credits": 2.0,
       "prerequisites": [
-        "BME___421"
+        "BME__421"
       ]
     },
-    "BME___439": {
+    "BME__439": {
       "credits": 4.0,
       "prerequisites": [
-        "BME___339"
+        "BME__339"
       ]
     },
-    "BME___450": {
+    "BME__450": {
       "credits": 4.0,
       "prerequisites": [
-        "PHYS___245"
+        "PHYS_245"
       ]
     },
-    "BME___452": {
+    "BME__452": {
       "credits": 4.0,
       "prerequisites": [
-        "BME___310"
+        "BME__310"
       ]
     },
-    "BME___455": {
+    "BME__455": {
       "credits": 4.0,
       "prerequisites": [
-        "BIOS___320",
-        "BIOS___343",
-        "BIOS___452",
-        "BME___460"
+        "BIOS_320",
+        "BIOS_343",
+        "BIOS_452",
+        "BME__460"
       ]
     },
-    "BME___456": {
+    "BME__456": {
       "credits": 2.0,
       "prerequisites": [
-        "BME___455"
+        "BME__455"
       ]
     },
-    "BME___460": {
+    "BME__460": {
       "credits": 4.0,
       "prerequisites": [
-        "BIOS___220",
-        "BIOS___222",
-        "CHEM___232",
-        "CME___260",
-        "PSCH___262",
-        "BIOS___286",
-        "BIOS___340"
+        "BIOS_220",
+        "BIOS_222",
+        "CHEM_232",
+        "CME__260",
+        "PSCH_262",
+        "BIOS_286",
+        "BIOS_340"
       ]
     },
-    "BME___462": {
+    "BME__462": {
       "credits": 4.0,
       "prerequisites": [
-        "CME___260"
+        "CME__260"
       ]
     },
-    "BME___471": {
+    "BME__471": {
       "credits": 4.0,
       "prerequisites": [
-        "BIOS___110",
-        "PHYS___142"
+        "BIOS_110",
+        "PHYS_142"
       ]
     },
-    "BME___472": {
+    "BME__472": {
       "credits": 4.0,
       "prerequisites": [
-        "BME___310",
-        "BIOS___484"
+        "BME__310",
+        "BIOS_484"
       ]
     },
-    "BME___475": {
+    "BME__475": {
       "credits": 4.0,
       "prerequisites": [
-        "BME___472"
+        "BME__472"
       ]
     },
-    "BME___476": {
+    "BME__476": {
       "credits": 2.0,
       "prerequisites": [
-        "BME___332",
-        "BME___333",
-        "BME___475"
+        "BME__332",
+        "BME__333",
+        "BME__475"
       ]
     },
-    "BME___479": {
+    "BME__479": {
       "credits": 4.0,
       "prerequisites": [
         "CS___109",
-        "ECE___210",
-        "BME___240",
+        "ECE__210",
+        "BME__240",
         "CS___251"
       ]
     },
-    "BME___480": {
+    "BME__480": {
       "credits": 4.0,
       "prerequisites": [
-        "BIOS___220",
-        "BIOS___222",
-        "CHEM___232",
-        "BME___240"
+        "BIOS_220",
+        "BIOS_222",
+        "CHEM_232",
+        "BME__240"
       ]
     },
-    "BME___481": {
+    "BME__481": {
       "credits": 2.0,
       "prerequisites": [
-        "BME___480"
+        "BME__480"
       ]
     },
-    "BME___483": {
+    "BME__483": {
       "credits": 4.0,
       "prerequisites": [
-        "BME___480"
+        "BME__480"
       ]
     },
-    "BME___494": {
+    "BME__494": {
       "credits": null,
       "prerequisites": []
     },
-    "BME___504": {
+    "BME__504": {
       "credits": 3.0,
       "prerequisites": [
-        "BME___402",
-        "BME___403",
-        "BME___410",
-        "BME___494"
+        "BME__402",
+        "BME__403",
+        "BME__410",
+        "BME__494"
       ]
     },
-    "BME___520": {
+    "BME__520": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "BME___525": {
+    "BME__525": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "BME___530": {
+    "BME__530": {
       "credits": 4.0,
       "prerequisites": [
-        "MATH___310"
+        "MATH_310"
       ]
     },
-    "BME___534": {
+    "BME__534": {
       "credits": 4.0,
       "prerequisites": [
-        "MATH___310",
-        "BME___530"
+        "MATH_310",
+        "BME__530"
       ]
     },
-    "BME___538": {
+    "BME__538": {
       "credits": 4.0,
       "prerequisites": [
-        "MATH___220",
-        "MATH___310"
+        "MATH_220",
+        "MATH_310"
       ]
     },
-    "BME___540": {
+    "BME__540": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "BME___542": {
+    "BME__542": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "BME___548": {
+    "BME__548": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "BME___562": {
+    "BME__562": {
       "credits": 4.0,
       "prerequisites": [
-        "BME___460"
+        "BME__460"
       ]
     },
-    "BME___564": {
+    "BME__564": {
       "credits": 4.0,
       "prerequisites": [
-        "BME___460"
+        "BME__460"
       ]
     },
-    "BME___568": {
+    "BME__568": {
       "credits": 1.0,
       "prerequisites": []
     },
-    "BME___574": {
+    "BME__574": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "BME___575": {
+    "BME__575": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "BME___576": {
+    "BME__576": {
       "credits": 4.0,
       "prerequisites": [
-        "BME___475"
+        "BME__475"
       ]
     },
-    "BME___580": {
+    "BME__580": {
       "credits": 4.0,
       "prerequisites": [
-        "BME___480"
+        "BME__480"
       ]
     },
-    "BME___586": {
+    "BME__586": {
       "credits": 4.0,
       "prerequisites": [
-        "MATH___220"
+        "MATH_220"
       ]
     },
-    "BME___590": {
+    "BME__590": {
       "credits": null,
       "prerequisites": []
     },
-    "BME___594": {
+    "BME__594": {
       "credits": null,
       "prerequisites": []
     },
-    "BME___595": {
+    "BME__595": {
       "credits": 1.0,
       "prerequisites": []
     },
-    "BME___596": {
+    "BME__596": {
       "credits": null,
       "prerequisites": []
     },
-    "BME___598": {
+    "BME__598": {
       "credits": null,
       "prerequisites": []
     },
-    "BME___599": {
+    "BME__599": {
       "credits": null,
       "prerequisites": []
     }

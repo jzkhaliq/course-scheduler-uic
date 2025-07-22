@@ -3,181 +3,181 @@
   "subject_code": "LING",
   "min_total_credits": 120,
   "courses": {
-    "LING___150": {
+    "LING_150": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "LING___160": {
+    "LING_160": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "LING___170": {
+    "LING_170": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "LING___201": {
+    "LING_201": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "LING___210": {
+    "LING_210": {
       "credits": 3.0,
       "prerequisites": [
-        "LING___150",
-        "ENGL___200"
+        "LING_150",
+        "ENGL_200"
       ]
     },
-    "LING___220": {
+    "LING_220": {
       "credits": 3.0,
       "prerequisites": [
-        "LING___150"
+        "LING_150"
       ]
     },
-    "LING___230": {
+    "LING_230": {
       "credits": 3.0,
       "prerequisites": [
-        "LING___150"
+        "LING_150"
       ]
     },
-    "LING___260": {
+    "LING_260": {
       "credits": 3.0,
       "prerequisites": [
-        "LING___150",
-        "LING___160",
-        "ENGL___160"
+        "LING_150",
+        "ENGL_160",
+        "LING_160"
       ]
     },
-    "LING___270": {
+    "LING_270": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "LING___300": {
+    "LING_300": {
       "credits": 3.0,
       "prerequisites": [
-        "LING___150",
-        "LING___210",
-        "LING___220",
-        "LING___230"
+        "LING_150",
+        "LING_210",
+        "LING_220",
+        "LING_230"
       ]
     },
-    "LING___330": {
+    "LING_330": {
       "credits": 3.0,
       "prerequisites": [
-        "CHIN___101",
-        "LING___150"
+        "CHIN_101",
+        "LING_150"
       ]
     },
-    "LING___360": {
+    "LING_360": {
       "credits": 3.0,
       "prerequisites": [
-        "LING___150",
-        "MATH___180",
-        "MATH___180",
-        "LING___200"
+        "LING_150",
+        "MATH_180",
+        "MATH_180",
+        "LING_200"
       ]
     },
-    "LING___370": {
+    "LING_370": {
       "credits": 3.0,
       "prerequisites": [
-        "LING___150",
-        "LING___200"
+        "LING_150",
+        "LING_200"
       ]
     },
-    "LING___402": {
+    "LING_402": {
       "credits": 4.0,
       "prerequisites": [
-        "CLJ___261",
-        "CLJ___350"
+        "CLJ__261",
+        "CLJ__350"
       ]
     },
-    "LING___405": {
-      "credits": 4.0,
-      "prerequisites": []
-    },
-    "LING___406": {
+    "LING_405": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "LING___480": {
-      "credits": 4.0,
-      "prerequisites": [
-        "LING___405"
-      ]
-    },
-    "LING___483": {
+    "LING_406": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "LING___487": {
+    "LING_480": {
       "credits": 4.0,
       "prerequisites": [
-        "SPAN___448",
-        "GER___448",
+        "LING_405"
+      ]
+    },
+    "LING_483": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "LING_487": {
+      "credits": 4.0,
+      "prerequisites": [
+        "SPAN_448",
+        "GER__448",
         "FR___448",
-        "SPAN___449",
+        "GER__449",
         "FR___449",
-        "GER___449",
-        "LING___483",
+        "SPAN_449",
+        "LING_483",
         "FR___502",
-        "SPAN___502"
+        "SPAN_502"
       ]
     },
-    "LING___496": {
+    "LING_496": {
       "credits": null,
       "prerequisites": []
     },
-    "LING___506": {
+    "LING_506": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "LING___531": {
+    "LING_531": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "LING___551": {
+    "LING_551": {
       "credits": 4.0,
       "prerequisites": [
-        "LING___480"
+        "LING_480"
       ]
     },
-    "LING___554": {
+    "LING_554": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "LING___556": {
+    "LING_556": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "LING___558": {
+    "LING_558": {
       "credits": 4.0,
       "prerequisites": [
+        "GER__448",
         "FR___448",
-        "SPAN___448",
-        "GER___448",
+        "SPAN_448",
+        "SPAN_449",
+        "GER__449",
         "FR___449",
-        "GER___449",
-        "SPAN___449",
-        "LING___483",
+        "LING_483",
         "CI___483",
-        "LCSL___502"
+        "LCSL_502"
       ]
     },
-    "LING___559": {
+    "LING_559": {
       "credits": 4.0,
       "prerequisites": [
-        "LING___405"
+        "LING_405"
       ]
     },
-    "LING___594": {
+    "LING_594": {
       "credits": 9.0,
       "prerequisites": [
-        "LING___593"
+        "LING_593"
       ]
     },
-    "LING___596": {
+    "LING_596": {
       "credits": null,
       "prerequisites": []
     },
-    "LING___598": {
+    "LING_598": {
       "credits": null,
       "prerequisites": []
     }

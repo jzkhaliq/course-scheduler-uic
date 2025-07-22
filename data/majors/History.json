@@ -3,651 +3,651 @@
   "subject_code": "HIST",
   "min_total_credits": 120,
   "courses": {
-    "HIST___100": {
+    "HIST_100": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "HIST___101": {
+    "HIST_101": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "HIST___103": {
+    "HIST_103": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "HIST___104": {
+    "HIST_104": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "HIST___105": {
+    "HIST_105": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "HIST___106": {
+    "HIST_106": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "HIST___109": {
+    "HIST_109": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "HIST___114": {
+    "HIST_114": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "HIST___117": {
+    "HIST_117": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "HIST___137": {
+    "HIST_137": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "HIST___150": {
+    "HIST_150": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "HIST___170": {
+    "HIST_170": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "HIST___177": {
+    "HIST_177": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "HIST___199": {
+    "HIST_199": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "HIST___200": {
+    "HIST_200": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "HIST___202": {
+    "HIST_202": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "HIST___203": {
+    "HIST_203": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "HIST___204": {
+    "HIST_204": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "HIST___205": {
+    "HIST_205": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "HIST___208": {
+    "HIST_208": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "HIST___209": {
+    "HIST_209": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "HIST___210": {
+    "HIST_210": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "HIST___211": {
+    "HIST_211": {
       "credits": 3.0,
       "prerequisites": [
-        "ENGL___161"
+        "ENGL_161"
       ]
     },
-    "HIST___213": {
+    "HIST_213": {
       "credits": 3.0,
       "prerequisites": [
-        "ENGL___161"
+        "ENGL_161"
       ]
     },
-    "HIST___214": {
+    "HIST_214": {
       "credits": 3.0,
       "prerequisites": [
-        "ENGL___161"
+        "ENGL_161"
       ]
     },
-    "HIST___215": {
+    "HIST_215": {
       "credits": 3.0,
       "prerequisites": [
-        "GLAS___100"
+        "GLAS_100"
       ]
     },
-    "HIST___217": {
+    "HIST_217": {
       "credits": 3.0,
       "prerequisites": [
-        "ENGL___161"
+        "ENGL_161"
       ]
     },
-    "HIST___218": {
+    "HIST_218": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "HIST___219": {
+    "HIST_219": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "HIST___220": {
+    "HIST_220": {
       "credits": 3.0,
       "prerequisites": [
-        "ENGL___161"
+        "ENGL_161"
       ]
     },
-    "HIST___221": {
+    "HIST_221": {
       "credits": 3.0,
       "prerequisites": [
-        "ENGL___161"
+        "ENGL_161"
       ]
     },
-    "HIST___222": {
+    "HIST_222": {
       "credits": 3.0,
       "prerequisites": [
-        "ENGL___161"
+        "ENGL_161"
       ]
     },
-    "HIST___223": {
+    "HIST_223": {
       "credits": 3.0,
       "prerequisites": [
-        "ENGL___161"
+        "ENGL_161"
       ]
     },
-    "HIST___224": {
+    "HIST_224": {
       "credits": 3.0,
       "prerequisites": [
-        "ENGL___161"
+        "ENGL_161"
       ]
     },
-    "HIST___225": {
+    "HIST_225": {
       "credits": 3.0,
       "prerequisites": [
-        "ENGL___161"
+        "ENGL_161"
       ]
     },
-    "HIST___229": {
+    "HIST_229": {
       "credits": 3.0,
       "prerequisites": [
-        "BLST___100",
-        "BLST___101"
+        "BLST_100",
+        "BLST_101"
       ]
     },
-    "HIST___232": {
+    "HIST_232": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "HIST___233": {
+    "HIST_233": {
       "credits": 3.0,
       "prerequisites": [
-        "ENGL___161"
+        "ENGL_161"
       ]
     },
-    "HIST___234": {
+    "HIST_234": {
       "credits": 3.0,
       "prerequisites": [
-        "ENGL___160"
+        "ENGL_160"
       ]
     },
-    "HIST___235": {
+    "HIST_235": {
       "credits": 3.0,
       "prerequisites": [
-        "ENGL___161"
+        "ENGL_161"
       ]
     },
-    "HIST___236": {
+    "HIST_236": {
       "credits": 3.0,
       "prerequisites": [
-        "ENGL___161"
+        "ENGL_161"
       ]
     },
-    "HIST___237": {
+    "HIST_237": {
       "credits": 3.0,
       "prerequisites": [
-        "ENGL___161"
+        "ENGL_161"
       ]
     },
-    "HIST___239": {
+    "HIST_239": {
       "credits": 3.0,
       "prerequisites": [
-        "ENGL___160"
+        "ENGL_160"
       ]
     },
-    "HIST___240": {
+    "HIST_240": {
       "credits": 3.0,
       "prerequisites": [
-        "ENGL___161"
+        "ENGL_161"
       ]
     },
-    "HIST___241": {
+    "HIST_241": {
       "credits": 3.0,
       "prerequisites": [
-        "ENGL___161"
+        "ENGL_161"
       ]
     },
-    "HIST___242": {
+    "HIST_242": {
       "credits": 3.0,
       "prerequisites": [
-        "ENGL___161"
+        "ENGL_161"
       ]
     },
-    "HIST___243": {
+    "HIST_243": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "HIST___245": {
+    "HIST_245": {
       "credits": 3.0,
       "prerequisites": [
-        "ENGL___161"
+        "ENGL_161"
       ]
     },
-    "HIST___246": {
+    "HIST_246": {
       "credits": 3.0,
       "prerequisites": [
-        "ENGL___161"
+        "ENGL_161"
       ]
     },
-    "HIST___247": {
+    "HIST_247": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "HIST___248": {
+    "HIST_248": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "HIST___249": {
+    "HIST_249": {
       "credits": 3.0,
       "prerequisites": [
-        "ENGL___161"
+        "ENGL_161"
       ]
     },
-    "HIST___253": {
+    "HIST_253": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "HIST___255": {
+    "HIST_255": {
       "credits": 3.0,
       "prerequisites": [
-        "ENGL___161"
+        "ENGL_161"
       ]
     },
-    "HIST___257": {
+    "HIST_257": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "HIST___258": {
+    "HIST_258": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "HIST___259": {
+    "HIST_259": {
       "credits": 3.0,
       "prerequisites": [
-        "ENGL___161"
+        "ENGL_161"
       ]
     },
-    "HIST___261": {
+    "HIST_261": {
       "credits": 3.0,
       "prerequisites": [
-        "ENGL___161"
+        "ENGL_161"
       ]
     },
-    "HIST___262": {
+    "HIST_262": {
       "credits": 3.0,
       "prerequisites": [
-        "ENGL___161"
+        "ENGL_161"
       ]
     },
-    "HIST___264": {
+    "HIST_264": {
       "credits": 3.0,
       "prerequisites": [
-        "ENGL___161"
+        "ENGL_161"
       ]
     },
-    "HIST___266": {
+    "HIST_266": {
       "credits": 3.0,
       "prerequisites": [
-        "ENGL___161"
+        "ENGL_161"
       ]
     },
-    "HIST___267": {
+    "HIST_267": {
       "credits": 3.0,
       "prerequisites": [
-        "ENGL___161"
+        "ENGL_161"
       ]
     },
-    "HIST___268": {
+    "HIST_268": {
       "credits": 3.0,
       "prerequisites": [
-        "ENGL___161"
+        "ENGL_161"
       ]
     },
-    "HIST___271": {
+    "HIST_271": {
       "credits": 3.0,
       "prerequisites": [
-        "ENGL___161"
+        "ENGL_161"
       ]
     },
-    "HIST___272": {
+    "HIST_272": {
       "credits": 3.0,
       "prerequisites": [
-        "ENGL___161"
+        "ENGL_161"
       ]
     },
-    "HIST___275": {
+    "HIST_275": {
       "credits": 3.0,
       "prerequisites": [
-        "ENGL___161"
+        "ENGL_161"
       ]
     },
-    "HIST___276": {
+    "HIST_276": {
       "credits": 3.0,
       "prerequisites": [
-        "ENGL___161",
-        "GLAS___276"
+        "ENGL_161",
+        "GLAS_276"
       ]
     },
-    "HIST___277": {
+    "HIST_277": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "HIST___278": {
+    "HIST_278": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "HIST___281": {
+    "HIST_281": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "HIST___282": {
+    "HIST_282": {
       "credits": 3.0,
       "prerequisites": [
-        "ENGL___160"
+        "ENGL_160"
       ]
     },
-    "HIST___285": {
+    "HIST_285": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "HIST___288": {
+    "HIST_288": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "HIST___289": {
+    "HIST_289": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "HIST___290": {
+    "HIST_290": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "HIST___292": {
+    "HIST_292": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "HIST___296": {
+    "HIST_296": {
       "credits": 3.0,
       "prerequisites": [
-        "ENGL___161"
+        "ENGL_161"
       ]
     },
-    "HIST___300": {
+    "HIST_300": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "HIST___320": {
+    "HIST_320": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "HIST___398": {
+    "HIST_398": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "HIST___399": {
+    "HIST_399": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "HIST___400": {
+    "HIST_400": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "HIST___403": {
+    "HIST_403": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "HIST___405": {
+    "HIST_405": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "HIST___407": {
+    "HIST_407": {
       "credits": 4.0,
       "prerequisites": [
         "CL___101",
         "CL___103",
         "AH___110",
-        "HIST___203",
         "CL___203",
-        "CL___204",
+        "HIST_203",
         "AH___204",
-        "CL___205",
+        "CL___204",
         "AH___205",
-        "HIST___205"
+        "HIST_205",
+        "CL___205"
       ]
     },
-    "HIST___408": {
+    "HIST_408": {
       "credits": 4.0,
       "prerequisites": [
         "CL___202",
         "CL___251",
         "CL___252",
-        "CL___405",
-        "HIST___405"
+        "HIST_405",
+        "CL___405"
       ]
     },
-    "HIST___409": {
+    "HIST_409": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "HIST___410": {
+    "HIST_410": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "HIST___418": {
+    "HIST_418": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "HIST___420": {
+    "HIST_420": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "HIST___421": {
+    "HIST_421": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "HIST___424": {
+    "HIST_424": {
       "credits": 4.0,
       "prerequisites": [
         "FR___464",
         "FR___464"
       ]
     },
-    "HIST___433": {
+    "HIST_433": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "HIST___435": {
+    "HIST_435": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "HIST___437": {
+    "HIST_437": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "HIST___438": {
+    "HIST_438": {
       "credits": 4.0,
       "prerequisites": [
-        "GWS___438",
-        "GLAS___438"
+        "GWS__438",
+        "GLAS_438"
       ]
     },
-    "HIST___440": {
+    "HIST_440": {
       "credits": 3.0,
       "prerequisites": [
-        "HIST___300"
+        "HIST_300"
       ]
     },
-    "HIST___441": {
+    "HIST_441": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "HIST___453": {
+    "HIST_453": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "HIST___454": {
+    "HIST_454": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "HIST___457": {
+    "HIST_457": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "HIST___461": {
+    "HIST_461": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "HIST___462": {
+    "HIST_462": {
       "credits": 4.0,
       "prerequisites": [
-        "GWS___101",
-        "GWS___102",
-        "GWS___203",
-        "GWS___214"
+        "GWS__101",
+        "GWS__102",
+        "GWS__203",
+        "GWS__214"
       ]
     },
-    "HIST___465": {
+    "HIST_465": {
       "credits": 4.0,
       "prerequisites": [
-        "GLAS___100",
-        "HIST___161",
-        "HIST___264"
+        "GLAS_100",
+        "HIST_161",
+        "HIST_264"
       ]
     },
-    "HIST___473": {
+    "HIST_473": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "HIST___475": {
+    "HIST_475": {
       "credits": 6.0,
       "prerequisites": []
     },
-    "HIST___476": {
+    "HIST_476": {
       "credits": 6.0,
       "prerequisites": [
-        "HIST___475"
+        "HIST_475"
       ]
     },
-    "HIST___477": {
+    "HIST_477": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "HIST___479": {
+    "HIST_479": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "HIST___481": {
+    "HIST_481": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "HIST___482": {
+    "HIST_482": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "HIST___484": {
+    "HIST_484": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "HIST___485": {
+    "HIST_485": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "HIST___489": {
+    "HIST_489": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "HIST___492": {
+    "HIST_492": {
       "credits": 4.0,
       "prerequisites": [
-        "COMM___494"
+        "COMM_494"
       ]
     },
-    "HIST___494": {
+    "HIST_494": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "HIST___495": {
+    "HIST_495": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "HIST___496": {
+    "HIST_496": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "HIST___497": {
+    "HIST_497": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "HIST___499": {
+    "HIST_499": {
       "credits": null,
       "prerequisites": []
     },
-    "HIST___500": {
+    "HIST_500": {
       "credits": null,
       "prerequisites": []
     },
-    "HIST___501": {
+    "HIST_501": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "HIST___503": {
+    "HIST_503": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "HIST___511": {
+    "HIST_511": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "HIST___512": {
+    "HIST_512": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "HIST___551": {
+    "HIST_551": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "HIST___552": {
+    "HIST_552": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "HIST___591": {
+    "HIST_591": {
       "credits": null,
       "prerequisites": []
     },
-    "HIST___592": {
+    "HIST_592": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "HIST___593": {
+    "HIST_593": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "HIST___594": {
+    "HIST_594": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "HIST___596": {
+    "HIST_596": {
       "credits": null,
       "prerequisites": []
     },
-    "HIST___599": {
+    "HIST_599": {
       "credits": null,
       "prerequisites": []
     }

@@ -3,315 +3,315 @@
   "subject_code": "DES",
   "min_total_credits": 120,
   "courses": {
-    "DES___110": {
+    "DES__110": {
       "credits": 1.0,
       "prerequisites": []
     },
-    "DES___120": {
+    "DES__120": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "DES___130": {
+    "DES__130": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "DES___140": {
+    "DES__140": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "DES___150": {
+    "DES__150": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "DES___160": {
+    "DES__160": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "DES___170": {
+    "DES__170": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "DES___208": {
+    "DES__208": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "DES___209": {
+    "DES__209": {
       "credits": 4.0,
       "prerequisites": [
-        "DES___208"
+        "DES__208"
       ]
     },
-    "DES___220": {
+    "DES__220": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "DES___222": {
+    "DES__222": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "DES___230": {
+    "DES__230": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "DES___231": {
+    "DES__231": {
       "credits": 4.0,
       "prerequisites": [
-        "DES___230"
+        "DES__230"
       ]
     },
-    "DES___235": {
+    "DES__235": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "DES___236": {
+    "DES__236": {
       "credits": 3.0,
       "prerequisites": [
-        "DES___235",
+        "DES__235",
         "AH___235"
       ]
     },
-    "DES___240": {
+    "DES__240": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "DES___241": {
+    "DES__241": {
       "credits": 4.0,
       "prerequisites": [
-        "DES___240"
+        "DES__240"
       ]
     },
-    "DES___250": {
+    "DES__250": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "DES___251": {
+    "DES__251": {
       "credits": 4.0,
       "prerequisites": [
-        "DES___250"
+        "DES__250"
       ]
     },
-    "DES___255": {
+    "DES__255": {
       "credits": 4.0,
       "prerequisites": [
-        "DES___208",
+        "DES__208",
         "CS___211"
       ]
     },
-    "DES___256": {
+    "DES__256": {
       "credits": 4.0,
       "prerequisites": [
-        "DES___209",
+        "DES__209",
         "CS___251"
       ]
     },
-    "DES___308": {
+    "DES__308": {
       "credits": 4.0,
       "prerequisites": [
-        "DES___209"
+        "DES__209"
       ]
     },
-    "DES___309": {
+    "DES__309": {
       "credits": 4.0,
       "prerequisites": [
-        "DES___308"
+        "DES__308"
       ]
     },
-    "DES___322": {
+    "DES__322": {
       "credits": 4.0,
       "prerequisites": [
-        "DES___222"
+        "DES__222"
       ]
     },
-    "DES___326": {
+    "DES__326": {
       "credits": 4.0,
       "prerequisites": [
-        "DES___330"
+        "DES__330"
       ]
     },
-    "DES___330": {
+    "DES__330": {
       "credits": 4.0,
       "prerequisites": [
-        "DES___231"
+        "DES__231"
       ]
     },
-    "DES___331": {
+    "DES__331": {
       "credits": 4.0,
       "prerequisites": [
-        "DES___330"
+        "DES__330"
       ]
     },
-    "DES___350": {
+    "DES__350": {
       "credits": 4.0,
       "prerequisites": [
-        "DES___251"
+        "DES__251"
       ]
     },
-    "DES___355": {
+    "DES__355": {
       "credits": 3.0,
       "prerequisites": [
         "CS___261",
-        "DES___357"
+        "DES__357"
       ]
     },
-    "DES___357": {
+    "DES__357": {
       "credits": 4.0,
       "prerequisites": [
         "CS___261",
-        "DES___355",
-        "DES___355"
+        "DES__355",
+        "DES__355"
       ]
     },
-    "DES___410": {
+    "DES__410": {
       "credits": 1.0,
       "prerequisites": [
-        "DES___319",
-        "DES___322"
+        "DES__319",
+        "DES__322"
       ]
     },
-    "DES___411": {
+    "DES__411": {
       "credits": 1.0,
       "prerequisites": [
-        "DES___410"
+        "DES__410"
       ]
     },
-    "DES___420": {
+    "DES__420": {
       "credits": null,
       "prerequisites": []
     },
-    "DES___421": {
+    "DES__421": {
       "credits": 4.0,
       "prerequisites": [
-        "DES___420"
+        "DES__420"
       ]
     },
-    "DES___426": {
+    "DES__426": {
       "credits": 4.0,
       "prerequisites": [
         "CS___251"
       ]
     },
-    "DES___427": {
+    "DES__427": {
       "credits": 4.0,
       "prerequisites": [
         "CS___251"
       ]
     },
-    "DES___450": {
+    "DES__450": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "DES___458": {
+    "DES__458": {
       "credits": 4.0,
       "prerequisites": [
-        "DES___357"
+        "DES__357"
       ]
     },
-    "DES___470": {
+    "DES__470": {
       "credits": 4.0,
       "prerequisites": [
-        "DES___236",
-        "DES___331"
+        "DES__236",
+        "DES__331"
       ]
     },
-    "DES___471": {
+    "DES__471": {
       "credits": 4.0,
       "prerequisites": [
-        "DES___470"
+        "DES__470"
       ]
     },
-    "DES___480": {
+    "DES__480": {
       "credits": 4.0,
       "prerequisites": [
-        "DES___236",
-        "DES___319"
+        "DES__236",
+        "DES__319"
       ]
     },
-    "DES___481": {
+    "DES__481": {
       "credits": 4.0,
       "prerequisites": [
-        "DES___480"
+        "DES__480"
       ]
     },
-    "DES___499": {
+    "DES__499": {
       "credits": 1.0,
       "prerequisites": []
     },
-    "DES___500": {
+    "DES__500": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "DES___501": {
+    "DES__501": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "DES___502": {
+    "DES__502": {
       "credits": null,
       "prerequisites": []
     },
-    "DES___510": {
+    "DES__510": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "DES___511": {
+    "DES__511": {
       "credits": 4.0,
       "prerequisites": [
-        "DES___501"
+        "DES__501"
       ]
     },
-    "DES___512": {
+    "DES__512": {
       "credits": 4.0,
       "prerequisites": [
-        "DES___501",
-        "DES___510"
+        "DES__501",
+        "DES__510"
       ]
     },
-    "DES___520": {
+    "DES__520": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "DES___531": {
+    "DES__531": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "DES___532": {
+    "DES__532": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "DES___540": {
+    "DES__540": {
       "credits": 4.0,
       "prerequisites": [
-        "DES___502",
-        "DES___511"
+        "DES__502",
+        "DES__511"
       ]
     },
-    "DES___541": {
+    "DES__541": {
       "credits": 4.0,
       "prerequisites": [
-        "DES___502",
-        "DES___511"
+        "DES__502",
+        "DES__511"
       ]
     },
-    "DES___542": {
+    "DES__542": {
       "credits": 2.0,
       "prerequisites": [
-        "DES___540"
+        "DES__540"
       ]
     },
-    "DES___550": {
+    "DES__550": {
       "credits": 4.0,
       "prerequisites": [
-        "DES___501",
-        "DES___531"
+        "DES__501",
+        "DES__531"
       ]
     },
-    "DES___551": {
+    "DES__551": {
       "credits": 4.0,
       "prerequisites": [
-        "DES___502",
-        "DES___550"
+        "DES__502",
+        "DES__550"
       ]
     },
-    "DES___597": {
+    "DES__597": {
       "credits": null,
       "prerequisites": []
     }

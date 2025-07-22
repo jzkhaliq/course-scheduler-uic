@@ -3,132 +3,132 @@
   "subject_code": "ENTR",
   "min_total_credits": 120,
   "courses": {
-    "ENTR___200": {
+    "ENTR_200": {
       "credits": 3.0,
       "prerequisites": [
-        "ENGL___161"
+        "ENGL_161"
       ]
     },
-    "ENTR___310": {
+    "ENTR_310": {
       "credits": 3.0,
       "prerequisites": [
-        "ENGL___161",
-        "ENGL___161",
-        "ENTR___200",
+        "ENGL_161",
+        "ENGL_161",
+        "ENTR_200",
         "BA___200"
       ]
     },
-    "ENTR___320": {
+    "ENTR_320": {
       "credits": 3.0,
       "prerequisites": [
-        "ENTR___310"
+        "ENTR_310"
       ]
     },
-    "ENTR___360": {
+    "ENTR_360": {
       "credits": 3.0,
       "prerequisites": [
-        "IDS___200",
+        "IDS__200",
         "BA___200",
-        "ACTG___210",
-        "IDS___270",
-        "MGMT___340",
-        "MGMT___355"
+        "ACTG_210",
+        "IDS__270",
+        "MGMT_340",
+        "MGMT_355"
       ]
     },
-    "ENTR___430": {
+    "ENTR_430": {
       "credits": 3.0,
       "prerequisites": [
-        "ENTR___310"
+        "ENTR_310"
       ]
     },
-    "ENTR___435": {
+    "ENTR_435": {
       "credits": 3.0,
       "prerequisites": [
-        "ENTR___310"
+        "ENTR_310"
       ]
     },
-    "ENTR___444": {
+    "ENTR_444": {
       "credits": 3.0,
       "prerequisites": [
-        "ENTR___310"
+        "ENTR_310"
       ]
     },
-    "ENTR___445": {
+    "ENTR_445": {
       "credits": 3.0,
       "prerequisites": [
-        "ENTR___310"
+        "ENTR_310"
       ]
     },
-    "ENTR___454": {
+    "ENTR_454": {
       "credits": 3.0,
       "prerequisites": [
-        "ENTR___310"
+        "ENTR_310"
       ]
     },
-    "ENTR___464": {
+    "ENTR_464": {
       "credits": 3.0,
       "prerequisites": [
-        "ENTR___310"
+        "ENTR_310"
       ]
     },
-    "ENTR___494": {
+    "ENTR_494": {
       "credits": null,
       "prerequisites": [
-        "ENTR___310"
+        "ENTR_310"
       ]
     },
-    "ENTR___499": {
+    "ENTR_499": {
       "credits": null,
       "prerequisites": []
     },
-    "ENTR___502": {
+    "ENTR_502": {
       "credits": 4.0,
       "prerequisites": [
-        "ACTG___500",
-        "MKTG___500"
+        "ACTG_500",
+        "MKTG_500"
       ]
     },
-    "ENTR___515": {
+    "ENTR_515": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "ENTR___523": {
+    "ENTR_523": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "ENTR___541": {
+    "ENTR_541": {
       "credits": 1.0,
       "prerequisites": [
-        "ENTR___523"
+        "ENTR_523"
       ]
     },
-    "ENTR___555": {
+    "ENTR_555": {
       "credits": 4.0,
       "prerequisites": [
-        "ENTR___554"
+        "ENTR_554"
       ]
     },
-    "ENTR___559": {
+    "ENTR_559": {
       "credits": 4.0,
       "prerequisites": [
-        "ENTR___502"
+        "ENTR_502"
       ]
     },
-    "ENTR___565": {
+    "ENTR_565": {
       "credits": 2.0,
       "prerequisites": []
     },
-    "ENTR___566": {
+    "ENTR_566": {
       "credits": 2.0,
       "prerequisites": []
     },
-    "ENTR___594": {
+    "ENTR_594": {
       "credits": 4.0,
       "prerequisites": [
-        "ENTR___502"
+        "ENTR_502"
       ]
     },
-    "ENTR___596": {
+    "ENTR_596": {
       "credits": null,
       "prerequisites": []
     }

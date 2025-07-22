@@ -3,296 +3,296 @@
   "subject_code": "CLJ",
   "min_total_credits": 120,
   "courses": {
-    "CLJ___101": {
+    "CLJ__101": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "CLJ___102": {
+    "CLJ__102": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "CLJ___110": {
+    "CLJ__110": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "CLJ___114": {
+    "CLJ__114": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "CLJ___120": {
+    "CLJ__120": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "CLJ___121": {
+    "CLJ__121": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "CLJ___122": {
+    "CLJ__122": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "CLJ___200": {
+    "CLJ__200": {
       "credits": 3.0,
       "prerequisites": [
-        "CLJ___101"
+        "CLJ__101"
       ]
     },
-    "CLJ___210": {
+    "CLJ__210": {
       "credits": 3.0,
       "prerequisites": [
-        "CLJ___101"
+        "CLJ__101"
       ]
     },
-    "CLJ___220": {
+    "CLJ__220": {
       "credits": 3.0,
       "prerequisites": [
-        "CLJ___101"
+        "CLJ__101"
       ]
     },
-    "CLJ___261": {
+    "CLJ__261": {
       "credits": 3.0,
       "prerequisites": [
-        "CLJ___101"
+        "CLJ__101"
       ]
     },
-    "CLJ___262": {
+    "CLJ__262": {
       "credits": 3.0,
       "prerequisites": [
-        "MATH___090",
-        "MATH___105"
+        "MATH_090",
+        "MATH_105"
       ]
     },
-    "CLJ___265": {
+    "CLJ__265": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "CLJ___271": {
+    "CLJ__271": {
       "credits": 3.0,
       "prerequisites": [
-        "SOC___100",
-        "BLST___100",
-        "CLJ___101"
+        "BLST_100",
+        "SOC__100",
+        "CLJ__101"
       ]
     },
-    "CLJ___303": {
+    "CLJ__303": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "CLJ___311": {
+    "CLJ__311": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "CLJ___321": {
+    "CLJ__321": {
       "credits": 3.0,
       "prerequisites": [
-        "CLJ___101"
+        "CLJ__101"
       ]
     },
-    "CLJ___345": {
+    "CLJ__345": {
       "credits": 3.0,
       "prerequisites": [
-        "CLJ___101"
+        "CLJ__101"
       ]
     },
-    "CLJ___350": {
+    "CLJ__350": {
       "credits": 3.0,
       "prerequisites": [
-        "CLJ___101"
+        "CLJ__101"
       ]
     },
-    "CLJ___355": {
+    "CLJ__355": {
       "credits": 3.0,
       "prerequisites": [
-        "CLJ___101"
+        "CLJ__101"
       ]
     },
-    "CLJ___356": {
+    "CLJ__356": {
       "credits": 3.0,
       "prerequisites": [
-        "CLJ___101"
+        "CLJ__101"
       ]
     },
-    "CLJ___361": {
+    "CLJ__361": {
       "credits": 3.0,
       "prerequisites": [
-        "CLJ___101"
+        "CLJ__101"
       ]
     },
-    "CLJ___363": {
+    "CLJ__363": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "CLJ___374": {
+    "CLJ__374": {
       "credits": 3.0,
       "prerequisites": [
-        "CLJ___101",
-        "CLJ___373"
+        "CLJ__101",
+        "CLJ__373"
       ]
     },
-    "CLJ___375": {
+    "CLJ__375": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "CLJ___394": {
+    "CLJ__394": {
       "credits": 3.0,
       "prerequisites": [
-        "CLJ___101"
+        "CLJ__101"
       ]
     },
-    "CLJ___395": {
+    "CLJ__395": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "CLJ___399": {
+    "CLJ__399": {
       "credits": null,
       "prerequisites": []
     },
-    "CLJ___402": {
+    "CLJ__402": {
       "credits": 4.0,
       "prerequisites": [
-        "CLJ___261",
-        "CLJ___350"
+        "CLJ__261",
+        "CLJ__350"
       ]
     },
-    "CLJ___405": {
+    "CLJ__405": {
       "credits": 4.0,
       "prerequisites": [
-        "CLJ___101"
+        "CLJ__101"
       ]
     },
-    "CLJ___422": {
+    "CLJ__422": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "CLJ___423": {
+    "CLJ__423": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "CLJ___424": {
+    "CLJ__424": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "CLJ___425": {
+    "CLJ__425": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "CLJ___430": {
+    "CLJ__430": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "CLJ___435": {
+    "CLJ__435": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "CLJ___442": {
+    "CLJ__442": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "CLJ___450": {
+    "CLJ__450": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "CLJ___491": {
+    "CLJ__491": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "CLJ___492": {
+    "CLJ__492": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "CLJ___493": {
+    "CLJ__493": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "CLJ___500": {
+    "CLJ__500": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "CLJ___501": {
+    "CLJ__501": {
       "credits": 1.0,
       "prerequisites": []
     },
-    "CLJ___520": {
+    "CLJ__520": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "CLJ___540": {
+    "CLJ__540": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "CLJ___542": {
+    "CLJ__542": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "CLJ___546": {
+    "CLJ__546": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "CLJ___547": {
+    "CLJ__547": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "CLJ___548": {
+    "CLJ__548": {
       "credits": 4.0,
       "prerequisites": [
-        "CLJ___500"
+        "CLJ__500"
       ]
     },
-    "CLJ___560": {
+    "CLJ__560": {
       "credits": 4.0,
       "prerequisites": [
-        "CLJ___262"
+        "CLJ__262"
       ]
     },
-    "CLJ___561": {
+    "CLJ__561": {
       "credits": 4.0,
       "prerequisites": [
-        "CLJ___262"
+        "CLJ__262"
       ]
     },
-    "CLJ___562": {
+    "CLJ__562": {
       "credits": 4.0,
       "prerequisites": [
-        "CLJ___262"
+        "CLJ__262"
       ]
     },
-    "CLJ___564": {
+    "CLJ__564": {
       "credits": 4.0,
       "prerequisites": [
-        "CLJ___562"
+        "CLJ__562"
       ]
     },
-    "CLJ___570": {
+    "CLJ__570": {
       "credits": 4.0,
       "prerequisites": [
-        "CLJ___560"
+        "CLJ__560"
       ]
     },
-    "CLJ___580": {
+    "CLJ__580": {
       "credits": 2.0,
       "prerequisites": []
     },
-    "CLJ___592": {
+    "CLJ__592": {
       "credits": null,
       "prerequisites": []
     },
-    "CLJ___594": {
+    "CLJ__594": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "CLJ___596": {
+    "CLJ__596": {
       "credits": null,
       "prerequisites": []
     },
-    "CLJ___597": {
+    "CLJ__597": {
       "credits": null,
       "prerequisites": []
     },
-    "CLJ___598": {
+    "CLJ__598": {
       "credits": null,
       "prerequisites": []
     },
-    "CLJ___599": {
+    "CLJ__599": {
       "credits": null,
       "prerequisites": []
     }

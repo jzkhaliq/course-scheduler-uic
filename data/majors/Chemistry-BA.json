@@ -3,522 +3,522 @@
   "subject_code": "CHEM",
   "min_total_credits": 120,
   "courses": {
-    "CHEM___100": {
+    "CHEM_100": {
       "credits": 5.0,
       "prerequisites": []
     },
-    "CHEM___101": {
+    "CHEM_101": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "CHEM___105": {
+    "CHEM_105": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "CHEM___110": {
+    "CHEM_110": {
       "credits": 1.0,
       "prerequisites": []
     },
-    "CHEM___115": {
+    "CHEM_115": {
       "credits": 5.0,
       "prerequisites": [
-        "CHEM___101"
+        "CHEM_101"
       ]
     },
-    "CHEM___116": {
+    "CHEM_116": {
       "credits": 5.0,
       "prerequisites": []
     },
-    "CHEM___118": {
+    "CHEM_118": {
       "credits": 5.0,
       "prerequisites": [
-        "CHEM___116"
+        "CHEM_116"
       ]
     },
-    "CHEM___122": {
+    "CHEM_122": {
       "credits": 3.0,
       "prerequisites": [
-        "CHEM___101"
+        "CHEM_101"
       ]
     },
-    "CHEM___123": {
+    "CHEM_123": {
       "credits": 2.0,
       "prerequisites": [
-        "CHEM___101",
-        "CHEM___122"
+        "CHEM_101",
+        "CHEM_122"
       ]
     },
-    "CHEM___124": {
+    "CHEM_124": {
       "credits": 3.0,
       "prerequisites": [
-        "CHEM___115",
-        "CHEM___116",
-        "CHEM___122",
-        "CHEM___123"
+        "CHEM_115",
+        "CHEM_116",
+        "CHEM_122",
+        "CHEM_123"
       ]
     },
-    "CHEM___125": {
+    "CHEM_125": {
       "credits": 2.0,
       "prerequisites": [
-        "CHEM___115",
-        "CHEM___116",
-        "CHEM___122",
-        "CHEM___123",
-        "CHEM___124"
+        "CHEM_115",
+        "CHEM_116",
+        "CHEM_122",
+        "CHEM_123",
+        "CHEM_124"
       ]
     },
-    "CHEM___130": {
+    "CHEM_130": {
       "credits": 5.0,
       "prerequisites": [
-        "CHEM___115",
-        "CHEM___116",
-        "CHEM___118",
-        "CHEM___122",
-        "CHEM___123",
-        "CHEM___124",
-        "CHEM___125"
+        "CHEM_115",
+        "CHEM_116",
+        "CHEM_118",
+        "CHEM_122",
+        "CHEM_123",
+        "CHEM_124",
+        "CHEM_125"
       ]
     },
-    "CHEM___222": {
+    "CHEM_222": {
       "credits": 4.0,
       "prerequisites": [
-        "CHEM___114",
-        "CHEM___118",
-        "CHEM___124",
-        "CHEM___125"
+        "CHEM_114",
+        "CHEM_118",
+        "CHEM_124",
+        "CHEM_125"
       ]
     },
-    "CHEM___230": {
+    "CHEM_230": {
       "credits": 4.0,
       "prerequisites": [
-        "CHEM___118",
-        "CHEM___124",
-        "CHEM___125",
-        "CHEM___130"
+        "CHEM_118",
+        "CHEM_124",
+        "CHEM_125",
+        "CHEM_130"
       ]
     },
-    "CHEM___232": {
+    "CHEM_232": {
       "credits": 3.0,
       "prerequisites": [
-        "CHEM___116",
-        "CHEM___118",
-        "CHEM___122",
-        "CHEM___123",
-        "CHEM___233"
+        "CHEM_116",
+        "CHEM_118",
+        "CHEM_122",
+        "CHEM_123",
+        "CHEM_233"
       ]
     },
-    "CHEM___233": {
+    "CHEM_233": {
       "credits": 2.0,
       "prerequisites": [
-        "CHEM___116",
-        "CHEM___118",
-        "CHEM___122",
-        "CHEM___123",
-        "CHEM___230",
-        "CHEM___232"
+        "CHEM_116",
+        "CHEM_118",
+        "CHEM_122",
+        "CHEM_123",
+        "CHEM_230",
+        "CHEM_232"
       ]
     },
-    "CHEM___234": {
+    "CHEM_234": {
       "credits": 3.0,
       "prerequisites": [
-        "CHEM___118",
-        "CHEM___124",
-        "CHEM___125",
-        "CHEM___232"
+        "CHEM_118",
+        "CHEM_124",
+        "CHEM_125",
+        "CHEM_232"
       ]
     },
-    "CHEM___235": {
+    "CHEM_235": {
       "credits": 2.0,
       "prerequisites": [
-        "CHEM___233",
-        "CHEM___234"
+        "CHEM_233",
+        "CHEM_234"
       ]
     },
-    "CHEM___240": {
+    "CHEM_240": {
       "credits": 2.0,
       "prerequisites": []
     },
-    "CHEM___314": {
+    "CHEM_314": {
       "credits": 4.0,
       "prerequisites": [
-        "CHEM___232",
-        "CHEM___233"
+        "CHEM_232",
+        "CHEM_233"
       ]
     },
-    "CHEM___340": {
+    "CHEM_340": {
       "credits": 3.0,
       "prerequisites": [
-        "CHEM___118",
-        "PHYS___132",
-        "PHYS___142",
-        "MATH___181",
-        "CHEM___222"
+        "CHEM_118",
+        "PHYS_132",
+        "PHYS_142",
+        "MATH_181",
+        "CHEM_222"
       ]
     },
-    "CHEM___342": {
+    "CHEM_342": {
       "credits": 3.0,
       "prerequisites": [
-        "CHEM___118",
-        "PHYS___142",
-        "MATH___181",
-        "MATH___210",
-        "CHEM___222"
+        "CHEM_118",
+        "PHYS_142",
+        "MATH_181",
+        "MATH_210",
+        "CHEM_222"
       ]
     },
-    "CHEM___343": {
+    "CHEM_343": {
       "credits": 3.0,
       "prerequisites": [
-        "CHEM___340",
-        "CHEM___342"
+        "CHEM_340",
+        "CHEM_342"
       ]
     },
-    "CHEM___344": {
+    "CHEM_344": {
       "credits": 3.0,
       "prerequisites": [
-        "PHYS___132",
-        "PHYS___142",
-        "MATH___181",
-        "CHEM___340",
-        "CHEM___342"
+        "PHYS_132",
+        "PHYS_142",
+        "MATH_181",
+        "CHEM_340",
+        "CHEM_342"
       ]
     },
-    "CHEM___346": {
+    "CHEM_346": {
       "credits": 3.0,
       "prerequisites": [
-        "MATH___210",
-        "CHEM___342"
+        "MATH_210",
+        "CHEM_342"
       ]
     },
-    "CHEM___352": {
+    "CHEM_352": {
       "credits": 3.0,
       "prerequisites": [
-        "BIOS___100",
-        "BIOS___101",
-        "BIOS___110",
-        "BIOS___120",
-        "CHEM___230",
-        "CHEM___232"
+        "BIOS_100",
+        "BIOS_101",
+        "BIOS_110",
+        "BIOS_120",
+        "CHEM_230",
+        "CHEM_232"
       ]
     },
-    "CHEM___402": {
+    "CHEM_402": {
       "credits": 2.0,
       "prerequisites": [
-        "CHEM___234"
+        "CHEM_234"
       ]
     },
-    "CHEM___414": {
+    "CHEM_414": {
       "credits": 3.0,
       "prerequisites": [
-        "CHEM___314",
-        "CHEM___340",
-        "CHEM___342"
+        "CHEM_314",
+        "CHEM_340",
+        "CHEM_342"
       ]
     },
-    "CHEM___415": {
+    "CHEM_415": {
       "credits": null,
       "prerequisites": [
-        "CHEM___314"
+        "CHEM_314"
       ]
     },
-    "CHEM___421": {
+    "CHEM_421": {
       "credits": null,
       "prerequisites": [
-        "CHEM___118",
-        "CHEM___222"
+        "CHEM_118",
+        "CHEM_222"
       ]
     },
-    "CHEM___432": {
+    "CHEM_432": {
       "credits": 4.0,
       "prerequisites": [
-        "CHEM___235"
+        "CHEM_235"
       ]
     },
-    "CHEM___444": {
+    "CHEM_444": {
       "credits": 4.0,
       "prerequisites": [
-        "CHEM___344",
-        "CHEM___346"
+        "CHEM_344",
+        "CHEM_346"
       ]
     },
-    "CHEM___452": {
+    "CHEM_452": {
       "credits": 4.0,
       "prerequisites": [
-        "CHEM___230",
-        "CHEM___234"
+        "CHEM_230",
+        "CHEM_234"
       ]
     },
-    "CHEM___454": {
+    "CHEM_454": {
       "credits": 4.0,
       "prerequisites": [
-        "CHEM___452",
-        "BIOS___452"
+        "BIOS_452",
+        "CHEM_452"
       ]
     },
-    "CHEM___455": {
+    "CHEM_455": {
       "credits": 3.0,
       "prerequisites": [
-        "CHEM___118",
-        "CHEM___222",
-        "BIOS___452",
-        "CHEM___452"
+        "CHEM_118",
+        "CHEM_222",
+        "BIOS_452",
+        "CHEM_452"
       ]
     },
-    "CHEM___458": {
+    "CHEM_458": {
       "credits": 4.0,
       "prerequisites": [
-        "BIOS___352",
-        "CHEM___352",
-        "BIOS___452",
-        "CHEM___452"
+        "BIOS_352",
+        "CHEM_352",
+        "BIOS_452",
+        "CHEM_452"
       ]
     },
-    "CHEM___470": {
+    "CHEM_470": {
       "credits": 6.0,
       "prerequisites": []
     },
-    "CHEM___471": {
+    "CHEM_471": {
       "credits": 6.0,
       "prerequisites": [
-        "CHEM___470"
+        "CHEM_470"
       ]
     },
-    "CHEM___472": {
+    "CHEM_472": {
       "credits": 3.0,
       "prerequisites": [
         "ED___210"
       ]
     },
-    "CHEM___475": {
+    "CHEM_475": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "CHEM___480": {
+    "CHEM_480": {
       "credits": 1.0,
       "prerequisites": []
     },
-    "CHEM___488": {
+    "CHEM_488": {
       "credits": 1.0,
       "prerequisites": [
-        "LAS___289"
+        "LAS__289"
       ]
     },
-    "CHEM___492": {
+    "CHEM_492": {
       "credits": null,
       "prerequisites": []
     },
-    "CHEM___494": {
+    "CHEM_494": {
       "credits": null,
       "prerequisites": []
     },
-    "CHEM___499": {
+    "CHEM_499": {
       "credits": 3.0,
       "prerequisites": [
-        "CHEM___314",
-        "CHEM___333"
+        "CHEM_314",
+        "CHEM_333"
       ]
     },
-    "CHEM___500": {
+    "CHEM_500": {
       "credits": 1.0,
       "prerequisites": []
     },
-    "CHEM___501": {
+    "CHEM_501": {
       "credits": 2.0,
       "prerequisites": []
     },
-    "CHEM___510": {
+    "CHEM_510": {
       "credits": 1.0,
       "prerequisites": []
     },
-    "CHEM___514": {
+    "CHEM_514": {
       "credits": 4.0,
       "prerequisites": [
-        "CHEM___416"
+        "CHEM_416"
       ]
     },
-    "CHEM___517": {
+    "CHEM_517": {
       "credits": 4.0,
       "prerequisites": [
-        "CHEM___432",
-        "CHEM___532"
+        "CHEM_432",
+        "CHEM_532"
       ]
     },
-    "CHEM___519": {
+    "CHEM_519": {
       "credits": null,
       "prerequisites": []
     },
-    "CHEM___520": {
+    "CHEM_520": {
       "credits": 1.0,
       "prerequisites": []
     },
-    "CHEM___522": {
+    "CHEM_522": {
       "credits": 4.0,
       "prerequisites": [
-        "CHEM___421"
+        "CHEM_421"
       ]
     },
-    "CHEM___524": {
+    "CHEM_524": {
       "credits": 4.0,
       "prerequisites": [
-        "CHEM___346",
-        "CHEM___421"
+        "CHEM_346",
+        "CHEM_421"
       ]
     },
-    "CHEM___526": {
+    "CHEM_526": {
       "credits": 4.0,
       "prerequisites": [
-        "CHEM___346",
-        "CHEM___421"
+        "CHEM_346",
+        "CHEM_421"
       ]
     },
-    "CHEM___527": {
+    "CHEM_527": {
       "credits": 4.0,
       "prerequisites": [
-        "CHEM___346"
+        "CHEM_346"
       ]
     },
-    "CHEM___528": {
+    "CHEM_528": {
       "credits": 4.0,
       "prerequisites": [
-        "CHEM___421"
+        "CHEM_421"
       ]
     },
-    "CHEM___529": {
+    "CHEM_529": {
       "credits": null,
       "prerequisites": []
     },
-    "CHEM___530": {
+    "CHEM_530": {
       "credits": 1.0,
       "prerequisites": []
     },
-    "CHEM___531": {
+    "CHEM_531": {
       "credits": 4.0,
       "prerequisites": [
-        "CHEM___234"
+        "CHEM_234"
       ]
     },
-    "CHEM___532": {
+    "CHEM_532": {
       "credits": 4.0,
       "prerequisites": [
-        "CHEM___432"
+        "CHEM_432"
       ]
     },
-    "CHEM___533": {
+    "CHEM_533": {
       "credits": 4.0,
       "prerequisites": [
-        "CHEM___532"
+        "CHEM_532"
       ]
     },
-    "CHEM___534": {
+    "CHEM_534": {
       "credits": 4.0,
       "prerequisites": [
-        "CHEM___533"
+        "CHEM_533"
       ]
     },
-    "CHEM___537": {
+    "CHEM_537": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "CHEM___539": {
+    "CHEM_539": {
       "credits": null,
       "prerequisites": [
-        "CHEM___533"
+        "CHEM_533"
       ]
     },
-    "CHEM___540": {
+    "CHEM_540": {
       "credits": 1.0,
       "prerequisites": []
     },
-    "CHEM___541": {
+    "CHEM_541": {
       "credits": 4.0,
       "prerequisites": [
-        "CHEM___340",
-        "CHEM___342",
-        "CHEM___344",
-        "CHEM___346",
-        "CHEM___542"
+        "CHEM_340",
+        "CHEM_342",
+        "CHEM_344",
+        "CHEM_346",
+        "CHEM_542"
       ]
     },
-    "CHEM___542": {
+    "CHEM_542": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "CHEM___548": {
+    "CHEM_548": {
       "credits": 4.0,
       "prerequisites": [
-        "CHEM___542"
+        "CHEM_542"
       ]
     },
-    "CHEM___549": {
+    "CHEM_549": {
       "credits": null,
       "prerequisites": []
     },
-    "CHEM___550": {
+    "CHEM_550": {
       "credits": 1.0,
       "prerequisites": []
     },
-    "CHEM___551": {
+    "CHEM_551": {
       "credits": 4.0,
       "prerequisites": [
-        "CHEM___344",
-        "CHEM___346",
-        "CHEM___454"
+        "CHEM_344",
+        "CHEM_346",
+        "CHEM_454"
       ]
     },
-    "CHEM___552": {
+    "CHEM_552": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "CHEM___555": {
+    "CHEM_555": {
       "credits": 4.0,
       "prerequisites": [
-        "CHEM___454"
+        "CHEM_454"
       ]
     },
-    "CHEM___557": {
+    "CHEM_557": {
       "credits": 4.0,
       "prerequisites": [
-        "CHEM___340",
-        "CHEM___342"
+        "CHEM_340",
+        "CHEM_342"
       ]
     },
-    "CHEM___558": {
+    "CHEM_558": {
       "credits": 4.0,
       "prerequisites": [
-        "CHEM___452"
+        "CHEM_452"
       ]
     },
-    "CHEM___559": {
+    "CHEM_559": {
       "credits": null,
       "prerequisites": [
-        "CHEM___454",
-        "BIOS___454"
+        "CHEM_454",
+        "BIOS_454"
       ]
     },
-    "CHEM___570": {
+    "CHEM_570": {
       "credits": 1.0,
       "prerequisites": []
     },
-    "CHEM___571": {
+    "CHEM_571": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "CHEM___574": {
+    "CHEM_574": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "CHEM___590": {
+    "CHEM_590": {
       "credits": 2.0,
       "prerequisites": []
     },
-    "CHEM___592": {
+    "CHEM_592": {
       "credits": null,
       "prerequisites": []
     },
-    "CHEM___598": {
+    "CHEM_598": {
       "credits": null,
       "prerequisites": []
     },
-    "CHEM___599": {
+    "CHEM_599": {
       "credits": null,
       "prerequisites": []
     }

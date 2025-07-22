@@ -3,365 +3,365 @@
   "subject_code": "NURS",
   "min_total_credits": 120,
   "courses": {
-    "NURS___204": {
+    "NURS_204": {
       "credits": 4.0,
       "prerequisites": [
-        "NURS___212",
-        "NURS___221"
+        "NURS_212",
+        "NURS_221"
       ]
     },
-    "NURS___212": {
+    "NURS_212": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "NURS___221": {
+    "NURS_221": {
       "credits": 6.0,
       "prerequisites": [
-        "NURS___204",
-        "NURS___212",
-        "NURS___223"
+        "NURS_204",
+        "NURS_212",
+        "NURS_223"
       ]
     },
-    "NURS___223": {
+    "NURS_223": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "NURS___232": {
+    "NURS_232": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "NURS___304": {
+    "NURS_304": {
       "credits": 4.0,
       "prerequisites": [
-        "NURS___221",
-        "NURS___254",
-        "NURS___321",
-        "NURS___331",
-        "NURS___341",
-        "NURS___351",
-        "NURS___361",
-        "NURS___371"
+        "NURS_221",
+        "NURS_254",
+        "NURS_321",
+        "NURS_331",
+        "NURS_341",
+        "NURS_351",
+        "NURS_361",
+        "NURS_371"
       ]
     },
-    "NURS___322": {
+    "NURS_322": {
       "credits": 4.0,
       "prerequisites": [
-        "NURS___210",
-        "NURS___242"
+        "NURS_210",
+        "NURS_242"
       ]
     },
-    "NURS___331": {
+    "NURS_331": {
       "credits": 4.0,
       "prerequisites": [
-        "NURS___212",
-        "NURS___233",
-        "NURS___254",
-        "NURS___304",
-        "NURS___361",
-        "NURS___371"
+        "NURS_212",
+        "NURS_233",
+        "NURS_254",
+        "NURS_304",
+        "NURS_361",
+        "NURS_371"
       ]
     },
-    "NURS___341": {
+    "NURS_341": {
       "credits": 4.0,
       "prerequisites": [
-        "NURS___212",
-        "NURS___221",
-        "NURS___233",
-        "NURS___254",
-        "NURS___304",
-        "NURS___361",
-        "NURS___371"
+        "NURS_212",
+        "NURS_221",
+        "NURS_233",
+        "NURS_254",
+        "NURS_304",
+        "NURS_361",
+        "NURS_371"
       ]
     },
-    "NURS___354": {
+    "NURS_354": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "NURS___361": {
+    "NURS_361": {
       "credits": 4.0,
       "prerequisites": [
-        "NURS___212",
-        "NURS___221",
-        "NURS___254",
-        "NURS___321",
-        "NURS___331",
-        "NURS___341",
-        "NURS___351"
+        "NURS_212",
+        "NURS_221",
+        "NURS_254",
+        "NURS_321",
+        "NURS_331",
+        "NURS_341",
+        "NURS_351"
       ]
     },
-    "NURS___371": {
+    "NURS_371": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "NURS___372": {
+    "NURS_372": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "NURS___377": {
+    "NURS_377": {
       "credits": 2.0,
       "prerequisites": [
-        "NURS___254",
-        "NURS___304",
-        "NURS___321",
-        "NURS___331",
-        "NURS___341"
+        "NURS_254",
+        "NURS_304",
+        "NURS_321",
+        "NURS_331",
+        "NURS_341"
       ]
     },
-    "NURS___382": {
+    "NURS_382": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "NURS___385": {
+    "NURS_385": {
       "credits": 5.0,
       "prerequisites": [
-        "NURS___210",
-        "NURS___242"
+        "NURS_210",
+        "NURS_242"
       ]
     },
-    "NURS___387": {
+    "NURS_387": {
       "credits": 3.0,
       "prerequisites": [
-        "NURS___304",
-        "NURS___321",
-        "NURS___331",
-        "NURS___341",
-        "NURS___351",
-        "NURS___354",
-        "NURS___361",
-        "NURS___371"
+        "NURS_304",
+        "NURS_321",
+        "NURS_331",
+        "NURS_341",
+        "NURS_351",
+        "NURS_354",
+        "NURS_361",
+        "NURS_371"
       ]
     },
-    "NURS___390": {
+    "NURS_390": {
       "credits": 6.0,
       "prerequisites": [
-        "NURS___210",
-        "NURS___242"
+        "NURS_210",
+        "NURS_242"
       ]
     },
-    "NURS___397": {
+    "NURS_397": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "NURS___403": {
+    "NURS_403": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "NURS___404": {
+    "NURS_404": {
       "credits": 3.0,
       "prerequisites": [
-        "NURS___401",
-        "NURS___421"
+        "NURS_401",
+        "NURS_421"
       ]
     },
-    "NURS___406": {
+    "NURS_406": {
       "credits": 2.0,
       "prerequisites": [
-        "NURS___408",
-        "NURS___414"
+        "NURS_408",
+        "NURS_414"
       ]
     },
-    "NURS___409": {
+    "NURS_409": {
       "credits": 5.0,
       "prerequisites": []
     },
-    "NURS___411": {
+    "NURS_411": {
       "credits": 7.0,
       "prerequisites": [
-        "NURS___420"
+        "NURS_420"
       ]
     },
-    "NURS___412": {
+    "NURS_412": {
       "credits": 4.0,
       "prerequisites": [
-        "NURS___408",
-        "NURS___414"
+        "NURS_408",
+        "NURS_414"
       ]
     },
-    "NURS___414": {
+    "NURS_414": {
       "credits": 2.0,
       "prerequisites": [
-        "NURS___401",
-        "NURS___402",
-        "NURS___404",
-        "NUPR___405"
+        "NURS_401",
+        "NURS_402",
+        "NURS_404",
+        "NUPR_405"
       ]
     },
-    "NURS___419": {
+    "NURS_419": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "NURS___420": {
+    "NURS_420": {
       "credits": 3.0,
       "prerequisites": [
-        "NURS___419"
+        "NURS_419"
       ]
     },
-    "NURS___421": {
+    "NURS_421": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "NURS___422": {
+    "NURS_422": {
       "credits": 3.0,
       "prerequisites": [
-        "NURS___421"
+        "NURS_421"
       ]
     },
-    "NURS___423": {
+    "NURS_423": {
       "credits": 7.0,
       "prerequisites": []
     },
-    "NURS___428": {
+    "NURS_428": {
       "credits": 2.0,
       "prerequisites": [
-        "NURS___411"
+        "NURS_411"
       ]
     },
-    "NURS___443": {
+    "NURS_443": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "NURS___463": {
+    "NURS_463": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "NURS___511": {
+    "NURS_511": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "NURS___515": {
+    "NURS_515": {
       "credits": 3.0,
       "prerequisites": [
-        "NURS___511"
+        "NURS_511"
       ]
     },
-    "NURS___516": {
+    "NURS_516": {
       "credits": 3.0,
       "prerequisites": [
-        "NURS___515"
+        "NURS_515"
       ]
     },
-    "NURS___517": {
+    "NURS_517": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "NURS___518": {
+    "NURS_518": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "NURS___519": {
+    "NURS_519": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "NURS___531": {
+    "NURS_531": {
       "credits": 3.0,
       "prerequisites": [
-        "NURS___534"
+        "NURS_534"
       ]
     },
-    "NURS___532": {
+    "NURS_532": {
       "credits": 4.0,
       "prerequisites": [
-        "NURS___210"
+        "NURS_210"
       ]
     },
-    "NURS___533": {
+    "NURS_533": {
       "credits": null,
       "prerequisites": [
-        "NURS___531",
-        "NUSP___534"
+        "NURS_531",
+        "NUSP_534"
       ]
     },
-    "NURS___534": {
+    "NURS_534": {
       "credits": 2.0,
       "prerequisites": []
     },
-    "NURS___535": {
+    "NURS_535": {
       "credits": 3.0,
       "prerequisites": [
-        "NURS___534"
+        "NURS_534"
       ]
     },
-    "NURS___540": {
+    "NURS_540": {
       "credits": 3.0,
       "prerequisites": [
-        "NURS___517"
+        "NURS_517"
       ]
     },
-    "NURS___541": {
+    "NURS_541": {
       "credits": 3.0,
       "prerequisites": [
-        "NURS___518"
+        "NURS_518"
       ]
     },
-    "NURS___542": {
+    "NURS_542": {
       "credits": 3.0,
       "prerequisites": [
-        "NURS___516"
+        "NURS_516"
       ]
     },
-    "NURS___553": {
+    "NURS_553": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "NURS___555": {
+    "NURS_555": {
       "credits": 3.0,
       "prerequisites": [
-        "NURS___516",
-        "NURS___542",
-        "NURS___553"
+        "NURS_516",
+        "NURS_542",
+        "NURS_553"
       ]
     },
-    "NURS___566": {
+    "NURS_566": {
       "credits": 2.0,
       "prerequisites": []
     },
-    "NURS___568": {
+    "NURS_568": {
       "credits": 2.0,
       "prerequisites": [
-        "NURS___572",
-        "NUEL___596"
+        "NURS_572",
+        "NUEL_596"
       ]
     },
-    "NURS___570": {
+    "NURS_570": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "NURS___571": {
+    "NURS_571": {
       "credits": 3.0,
       "prerequisites": [
-        "NURS___570"
+        "NURS_570"
       ]
     },
-    "NURS___572": {
+    "NURS_572": {
       "credits": 4.0,
       "prerequisites": [
-        "NURS___570"
+        "NURS_570"
       ]
     },
-    "NURS___573": {
+    "NURS_573": {
       "credits": 4.0,
       "prerequisites": [
-        "NURS___571",
-        "NURS___572"
+        "NURS_571",
+        "NURS_572"
       ]
     },
-    "NURS___574": {
+    "NURS_574": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "NURS___586": {
+    "NURS_586": {
       "credits": 2.0,
       "prerequisites": []
     },
-    "NURS___588": {
+    "NURS_588": {
       "credits": 2.0,
       "prerequisites": []
     },
-    "NURS___592": {
+    "NURS_592": {
       "credits": null,
       "prerequisites": []
     },
-    "NURS___599": {
+    "NURS_599": {
       "credits": null,
       "prerequisites": []
     }

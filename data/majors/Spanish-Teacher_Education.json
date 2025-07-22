@@ -3,462 +3,462 @@
   "subject_code": "SPAN",
   "min_total_credits": 120,
   "courses": {
-    "SPAN___101": {
+    "SPAN_101": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "SPAN___102": {
+    "SPAN_102": {
       "credits": 4.0,
       "prerequisites": [
-        "SPAN___101"
+        "SPAN_101"
       ]
     },
-    "SPAN___103": {
+    "SPAN_103": {
       "credits": 4.0,
       "prerequisites": [
-        "SPAN___102"
+        "SPAN_102"
       ]
     },
-    "SPAN___104": {
+    "SPAN_104": {
       "credits": 4.0,
       "prerequisites": [
-        "SPAN___103"
+        "SPAN_103"
       ]
     },
-    "SPAN___113": {
-      "credits": 4.0,
-      "prerequisites": []
-    },
-    "SPAN___114": {
+    "SPAN_113": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "SPAN___192": {
-      "credits": 3.0,
-      "prerequisites": []
-    },
-    "SPAN___196": {
-      "credits": 3.0,
-      "prerequisites": []
-    },
-    "SPAN___200": {
-      "credits": 3.0,
-      "prerequisites": [
-        "SPAN___104"
-      ]
-    },
-    "SPAN___202": {
-      "credits": 3.0,
-      "prerequisites": [
-        "SPAN___104",
-        "SPAN___114"
-      ]
-    },
-    "SPAN___203": {
-      "credits": 3.0,
-      "prerequisites": [
-        "SPAN___104",
-        "SPAN___202"
-      ]
-    },
-    "SPAN___204": {
-      "credits": 3.0,
-      "prerequisites": [
-        "SPAN___114",
-        "SPAN___202"
-      ]
-    },
-    "SPAN___206": {
-      "credits": 3.0,
-      "prerequisites": [
-        "SPAN___202"
-      ]
-    },
-    "SPAN___207": {
-      "credits": 3.0,
-      "prerequisites": [
-        "ENGL___160"
-      ]
-    },
-    "SPAN___210": {
-      "credits": 3.0,
-      "prerequisites": [
-        "SPAN___202",
-        "SPAN___203",
-        "SPAN___204"
-      ]
-    },
-    "SPAN___212": {
-      "credits": 3.0,
-      "prerequisites": [
-        "SPAN___210"
-      ]
-    },
-    "SPAN___220": {
-      "credits": 3.0,
-      "prerequisites": [
-        "SPAN___202",
-        "SPAN___203",
-        "SPAN___204"
-      ]
-    },
-    "SPAN___221": {
-      "credits": 3.0,
-      "prerequisites": [
-        "SPAN___202",
-        "SPAN___203",
-        "SPAN___204"
-      ]
-    },
-    "SPAN___225": {
-      "credits": 3.0,
-      "prerequisites": []
-    },
-    "SPAN___226": {
-      "credits": 3.0,
-      "prerequisites": []
-    },
-    "SPAN___228": {
-      "credits": 3.0,
-      "prerequisites": [
-        "SPAN___202"
-      ]
-    },
-    "SPAN___230": {
-      "credits": 3.0,
-      "prerequisites": [
-        "SPAN___203",
-        "SPAN___204"
-      ]
-    },
-    "SPAN___278": {
+    "SPAN_114": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "SPAN___295": {
+    "SPAN_192": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "SPAN___302": {
+    "SPAN_196": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "SPAN_200": {
       "credits": 3.0,
       "prerequisites": [
-        "SPAN___202"
+        "SPAN_104"
       ]
     },
-    "SPAN___303": {
+    "SPAN_202": {
       "credits": 3.0,
       "prerequisites": [
-        "SPAN___203",
-        "SPAN___204"
+        "SPAN_104",
+        "SPAN_114"
       ]
     },
-    "SPAN___304": {
+    "SPAN_203": {
       "credits": 3.0,
       "prerequisites": [
-        "SPAN___204",
-        "SPAN___210"
+        "SPAN_104",
+        "SPAN_202"
       ]
     },
-    "SPAN___320": {
+    "SPAN_204": {
       "credits": 3.0,
       "prerequisites": [
-        "SPAN___203",
-        "SPAN___204",
-        "SPAN___220"
+        "SPAN_114",
+        "SPAN_202"
       ]
     },
-    "SPAN___321": {
+    "SPAN_206": {
       "credits": 3.0,
       "prerequisites": [
-        "SPAN___203",
-        "SPAN___204",
-        "SPAN___221"
+        "SPAN_202"
       ]
     },
-    "SPAN___328": {
+    "SPAN_207": {
       "credits": 3.0,
       "prerequisites": [
-        "SPAN___220",
-        "SPAN___221",
-        "SPAN___228"
+        "ENGL_160"
       ]
     },
-    "SPAN___360": {
+    "SPAN_210": {
+      "credits": 3.0,
+      "prerequisites": [
+        "SPAN_202",
+        "SPAN_203",
+        "SPAN_204"
+      ]
+    },
+    "SPAN_212": {
+      "credits": 3.0,
+      "prerequisites": [
+        "SPAN_210"
+      ]
+    },
+    "SPAN_220": {
+      "credits": 3.0,
+      "prerequisites": [
+        "SPAN_202",
+        "SPAN_203",
+        "SPAN_204"
+      ]
+    },
+    "SPAN_221": {
+      "credits": 3.0,
+      "prerequisites": [
+        "SPAN_202",
+        "SPAN_203",
+        "SPAN_204"
+      ]
+    },
+    "SPAN_225": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "SPAN_226": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "SPAN_228": {
+      "credits": 3.0,
+      "prerequisites": [
+        "SPAN_202"
+      ]
+    },
+    "SPAN_230": {
+      "credits": 3.0,
+      "prerequisites": [
+        "SPAN_203",
+        "SPAN_204"
+      ]
+    },
+    "SPAN_278": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "SPAN_295": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "SPAN_302": {
+      "credits": 3.0,
+      "prerequisites": [
+        "SPAN_202"
+      ]
+    },
+    "SPAN_303": {
+      "credits": 3.0,
+      "prerequisites": [
+        "SPAN_203",
+        "SPAN_204"
+      ]
+    },
+    "SPAN_304": {
+      "credits": 3.0,
+      "prerequisites": [
+        "SPAN_204",
+        "SPAN_210"
+      ]
+    },
+    "SPAN_320": {
+      "credits": 3.0,
+      "prerequisites": [
+        "SPAN_203",
+        "SPAN_204",
+        "SPAN_220"
+      ]
+    },
+    "SPAN_321": {
+      "credits": 3.0,
+      "prerequisites": [
+        "SPAN_203",
+        "SPAN_204",
+        "SPAN_221"
+      ]
+    },
+    "SPAN_328": {
+      "credits": 3.0,
+      "prerequisites": [
+        "SPAN_220",
+        "SPAN_221",
+        "SPAN_228"
+      ]
+    },
+    "SPAN_360": {
       "credits": null,
       "prerequisites": [
-        "SPAN___104",
-        "SPAN___114"
+        "SPAN_104",
+        "SPAN_114"
       ]
     },
-    "SPAN___361": {
+    "SPAN_361": {
       "credits": 3.0,
       "prerequisites": [
-        "LING___150",
-        "SPAN___206"
+        "LING_150",
+        "SPAN_206"
       ]
     },
-    "SPAN___362": {
+    "SPAN_362": {
       "credits": 3.0,
       "prerequisites": [
-        "LING___150",
-        "SPAN___206"
+        "LING_150",
+        "SPAN_206"
       ]
     },
-    "SPAN___363": {
+    "SPAN_363": {
       "credits": 3.0,
       "prerequisites": [
-        "LING___150",
-        "SPAN___206"
+        "LING_150",
+        "SPAN_206"
       ]
     },
-    "SPAN___364": {
+    "SPAN_364": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "SPAN___365": {
+    "SPAN_365": {
       "credits": 3.0,
       "prerequisites": [
-        "LING___150",
-        "SPAN___206"
+        "LING_150",
+        "SPAN_206"
       ]
     },
-    "SPAN___366": {
+    "SPAN_366": {
       "credits": 3.0,
       "prerequisites": [
-        "SPAN___206"
+        "SPAN_206"
       ]
     },
-    "SPAN___375": {
+    "SPAN_375": {
       "credits": 3.0,
       "prerequisites": [
-        "SPAN___210",
-        "SPAN___212"
+        "SPAN_210",
+        "SPAN_212"
       ]
     },
-    "SPAN___377": {
+    "SPAN_377": {
       "credits": 3.0,
       "prerequisites": [
-        "SPAN___210",
-        "SPAN___212"
+        "SPAN_210",
+        "SPAN_212"
       ]
     },
-    "SPAN___378": {
+    "SPAN_378": {
       "credits": 3.0,
       "prerequisites": [
-        "SPAN___210",
-        "SPAN___212"
+        "SPAN_210",
+        "SPAN_212"
       ]
     },
-    "SPAN___379": {
+    "SPAN_379": {
       "credits": 3.0,
       "prerequisites": [
-        "SPAN___210",
-        "SPAN___212"
+        "SPAN_210",
+        "SPAN_212"
       ]
     },
-    "SPAN___380": {
+    "SPAN_380": {
       "credits": 1.0,
       "prerequisites": [
-        "SPAN___206",
-        "SPAN___320"
+        "SPAN_206",
+        "SPAN_320"
       ]
     },
-    "SPAN___399": {
+    "SPAN_399": {
       "credits": null,
       "prerequisites": [
-        "SPAN___206",
-        "SPAN___212"
+        "SPAN_206",
+        "SPAN_212"
       ]
     },
-    "SPAN___406": {
+    "SPAN_406": {
       "credits": 4.0,
       "prerequisites": [
-        "SPAN___363"
+        "SPAN_363"
       ]
     },
-    "SPAN___407": {
+    "SPAN_407": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "SPAN___409": {
+    "SPAN_409": {
       "credits": 4.0,
       "prerequisites": [
-        "SPAN___365",
-        "SPAN___401"
+        "SPAN_365",
+        "SPAN_401"
       ]
     },
-    "SPAN___411": {
+    "SPAN_411": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "SPAN___414": {
+    "SPAN_414": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "SPAN___421": {
+    "SPAN_421": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "SPAN___427": {
+    "SPAN_427": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "SPAN___430": {
+    "SPAN_430": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "SPAN___434": {
+    "SPAN_434": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "SPAN___435": {
+    "SPAN_435": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "SPAN___440": {
+    "SPAN_440": {
       "credits": 4.0,
       "prerequisites": [
-        "SPAN___363",
-        "SPAN___448",
-        "SPAN___449"
+        "SPAN_363",
+        "SPAN_448",
+        "SPAN_449"
       ]
     },
-    "SPAN___448": {
+    "SPAN_448": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "SPAN___449": {
+    "SPAN_449": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "SPAN___451": {
+    "SPAN_451": {
       "credits": 6.0,
       "prerequisites": []
     },
-    "SPAN___452": {
+    "SPAN_452": {
       "credits": 6.0,
       "prerequisites": [
-        "SPAN___451"
+        "SPAN_451"
       ]
     },
-    "SPAN___487": {
+    "SPAN_487": {
       "credits": 4.0,
       "prerequisites": [
-        "GER___448",
-        "SPAN___448",
+        "GER__448",
+        "SPAN_448",
         "FR___448",
+        "SPAN_449",
         "FR___449",
-        "SPAN___449",
-        "GER___449",
-        "LING___483",
-        "SPAN___502",
-        "FR___502"
+        "GER__449",
+        "LING_483",
+        "FR___502",
+        "SPAN_502"
       ]
     },
-    "SPAN___494": {
+    "SPAN_494": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "SPAN___500": {
+    "SPAN_500": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "SPAN___501": {
+    "SPAN_501": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "SPAN___505": {
+    "SPAN_505": {
       "credits": 4.0,
       "prerequisites": [
-        "PHIL___538"
+        "PHIL_538"
       ]
     },
-    "SPAN___507": {
+    "SPAN_507": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "SPAN___509": {
+    "SPAN_509": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "SPAN___511": {
+    "SPAN_511": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "SPAN___512": {
+    "SPAN_512": {
       "credits": 4.0,
       "prerequisites": [
-        "SPAN___511"
+        "SPAN_511"
       ]
     },
-    "SPAN___515": {
+    "SPAN_515": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "SPAN___516": {
+    "SPAN_516": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "SPAN___517": {
+    "SPAN_517": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "SPAN___520": {
+    "SPAN_520": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "SPAN___523": {
+    "SPAN_523": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "SPAN___525": {
+    "SPAN_525": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "SPAN___535": {
+    "SPAN_535": {
       "credits": 4.0,
       "prerequisites": [
-        "SPAN___407"
+        "SPAN_407"
       ]
     },
-    "SPAN___551": {
+    "SPAN_551": {
       "credits": 4.0,
       "prerequisites": [
-        "LING___480"
+        "LING_480"
       ]
     },
-    "SPAN___556": {
+    "SPAN_556": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "SPAN___557": {
+    "SPAN_557": {
       "credits": 4.0,
       "prerequisites": [
-        "LING___556",
-        "SPAN___556"
+        "SPAN_556",
+        "LING_556"
       ]
     },
-    "SPAN___570": {
+    "SPAN_570": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "SPAN___590": {
+    "SPAN_590": {
       "credits": null,
       "prerequisites": []
     },
-    "SPAN___594": {
+    "SPAN_594": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "SPAN___596": {
+    "SPAN_596": {
       "credits": null,
       "prerequisites": []
     },
-    "SPAN___598": {
+    "SPAN_598": {
       "credits": null,
       "prerequisites": []
     },
-    "SPAN___599": {
+    "SPAN_599": {
       "credits": null,
       "prerequisites": []
     }

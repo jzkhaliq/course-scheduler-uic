@@ -3,111 +3,111 @@
   "subject_code": "PUBH",
   "min_total_credits": 120,
   "courses": {
-    "PUBH___100": {
+    "PUBH_100": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "PUBH___105": {
+    "PUBH_105": {
       "credits": 2.0,
       "prerequisites": []
     },
-    "PUBH___110": {
+    "PUBH_110": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "PUBH___120": {
+    "PUBH_120": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "PUBH___299": {
+    "PUBH_299": {
       "credits": null,
       "prerequisites": []
     },
-    "PUBH___300": {
+    "PUBH_300": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "PUBH___301": {
+    "PUBH_301": {
       "credits": 2.0,
       "prerequisites": [
-        "PUBH___300"
+        "PUBH_300"
       ]
     },
-    "PUBH___310": {
+    "PUBH_310": {
       "credits": 3.0,
       "prerequisites": [
-        "PUBH___110"
+        "PUBH_110"
       ]
     },
-    "PUBH___320": {
+    "PUBH_320": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "PUBH___330": {
+    "PUBH_330": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "PUBH___340": {
+    "PUBH_340": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "PUBH___350": {
+    "PUBH_350": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "PUBH___360": {
+    "PUBH_360": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "PUBH___370": {
+    "PUBH_370": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "PUBH___390": {
+    "PUBH_390": {
       "credits": 3.0,
       "prerequisites": [
-        "PHYS___116",
+        "PHYS_116",
         "US___130"
       ]
     },
-    "PUBH___393": {
+    "PUBH_393": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "PUBH___394": {
+    "PUBH_394": {
       "credits": null,
       "prerequisites": []
     },
-    "PUBH___395": {
+    "PUBH_395": {
       "credits": 0.0,
       "prerequisites": []
     },
-    "PUBH___396": {
+    "PUBH_396": {
       "credits": null,
       "prerequisites": []
     },
-    "PUBH___397": {
+    "PUBH_397": {
       "credits": 3.0,
       "prerequisites": [
-        "PUBH___370",
-        "PUBH___411"
+        "PUBH_370",
+        "PUBH_411"
       ]
     },
-    "PUBH___399": {
+    "PUBH_399": {
       "credits": null,
       "prerequisites": []
     },
-    "PUBH___410": {
+    "PUBH_410": {
       "credits": 2.0,
       "prerequisites": []
     },
-    "PUBH___411": {
+    "PUBH_411": {
       "credits": 2.0,
       "prerequisites": [
-        "PUBH___410"
+        "PUBH_410"
       ]
     },
-    "PUBH___420": {
+    "PUBH_420": {
       "credits": 3.0,
       "prerequisites": []
     }

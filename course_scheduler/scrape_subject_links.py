@@ -1,4 +1,3 @@
-### scrape_subject_links.py
 import os
 import requests
 from bs4 import BeautifulSoup
@@ -27,7 +26,7 @@ master = {}
 offering_term = {}  # norm_code → "fall" or "spring"
 excluded_courses = set()  # courses seen in both terms
 seen_in_term = defaultdict(set)  # term → set of course codes seen in that term
-timings = defaultdict(list)  # CS___XXX_CRN → [(crn, start, end)]
+timings = defaultdict(list)  # CS_111_CRN → [(crn, start, end)]
 prereqs = set()
 
 
@@ -77,6 +76,13 @@ def minutes_from_monday(time_str, days_str):
         return []
 
 
+def normalize_course_code(subject, course_number):
+    """Convert subject and course number to 8-character format with underscores"""
+    # Calculate how many underscores needed: 8 total - len(subject) - len(course_number)
+    underscores_needed = 8 - len(subject) - len(course_number)
+    return f"{subject}{'_' * underscores_needed}{course_number}"
+
+
 def parse_course_table(url, term, subject):
     """Parse course table from UIC schedule page"""
     try:
@@ -115,7 +121,7 @@ def parse_course_table(url, term, subject):
 
                 course_number = match.group(1)
                 code = f"{subject} {course_number}"
-                norm_code = code.replace(" ", "___")
+                norm_code = normalize_course_code(subject, course_number)
                 seen_in_term[norm_code].add(term)
                 
 
@@ -135,7 +141,7 @@ def parse_course_table(url, term, subject):
                         course_refs = re.findall(r"\b([A-Z]{2,4})\s+(\d{3})\b", chunk)
 
                         for dept, num in course_refs:
-                            prereq_code = f"{dept}___{num}"
+                            prereq_code = normalize_course_code(dept, num)
 
                             if prereq_code == norm_code:
                                 continue
@@ -157,7 +163,7 @@ def parse_course_table(url, term, subject):
 
                 course_number = match.group(1)
                 code = f"{subject} {course_number}"
-                norm_code = code.replace(" ", "___")
+                norm_code = normalize_course_code(subject, course_number)
 
 
                 # Always mark this course as seen, even if no table rows
@@ -319,8 +325,8 @@ def write_outputs(subject):
         prereqs_sorted = sorted(
             prereqs_cleaned,
             key=lambda x: (
-                int(x[1].split("___")[1]),  # course number (middle column)
-                int(x[0].split("___")[1])  # prereq number (left column)
+                int(x[1][-3:]),  # course number (last 3 chars)
+                int(x[0][-3:])   # prereq number (last 3 chars)
             )
         )
 
@@ -338,8 +344,12 @@ def write_outputs(subject):
             added = set()
             all_seen = set(seen_in_term.keys()) | {key.rsplit("_", 1)[0] for key in timings.keys()}
             for code in sorted(all_seen):
-                if code.count("___") == 1 and code not in added:
-                    credit = master.get(code.replace("___", " "), "???")
+                if len(code) == 8 and code not in added:  # All codes should be exactly 8 characters
+                    # Convert back to "SUBJECT NUMBER" format for master lookup
+                    subject_part = code.rstrip('_0123456789')
+                    number_part = code[-3:]
+                    original_format = f"{subject_part} {number_part}"
+                    credit = master.get(original_format, "???")
                     f.write(f"{code}\t{credit}\n")
                     added.add(code)
 

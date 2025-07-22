@@ -3,95 +3,95 @@
   "subject_code": "MTHT",
   "min_total_credits": 120,
   "courses": {
-    "MTHT___400": {
+    "MTHT_400": {
       "credits": 4.0,
       "prerequisites": [
-        "MATH___215"
+        "MATH_215"
       ]
     },
-    "MTHT___401": {
+    "MTHT_401": {
       "credits": 4.0,
       "prerequisites": [
-        "MATH___210"
+        "MATH_210"
       ]
     },
-    "MTHT___411": {
+    "MTHT_411": {
       "credits": 4.0,
       "prerequisites": [
-        "MATH___215"
+        "MATH_215"
       ]
     },
-    "MTHT___430": {
+    "MTHT_430": {
       "credits": 4.0,
       "prerequisites": [
-        "MATH___210",
-        "MATH___215"
+        "MATH_210",
+        "MATH_215"
       ]
     },
-    "MTHT___435": {
+    "MTHT_435": {
       "credits": 4.0,
       "prerequisites": [
-        "MATH___210",
-        "MATH___215"
+        "MATH_210",
+        "MATH_215"
       ]
     },
-    "MTHT___438": {
+    "MTHT_438": {
       "credits": 6.0,
       "prerequisites": []
     },
-    "MTHT___439": {
+    "MTHT_439": {
       "credits": 6.0,
       "prerequisites": [
-        "MTHT___438"
+        "MTHT_438"
       ]
     },
-    "MTHT___450": {
+    "MTHT_450": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "MTHT___465": {
+    "MTHT_465": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "MTHT___467": {
+    "MTHT_467": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "MTHT___468": {
+    "MTHT_468": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "MTHT___490": {
+    "MTHT_490": {
       "credits": null,
       "prerequisites": []
     },
-    "MTHT___491": {
+    "MTHT_491": {
       "credits": null,
       "prerequisites": []
     },
-    "MTHT___496": {
+    "MTHT_496": {
       "credits": null,
       "prerequisites": []
     },
-    "MTHT___510": {
+    "MTHT_510": {
       "credits": 4.0,
       "prerequisites": [
-        "MATH___330"
+        "MATH_330"
       ]
     },
-    "MTHT___589": {
+    "MTHT_589": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "MTHT___590": {
+    "MTHT_590": {
       "credits": null,
       "prerequisites": []
     },
-    "MTHT___591": {
+    "MTHT_591": {
       "credits": null,
       "prerequisites": []
     },
-    "MTHT___596": {
+    "MTHT_596": {
       "credits": null,
       "prerequisites": []
     }

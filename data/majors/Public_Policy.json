@@ -3,128 +3,128 @@
   "subject_code": "PPOL",
   "min_total_credits": 120,
   "courses": {
-    "PPOL___100": {
+    "PPOL_100": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "PPOL___101": {
+    "PPOL_101": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "PPOL___105": {
+    "PPOL_105": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "PPOL___196": {
+    "PPOL_196": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "PPOL___205": {
+    "PPOL_205": {
       "credits": 3.0,
       "prerequisites": [
-        "PPOL___105"
+        "PPOL_105"
       ]
     },
-    "PPOL___210": {
+    "PPOL_210": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "PPOL___212": {
+    "PPOL_212": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "PPOL___220": {
+    "PPOL_220": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "PPOL___230": {
+    "PPOL_230": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "PPOL___231": {
+    "PPOL_231": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "PPOL___232": {
+    "PPOL_232": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "PPOL___240": {
+    "PPOL_240": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "PPOL___296": {
+    "PPOL_296": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "PPOL___300": {
+    "PPOL_300": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "PPOL___303": {
+    "PPOL_303": {
       "credits": 3.0,
       "prerequisites": [
-        "PPOL___210"
+        "PPOL_210"
       ]
     },
-    "PPOL___305": {
+    "PPOL_305": {
       "credits": 3.0,
       "prerequisites": [
-        "PPOL___210"
+        "PPOL_210"
       ]
     },
-    "PPOL___307": {
+    "PPOL_307": {
       "credits": 3.0,
       "prerequisites": [
-        "ENGL___161",
-        "PPOL___210"
+        "ENGL_161",
+        "PPOL_210"
       ]
     },
-    "PPOL___309": {
+    "PPOL_309": {
       "credits": 3.0,
       "prerequisites": [
-        "PPOL___210"
+        "PPOL_210"
       ]
     },
-    "PPOL___330": {
+    "PPOL_330": {
       "credits": 3.0,
       "prerequisites": [
-        "PPOL___230"
+        "PPOL_230"
       ]
     },
-    "PPOL___396": {
+    "PPOL_396": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "PPOL___405": {
+    "PPOL_405": {
       "credits": 4.0,
       "prerequisites": [
-        "PPOL___205"
+        "PPOL_205"
       ]
     },
-    "PPOL___430": {
+    "PPOL_430": {
       "credits": 4.0,
       "prerequisites": [
-        "PPOL___230"
+        "PPOL_230"
       ]
     },
-    "PPOL___467": {
-      "credits": 4.0,
-      "prerequisites": []
-    },
-    "PPOL___490": {
+    "PPOL_467": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "PPOL___491": {
-      "credits": 3.0,
-      "prerequisites": []
-    },
-    "PPOL___496": {
+    "PPOL_490": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "PPOL___499": {
+    "PPOL_491": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "PPOL_496": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "PPOL_499": {
       "credits": null,
       "prerequisites": []
     }

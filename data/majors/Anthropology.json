@@ -3,399 +3,399 @@
   "subject_code": "ANTH",
   "min_total_credits": 120,
   "courses": {
-    "ANTH___100": {
+    "ANTH_100": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "ANTH___101": {
+    "ANTH_101": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "ANTH___102": {
+    "ANTH_102": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "ANTH___105": {
+    "ANTH_105": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "ANTH___200": {
+    "ANTH_200": {
       "credits": 3.0,
       "prerequisites": [
-        "ANTH___101"
+        "ANTH_101"
       ]
     },
-    "ANTH___208": {
+    "ANTH_208": {
       "credits": 3.0,
       "prerequisites": [
-        "ENGL___161"
+        "ENGL_161"
       ]
     },
-    "ANTH___215": {
+    "ANTH_215": {
       "credits": 3.0,
       "prerequisites": [
-        "ENGL___161"
+        "ENGL_161"
       ]
     },
-    "ANTH___216": {
+    "ANTH_216": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "ANTH___217": {
+    "ANTH_217": {
       "credits": 3.0,
       "prerequisites": [
-        "ANTH___101"
+        "ANTH_101"
       ]
     },
-    "ANTH___220": {
+    "ANTH_220": {
       "credits": 3.0,
       "prerequisites": [
-        "ANTH___102"
+        "ANTH_102"
       ]
     },
-    "ANTH___223": {
+    "ANTH_223": {
       "credits": 3.0,
       "prerequisites": [
-        "ANTH___102"
+        "ANTH_102"
       ]
     },
-    "ANTH___224": {
+    "ANTH_224": {
       "credits": 3.0,
       "prerequisites": [
-        "ANTH___101",
-        "ANTH___102"
+        "ANTH_101",
+        "ANTH_102"
       ]
     },
-    "ANTH___226": {
+    "ANTH_226": {
       "credits": 3.0,
       "prerequisites": [
-        "ANTH___102"
+        "ANTH_102"
       ]
     },
-    "ANTH___227": {
+    "ANTH_227": {
       "credits": 3.0,
       "prerequisites": [
-        "ANTH___102"
+        "ANTH_102"
       ]
     },
-    "ANTH___229": {
+    "ANTH_229": {
       "credits": 3.0,
       "prerequisites": [
-        "ANTH___102"
+        "ANTH_102"
       ]
     },
-    "ANTH___231": {
+    "ANTH_231": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "ANTH___233": {
+    "ANTH_233": {
       "credits": 4.0,
       "prerequisites": [
-        "ENGL___161"
+        "ENGL_161"
       ]
     },
-    "ANTH___234": {
+    "ANTH_234": {
       "credits": 4.0,
       "prerequisites": [
-        "ANTH___105"
+        "ANTH_105"
       ]
     },
-    "ANTH___237": {
-      "credits": 4.0,
-      "prerequisites": []
-    },
-    "ANTH___238": {
-      "credits": 3.0,
-      "prerequisites": [
-        "ANTH___105"
-      ]
-    },
-    "ANTH___239": {
-      "credits": 3.0,
-      "prerequisites": [
-        "ANTH___105",
-        "BIOS___294"
-      ]
-    },
-    "ANTH___242": {
-      "credits": 3.0,
-      "prerequisites": [
-        "ENGL___161"
-      ]
-    },
-    "ANTH___243": {
-      "credits": 3.0,
-      "prerequisites": [
-        "ENGL___161"
-      ]
-    },
-    "ANTH___244": {
-      "credits": 3.0,
-      "prerequisites": [
-        "ENGL___161"
-      ]
-    },
-    "ANTH___245": {
-      "credits": 3.0,
-      "prerequisites": [
-        "ANTH___101"
-      ]
-    },
-    "ANTH___248": {
-      "credits": 3.0,
-      "prerequisites": [
-        "ENGL___161"
-      ]
-    },
-    "ANTH___255": {
-      "credits": 3.0,
-      "prerequisites": []
-    },
-    "ANTH___256": {
-      "credits": 3.0,
-      "prerequisites": []
-    },
-    "ANTH___262": {
-      "credits": 3.0,
-      "prerequisites": [
-        "GWS___101",
-        "GWS___102"
-      ]
-    },
-    "ANTH___272": {
-      "credits": 3.0,
-      "prerequisites": []
-    },
-    "ANTH___273": {
-      "credits": 3.0,
-      "prerequisites": []
-    },
-    "ANTH___276": {
-      "credits": 3.0,
-      "prerequisites": []
-    },
-    "ANTH___277": {
-      "credits": 3.0,
-      "prerequisites": [
-        "ENGL___161"
-      ]
-    },
-    "ANTH___279": {
-      "credits": 3.0,
-      "prerequisites": []
-    },
-    "ANTH___309": {
-      "credits": 3.0,
-      "prerequisites": [
-        "ANTH___101"
-      ]
-    },
-    "ANTH___311": {
-      "credits": 3.0,
-      "prerequisites": []
-    },
-    "ANTH___312": {
-      "credits": 3.0,
-      "prerequisites": []
-    },
-    "ANTH___314": {
-      "credits": 3.0,
-      "prerequisites": [
-        "ANTH___101"
-      ]
-    },
-    "ANTH___319": {
-      "credits": 3.0,
-      "prerequisites": [
-        "ANTH___101"
-      ]
-    },
-    "ANTH___320": {
-      "credits": 3.0,
-      "prerequisites": [
-        "ANTH___102"
-      ]
-    },
-    "ANTH___390": {
-      "credits": 3.0,
-      "prerequisites": []
-    },
-    "ANTH___394": {
-      "credits": 3.0,
-      "prerequisites": [
-        "ANTH___101"
-      ]
-    },
-    "ANTH___409": {
+    "ANTH_237": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "ANTH___411": {
-      "credits": 4.0,
-      "prerequisites": []
-    },
-    "ANTH___418": {
-      "credits": 4.0,
-      "prerequisites": []
-    },
-    "ANTH___420": {
-      "credits": 4.0,
-      "prerequisites": []
-    },
-    "ANTH___423": {
-      "credits": 4.0,
+    "ANTH_238": {
+      "credits": 3.0,
       "prerequisites": [
-        "ANTH___269"
+        "ANTH_105"
       ]
     },
-    "ANTH___424": {
-      "credits": 4.0,
-      "prerequisites": []
-    },
-    "ANTH___428": {
-      "credits": 4.0,
+    "ANTH_239": {
+      "credits": 3.0,
       "prerequisites": [
-        "ANTH___101",
-        "ANTH___102"
+        "ANTH_105",
+        "BIOS_294"
       ]
     },
-    "ANTH___429": {
+    "ANTH_242": {
+      "credits": 3.0,
+      "prerequisites": [
+        "ENGL_161"
+      ]
+    },
+    "ANTH_243": {
+      "credits": 3.0,
+      "prerequisites": [
+        "ENGL_161"
+      ]
+    },
+    "ANTH_244": {
+      "credits": 3.0,
+      "prerequisites": [
+        "ENGL_161"
+      ]
+    },
+    "ANTH_245": {
+      "credits": 3.0,
+      "prerequisites": [
+        "ANTH_101"
+      ]
+    },
+    "ANTH_248": {
+      "credits": 3.0,
+      "prerequisites": [
+        "ENGL_161"
+      ]
+    },
+    "ANTH_255": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "ANTH_256": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "ANTH_262": {
+      "credits": 3.0,
+      "prerequisites": [
+        "GWS__101",
+        "GWS__102"
+      ]
+    },
+    "ANTH_272": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "ANTH_273": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "ANTH_276": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "ANTH_277": {
+      "credits": 3.0,
+      "prerequisites": [
+        "ENGL_161"
+      ]
+    },
+    "ANTH_279": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "ANTH_309": {
+      "credits": 3.0,
+      "prerequisites": [
+        "ANTH_101"
+      ]
+    },
+    "ANTH_311": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "ANTH_312": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "ANTH_314": {
+      "credits": 3.0,
+      "prerequisites": [
+        "ANTH_101"
+      ]
+    },
+    "ANTH_319": {
+      "credits": 3.0,
+      "prerequisites": [
+        "ANTH_101"
+      ]
+    },
+    "ANTH_320": {
+      "credits": 3.0,
+      "prerequisites": [
+        "ANTH_102"
+      ]
+    },
+    "ANTH_390": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "ANTH_394": {
+      "credits": 3.0,
+      "prerequisites": [
+        "ANTH_101"
+      ]
+    },
+    "ANTH_409": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "ANTH___436": {
+    "ANTH_411": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "ANTH___437": {
+    "ANTH_418": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "ANTH_420": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "ANTH_423": {
+      "credits": 4.0,
+      "prerequisites": [
+        "ANTH_269"
+      ]
+    },
+    "ANTH_424": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "ANTH_428": {
+      "credits": 4.0,
+      "prerequisites": [
+        "ANTH_101",
+        "ANTH_102"
+      ]
+    },
+    "ANTH_429": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "ANTH_436": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "ANTH_437": {
       "credits": 5.0,
       "prerequisites": [
-        "ANTH___237"
+        "ANTH_237"
       ]
     },
-    "ANTH___453": {
+    "ANTH_453": {
       "credits": 4.0,
       "prerequisites": [
-        "ANTH___101",
-        "GEOG___151"
+        "ANTH_101",
+        "GEOG_151"
       ]
     },
-    "ANTH___455": {
+    "ANTH_455": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "ANTH___466": {
+    "ANTH_466": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "ANTH___473": {
+    "ANTH_473": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "ANTH___476": {
+    "ANTH_476": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "ANTH___477": {
+    "ANTH_477": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "ANTH___478": {
+    "ANTH_478": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "ANTH___479": {
+    "ANTH_479": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "ANTH___480": {
+    "ANTH_480": {
       "credits": 4.0,
       "prerequisites": [
-        "LING___405"
+        "LING_405"
       ]
     },
-    "ANTH___481": {
+    "ANTH_481": {
       "credits": 4.0,
       "prerequisites": [
-        "GEOG___100",
-        "IDS___100",
-        "GEOG___278",
-        "GEOG___386"
+        "GEOG_100",
+        "IDS__100",
+        "GEOG_278",
+        "GEOG_386"
       ]
     },
-    "ANTH___490": {
+    "ANTH_490": {
       "credits": null,
       "prerequisites": []
     },
-    "ANTH___494": {
+    "ANTH_494": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "ANTH___496": {
+    "ANTH_496": {
       "credits": null,
       "prerequisites": []
     },
-    "ANTH___500": {
+    "ANTH_500": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "ANTH___501": {
+    "ANTH_501": {
       "credits": 4.0,
       "prerequisites": [
-        "ANTH___500"
+        "ANTH_500"
       ]
     },
-    "ANTH___502": {
+    "ANTH_502": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "ANTH___503": {
+    "ANTH_503": {
       "credits": 5.0,
       "prerequisites": []
     },
-    "ANTH___508": {
+    "ANTH_508": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "ANTH___511": {
+    "ANTH_511": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "ANTH___513": {
+    "ANTH_513": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "ANTH___516": {
+    "ANTH_516": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "ANTH___520": {
+    "ANTH_520": {
       "credits": 4.0,
       "prerequisites": [
-        "ANTH___502"
+        "ANTH_502"
       ]
     },
-    "ANTH___593": {
+    "ANTH_593": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "ANTH___594": {
+    "ANTH_594": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "ANTH___595": {
+    "ANTH_595": {
       "credits": 1.0,
       "prerequisites": []
     },
-    "ANTH___596": {
+    "ANTH_596": {
       "credits": null,
       "prerequisites": []
     },
-    "ANTH___597": {
+    "ANTH_597": {
       "credits": null,
       "prerequisites": []
     },
-    "ANTH___599": {
+    "ANTH_599": {
       "credits": null,
       "prerequisites": []
     }

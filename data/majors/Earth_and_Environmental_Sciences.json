@@ -3,286 +3,286 @@
   "subject_code": "EAES",
   "min_total_credits": 120,
   "courses": {
-    "EAES___101": {
+    "EAES_101": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "EAES___111": {
+    "EAES_111": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "EAES___180": {
+    "EAES_180": {
       "credits": 1.0,
       "prerequisites": [
-        "EAES___101",
-        "EAES___111"
+        "EAES_101",
+        "EAES_111"
       ]
     },
-    "EAES___200": {
+    "EAES_200": {
       "credits": 2.0,
       "prerequisites": [
-        "EAES___101",
-        "EAES___101",
-        "EAES___111",
-        "EAES___111",
-        "EAES___230"
+        "EAES_101",
+        "EAES_101",
+        "EAES_111",
+        "EAES_111",
+        "EAES_230"
       ]
     },
-    "EAES___203": {
+    "EAES_203": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "EAES___230": {
+    "EAES_230": {
       "credits": 4.0,
       "prerequisites": [
-        "EAES___101",
-        "EAES___111"
+        "EAES_101",
+        "EAES_111"
       ]
     },
-    "EAES___285": {
+    "EAES_285": {
       "credits": 4.0,
       "prerequisites": [
-        "EAES___101",
-        "EAES___111"
+        "EAES_101",
+        "EAES_111"
       ]
     },
-    "EAES___290": {
+    "EAES_290": {
       "credits": 2.0,
       "prerequisites": []
     },
-    "EAES___350": {
+    "EAES_350": {
       "credits": 3.0,
       "prerequisites": [
-        "EAES___230",
-        "EAES___320"
+        "EAES_230",
+        "EAES_320"
       ]
     },
-    "EAES___360": {
+    "EAES_360": {
       "credits": 4.0,
       "prerequisites": [
-        "BIOS___100",
-        "EAES___101",
-        "BIOS___101",
-        "BIOS___110",
-        "EAES___111",
-        "BIOS___120"
+        "BIOS_100",
+        "BIOS_101",
+        "EAES_101",
+        "BIOS_110",
+        "EAES_111",
+        "BIOS_120"
       ]
     },
-    "EAES___396": {
+    "EAES_396": {
       "credits": null,
       "prerequisites": []
     },
-    "EAES___400": {
+    "EAES_400": {
       "credits": null,
       "prerequisites": []
     },
-    "EAES___415": {
+    "EAES_415": {
       "credits": 4.0,
       "prerequisites": [
-        "CHEM___114",
-        "CHEM___124",
-        "CHEM___125",
-        "EAES___230",
-        "EAES___285"
+        "CHEM_114",
+        "CHEM_124",
+        "CHEM_125",
+        "EAES_230",
+        "EAES_285"
       ]
     },
-    "EAES___416": {
+    "EAES_416": {
       "credits": 3.0,
       "prerequisites": [
-        "CHEM___114",
-        "CHEM___124",
-        "CHEM___125",
-        "CHEM___130",
-        "EAES___230",
-        "EAES___320"
+        "CHEM_114",
+        "CHEM_124",
+        "CHEM_125",
+        "CHEM_130",
+        "EAES_230",
+        "EAES_320"
       ]
     },
-    "EAES___418": {
+    "EAES_418": {
       "credits": 3.0,
       "prerequisites": [
-        "BIOS___100",
-        "BIOS___101",
-        "EAES___111",
-        "CHEM___112",
-        "CHEM___114",
-        "CHEM___122",
-        "CHEM___123",
-        "CHEM___124",
-        "CHEM___125",
-        "EAES___230",
-        "EAES___285"
+        "BIOS_100",
+        "BIOS_101",
+        "EAES_111",
+        "CHEM_112",
+        "CHEM_114",
+        "CHEM_122",
+        "CHEM_123",
+        "CHEM_124",
+        "CHEM_125",
+        "EAES_230",
+        "EAES_285"
       ]
     },
-    "EAES___422": {
+    "EAES_422": {
       "credits": 4.0,
       "prerequisites": [
-        "EAES___320"
+        "EAES_320"
       ]
     },
-    "EAES___440": {
+    "EAES_440": {
       "credits": 3.0,
       "prerequisites": [
-        "EAES___111",
-        "EAES___230"
+        "EAES_111",
+        "EAES_230"
       ]
     },
-    "EAES___444": {
+    "EAES_444": {
       "credits": 4.0,
       "prerequisites": [
-        "EAES___111",
-        "EAES___285"
+        "EAES_111",
+        "EAES_285"
       ]
     },
-    "EAES___448": {
+    "EAES_448": {
       "credits": 3.0,
       "prerequisites": [
-        "EAES___111"
+        "EAES_111"
       ]
     },
-    "EAES___460": {
+    "EAES_460": {
       "credits": 4.0,
       "prerequisites": [
-        "EAES___230",
-        "EAES___285",
-        "EAES___350",
-        "EAES___360",
-        "EAES___440"
+        "EAES_230",
+        "EAES_285",
+        "EAES_350",
+        "EAES_360",
+        "EAES_440"
       ]
     },
-    "EAES___470": {
+    "EAES_470": {
       "credits": 4.0,
       "prerequisites": [
-        "MATH___181",
-        "EAES___230",
-        "EAES___285"
+        "MATH_181",
+        "EAES_230",
+        "EAES_285"
       ]
     },
-    "EAES___473": {
+    "EAES_473": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "EAES___475": {
+    "EAES_475": {
       "credits": 3.0,
       "prerequisites": [
-        "EAES___111",
-        "MATH___181",
-        "EAES___230",
-        "EAES___285"
+        "EAES_111",
+        "MATH_181",
+        "EAES_230",
+        "EAES_285"
       ]
     },
-    "EAES___478": {
+    "EAES_478": {
       "credits": 1.0,
       "prerequisites": []
     },
-    "EAES___480": {
+    "EAES_480": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "EAES___484": {
+    "EAES_484": {
       "credits": 3.0,
       "prerequisites": [
-        "EAES___230",
-        "EAES___285"
+        "EAES_230",
+        "EAES_285"
       ]
     },
-    "EAES___490": {
+    "EAES_490": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "EAES___492": {
+    "EAES_492": {
       "credits": 1.0,
       "prerequisites": []
     },
-    "EAES___494": {
+    "EAES_494": {
       "credits": null,
       "prerequisites": []
     },
-    "EAES___510": {
+    "EAES_510": {
       "credits": null,
       "prerequisites": [
-        "EAES___410"
+        "EAES_410"
       ]
     },
-    "EAES___511": {
+    "EAES_511": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "EAES___512": {
+    "EAES_512": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "EAES___513": {
+    "EAES_513": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "EAES___514": {
+    "EAES_514": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "EAES___516": {
+    "EAES_516": {
       "credits": 4.0,
       "prerequisites": [
-        "EAES___416"
+        "EAES_416"
       ]
     },
-    "EAES___518": {
+    "EAES_518": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "EAES___525": {
+    "EAES_525": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "EAES___543": {
+    "EAES_543": {
       "credits": 4.0,
       "prerequisites": [
-        "EAES___444",
-        "EAES___448"
+        "EAES_444",
+        "EAES_448"
       ]
     },
-    "EAES___545": {
+    "EAES_545": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "EAES___547": {
+    "EAES_547": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "EAES___560": {
+    "EAES_560": {
       "credits": null,
       "prerequisites": []
     },
-    "EAES___577": {
+    "EAES_577": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "EAES___578": {
+    "EAES_578": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "EAES___579": {
+    "EAES_579": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "EAES___580": {
+    "EAES_580": {
       "credits": 3.0,
       "prerequisites": [
-        "EAES___475"
+        "EAES_475"
       ]
     },
-    "EAES___595": {
+    "EAES_595": {
       "credits": 1.0,
       "prerequisites": []
     },
-    "EAES___596": {
+    "EAES_596": {
       "credits": null,
       "prerequisites": []
     },
-    "EAES___598": {
+    "EAES_598": {
       "credits": null,
       "prerequisites": []
     },
-    "EAES___599": {
+    "EAES_599": {
       "credits": null,
       "prerequisites": []
     }

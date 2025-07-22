@@ -3,229 +3,229 @@
   "subject_code": "MCS",
   "min_total_credits": 120,
   "courses": {
-    "MCS___160": {
+    "MCS__160": {
       "credits": 4.0,
       "prerequisites": [
-        "MATH___180"
+        "MATH_180"
       ]
     },
-    "MCS___260": {
+    "MCS__260": {
       "credits": 4.0,
       "prerequisites": [
-        "MATH___180"
+        "MATH_180"
       ]
     },
-    "MCS___275": {
+    "MCS__275": {
       "credits": 4.0,
       "prerequisites": [
         "CS___107",
         "CS___109",
         "CS___111",
-        "MCS___260"
+        "MCS__260"
       ]
     },
-    "MCS___320": {
+    "MCS__320": {
       "credits": 3.0,
       "prerequisites": [
         "CS___107",
         "CS___109",
         "CS___111",
-        "MCS___260"
+        "MCS__260"
       ]
     },
-    "MCS___360": {
+    "MCS__360": {
       "credits": 4.0,
       "prerequisites": [
-        "MCS___260",
-        "MCS___275"
+        "MCS__260",
+        "MCS__275"
       ]
     },
-    "MCS___361": {
+    "MCS__361": {
       "credits": 3.0,
       "prerequisites": [
         "CS___107",
         "CS___109",
         "CS___111",
-        "MATH___215"
+        "MATH_215"
       ]
     },
-    "MCS___394": {
+    "MCS__394": {
       "credits": null,
       "prerequisites": []
     },
-    "MCS___401": {
+    "MCS__401": {
       "credits": 4.0,
       "prerequisites": [
         "CS___251",
-        "MCS___360"
+        "MCS__360"
       ]
     },
-    "MCS___415": {
+    "MCS__415": {
       "credits": 4.0,
       "prerequisites": [
         "CS___341",
-        "MCS___360"
+        "MCS__360"
       ]
     },
-    "MCS___421": {
+    "MCS__421": {
       "credits": 4.0,
       "prerequisites": [
-        "MATH___215",
-        "MATH___310",
-        "MATH___320"
+        "MATH_215",
+        "MATH_310",
+        "MATH_320"
       ]
     },
-    "MCS___423": {
+    "MCS__423": {
       "credits": 4.0,
       "prerequisites": [
-        "MATH___215",
-        "MATH___310",
-        "MATH___320"
+        "MATH_215",
+        "MATH_310",
+        "MATH_320"
       ]
     },
-    "MCS___425": {
+    "MCS__425": {
       "credits": 4.0,
       "prerequisites": [
-        "MATH___215",
-        "MATH___310",
-        "MATH___320"
+        "MATH_215",
+        "MATH_310",
+        "MATH_320"
       ]
     },
-    "MCS___441": {
+    "MCS__441": {
       "credits": 4.0,
       "prerequisites": [
-        "MATH___215"
+        "MATH_215"
       ]
     },
-    "MCS___471": {
+    "MCS__471": {
       "credits": 4.0,
       "prerequisites": [
         "CS___107",
         "CS___109",
         "CS___111",
-        "MCS___260"
+        "MCS__260"
       ]
     },
-    "MCS___472": {
+    "MCS__472": {
       "credits": 4.0,
       "prerequisites": [
-        "MCS___471"
+        "MCS__471"
       ]
     },
-    "MCS___481": {
+    "MCS__481": {
       "credits": 4.0,
       "prerequisites": [
-        "MCS___401"
+        "MCS__401"
       ]
     },
-    "MCS___496": {
+    "MCS__496": {
       "credits": null,
       "prerequisites": []
     },
-    "MCS___501": {
+    "MCS__501": {
       "credits": 4.0,
       "prerequisites": [
-        "MCS___401",
+        "MCS__401",
         "CS___401"
       ]
     },
-    "MCS___507": {
+    "MCS__507": {
       "credits": 4.0,
       "prerequisites": [
-        "MCS___360"
+        "MCS__360"
       ]
     },
-    "MCS___521": {
+    "MCS__521": {
       "credits": 4.0,
       "prerequisites": [
-        "MCS___423",
-        "STAT___471"
+        "MCS__423",
+        "STAT_471"
       ]
     },
-    "MCS___541": {
+    "MCS__541": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "MCS___548": {
+    "MCS__548": {
       "credits": 4.0,
       "prerequisites": [
-        "MCS___541"
+        "MCS__541"
       ]
     },
-    "MCS___549": {
+    "MCS__549": {
       "credits": 4.0,
       "prerequisites": [
-        "MCS___401",
-        "MCS___441"
+        "MCS__401",
+        "MCS__441"
       ]
     },
-    "MCS___563": {
+    "MCS__563": {
       "credits": 4.0,
       "prerequisites": [
-        "MCS___460",
-        "MATH___480"
+        "MCS__460",
+        "MATH_480"
       ]
     },
-    "MCS___571": {
+    "MCS__571": {
       "credits": 4.0,
       "prerequisites": [
-        "MCS___471",
-        "MATH___481"
+        "MCS__471",
+        "MATH_481"
       ]
     },
-    "MCS___572": {
+    "MCS__572": {
       "credits": 4.0,
       "prerequisites": [
-        "MCS___471",
-        "MCS___571"
+        "MCS__471",
+        "MCS__571"
       ]
     },
-    "MCS___573": {
+    "MCS__573": {
       "credits": 4.0,
       "prerequisites": [
-        "MCS___471",
-        "MATH___481"
+        "MCS__471",
+        "MATH_481"
       ]
     },
-    "MCS___582": {
+    "MCS__582": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "MCS___583": {
+    "MCS__583": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "MCS___584": {
+    "MCS__584": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "MCS___590": {
+    "MCS__590": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "MCS___591": {
+    "MCS__591": {
       "credits": 4.0,
       "prerequisites": [
-        "MCS___423"
+        "MCS__423"
       ]
     },
-    "MCS___593": {
+    "MCS__593": {
       "credits": 1.0,
       "prerequisites": []
     },
-    "MCS___595": {
+    "MCS__595": {
       "credits": 1.0,
       "prerequisites": []
     },
-    "MCS___596": {
+    "MCS__596": {
       "credits": null,
       "prerequisites": []
     },
-    "MCS___598": {
+    "MCS__598": {
       "credits": null,
       "prerequisites": []
     },
-    "MCS___599": {
+    "MCS__599": {
       "credits": null,
       "prerequisites": []
     }

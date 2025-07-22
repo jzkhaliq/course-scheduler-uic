@@ -3,297 +3,297 @@
   "subject_code": "ARCH",
   "min_total_credits": 122,
   "courses": {
-    "ARCH___105": {
+    "ARCH_105": {
       "credits": 5.0,
       "prerequisites": []
     },
-    "ARCH___106": {
+    "ARCH_106": {
       "credits": 5.0,
       "prerequisites": [
-        "ARCH___105"
+        "ARCH_105"
       ]
     },
-    "ARCH___151": {
+    "ARCH_151": {
       "credits": 2.0,
       "prerequisites": []
     },
-    "ARCH___200": {
+    "ARCH_200": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "ARCH___205": {
+    "ARCH_205": {
       "credits": 5.0,
       "prerequisites": [
-        "ARCH___105",
-        "ARCH___105",
-        "ARCH___106",
-        "ARCH___106"
+        "ARCH_105",
+        "ARCH_105",
+        "ARCH_106",
+        "ARCH_106"
       ]
     },
-    "ARCH___206": {
+    "ARCH_206": {
       "credits": 5.0,
       "prerequisites": [
-        "ARCH___205"
+        "ARCH_205"
       ]
     },
-    "ARCH___210": {
+    "ARCH_210": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "ARCH___251": {
+    "ARCH_251": {
       "credits": 3.0,
       "prerequisites": [
-        "ARCH___105",
-        "ARCH___106",
-        "ARCH___205"
+        "ARCH_105",
+        "ARCH_106",
+        "ARCH_205"
       ]
     },
-    "ARCH___252": {
+    "ARCH_252": {
       "credits": 3.0,
       "prerequisites": [
-        "ARCH___200",
-        "ARCH___205",
-        "ARCH___206",
-        "ARCH___251"
+        "ARCH_200",
+        "ARCH_205",
+        "ARCH_206",
+        "ARCH_251"
       ]
     },
-    "ARCH___359": {
+    "ARCH_359": {
       "credits": 4.0,
       "prerequisites": [
-        "ARCH___365"
+        "ARCH_365"
       ]
     },
-    "ARCH___360": {
+    "ARCH_360": {
       "credits": 4.0,
       "prerequisites": [
-        "ARCH___359",
-        "ARCH___366"
+        "ARCH_359",
+        "ARCH_366"
       ]
     },
-    "ARCH___365": {
+    "ARCH_365": {
       "credits": 6.0,
       "prerequisites": [
-        "ARCH___205",
-        "ARCH___205",
-        "ARCH___206"
+        "ARCH_205",
+        "ARCH_205",
+        "ARCH_206"
       ]
     },
-    "ARCH___366": {
+    "ARCH_366": {
       "credits": 6.0,
       "prerequisites": [
-        "ARCH___365"
+        "ARCH_365"
       ]
     },
-    "ARCH___371": {
+    "ARCH_371": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "ARCH___372": {
+    "ARCH_372": {
       "credits": 3.0,
       "prerequisites": [
-        "ARCH___366",
-        "ARCH___371"
+        "ARCH_366",
+        "ARCH_371"
       ]
     },
-    "ARCH___391": {
+    "ARCH_391": {
       "credits": null,
       "prerequisites": []
     },
-    "ARCH___395": {
+    "ARCH_395": {
       "credits": 1.0,
       "prerequisites": []
     },
-    "ARCH___399": {
+    "ARCH_399": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "ARCH___414": {
+    "ARCH_414": {
       "credits": 3.0,
       "prerequisites": [
-        "ARCH___252",
-        "ARCH___371",
-        "ARCH___465"
+        "ARCH_252",
+        "ARCH_371",
+        "ARCH_465"
       ]
     },
-    "ARCH___440": {
+    "ARCH_440": {
       "credits": 3.0,
       "prerequisites": [
-        "ARCH___106"
+        "ARCH_106"
       ]
     },
-    "ARCH___465": {
+    "ARCH_465": {
       "credits": 6.0,
       "prerequisites": [
-        "ARCH___360",
-        "ARCH___365",
-        "ARCH___365",
-        "ARCH___366",
-        "ARCH___372"
+        "ARCH_360",
+        "ARCH_365",
+        "ARCH_365",
+        "ARCH_366",
+        "ARCH_372"
       ]
     },
-    "ARCH___466": {
+    "ARCH_466": {
       "credits": 6.0,
       "prerequisites": [
-        "ARCH___365",
-        "ARCH___366",
-        "ARCH___465"
+        "ARCH_365",
+        "ARCH_366",
+        "ARCH_465"
       ]
     },
-    "ARCH___470": {
+    "ARCH_470": {
       "credits": 3.0,
       "prerequisites": [
-        "PHYS___131",
-        "MATH___180"
+        "PHYS_131",
+        "MATH_180"
       ]
     },
-    "ARCH___471": {
+    "ARCH_471": {
       "credits": 3.0,
       "prerequisites": [
-        "ARCH___470"
+        "ARCH_470"
       ]
     },
-    "ARCH___499": {
+    "ARCH_499": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "ARCH___520": {
+    "ARCH_520": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "ARCH___522": {
+    "ARCH_522": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "ARCH___531": {
+    "ARCH_531": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "ARCH___532": {
+    "ARCH_532": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "ARCH___544": {
+    "ARCH_544": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "ARCH___551": {
+    "ARCH_551": {
       "credits": 6.0,
       "prerequisites": []
     },
-    "ARCH___552": {
+    "ARCH_552": {
       "credits": 6.0,
       "prerequisites": [
-        "ARCH___551"
+        "ARCH_551"
       ]
     },
-    "ARCH___553": {
+    "ARCH_553": {
       "credits": 6.0,
       "prerequisites": [
-        "ARCH___551",
-        "ARCH___552"
+        "ARCH_551",
+        "ARCH_552"
       ]
     },
-    "ARCH___554": {
+    "ARCH_554": {
       "credits": 6.0,
       "prerequisites": [
-        "ARCH___553"
+        "ARCH_553"
       ]
     },
-    "ARCH___555": {
+    "ARCH_555": {
       "credits": 4.0,
       "prerequisites": [
-        "ARCH___553",
-        "ARCH___563"
+        "ARCH_553",
+        "ARCH_563"
       ]
     },
-    "ARCH___561": {
+    "ARCH_561": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "ARCH___562": {
+    "ARCH_562": {
       "credits": 4.0,
       "prerequisites": [
-        "ARCH___561"
+        "ARCH_561"
       ]
     },
-    "ARCH___563": {
+    "ARCH_563": {
       "credits": 4.0,
       "prerequisites": [
-        "ARCH___562"
+        "ARCH_562"
       ]
     },
-    "ARCH___564": {
+    "ARCH_564": {
       "credits": 4.0,
       "prerequisites": [
-        "ARCH___561",
-        "ARCH___562",
-        "ARCH___563",
-        "ARCH___573",
-        "ARCH___574"
+        "ARCH_561",
+        "ARCH_562",
+        "ARCH_563",
+        "ARCH_573",
+        "ARCH_574"
       ]
     },
-    "ARCH___565": {
+    "ARCH_565": {
       "credits": 6.0,
       "prerequisites": [
-        "ARCH___553",
-        "ARCH___554"
+        "ARCH_553",
+        "ARCH_554"
       ]
     },
-    "ARCH___566": {
+    "ARCH_566": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "ARCH___567": {
+    "ARCH_567": {
       "credits": 6.0,
       "prerequisites": [
-        "ARCH___566"
+        "ARCH_566"
       ]
     },
-    "ARCH___573": {
+    "ARCH_573": {
       "credits": 4.0,
       "prerequisites": [
-        "ARCH___561"
+        "ARCH_561"
       ]
     },
-    "ARCH___574": {
+    "ARCH_574": {
       "credits": 4.0,
       "prerequisites": [
-        "ARCH___561"
+        "ARCH_561"
       ]
     },
-    "ARCH___585": {
+    "ARCH_585": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "ARCH___586": {
+    "ARCH_586": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "ARCH___587": {
+    "ARCH_587": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "ARCH___588": {
+    "ARCH_588": {
       "credits": 4.0,
       "prerequisites": [
-        "ARCH___587"
+        "ARCH_587"
       ]
     },
-    "ARCH___589": {
+    "ARCH_589": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "ARCH___590": {
+    "ARCH_590": {
       "credits": 4.0,
       "prerequisites": [
-        "ARCH___589"
+        "ARCH_589"
       ]
     },
-    "ARCH___591": {
+    "ARCH_591": {
       "credits": null,
       "prerequisites": []
     },
-    "ARCH___596": {
+    "ARCH_596": {
       "credits": null,
       "prerequisites": []
     }

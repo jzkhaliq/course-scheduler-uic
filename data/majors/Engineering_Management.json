@@ -10,21 +10,21 @@
     "IE___201": {
       "credits": 3.0,
       "prerequisites": [
-        "MATH___181"
+        "MATH_181"
       ]
     },
     "IE___312": {
       "credits": 3.0,
       "prerequisites": [
         "CS___109",
-        "ECE___210",
-        "MATH___220"
+        "ECE__210",
+        "MATH_220"
       ]
     },
     "IE___342": {
       "credits": 3.0,
       "prerequisites": [
-        "MATH___181"
+        "MATH_181"
       ]
     },
     "IE___345": {
@@ -42,7 +42,7 @@
     "IE___380": {
       "credits": 3.0,
       "prerequisites": [
-        "CME___203"
+        "CME__203"
       ]
     },
     "IE___391": {
@@ -68,8 +68,8 @@
     "IE___397": {
       "credits": 3.0,
       "prerequisites": [
-        "ME___396",
         "IE___396",
+        "ME___396",
         "ME___499",
         "IE___499"
       ]
@@ -165,7 +165,7 @@
     "IE___471": {
       "credits": 4.0,
       "prerequisites": [
-        "MATH___310"
+        "MATH_310"
       ]
     },
     "IE___472": {
@@ -179,7 +179,7 @@
     "IE___473": {
       "credits": 4.0,
       "prerequisites": [
-        "MATH___210",
+        "MATH_210",
         "IE___342",
         "IE___471"
       ]

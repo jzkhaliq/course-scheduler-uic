@@ -3,102 +3,102 @@
   "subject_code": "AHS",
   "min_total_credits": 120,
   "courses": {
-    "AHS___100": {
+    "AHS__100": {
       "credits": 1.0,
       "prerequisites": []
     },
-    "AHS___101": {
+    "AHS__101": {
       "credits": 1.0,
       "prerequisites": []
     },
-    "AHS___102": {
+    "AHS__102": {
       "credits": 3.0,
       "prerequisites": [
-        "AHS___101"
+        "AHS__101"
       ]
     },
-    "AHS___200": {
+    "AHS__200": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "AHS___210": {
+    "AHS__210": {
       "credits": 3.0,
       "prerequisites": [
-        "AHS___100",
-        "AHS___101"
+        "AHS__100",
+        "AHS__101"
       ]
     },
-    "AHS___294": {
+    "AHS__294": {
       "credits": null,
       "prerequisites": []
     },
-    "AHS___299": {
+    "AHS__299": {
       "credits": null,
       "prerequisites": []
     },
-    "AHS___304": {
+    "AHS__304": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "AHS___325": {
+    "AHS__325": {
       "credits": 3.0,
       "prerequisites": [
-        "AHS___102",
-        "AHS___210"
+        "AHS__102",
+        "AHS__210"
       ]
     },
-    "AHS___330": {
+    "AHS__330": {
       "credits": 3.0,
       "prerequisites": [
-        "AHS___210"
+        "AHS__210"
       ]
     },
-    "AHS___365": {
+    "AHS__365": {
       "credits": 3.0,
       "prerequisites": [
-        "STAT___101",
-        "STAT___130",
-        "AHS___210"
+        "STAT_101",
+        "STAT_130",
+        "AHS__210"
       ]
     },
-    "AHS___375": {
+    "AHS__375": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "AHS___393": {
+    "AHS__393": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "AHS___396": {
+    "AHS__396": {
       "credits": null,
       "prerequisites": []
     },
-    "AHS___402": {
+    "AHS__402": {
       "credits": 2.0,
       "prerequisites": []
     },
-    "AHS___405": {
+    "AHS__405": {
       "credits": 3.0,
       "prerequisites": [
-        "AHS___325"
+        "AHS__325"
       ]
     },
-    "AHS___511": {
+    "AHS__511": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "AHS___512": {
+    "AHS__512": {
       "credits": 5.0,
       "prerequisites": [
-        "BSTT___400",
-        "AHS___511"
+        "BSTT_400",
+        "AHS__511"
       ]
     },
-    "AHS___596": {
+    "AHS__596": {
       "credits": null,
       "prerequisites": []
     },
-    "AHS___599": {
+    "AHS__599": {
       "credits": null,
       "prerequisites": []
     }

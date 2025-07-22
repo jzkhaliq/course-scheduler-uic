@@ -3,528 +3,528 @@
   "subject_code": "MATH",
   "min_total_credits": 120,
   "courses": {
-    "MATH___088": {
+    "MATH_088": {
       "credits": 1.0,
       "prerequisites": []
     },
-    "MATH___090": {
+    "MATH_090": {
       "credits": 3.0,
       "prerequisites": [
-        "MATH___088"
+        "MATH_088"
       ]
     },
-    "MATH___100": {
+    "MATH_100": {
       "credits": 1.0,
       "prerequisites": []
     },
-    "MATH___104": {
+    "MATH_104": {
       "credits": 1.0,
       "prerequisites": []
     },
-    "MATH___105": {
+    "MATH_105": {
       "credits": 4.0,
       "prerequisites": [
-        "MATH___104"
+        "MATH_104"
       ]
     },
-    "MATH___109": {
+    "MATH_109": {
       "credits": 1.0,
       "prerequisites": [
-        "MATH___110"
+        "MATH_110"
       ]
     },
-    "MATH___110": {
+    "MATH_110": {
       "credits": 4.0,
       "prerequisites": [
-        "MATH___090",
-        "MATH___109"
+        "MATH_090",
+        "MATH_109"
       ]
     },
-    "MATH___121": {
+    "MATH_121": {
       "credits": 5.0,
       "prerequisites": [
-        "MATH___110"
+        "MATH_110"
       ]
     },
-    "MATH___122": {
+    "MATH_122": {
       "credits": 1.0,
       "prerequisites": [
-        "MATH___121"
+        "MATH_121"
       ]
     },
-    "MATH___125": {
+    "MATH_125": {
       "credits": 5.0,
       "prerequisites": [
-        "MATH___110"
+        "MATH_110"
       ]
     },
-    "MATH___140": {
+    "MATH_140": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "MATH___141": {
+    "MATH_141": {
       "credits": 4.0,
       "prerequisites": [
-        "MATH___140"
+        "MATH_140"
       ]
     },
-    "MATH___160": {
+    "MATH_160": {
       "credits": 5.0,
       "prerequisites": [
-        "MATH___110"
+        "MATH_110"
       ]
     },
-    "MATH___165": {
+    "MATH_165": {
       "credits": 5.0,
       "prerequisites": [
-        "MATH___110"
+        "MATH_110"
       ]
     },
-    "MATH___170": {
+    "MATH_170": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "MATH___179": {
+    "MATH_179": {
       "credits": 1.0,
       "prerequisites": [
-        "MATH___180"
+        "MATH_180"
       ]
     },
-    "MATH___180": {
+    "MATH_180": {
       "credits": 4.0,
       "prerequisites": [
-        "MATH___121"
+        "MATH_121"
       ]
     },
-    "MATH___181": {
+    "MATH_181": {
       "credits": 4.0,
       "prerequisites": [
-        "MATH___180"
+        "MATH_180"
       ]
     },
-    "MATH___182": {
+    "MATH_182": {
       "credits": 1.0,
       "prerequisites": [
-        "MATH___181"
+        "MATH_181"
       ]
     },
-    "MATH___194": {
+    "MATH_194": {
       "credits": null,
       "prerequisites": []
     },
-    "MATH___210": {
+    "MATH_210": {
       "credits": 3.0,
       "prerequisites": [
-        "MATH___181"
+        "MATH_181"
       ]
     },
-    "MATH___211": {
+    "MATH_211": {
       "credits": 1.0,
       "prerequisites": [
-        "MATH___210"
+        "MATH_210"
       ]
     },
-    "MATH___215": {
+    "MATH_215": {
       "credits": 3.0,
       "prerequisites": [
-        "MATH___181"
+        "MATH_181"
       ]
     },
-    "MATH___220": {
+    "MATH_220": {
       "credits": 3.0,
       "prerequisites": [
-        "MATH___210"
+        "MATH_210"
       ]
     },
-    "MATH___294": {
+    "MATH_294": {
       "credits": null,
       "prerequisites": []
     },
-    "MATH___300": {
+    "MATH_300": {
       "credits": 1.0,
       "prerequisites": [
-        "ENGL___161",
-        "MATH___210"
+        "ENGL_161",
+        "MATH_210"
       ]
     },
-    "MATH___310": {
+    "MATH_310": {
       "credits": 3.0,
       "prerequisites": [
-        "MATH___181"
+        "MATH_181"
       ]
     },
-    "MATH___313": {
+    "MATH_313": {
       "credits": 3.0,
       "prerequisites": [
-        "MATH___215"
+        "MATH_215"
       ]
     },
-    "MATH___320": {
+    "MATH_320": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "MATH___330": {
+    "MATH_330": {
       "credits": 3.0,
       "prerequisites": [
-        "MATH___215"
+        "MATH_215"
       ]
     },
-    "MATH___410": {
+    "MATH_410": {
       "credits": 4.0,
       "prerequisites": [
-        "MATH___210"
+        "MATH_210"
       ]
     },
-    "MATH___414": {
+    "MATH_414": {
       "credits": 4.0,
       "prerequisites": [
-        "MATH___310",
-        "MATH___313",
-        "MATH___320"
+        "MATH_310",
+        "MATH_313",
+        "MATH_320"
       ]
     },
-    "MATH___417": {
+    "MATH_417": {
       "credits": 4.0,
       "prerequisites": [
-        "MATH___210"
+        "MATH_210"
       ]
     },
-    "MATH___419": {
+    "MATH_419": {
       "credits": 4.0,
       "prerequisites": [
-        "MATH___220",
-        "MCS___260"
+        "MATH_220",
+        "MCS__260"
       ]
     },
-    "MATH___425": {
+    "MATH_425": {
       "credits": 4.0,
       "prerequisites": [
-        "MATH___320"
+        "MATH_320"
       ]
     },
-    "MATH___430": {
+    "MATH_430": {
       "credits": 4.0,
       "prerequisites": [
         "CS___202",
-        "MATH___215",
-        "MCS___261"
+        "MATH_215",
+        "MCS__261"
       ]
     },
-    "MATH___431": {
+    "MATH_431": {
       "credits": 4.0,
       "prerequisites": [
-        "MATH___320",
-        "MATH___330"
+        "MATH_320",
+        "MATH_330"
       ]
     },
-    "MATH___435": {
+    "MATH_435": {
       "credits": 4.0,
       "prerequisites": [
-        "MATH___215"
+        "MATH_215"
       ]
     },
-    "MATH___442": {
+    "MATH_442": {
       "credits": 4.0,
       "prerequisites": [
-        "MATH___320"
+        "MATH_320"
       ]
     },
-    "MATH___445": {
+    "MATH_445": {
       "credits": 4.0,
       "prerequisites": [
-        "MATH___313"
+        "MATH_313"
       ]
     },
-    "MATH___480": {
+    "MATH_480": {
       "credits": 4.0,
       "prerequisites": [
-        "MATH___220"
+        "MATH_220"
       ]
     },
-    "MATH___481": {
+    "MATH_481": {
       "credits": 4.0,
       "prerequisites": [
-        "MATH___220"
+        "MATH_220"
       ]
     },
-    "MATH___494": {
+    "MATH_494": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "MATH___496": {
+    "MATH_496": {
       "credits": null,
       "prerequisites": []
     },
-    "MATH___502": {
+    "MATH_502": {
       "credits": 4.0,
       "prerequisites": [
-        "MATH___430"
+        "MATH_430"
       ]
     },
-    "MATH___504": {
+    "MATH_504": {
       "credits": 4.0,
       "prerequisites": [
-        "MATH___430",
-        "MATH___502",
-        "PHIL___562"
+        "MATH_430",
+        "MATH_502",
+        "PHIL_562"
       ]
     },
-    "MATH___506": {
+    "MATH_506": {
       "credits": 4.0,
       "prerequisites": [
-        "MATH___502",
-        "PHIL___562"
+        "MATH_502",
+        "PHIL_562"
       ]
     },
-    "MATH___507": {
+    "MATH_507": {
       "credits": 4.0,
       "prerequisites": [
-        "MATH___506",
-        "PHIL___567"
+        "MATH_506",
+        "PHIL_567"
       ]
     },
-    "MATH___511": {
+    "MATH_511": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "MATH___512": {
+    "MATH_512": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "MATH___514": {
+    "MATH_514": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "MATH___515": {
+    "MATH_515": {
       "credits": 4.0,
       "prerequisites": [
-        "MATH___514"
+        "MATH_514"
       ]
     },
-    "MATH___516": {
+    "MATH_516": {
       "credits": 4.0,
       "prerequisites": [
-        "MATH___330",
-        "MATH___425"
+        "MATH_330",
+        "MATH_425"
       ]
     },
-    "MATH___517": {
+    "MATH_517": {
       "credits": 4.0,
       "prerequisites": [
-        "MATH___516"
+        "MATH_516"
       ]
     },
-    "MATH___518": {
+    "MATH_518": {
       "credits": 4.0,
       "prerequisites": [
-        "MATH___517"
+        "MATH_517"
       ]
     },
-    "MATH___520": {
+    "MATH_520": {
       "credits": 4.0,
       "prerequisites": [
-        "MATH___516",
-        "MATH___517"
+        "MATH_516",
+        "MATH_517"
       ]
     },
-    "MATH___525": {
+    "MATH_525": {
       "credits": 4.0,
       "prerequisites": [
-        "MATH___515"
+        "MATH_515"
       ]
     },
-    "MATH___531": {
+    "MATH_531": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "MATH___533": {
+    "MATH_533": {
       "credits": 4.0,
       "prerequisites": [
-        "MATH___411",
-        "MATH___414"
+        "MATH_411",
+        "MATH_414"
       ]
     },
-    "MATH___535": {
+    "MATH_535": {
       "credits": 4.0,
       "prerequisites": [
-        "MATH___411"
+        "MATH_411"
       ]
     },
-    "MATH___537": {
+    "MATH_537": {
       "credits": 4.0,
       "prerequisites": [
-        "MATH___417",
-        "MATH___533",
-        "MATH___535"
+        "MATH_417",
+        "MATH_533",
+        "MATH_535"
       ]
     },
-    "MATH___539": {
+    "MATH_539": {
       "credits": 4.0,
       "prerequisites": [
-        "MATH___533"
+        "MATH_533"
       ]
     },
-    "MATH___546": {
+    "MATH_546": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "MATH___547": {
+    "MATH_547": {
       "credits": 4.0,
       "prerequisites": [
-        "MATH___330",
-        "MATH___445"
+        "MATH_330",
+        "MATH_445"
       ]
     },
-    "MATH___548": {
+    "MATH_548": {
       "credits": 4.0,
       "prerequisites": [
-        "MATH___547"
+        "MATH_547"
       ]
     },
-    "MATH___549": {
+    "MATH_549": {
       "credits": 4.0,
       "prerequisites": [
-        "MATH___310",
-        "MATH___320",
-        "MATH___445"
+        "MATH_310",
+        "MATH_320",
+        "MATH_445"
       ]
     },
-    "MATH___550": {
+    "MATH_550": {
       "credits": 4.0,
       "prerequisites": [
-        "MATH___549"
+        "MATH_549"
       ]
     },
-    "MATH___551": {
+    "MATH_551": {
       "credits": 4.0,
       "prerequisites": [
-        "MATH___442",
-        "MATH___549"
+        "MATH_442",
+        "MATH_549"
       ]
     },
-    "MATH___552": {
+    "MATH_552": {
       "credits": 4.0,
       "prerequisites": [
-        "MATH___516",
-        "MATH___517"
+        "MATH_516",
+        "MATH_517"
       ]
     },
-    "MATH___553": {
+    "MATH_553": {
       "credits": 4.0,
       "prerequisites": [
-        "MATH___552"
+        "MATH_552"
       ]
     },
-    "MATH___554": {
+    "MATH_554": {
       "credits": 4.0,
       "prerequisites": [
-        "MATH___517",
-        "MATH___535"
+        "MATH_517",
+        "MATH_535"
       ]
     },
-    "MATH___555": {
+    "MATH_555": {
       "credits": 4.0,
       "prerequisites": [
-        "MATH___517",
-        "MATH___535"
+        "MATH_517",
+        "MATH_535"
       ]
     },
-    "MATH___568": {
+    "MATH_568": {
       "credits": 4.0,
       "prerequisites": [
-        "MATH___548"
+        "MATH_548"
       ]
     },
-    "MATH___569": {
+    "MATH_569": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "MATH___571": {
+    "MATH_571": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "MATH___576": {
+    "MATH_576": {
       "credits": 4.0,
       "prerequisites": [
-        "MATH___410",
-        "MATH___481",
-        "MATH___533"
+        "MATH_410",
+        "MATH_481",
+        "MATH_533"
       ]
     },
-    "MATH___577": {
+    "MATH_577": {
       "credits": 4.0,
       "prerequisites": [
-        "MATH___533",
-        "MATH___576"
+        "MATH_533",
+        "MATH_576"
       ]
     },
-    "MATH___578": {
+    "MATH_578": {
       "credits": 4.0,
       "prerequisites": [
-        "MATH___417",
-        "MATH___481"
+        "MATH_417",
+        "MATH_481"
       ]
     },
-    "MATH___580": {
+    "MATH_580": {
       "credits": 4.0,
       "prerequisites": [
-        "MATH___410",
-        "MATH___417",
-        "MATH___481"
+        "MATH_410",
+        "MATH_417",
+        "MATH_481"
       ]
     },
-    "MATH___582": {
+    "MATH_582": {
       "credits": 4.0,
       "prerequisites": [
-        "MATH___533",
-        "MATH___539",
-        "MATH___576"
+        "MATH_533",
+        "MATH_539",
+        "MATH_576"
       ]
     },
-    "MATH___584": {
+    "MATH_584": {
       "credits": 4.0,
       "prerequisites": [
-        "STAT___401",
-        "MATH___417",
-        "MATH___481"
+        "STAT_401",
+        "MATH_417",
+        "MATH_481"
       ]
     },
-    "MATH___585": {
+    "MATH_585": {
       "credits": 4.0,
       "prerequisites": [
-        "MATH___313",
-        "MATH___480"
+        "MATH_313",
+        "MATH_480"
       ]
     },
-    "MATH___589": {
+    "MATH_589": {
       "credits": 2.0,
       "prerequisites": []
     },
-    "MATH___590": {
+    "MATH_590": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "MATH___593": {
+    "MATH_593": {
       "credits": 1.0,
       "prerequisites": []
     },
-    "MATH___594": {
+    "MATH_594": {
       "credits": null,
       "prerequisites": []
     },
-    "MATH___595": {
+    "MATH_595": {
       "credits": 1.0,
       "prerequisites": []
     },
-    "MATH___596": {
+    "MATH_596": {
       "credits": null,
       "prerequisites": []
     },
-    "MATH___598": {
+    "MATH_598": {
       "credits": null,
       "prerequisites": []
     },
-    "MATH___599": {
+    "MATH_599": {
       "credits": null,
       "prerequisites": []
     }

@@ -3,300 +3,300 @@
   "subject_code": "MKTG",
   "min_total_credits": 120,
   "courses": {
-    "MKTG___360": {
+    "MKTG_360": {
       "credits": 3.0,
       "prerequisites": [
-        "ENGL___161"
+        "ENGL_161"
       ]
     },
-    "MKTG___370": {
+    "MKTG_370": {
       "credits": 3.0,
       "prerequisites": [
-        "MKTG___360"
+        "MKTG_360"
       ]
     },
-    "MKTG___452": {
+    "MKTG_452": {
       "credits": 3.0,
       "prerequisites": [
-        "MKTG___360"
+        "MKTG_360"
       ]
     },
-    "MKTG___455": {
+    "MKTG_455": {
       "credits": 3.0,
       "prerequisites": [
-        "MKTG___360"
+        "MKTG_360"
       ]
     },
-    "MKTG___458": {
+    "MKTG_458": {
       "credits": 3.0,
       "prerequisites": [
-        "MKTG___360",
-        "MKTG___462"
+        "MKTG_360",
+        "MKTG_462"
       ]
     },
-    "MKTG___460": {
+    "MKTG_460": {
       "credits": 3.0,
       "prerequisites": [
-        "IDS___270",
-        "MKTG___360"
+        "IDS__270",
+        "MKTG_360"
       ]
     },
-    "MKTG___461": {
+    "MKTG_461": {
       "credits": 3.0,
       "prerequisites": [
-        "MKTG___360"
+        "MKTG_360"
       ]
     },
-    "MKTG___462": {
+    "MKTG_462": {
       "credits": 3.0,
       "prerequisites": [
-        "STAT___101",
-        "IDS___270",
-        "MKTG___360",
-        "MKTG___370"
+        "STAT_101",
+        "IDS__270",
+        "MKTG_360",
+        "MKTG_370"
       ]
     },
-    "MKTG___463": {
+    "MKTG_463": {
       "credits": 3.0,
       "prerequisites": [
-        "MKTG___360"
+        "MKTG_360"
       ]
     },
-    "MKTG___464": {
+    "MKTG_464": {
       "credits": 3.0,
       "prerequisites": [
-        "MKTG___360",
-        "MKTG___360"
+        "MKTG_360",
+        "MKTG_360"
       ]
     },
-    "MKTG___465": {
+    "MKTG_465": {
       "credits": 3.0,
       "prerequisites": [
-        "MKTG___461",
-        "MKTG___462"
+        "MKTG_461",
+        "MKTG_462"
       ]
     },
-    "MKTG___467": {
+    "MKTG_467": {
       "credits": 3.0,
       "prerequisites": [
-        "IDS___270",
-        "IDS___270",
-        "MKTG___460",
-        "MKTG___460",
-        "MKTG___462"
+        "IDS__270",
+        "IDS__270",
+        "MKTG_460",
+        "MKTG_460",
+        "MKTG_462"
       ]
     },
-    "MKTG___468": {
+    "MKTG_468": {
       "credits": 3.0,
       "prerequisites": [
-        "IDS___270",
-        "IDS___270",
-        "MKTG___462"
+        "IDS__270",
+        "IDS__270",
+        "MKTG_462"
       ]
     },
-    "MKTG___469": {
-      "credits": 3.0,
-      "prerequisites": [
-        "BA___200",
-        "MKTG___360"
-      ]
-    },
-    "MKTG___470": {
-      "credits": 3.0,
-      "prerequisites": [
-        "MKTG___360",
-        "MKTG___360",
-        "MKTG___462",
-        "MKTG___462"
-      ]
-    },
-    "MKTG___471": {
-      "credits": 3.0,
-      "prerequisites": [
-        "MKTG___360"
-      ]
-    },
-    "MKTG___473": {
-      "credits": 3.0,
-      "prerequisites": [
-        "MKTG___360"
-      ]
-    },
-    "MKTG___474": {
-      "credits": 3.0,
-      "prerequisites": [
-        "MKTG___461"
-      ]
-    },
-    "MKTG___475": {
-      "credits": 3.0,
-      "prerequisites": [
-        "MKTG___462"
-      ]
-    },
-    "MKTG___476": {
-      "credits": 3.0,
-      "prerequisites": [
-        "MKTG___360"
-      ]
-    },
-    "MKTG___477": {
-      "credits": 3.0,
-      "prerequisites": [
-        "MKTG___360",
-        "MKTG___478"
-      ]
-    },
-    "MKTG___479": {
+    "MKTG_469": {
       "credits": 3.0,
       "prerequisites": [
         "BA___200",
-        "MKTG___360",
-        "MKTG___461"
+        "MKTG_360"
       ]
     },
-    "MKTG___482": {
+    "MKTG_470": {
       "credits": 3.0,
       "prerequisites": [
-        "MKTG___360",
-        "MKTG___462"
+        "MKTG_360",
+        "MKTG_360",
+        "MKTG_462",
+        "MKTG_462"
       ]
     },
-    "MKTG___485": {
+    "MKTG_471": {
       "credits": 3.0,
       "prerequisites": [
-        "MKTG___360"
+        "MKTG_360"
       ]
     },
-    "MKTG___494": {
+    "MKTG_473": {
+      "credits": 3.0,
+      "prerequisites": [
+        "MKTG_360"
+      ]
+    },
+    "MKTG_474": {
+      "credits": 3.0,
+      "prerequisites": [
+        "MKTG_461"
+      ]
+    },
+    "MKTG_475": {
+      "credits": 3.0,
+      "prerequisites": [
+        "MKTG_462"
+      ]
+    },
+    "MKTG_476": {
+      "credits": 3.0,
+      "prerequisites": [
+        "MKTG_360"
+      ]
+    },
+    "MKTG_477": {
+      "credits": 3.0,
+      "prerequisites": [
+        "MKTG_360",
+        "MKTG_478"
+      ]
+    },
+    "MKTG_479": {
+      "credits": 3.0,
+      "prerequisites": [
+        "BA___200",
+        "MKTG_360",
+        "MKTG_461"
+      ]
+    },
+    "MKTG_482": {
+      "credits": 3.0,
+      "prerequisites": [
+        "MKTG_360",
+        "MKTG_462"
+      ]
+    },
+    "MKTG_485": {
+      "credits": 3.0,
+      "prerequisites": [
+        "MKTG_360"
+      ]
+    },
+    "MKTG_494": {
       "credits": null,
       "prerequisites": []
     },
-    "MKTG___499": {
+    "MKTG_499": {
       "credits": null,
       "prerequisites": []
     },
-    "MKTG___500": {
+    "MKTG_500": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "MKTG___518": {
+    "MKTG_518": {
       "credits": 4.0,
       "prerequisites": [
-        "MKTG___500",
-        "MBA___506"
+        "MKTG_500",
+        "MBA__506"
       ]
     },
-    "MKTG___560": {
+    "MKTG_560": {
       "credits": 4.0,
       "prerequisites": [
-        "MKTG___500"
+        "MKTG_500"
       ]
     },
-    "MKTG___561": {
+    "MKTG_561": {
       "credits": 4.0,
       "prerequisites": [
-        "MKTG___500"
+        "MKTG_500"
       ]
     },
-    "MKTG___562": {
+    "MKTG_562": {
       "credits": 4.0,
       "prerequisites": [
-        "MKTG___360",
-        "MKTG___500",
-        "MKTG___563"
+        "MKTG_360",
+        "MKTG_500",
+        "MKTG_563"
       ]
     },
-    "MKTG___563": {
+    "MKTG_563": {
       "credits": 4.0,
       "prerequisites": [
-        "MKTG___360",
-        "MKTG___500",
-        "MKTG___562"
+        "MKTG_360",
+        "MKTG_500",
+        "MKTG_562"
       ]
     },
-    "MKTG___565": {
+    "MKTG_565": {
       "credits": 4.0,
       "prerequisites": [
-        "MKTG___500"
+        "MKTG_500"
       ]
     },
-    "MKTG___567": {
+    "MKTG_567": {
       "credits": 4.0,
       "prerequisites": [
-        "MKTG___360",
-        "MKTG___500",
-        "MKTG___561"
+        "MKTG_360",
+        "MKTG_500",
+        "MKTG_561"
       ]
     },
-    "MKTG___569": {
+    "MKTG_569": {
       "credits": 4.0,
       "prerequisites": [
-        "MKTG___360",
-        "MKTG___500",
-        "MKTG___561"
+        "MKTG_360",
+        "MKTG_500",
+        "MKTG_561"
       ]
     },
-    "MKTG___570": {
+    "MKTG_570": {
       "credits": 4.0,
       "prerequisites": [
-        "MKTG___360",
-        "MKTG___500",
-        "MKTG___561",
-        "MKTG___563"
+        "MKTG_360",
+        "MKTG_500",
+        "MKTG_561",
+        "MKTG_563"
       ]
     },
-    "MKTG___571": {
+    "MKTG_571": {
       "credits": 4.0,
       "prerequisites": [
-        "MKTG___500"
+        "MKTG_500"
       ]
     },
-    "MKTG___572": {
+    "MKTG_572": {
       "credits": 4.0,
       "prerequisites": [
-        "MKTG___500"
+        "MKTG_500"
       ]
     },
-    "MKTG___574": {
+    "MKTG_574": {
       "credits": 4.0,
       "prerequisites": [
-        "MKTG___500"
+        "MKTG_500"
       ]
     },
-    "MKTG___575": {
+    "MKTG_575": {
       "credits": 4.0,
       "prerequisites": [
-        "MKTG___360",
-        "MKTG___500"
+        "MKTG_360",
+        "MKTG_500"
       ]
     },
-    "MKTG___577": {
+    "MKTG_577": {
       "credits": 4.0,
       "prerequisites": [
-        "MKTG___500",
-        "MKTG___578"
+        "MKTG_500",
+        "MKTG_578"
       ]
     },
-    "MKTG___581": {
+    "MKTG_581": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "MKTG___584": {
+    "MKTG_584": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "MKTG___594": {
+    "MKTG_594": {
       "credits": null,
       "prerequisites": [
-        "MKTG___500"
+        "MKTG_500"
       ]
     },
-    "MKTG___596": {
+    "MKTG_596": {
       "credits": null,
       "prerequisites": []
     },
-    "MKTG___599": {
+    "MKTG_599": {
       "credits": null,
       "prerequisites": []
     }

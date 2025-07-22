@@ -3,255 +3,255 @@
   "subject_code": "MGMT",
   "min_total_credits": 120,
   "courses": {
-    "MGMT___340": {
+    "MGMT_340": {
       "credits": 3.0,
       "prerequisites": [
-        "ENGL___161"
+        "ENGL_161"
       ]
     },
-    "MGMT___350": {
+    "MGMT_350": {
       "credits": 3.0,
       "prerequisites": [
-        "MATH___160",
-        "ENGL___161"
+        "MATH_160",
+        "ENGL_161"
       ]
     },
-    "MGMT___355": {
+    "MGMT_355": {
+      "credits": 3.0,
+      "prerequisites": [
+        "IDS__200",
+        "BA___200",
+        "ACTG_210",
+        "IDS__270",
+        "MGMT_340"
+      ]
+    },
+    "MGMT_360": {
       "credits": 3.0,
       "prerequisites": [
         "BA___200",
-        "IDS___200",
-        "ACTG___210",
-        "IDS___270",
-        "MGMT___340"
+        "IDS__200",
+        "ACTG_210",
+        "IDS__270",
+        "MGMT_340",
+        "MGMT_355"
       ]
     },
-    "MGMT___360": {
+    "MGMT_445": {
       "credits": 3.0,
       "prerequisites": [
-        "IDS___200",
-        "BA___200",
-        "ACTG___210",
-        "IDS___270",
-        "MGMT___340",
-        "MGMT___355"
+        "MGMT_340"
       ]
     },
-    "MGMT___445": {
-      "credits": 3.0,
-      "prerequisites": [
-        "MGMT___340"
-      ]
-    },
-    "MGMT___447": {
+    "MGMT_447": {
       "credits": 4.0,
       "prerequisites": [
-        "SOC___241",
-        "SOC___244",
-        "MGMT___340"
+        "SOC__241",
+        "SOC__244",
+        "MGMT_340"
       ]
     },
-    "MGMT___452": {
+    "MGMT_452": {
       "credits": 3.0,
       "prerequisites": [
-        "MGMT___340"
+        "MGMT_340"
       ]
     },
-    "MGMT___453": {
+    "MGMT_453": {
       "credits": 3.0,
       "prerequisites": [
-        "MGMT___340"
+        "MGMT_340"
       ]
     },
-    "MGMT___454": {
+    "MGMT_454": {
       "credits": 3.0,
       "prerequisites": [
-        "MGMT___340",
-        "MGMT___350"
+        "MGMT_340",
+        "MGMT_350"
       ]
     },
-    "MGMT___455": {
+    "MGMT_455": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "MGMT___460": {
+    "MGMT_460": {
       "credits": 4.0,
       "prerequisites": [
-        "MGMT___340",
-        "MGMT___350",
-        "MGMT___350"
+        "MGMT_340",
+        "MGMT_350",
+        "MGMT_350"
       ]
     },
-    "MGMT___463": {
+    "MGMT_463": {
       "credits": 3.0,
       "prerequisites": [
-        "MGMT___340"
+        "MGMT_340"
       ]
     },
-    "MGMT___464": {
+    "MGMT_464": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "MGMT___465": {
+    "MGMT_465": {
       "credits": 3.0,
       "prerequisites": [
-        "MGMT___452",
-        "MGMT___455"
+        "MGMT_452",
+        "MGMT_455"
       ]
     },
-    "MGMT___466": {
+    "MGMT_466": {
       "credits": 4.0,
       "prerequisites": [
-        "MGMT___340"
+        "MGMT_340"
       ]
     },
-    "MGMT___470": {
+    "MGMT_470": {
       "credits": 3.0,
       "prerequisites": [
-        "MGMT___452",
-        "MGMT___453"
+        "MGMT_452",
+        "MGMT_453"
       ]
     },
-    "MGMT___471": {
+    "MGMT_471": {
       "credits": 3.0,
       "prerequisites": [
-        "MGMT___340",
-        "MGMT___452"
+        "MGMT_340",
+        "MGMT_452"
       ]
     },
-    "MGMT___475": {
+    "MGMT_475": {
       "credits": 3.0,
       "prerequisites": [
-        "MGMT___340"
+        "MGMT_340"
       ]
     },
-    "MGMT___480": {
+    "MGMT_480": {
       "credits": 3.0,
       "prerequisites": [
-        "MGMT___340",
-        "MGMT___350"
+        "MGMT_340",
+        "MGMT_350"
       ]
     },
-    "MGMT___481": {
+    "MGMT_481": {
       "credits": 3.0,
       "prerequisites": [
-        "MATH___165",
-        "MATH___180",
-        "MGMT___340"
+        "MATH_165",
+        "MATH_180",
+        "MGMT_340"
       ]
     },
-    "MGMT___485": {
+    "MGMT_485": {
       "credits": 3.0,
       "prerequisites": [
-        "MGMT___340",
-        "MGMT___350"
+        "MGMT_340",
+        "MGMT_350"
       ]
     },
-    "MGMT___486": {
+    "MGMT_486": {
       "credits": 3.0,
       "prerequisites": [
-        "MGMT___452",
-        "MGMT___453"
+        "MGMT_452",
+        "MGMT_453"
       ]
     },
-    "MGMT___494": {
+    "MGMT_494": {
       "credits": 3.0,
       "prerequisites": [
-        "IDS___494",
-        "ACTG___494"
+        "ACTG_494",
+        "IDS__494"
       ]
     },
-    "MGMT___495": {
+    "MGMT_495": {
       "credits": 4.0,
       "prerequisites": [
-        "FIN___300",
-        "IDS___355",
+        "FIN__300",
+        "IDS__355",
         "IE___365"
       ]
     },
-    "MGMT___499": {
+    "MGMT_499": {
       "credits": null,
       "prerequisites": []
     },
-    "MGMT___541": {
+    "MGMT_541": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "MGMT___550": {
+    "MGMT_550": {
       "credits": 4.0,
       "prerequisites": [
-        "MGMT___541"
+        "MGMT_541"
       ]
     },
-    "MGMT___553": {
+    "MGMT_553": {
       "credits": 4.0,
       "prerequisites": [
-        "MGMT___541"
+        "MGMT_541"
       ]
     },
-    "MGMT___555": {
+    "MGMT_555": {
       "credits": 4.0,
       "prerequisites": [
-        "MGMT___541",
-        "MGMT___553",
-        "MGMT___553"
+        "MGMT_541",
+        "MGMT_553",
+        "MGMT_553"
       ]
     },
-    "MGMT___564": {
+    "MGMT_564": {
       "credits": 4.0,
       "prerequisites": [
-        "MGMT___541"
+        "MGMT_541"
       ]
     },
-    "MGMT___568": {
+    "MGMT_568": {
       "credits": 4.0,
       "prerequisites": [
-        "MGMT___553"
+        "MGMT_553"
       ]
     },
-    "MGMT___570": {
+    "MGMT_570": {
       "credits": 4.0,
       "prerequisites": [
-        "ECON___520"
+        "ECON_520"
       ]
     },
-    "MGMT___573": {
+    "MGMT_573": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "MGMT___575": {
+    "MGMT_575": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "MGMT___576": {
+    "MGMT_576": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "MGMT___582": {
+    "MGMT_582": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "MGMT___587": {
+    "MGMT_587": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "MGMT___589": {
+    "MGMT_589": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "MGMT___590": {
+    "MGMT_590": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "MGMT___594": {
+    "MGMT_594": {
       "credits": null,
       "prerequisites": []
     },
-    "MGMT___596": {
+    "MGMT_596": {
       "credits": null,
       "prerequisites": []
     },
-    "MGMT___599": {
+    "MGMT_599": {
       "credits": null,
       "prerequisites": []
     }

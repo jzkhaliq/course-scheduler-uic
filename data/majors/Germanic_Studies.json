@@ -3,261 +3,261 @@
   "subject_code": "GER",
   "min_total_credits": 120,
   "courses": {
-    "GER___101": {
+    "GER__101": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "GER___102": {
+    "GER__102": {
       "credits": 4.0,
       "prerequisites": [
-        "GER___101"
+        "GER__101"
       ]
     },
-    "GER___103": {
+    "GER__103": {
       "credits": 4.0,
       "prerequisites": [
-        "GER___102",
-        "GER___106"
+        "GER__102",
+        "GER__106"
       ]
     },
-    "GER___104": {
+    "GER__104": {
       "credits": 4.0,
       "prerequisites": [
-        "GER___103"
+        "GER__103"
       ]
     },
-    "GER___120": {
+    "GER__120": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "GER___123": {
+    "GER__123": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "GER___125": {
+    "GER__125": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "GER___207": {
+    "GER__207": {
       "credits": 3.0,
       "prerequisites": [
-        "ENGL___160"
+        "ENGL_160"
       ]
     },
-    "GER___211": {
+    "GER__211": {
       "credits": 3.0,
       "prerequisites": [
-        "GER___104"
+        "GER__104"
       ]
     },
-    "GER___212": {
+    "GER__212": {
       "credits": 3.0,
       "prerequisites": [
-        "GER___104"
+        "GER__104"
       ]
     },
-    "GER___214": {
+    "GER__214": {
       "credits": 3.0,
       "prerequisites": [
-        "GER___104"
+        "GER__104"
       ]
     },
-    "GER___217": {
+    "GER__217": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "GER___219": {
+    "GER__219": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "GER___240": {
+    "GER__240": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "GER___299": {
+    "GER__299": {
       "credits": null,
       "prerequisites": []
     },
-    "GER___300": {
+    "GER__300": {
       "credits": 1.0,
       "prerequisites": []
     },
-    "GER___302": {
+    "GER__302": {
       "credits": 3.0,
       "prerequisites": [
-        "MOVI___102",
-        "ENGL___102",
-        "ENGL___120",
-        "ENGL___121",
-        "MOVI___121",
-        "GER___207",
-        "LCSL___207",
-        "SPAN___207",
-        "GER___217",
+        "ENGL_102",
+        "MOVI_102",
+        "ENGL_120",
+        "ENGL_121",
+        "MOVI_121",
+        "GER__207",
+        "LCSL_207",
+        "SPAN_207",
+        "GER__217",
+        "ENGL_232",
         "AH___232",
-        "ENGL___232",
-        "MOVI___232",
-        "ENGL___233",
+        "MOVI_232",
         "AH___233",
-        "MOVI___233"
+        "MOVI_233",
+        "ENGL_233"
       ]
     },
-    "GER___310": {
+    "GER__310": {
       "credits": 3.0,
       "prerequisites": [
-        "GER___211",
-        "GER___212",
-        "GER___214"
+        "GER__211",
+        "GER__212",
+        "GER__214"
       ]
     },
-    "GER___311": {
+    "GER__311": {
       "credits": 3.0,
       "prerequisites": [
-        "GER___211",
-        "GER___212",
-        "GER___214"
+        "GER__211",
+        "GER__212",
+        "GER__214"
       ]
     },
-    "GER___318": {
+    "GER__318": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "GER___333": {
+    "GER__333": {
       "credits": 3.0,
       "prerequisites": [
-        "GER___211",
-        "GER___212"
+        "GER__211",
+        "GER__212"
       ]
     },
-    "GER___398": {
+    "GER__398": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "GER___399": {
+    "GER__399": {
       "credits": null,
       "prerequisites": []
     },
-    "GER___401": {
+    "GER__401": {
       "credits": 4.0,
       "prerequisites": [
-        "GER___211",
-        "GER___212",
-        "GER___310"
+        "GER__211",
+        "GER__212",
+        "GER__310"
       ]
     },
-    "GER___408": {
+    "GER__408": {
       "credits": 4.0,
       "prerequisites": [
-        "GER___212"
+        "GER__212"
       ]
     },
-    "GER___411": {
+    "GER__411": {
       "credits": 4.0,
       "prerequisites": [
-        "GER___212"
+        "GER__212"
       ]
     },
-    "GER___437": {
+    "GER__437": {
       "credits": 4.0,
       "prerequisites": [
-        "GER___211"
+        "GER__211"
       ]
     },
-    "GER___439": {
+    "GER__439": {
       "credits": 4.0,
       "prerequisites": [
-        "GER___212"
+        "GER__212"
       ]
     },
-    "GER___448": {
+    "GER__448": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "GER___461": {
+    "GER__461": {
       "credits": null,
       "prerequisites": [
-        "GER___104"
+        "GER__104"
       ]
     },
-    "GER___487": {
+    "GER__487": {
       "credits": 4.0,
       "prerequisites": [
-        "SPAN___448",
-        "GER___448",
+        "SPAN_448",
+        "GER__448",
         "FR___448",
+        "GER__449",
         "FR___449",
-        "GER___449",
-        "SPAN___449",
-        "LING___483",
-        "FR___502",
-        "SPAN___502"
+        "SPAN_449",
+        "LING_483",
+        "SPAN_502",
+        "FR___502"
       ]
     },
-    "GER___492": {
+    "GER__492": {
       "credits": null,
       "prerequisites": [
-        "GER___211",
-        "GER___493"
+        "GER__211",
+        "GER__493"
       ]
     },
-    "GER___493": {
+    "GER__493": {
       "credits": null,
       "prerequisites": [
-        "GER___211",
-        "GER___492"
+        "GER__211",
+        "GER__492"
       ]
     },
-    "GER___494": {
+    "GER__494": {
       "credits": 6.0,
       "prerequisites": []
     },
-    "GER___495": {
+    "GER__495": {
       "credits": 6.0,
       "prerequisites": [
-        "GER___494"
+        "GER__494"
       ]
     },
-    "GER___500": {
+    "GER__500": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "GER___513": {
+    "GER__513": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "GER___514": {
+    "GER__514": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "GER___515": {
+    "GER__515": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "GER___531": {
+    "GER__531": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "GER___540": {
+    "GER__540": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "GER___550": {
+    "GER__550": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "GER___593": {
+    "GER__593": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "GER___596": {
+    "GER__596": {
       "credits": null,
       "prerequisites": []
     },
-    "GER___598": {
+    "GER__598": {
       "credits": null,
       "prerequisites": []
     },
-    "GER___599": {
+    "GER__599": {
       "credits": null,
       "prerequisites": []
     }

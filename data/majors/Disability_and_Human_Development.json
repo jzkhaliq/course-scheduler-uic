@@ -3,302 +3,302 @@
   "subject_code": "DHD",
   "min_total_credits": 120,
   "courses": {
-    "DHD___100": {
+    "DHD__100": {
       "credits": 1.0,
       "prerequisites": []
     },
-    "DHD___101": {
+    "DHD__101": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "DHD___102": {
+    "DHD__102": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "DHD___103": {
+    "DHD__103": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "DHD___201": {
+    "DHD__201": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "DHD___202": {
+    "DHD__202": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "DHD___203": {
+    "DHD__203": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "DHD___204": {
+    "DHD__204": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "DHD___205": {
+    "DHD__205": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "DHD___206": {
+    "DHD__206": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "DHD___301": {
+    "DHD__301": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "DHD___302": {
+    "DHD__302": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "DHD___303": {
+    "DHD__303": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "DHD___390": {
+    "DHD__390": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "DHD___400": {
+    "DHD__400": {
       "credits": 1.0,
       "prerequisites": []
     },
-    "DHD___401": {
+    "DHD__401": {
       "credits": 3.0,
       "prerequisites": [
-        "DHD___101"
+        "DHD__101"
       ]
     },
-    "DHD___403": {
+    "DHD__403": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "DHD___404": {
+    "DHD__404": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "DHD___406": {
+    "DHD__406": {
       "credits": 4.0,
       "prerequisites": [
-        "DHD___101"
+        "DHD__101"
       ]
     },
-    "DHD___407": {
+    "DHD__407": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "DHD___408": {
+    "DHD__408": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "DHD___409": {
+    "DHD__409": {
       "credits": 2.0,
       "prerequisites": []
     },
-    "DHD___420": {
+    "DHD__420": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "DHD___440": {
+    "DHD__440": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "DHD___494": {
+    "DHD__494": {
       "credits": null,
       "prerequisites": []
     },
-    "DHD___501": {
+    "DHD__501": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "DHD___502": {
+    "DHD__502": {
       "credits": 4.0,
       "prerequisites": [
-        "DHD___501"
+        "DHD__501"
       ]
     },
-    "DHD___505": {
+    "DHD__505": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "DHD___506": {
+    "DHD__506": {
       "credits": 3.0,
       "prerequisites": [
-        "DHD___505"
+        "DHD__505"
       ]
     },
-    "DHD___510": {
+    "DHD__510": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "DHD___514": {
+    "DHD__514": {
       "credits": null,
       "prerequisites": []
     },
-    "DHD___515": {
+    "DHD__515": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "DHD___526": {
+    "DHD__526": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "DHD___528": {
+    "DHD__528": {
       "credits": null,
       "prerequisites": []
     },
-    "DHD___530": {
+    "DHD__530": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "DHD___535": {
+    "DHD__535": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "DHD___537": {
+    "DHD__537": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "DHD___541": {
+    "DHD__541": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "DHD___543": {
+    "DHD__543": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "DHD___544": {
+    "DHD__544": {
       "credits": 2.0,
       "prerequisites": []
     },
-    "DHD___546": {
+    "DHD__546": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "DHD___548": {
+    "DHD__548": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "DHD___551": {
+    "DHD__551": {
       "credits": 2.0,
       "prerequisites": [
-        "DHD___440"
+        "DHD__440"
       ]
     },
-    "DHD___553": {
+    "DHD__553": {
       "credits": 1.0,
       "prerequisites": []
     },
-    "DHD___554": {
+    "DHD__554": {
       "credits": 3.0,
       "prerequisites": [
-        "DHD___440"
+        "DHD__440"
       ]
     },
-    "DHD___555": {
+    "DHD__555": {
       "credits": 3.0,
       "prerequisites": [
-        "DHD___440"
+        "DHD__440"
       ]
     },
-    "DHD___556": {
+    "DHD__556": {
       "credits": 1.0,
       "prerequisites": [
-        "DHD___440"
+        "DHD__440"
       ]
     },
-    "DHD___557": {
+    "DHD__557": {
       "credits": 2.0,
       "prerequisites": [
-        "DHD___556"
+        "DHD__556"
       ]
     },
-    "DHD___561": {
+    "DHD__561": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "DHD___562": {
+    "DHD__562": {
       "credits": 1.0,
       "prerequisites": []
     },
-    "DHD___566": {
+    "DHD__566": {
       "credits": 2.0,
       "prerequisites": [
-        "DHD___440"
+        "DHD__440"
       ]
     },
-    "DHD___568": {
+    "DHD__568": {
       "credits": 3.0,
       "prerequisites": [
-        "DHD___440"
+        "DHD__440"
       ]
     },
-    "DHD___570": {
+    "DHD__570": {
       "credits": 3.0,
       "prerequisites": [
-        "DHD___401"
+        "DHD__401"
       ]
     },
-    "DHD___572": {
+    "DHD__572": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "DHD___573": {
+    "DHD__573": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "DHD___576": {
+    "DHD__576": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "DHD___578": {
+    "DHD__578": {
       "credits": null,
       "prerequisites": []
     },
-    "DHD___581": {
+    "DHD__581": {
       "credits": 2.0,
       "prerequisites": []
     },
-    "DHD___589": {
+    "DHD__589": {
       "credits": 1.0,
       "prerequisites": []
     },
-    "DHD___590": {
+    "DHD__590": {
       "credits": null,
       "prerequisites": [
-        "DHD___401",
-        "DHD___415"
+        "DHD__401",
+        "DHD__415"
       ]
     },
-    "DHD___592": {
+    "DHD__592": {
       "credits": 1.0,
       "prerequisites": []
     },
-    "DHD___593": {
+    "DHD__593": {
       "credits": null,
       "prerequisites": []
     },
-    "DHD___594": {
+    "DHD__594": {
       "credits": null,
       "prerequisites": []
     },
-    "DHD___595": {
+    "DHD__595": {
       "credits": null,
       "prerequisites": []
     },
-    "DHD___596": {
+    "DHD__596": {
       "credits": null,
       "prerequisites": []
     },
-    "DHD___597": {
+    "DHD__597": {
       "credits": null,
       "prerequisites": []
     },
-    "DHD___598": {
+    "DHD__598": {
       "credits": null,
       "prerequisites": []
     },
-    "DHD___599": {
+    "DHD__599": {
       "credits": null,
       "prerequisites": []
     }

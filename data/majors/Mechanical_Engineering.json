@@ -10,38 +10,38 @@
     "ME___205": {
       "credits": 3.0,
       "prerequisites": [
-        "PHYS___141",
-        "MATH___181"
+        "PHYS_141",
+        "MATH_181"
       ]
     },
     "ME___210": {
       "credits": 3.0,
       "prerequisites": [
-        "CME___201"
+        "CME__201"
       ]
     },
     "ME___211": {
       "credits": 4.0,
       "prerequisites": [
-        "PHYS___141",
-        "MATH___220",
-        "MATH___220"
+        "PHYS_141",
+        "MATH_220",
+        "MATH_220"
       ]
     },
     "ME___250": {
       "credits": 3.0,
       "prerequisites": [
-        "ENGL___160",
-        "ENGL___160"
+        "ENGL_160",
+        "ENGL_160"
       ]
     },
     "ME___261": {
       "credits": 2.0,
       "prerequisites": [
-        "CHEM___122",
-        "CHEM___123",
-        "PHYS___141",
-        "MATH___181"
+        "CHEM_122",
+        "CHEM_123",
+        "PHYS_141",
+        "MATH_181"
       ]
     },
     "ME___293": {
@@ -53,15 +53,15 @@
       "prerequisites": [
         "CS___109",
         "ME___210",
-        "MATH___220"
+        "MATH_220"
       ]
     },
     "ME___312": {
       "credits": 3.0,
       "prerequisites": [
         "CS___109",
-        "ECE___210",
-        "MATH___220"
+        "ECE__210",
+        "MATH_220"
       ]
     },
     "ME___320": {
@@ -88,29 +88,29 @@
       "credits": 3.0,
       "prerequisites": [
         "CS___109",
-        "MATH___310"
+        "MATH_310"
       ]
     },
     "ME___341": {
       "credits": 3.0,
       "prerequisites": [
-        "CME___203",
+        "CME__203",
         "ME___211"
       ]
     },
     "ME___347": {
       "credits": 3.0,
       "prerequisites": [
-        "CME___203",
-        "MATH___220",
+        "CME__203",
+        "MATH_220",
         "ME___250",
-        "MATH___310"
+        "MATH_310"
       ]
     },
     "ME___370": {
       "credits": 3.0,
       "prerequisites": [
-        "CME___203",
+        "CME__203",
         "ME___230",
         "ME___250"
       ]
@@ -118,7 +118,7 @@
     "ME___380": {
       "credits": 3.0,
       "prerequisites": [
-        "CME___203"
+        "CME__203"
       ]
     },
     "ME___391": {
@@ -146,14 +146,14 @@
       "prerequisites": [
         "ME___396",
         "IE___396",
-        "ME___499",
-        "IE___499"
+        "IE___499",
+        "ME___499"
       ]
     },
     "ME___401": {
       "credits": 4.0,
       "prerequisites": [
-        "CME___203"
+        "CME__203"
       ]
     },
     "ME___408": {
@@ -248,14 +248,14 @@
     "ME___445": {
       "credits": 4.0,
       "prerequisites": [
-        "IE___444",
-        "ME___444"
+        "ME___444",
+        "IE___444"
       ]
     },
     "ME___449": {
       "credits": null,
       "prerequisites": [
-        "ECE___347"
+        "ECE__347"
       ]
     },
     "ME___464": {
@@ -313,7 +313,7 @@
       "credits": 4.0,
       "prerequisites": [
         "ME___408",
-        "CME___435"
+        "CME__435"
       ]
     },
     "ME___510": {
@@ -399,8 +399,8 @@
     "ME___541": {
       "credits": 4.0,
       "prerequisites": [
-        "ECE___347",
-        "ECE___449"
+        "ECE__347",
+        "ECE__449"
       ]
     },
     "ME___542": {
@@ -417,7 +417,7 @@
     "ME___562": {
       "credits": 4.0,
       "prerequisites": [
-        "BME___460"
+        "BME__460"
       ]
     },
     "ME___574": {

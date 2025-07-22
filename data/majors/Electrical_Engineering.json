@@ -3,535 +3,535 @@
   "subject_code": "ECE",
   "min_total_credits": 128,
   "courses": {
-    "ECE___115": {
+    "ECE__115": {
       "credits": 4.0,
       "prerequisites": [
-        "MATH___165",
-        "MATH___180"
+        "MATH_165",
+        "MATH_180"
       ]
     },
-    "ECE___210": {
+    "ECE__210": {
       "credits": 3.0,
       "prerequisites": [
-        "MATH___180"
+        "MATH_180"
       ]
     },
-    "ECE___225": {
+    "ECE__225": {
       "credits": 4.0,
       "prerequisites": [
-        "ECE___115",
-        "PHYS___142",
-        "MATH___220"
+        "ECE__115",
+        "PHYS_142",
+        "MATH_220"
       ]
     },
-    "ECE___265": {
+    "ECE__265": {
       "credits": 4.0,
       "prerequisites": [
-        "ECE___115",
-        "MATH___180"
+        "ECE__115",
+        "MATH_180"
       ]
     },
-    "ECE___266": {
+    "ECE__266": {
       "credits": 4.0,
       "prerequisites": [
         "CS___107",
-        "ECE___265"
+        "ECE__265"
       ]
     },
-    "ECE___267": {
+    "ECE__267": {
       "credits": 3.0,
       "prerequisites": [
         "CS___107",
-        "ECE___265"
+        "ECE__265"
       ]
     },
-    "ECE___294": {
+    "ECE__294": {
       "credits": null,
       "prerequisites": []
     },
-    "ECE___310": {
+    "ECE__310": {
       "credits": 3.0,
       "prerequisites": [
-        "ECE___210",
-        "MATH___220",
-        "ECE___225"
+        "ECE__210",
+        "MATH_220",
+        "ECE__225"
       ]
     },
-    "ECE___311": {
+    "ECE__311": {
       "credits": 4.0,
       "prerequisites": [
-        "ECE___310",
-        "ECE___341"
+        "ECE__310",
+        "ECE__341"
       ]
     },
-    "ECE___317": {
+    "ECE__317": {
       "credits": 4.0,
       "prerequisites": [
-        "ECE___310"
+        "ECE__310"
       ]
     },
-    "ECE___322": {
+    "ECE__322": {
       "credits": 4.0,
       "prerequisites": [
-        "ECE___225"
+        "ECE__225"
       ]
     },
-    "ECE___333": {
+    "ECE__333": {
       "credits": 4.0,
       "prerequisites": [
         "CS___107",
-        "ECE___341"
+        "ECE__341"
       ]
     },
-    "ECE___340": {
+    "ECE__340": {
       "credits": 4.0,
       "prerequisites": [
-        "ECE___225"
+        "ECE__225"
       ]
     },
-    "ECE___341": {
+    "ECE__341": {
       "credits": 3.0,
       "prerequisites": [
-        "MATH___210"
+        "MATH_210"
       ]
     },
-    "ECE___342": {
+    "ECE__342": {
       "credits": 4.0,
       "prerequisites": [
-        "ECE___340"
+        "ECE__340"
       ]
     },
-    "ECE___346": {
+    "ECE__346": {
       "credits": 4.0,
       "prerequisites": [
-        "ECE___115",
-        "PHYS___142",
-        "MATH___220"
+        "ECE__115",
+        "PHYS_142",
+        "MATH_220"
       ]
     },
-    "ECE___347": {
+    "ECE__347": {
       "credits": 3.0,
       "prerequisites": [
-        "CHEM___122",
-        "ECE___225"
+        "CHEM_122",
+        "ECE__225"
       ]
     },
-    "ECE___350": {
+    "ECE__350": {
       "credits": 4.0,
       "prerequisites": [
-        "MATH___310",
-        "ECE___310"
+        "MATH_310",
+        "ECE__310"
       ]
     },
-    "ECE___366": {
+    "ECE__366": {
       "credits": 3.0,
       "prerequisites": [
-        "ECE___266"
+        "ECE__266"
       ]
     },
-    "ECE___367": {
+    "ECE__367": {
       "credits": 4.0,
       "prerequisites": [
-        "ECE___265",
-        "ECE___267",
+        "ECE__265",
+        "ECE__267",
         "CS___366"
       ]
     },
-    "ECE___391": {
+    "ECE__391": {
       "credits": 1.0,
       "prerequisites": []
     },
-    "ECE___392": {
+    "ECE__392": {
       "credits": null,
       "prerequisites": []
     },
-    "ECE___394": {
+    "ECE__394": {
       "credits": null,
       "prerequisites": []
     },
-    "ECE___396": {
+    "ECE__396": {
       "credits": 2.0,
       "prerequisites": [
-        "ENGL___161",
-        "ECE___225",
-        "ECE___340",
-        "ECE___346",
-        "ECE___366"
+        "ENGL_161",
+        "ECE__225",
+        "ECE__340",
+        "ECE__346",
+        "ECE__366"
       ]
     },
-    "ECE___397": {
+    "ECE__397": {
       "credits": 2.0,
       "prerequisites": [
-        "ECE___396"
+        "ECE__396"
       ]
     },
-    "ECE___407": {
+    "ECE__407": {
       "credits": 4.0,
       "prerequisites": [
-        "BME___339",
-        "ECE___341",
+        "BME__339",
+        "ECE__341",
         "IE___342",
-        "STAT___381"
+        "STAT_381"
       ]
     },
-    "ECE___410": {
+    "ECE__410": {
       "credits": 4.0,
       "prerequisites": [
-        "MATH___310",
-        "ECE___310"
+        "ECE__310",
+        "MATH_310"
       ]
     },
-    "ECE___412": {
+    "ECE__412": {
       "credits": 4.0,
       "prerequisites": [
-        "ECE___310"
+        "ECE__310"
       ]
     },
-    "ECE___415": {
+    "ECE__415": {
       "credits": 4.0,
       "prerequisites": [
-        "ECE___310"
+        "ECE__310"
       ]
     },
-    "ECE___417": {
+    "ECE__417": {
       "credits": null,
       "prerequisites": [
-        "ECE___317"
+        "ECE__317"
       ]
     },
-    "ECE___418": {
+    "ECE__418": {
       "credits": 4.0,
       "prerequisites": [
-        "ECE___317",
-        "ECE___341"
+        "ECE__317",
+        "ECE__341"
       ]
     },
-    "ECE___421": {
+    "ECE__421": {
       "credits": 4.0,
       "prerequisites": [
-        "ECE___225",
-        "ECE___322"
+        "ECE__225",
+        "ECE__322"
       ]
     },
-    "ECE___424": {
+    "ECE__424": {
       "credits": null,
       "prerequisites": [
-        "ECE___225",
-        "ECE___322"
+        "ECE__225",
+        "ECE__322"
       ]
     },
-    "ECE___432": {
+    "ECE__432": {
       "credits": 4.0,
       "prerequisites": [
-        "MATH___310",
-        "ECE___311",
-        "ECE___341"
+        "MATH_310",
+        "ECE__311",
+        "ECE__341"
       ]
     },
-    "ECE___434": {
+    "ECE__434": {
       "credits": 4.0,
       "prerequisites": [
-        "ECE___310"
+        "ECE__310"
       ]
     },
-    "ECE___436": {
+    "ECE__436": {
       "credits": 4.0,
       "prerequisites": [
-        "ECE___333"
+        "ECE__333"
       ]
     },
-    "ECE___437": {
+    "ECE__437": {
       "credits": 4.0,
       "prerequisites": [
-        "ECE___311",
-        "ECE___341"
+        "ECE__311",
+        "ECE__341"
       ]
     },
-    "ECE___440": {
+    "ECE__440": {
       "credits": 4.0,
       "prerequisites": [
-        "ECE___346"
+        "ECE__346"
       ]
     },
-    "ECE___445": {
+    "ECE__445": {
       "credits": null,
       "prerequisites": [
-        "ECE___342"
+        "ECE__342"
       ]
     },
-    "ECE___448": {
+    "ECE__448": {
       "credits": 4.0,
       "prerequisites": [
-        "ECE___346"
+        "ECE__346"
       ]
     },
-    "ECE___449": {
+    "ECE__449": {
       "credits": null,
       "prerequisites": [
-        "ECE___347"
+        "ECE__347"
       ]
     },
-    "ECE___451": {
+    "ECE__451": {
       "credits": 4.0,
       "prerequisites": [
-        "MATH___310",
-        "ECE___350"
+        "MATH_310",
+        "ECE__350"
       ]
     },
-    "ECE___452": {
+    "ECE__452": {
       "credits": 4.0,
       "prerequisites": [
-        "MATH___310",
-        "ECE___310"
+        "ECE__310",
+        "MATH_310"
       ]
     },
-    "ECE___454": {
+    "ECE__454": {
       "credits": null,
       "prerequisites": [
-        "ECE___266",
-        "ECE___310",
-        "ECE___340",
-        "ECE___350",
-        "ECE___412",
-        "ECE___451"
+        "ECE__266",
+        "ECE__310",
+        "ECE__340",
+        "ECE__350",
+        "ECE__412",
+        "ECE__451"
       ]
     },
-    "ECE___458": {
+    "ECE__458": {
       "credits": null,
       "prerequisites": [
-        "ECE___225"
+        "ECE__225"
       ]
     },
-    "ECE___464": {
+    "ECE__464": {
       "credits": 4.0,
       "prerequisites": [
         "CS___251",
-        "ECE___366"
+        "ECE__366"
       ]
     },
-    "ECE___465": {
+    "ECE__465": {
       "credits": 4.0,
       "prerequisites": [
-        "PHYS___142",
-        "ECE___366"
+        "PHYS_142",
+        "ECE__366"
       ]
     },
-    "ECE___466": {
+    "ECE__466": {
       "credits": 4.0,
       "prerequisites": [
         "CS___261",
-        "ECE___366"
+        "ECE__366"
       ]
     },
-    "ECE___467": {
+    "ECE__467": {
       "credits": null,
       "prerequisites": [
-        "ECE___340"
+        "ECE__340"
       ]
     },
-    "ECE___469": {
+    "ECE__469": {
       "credits": null,
       "prerequisites": [
-        "ECE___366",
-        "ECE___465"
+        "ECE__366",
+        "ECE__465"
       ]
     },
-    "ECE___491": {
+    "ECE__491": {
       "credits": null,
       "prerequisites": []
     },
-    "ECE___493": {
+    "ECE__493": {
       "credits": null,
       "prerequisites": []
     },
-    "ECE___499": {
+    "ECE__499": {
       "credits": 0.0,
       "prerequisites": []
     },
-    "ECE___508": {
+    "ECE__508": {
       "credits": 4.0,
       "prerequisites": [
-        "MATH___310",
-        "ECE___341"
+        "MATH_310",
+        "ECE__341"
       ]
     },
-    "ECE___516": {
+    "ECE__516": {
       "credits": 4.0,
       "prerequisites": [
-        "MATH___310",
-        "ECE___317",
-        "MATH___320",
-        "ECE___341"
+        "MATH_310",
+        "ECE__317",
+        "MATH_320",
+        "ECE__341"
       ]
     },
-    "ECE___517": {
+    "ECE__517": {
       "credits": 4.0,
       "prerequisites": [
-        "ECE___317",
-        "ECE___341"
+        "ECE__317",
+        "ECE__341"
       ]
     },
-    "ECE___520": {
+    "ECE__520": {
       "credits": 4.0,
       "prerequisites": [
-        "ECE___421"
+        "ECE__421"
       ]
     },
-    "ECE___521": {
+    "ECE__521": {
       "credits": 4.0,
       "prerequisites": [
-        "ECE___520"
+        "ECE__520"
       ]
     },
-    "ECE___522": {
+    "ECE__522": {
       "credits": 4.0,
       "prerequisites": [
-        "ECE___420",
-        "ECE___520"
+        "ECE__420",
+        "ECE__520"
       ]
     },
-    "ECE___523": {
+    "ECE__523": {
       "credits": 4.0,
       "prerequisites": [
-        "ECE___421",
-        "ECE___520"
+        "ECE__421",
+        "ECE__520"
       ]
     },
-    "ECE___526": {
+    "ECE__526": {
       "credits": 4.0,
       "prerequisites": [
-        "ECE___520"
+        "ECE__520"
       ]
     },
-    "ECE___532": {
+    "ECE__532": {
       "credits": 4.0,
       "prerequisites": [
-        "ECE___432"
+        "ECE__432"
       ]
     },
-    "ECE___533": {
+    "ECE__533": {
       "credits": 4.0,
       "prerequisites": [
-        "ECE___333",
-        "ECE___341"
+        "ECE__333",
+        "ECE__341"
       ]
     },
-    "ECE___534": {
+    "ECE__534": {
       "credits": 4.0,
       "prerequisites": [
-        "ECE___341"
+        "ECE__341"
       ]
     },
-    "ECE___540": {
+    "ECE__540": {
       "credits": 4.0,
       "prerequisites": [
-        "ECE___346"
+        "ECE__346"
       ]
     },
-    "ECE___541": {
+    "ECE__541": {
       "credits": 4.0,
       "prerequisites": [
-        "ECE___347",
-        "ECE___449"
+        "ECE__347",
+        "ECE__449"
       ]
     },
-    "ECE___542": {
+    "ECE__542": {
       "credits": 4.0,
       "prerequisites": [
-        "ECE___540"
+        "ECE__540"
       ]
     },
-    "ECE___545": {
+    "ECE__545": {
       "credits": 4.0,
       "prerequisites": [
-        "ECE___445"
+        "ECE__445"
       ]
     },
-    "ECE___550": {
+    "ECE__550": {
       "credits": 4.0,
       "prerequisites": [
-        "ECE___350"
+        "ECE__350"
       ]
     },
-    "ECE___551": {
+    "ECE__551": {
       "credits": 4.0,
       "prerequisites": [
-        "ECE___550"
+        "ECE__550"
       ]
     },
-    "ECE___552": {
+    "ECE__552": {
       "credits": 4.0,
       "prerequisites": [
-        "ECE___550"
+        "ECE__550"
       ]
     },
-    "ECE___559": {
+    "ECE__559": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "ECE___565": {
+    "ECE__565": {
       "credits": 4.0,
       "prerequisites": [
         "CS___401",
-        "ECE___465",
+        "ECE__465",
         "CS___466"
       ]
     },
-    "ECE___566": {
+    "ECE__566": {
       "credits": 4.0,
       "prerequisites": [
         "CS___401",
+        "ECE__466",
+        "CS___466"
+      ]
+    },
+    "ECE__567": {
+      "credits": 4.0,
+      "prerequisites": [
+        "ECE__467"
+      ]
+    },
+    "ECE__568": {
+      "credits": 4.0,
+      "prerequisites": [
+        "ECE__466"
+      ]
+    },
+    "ECE__569": {
+      "credits": 4.0,
+      "prerequisites": [
         "CS___466",
-        "ECE___466"
+        "ECE__466"
       ]
     },
-    "ECE___567": {
+    "ECE__572": {
       "credits": 4.0,
       "prerequisites": [
-        "ECE___467"
+        "PHYS_244",
+        "ECE__346"
       ]
     },
-    "ECE___568": {
-      "credits": 4.0,
-      "prerequisites": [
-        "ECE___466"
-      ]
-    },
-    "ECE___569": {
-      "credits": 4.0,
-      "prerequisites": [
-        "ECE___466",
-        "CS___466"
-      ]
-    },
-    "ECE___572": {
-      "credits": 4.0,
-      "prerequisites": [
-        "PHYS___244",
-        "ECE___346"
-      ]
-    },
-    "ECE___591": {
+    "ECE__591": {
       "credits": 1.0,
       "prerequisites": []
     },
-    "ECE___594": {
+    "ECE__594": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "ECE___595": {
+    "ECE__595": {
       "credits": 0.0,
       "prerequisites": []
     },
-    "ECE___596": {
+    "ECE__596": {
       "credits": null,
       "prerequisites": []
     },
-    "ECE___598": {
+    "ECE__598": {
       "credits": null,
       "prerequisites": []
     },
-    "ECE___599": {
+    "ECE__599": {
       "credits": null,
       "prerequisites": []
     }

@@ -3,70 +3,70 @@
   "subject_code": "CEES",
   "min_total_credits": 120,
   "courses": {
-    "CEES___208": {
+    "CEES_208": {
       "credits": 3.0,
       "prerequisites": [
-        "ENGL___160"
+        "ENGL_160"
       ]
     },
-    "CEES___246": {
+    "CEES_246": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "CEES___247": {
+    "CEES_247": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "CEES___250": {
+    "CEES_250": {
       "credits": 4.0,
       "prerequisites": [
-        "RUSS___150",
-        "ENGL___160"
+        "RUSS_150",
+        "ENGL_160"
       ]
     },
-    "CEES___320": {
+    "CEES_320": {
       "credits": 3.0,
       "prerequisites": []
     },
-    "CEES___400": {
+    "CEES_400": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "CEES___406": {
+    "CEES_406": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "CEES___418": {
+    "CEES_418": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "CEES___433": {
+    "CEES_433": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "CEES___435": {
+    "CEES_435": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "CEES___439": {
+    "CEES_439": {
       "credits": 4.0,
       "prerequisites": [
-        "GER___212"
+        "GER__212"
       ]
     },
-    "CEES___460": {
+    "CEES_460": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "CEES___515": {
+    "CEES_515": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "CEES___551": {
+    "CEES_551": {
       "credits": 4.0,
       "prerequisites": []
     },
-    "CEES___599": {
+    "CEES_599": {
       "credits": null,
       "prerequisites": []
     }
