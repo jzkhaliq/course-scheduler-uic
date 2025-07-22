@@ -271,7 +271,7 @@ def parse_course_table(url, term, subject):
 
 def write_outputs(subject):
     # Create subfolder for this subject
-    major_dir = os.path.join("subjects", subject)
+    major_dir = os.path.join("data/subjects", subject)
     os.makedirs(major_dir, exist_ok=True)
 
     """Write output files"""
