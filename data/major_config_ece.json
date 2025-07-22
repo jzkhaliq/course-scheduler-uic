@@ -1,48 +1,959 @@
 {
-  "major": "ECE",
+  "subject": "ECE",
   "course_prefix": "ECE___",
-  "intro_courses": [
-    "ECE___115"
-  ],
-  "only_one_intro": true,
-  "placeholder_courses": [
-    "ECE___499",
-    "ECE___XXX"
-  ],
-  "exclude_levels": [
-    500,
-    600
-  ],
-  "min_total_credits": 128,
-  "required_courses": [
-    "ECE___210",
-    "ECE___225",
-    "ECE___265",
-    "ECE___266",
-    "ECE___267",
-    "ECE___294",
-    "ECE___310",
-    "ECE___311",
-    "ECE___317",
-    "ECE___322",
-    "ECE___333",
-    "ECE___340",
-    "ECE___341",
-    "ECE___342",
-    "ECE___346",
-    "ECE___347",
-    "ECE___350",
-    "ECE___366",
-    "ECE___367",
-    "ECE___391",
-    "ECE___392",
-    "ECE___394",
-    "ECE___396",
-    "ECE___397",
-    "ECE___499"
-  ],
-  "required_course_equivalents": {
-    "ECE___115": []
+  "courses": {
+    "ECE___115": {
+      "credits": 4.0,
+      "offered": {
+        "fall": false,
+        "spring": false
+      },
+      "prerequisites": [
+        "MATH___165",
+        "MATH___180"
+      ],
+      "type": "intro"
+    },
+    "ECE___210": {
+      "credits": 3.0,
+      "offered": {
+        "fall": false,
+        "spring": false
+      },
+      "prerequisites": [
+        "MATH___180"
+      ],
+      "type": "required"
+    },
+    "ECE___225": {
+      "credits": 4.0,
+      "offered": {
+        "fall": false,
+        "spring": false
+      },
+      "prerequisites": [
+        "ECE___115",
+        "PHYS___142",
+        "MATH___220"
+      ],
+      "type": "required"
+    },
+    "ECE___265": {
+      "credits": 4.0,
+      "offered": {
+        "fall": false,
+        "spring": false
+      },
+      "prerequisites": [
+        "ECE___115",
+        "MATH___180"
+      ],
+      "type": "required"
+    },
+    "ECE___266": {
+      "credits": 4.0,
+      "offered": {
+        "fall": false,
+        "spring": false
+      },
+      "prerequisites": [
+        "CS___107",
+        "ECE___265"
+      ],
+      "type": "required"
+    },
+    "ECE___267": {
+      "credits": 3.0,
+      "offered": {
+        "fall": true,
+        "spring": false
+      },
+      "prerequisites": [
+        "CS___107",
+        "ECE___265"
+      ],
+      "type": "required"
+    },
+    "ECE___294": {
+      "credits": null,
+      "offered": {
+        "fall": true,
+        "spring": false
+      },
+      "prerequisites": [],
+      "type": "required"
+    },
+    "ECE___310": {
+      "credits": 3.0,
+      "offered": {
+        "fall": false,
+        "spring": false
+      },
+      "prerequisites": [
+        "ECE___210",
+        "MATH___220",
+        "ECE___225"
+      ],
+      "type": "required"
+    },
+    "ECE___311": {
+      "credits": 4.0,
+      "offered": {
+        "fall": false,
+        "spring": false
+      },
+      "prerequisites": [
+        "ECE___310",
+        "ECE___341"
+      ],
+      "type": "required"
+    },
+    "ECE___317": {
+      "credits": 4.0,
+      "offered": {
+        "fall": false,
+        "spring": false
+      },
+      "prerequisites": [
+        "ECE___310"
+      ],
+      "type": "required"
+    },
+    "ECE___322": {
+      "credits": 4.0,
+      "offered": {
+        "fall": false,
+        "spring": false
+      },
+      "prerequisites": [
+        "ECE___225"
+      ],
+      "type": "required"
+    },
+    "ECE___333": {
+      "credits": 4.0,
+      "offered": {
+        "fall": false,
+        "spring": false
+      },
+      "prerequisites": [
+        "CS___107",
+        "ECE___341"
+      ],
+      "type": "required"
+    },
+    "ECE___340": {
+      "credits": 4.0,
+      "offered": {
+        "fall": false,
+        "spring": false
+      },
+      "prerequisites": [
+        "ECE___225"
+      ],
+      "type": "required"
+    },
+    "ECE___341": {
+      "credits": 3.0,
+      "offered": {
+        "fall": false,
+        "spring": false
+      },
+      "prerequisites": [
+        "MATH___210"
+      ],
+      "type": "required"
+    },
+    "ECE___342": {
+      "credits": 4.0,
+      "offered": {
+        "fall": false,
+        "spring": false
+      },
+      "prerequisites": [
+        "ECE___340"
+      ],
+      "type": "required"
+    },
+    "ECE___346": {
+      "credits": 4.0,
+      "offered": {
+        "fall": false,
+        "spring": false
+      },
+      "prerequisites": [
+        "ECE___115",
+        "PHYS___142",
+        "MATH___220"
+      ],
+      "type": "required"
+    },
+    "ECE___347": {
+      "credits": 3.0,
+      "offered": {
+        "fall": true,
+        "spring": false
+      },
+      "prerequisites": [
+        "CHEM___122",
+        "ECE___225"
+      ],
+      "type": "required"
+    },
+    "ECE___350": {
+      "credits": 4.0,
+      "offered": {
+        "fall": false,
+        "spring": false
+      },
+      "prerequisites": [
+        "MATH___310",
+        "ECE___310"
+      ],
+      "type": "required"
+    },
+    "ECE___366": {
+      "credits": 3.0,
+      "offered": {
+        "fall": false,
+        "spring": false
+      },
+      "prerequisites": [
+        "ECE___266"
+      ],
+      "type": "required"
+    },
+    "ECE___367": {
+      "credits": 4.0,
+      "offered": {
+        "fall": true,
+        "spring": false
+      },
+      "prerequisites": [
+        "ECE___265",
+        "ECE___267",
+        "CS___366"
+      ],
+      "type": "required"
+    },
+    "ECE___391": {
+      "credits": 1.0,
+      "offered": {
+        "fall": false,
+        "spring": false
+      },
+      "prerequisites": [],
+      "type": "required"
+    },
+    "ECE___392": {
+      "credits": null,
+      "offered": {
+        "fall": false,
+        "spring": false
+      },
+      "prerequisites": [],
+      "type": "required"
+    },
+    "ECE___394": {
+      "credits": null,
+      "offered": {
+        "fall": false,
+        "spring": true
+      },
+      "prerequisites": [],
+      "type": "required"
+    },
+    "ECE___396": {
+      "credits": 2.0,
+      "offered": {
+        "fall": true,
+        "spring": false
+      },
+      "prerequisites": [
+        "ENGL___161",
+        "ECE___225",
+        "ECE___340",
+        "ECE___346",
+        "ECE___366"
+      ],
+      "type": "required"
+    },
+    "ECE___397": {
+      "credits": 2.0,
+      "offered": {
+        "fall": false,
+        "spring": false
+      },
+      "prerequisites": [
+        "ECE___396"
+      ],
+      "type": "required"
+    },
+    "ECE___407": {
+      "credits": 4.0,
+      "offered": {
+        "fall": false,
+        "spring": true
+      },
+      "prerequisites": [
+        "BME___339",
+        "ECE___341",
+        "IE___342",
+        "STAT___381"
+      ],
+      "type": "elective"
+    },
+    "ECE___410": {
+      "credits": 4.0,
+      "offered": {
+        "fall": true,
+        "spring": false
+      },
+      "prerequisites": [
+        "MATH___310",
+        "ECE___310"
+      ],
+      "type": "elective"
+    },
+    "ECE___412": {
+      "credits": 4.0,
+      "offered": {
+        "fall": false,
+        "spring": true
+      },
+      "prerequisites": [
+        "ECE___310"
+      ],
+      "type": "elective"
+    },
+    "ECE___415": {
+      "credits": 4.0,
+      "offered": {
+        "fall": true,
+        "spring": false
+      },
+      "prerequisites": [
+        "ECE___310"
+      ],
+      "type": "elective"
+    },
+    "ECE___417": {
+      "credits": null,
+      "offered": {
+        "fall": true,
+        "spring": false
+      },
+      "prerequisites": [
+        "ECE___317"
+      ],
+      "type": "elective"
+    },
+    "ECE___418": {
+      "credits": 4.0,
+      "offered": {
+        "fall": false,
+        "spring": true
+      },
+      "prerequisites": [
+        "ECE___317",
+        "ECE___341"
+      ],
+      "type": "elective"
+    },
+    "ECE___421": {
+      "credits": 4.0,
+      "offered": {
+        "fall": true,
+        "spring": false
+      },
+      "prerequisites": [
+        "ECE___225",
+        "ECE___322"
+      ],
+      "type": "elective"
+    },
+    "ECE___424": {
+      "credits": null,
+      "offered": {
+        "fall": false,
+        "spring": false
+      },
+      "prerequisites": [
+        "ECE___225",
+        "ECE___322"
+      ],
+      "type": "elective"
+    },
+    "ECE___432": {
+      "credits": 4.0,
+      "offered": {
+        "fall": true,
+        "spring": false
+      },
+      "prerequisites": [
+        "MATH___310",
+        "ECE___311",
+        "ECE___341"
+      ],
+      "type": "elective"
+    },
+    "ECE___434": {
+      "credits": 4.0,
+      "offered": {
+        "fall": true,
+        "spring": false
+      },
+      "prerequisites": [
+        "ECE___310"
+      ],
+      "type": "elective"
+    },
+    "ECE___436": {
+      "credits": 4.0,
+      "offered": {
+        "fall": false,
+        "spring": true
+      },
+      "prerequisites": [
+        "ECE___333"
+      ],
+      "type": "elective"
+    },
+    "ECE___437": {
+      "credits": 4.0,
+      "offered": {
+        "fall": false,
+        "spring": false
+      },
+      "prerequisites": [
+        "ECE___311",
+        "ECE___341"
+      ],
+      "type": "elective"
+    },
+    "ECE___440": {
+      "credits": 4.0,
+      "offered": {
+        "fall": true,
+        "spring": false
+      },
+      "prerequisites": [
+        "ECE___346"
+      ],
+      "type": "elective"
+    },
+    "ECE___445": {
+      "credits": null,
+      "offered": {
+        "fall": true,
+        "spring": false
+      },
+      "prerequisites": [
+        "ECE___342"
+      ],
+      "type": "elective"
+    },
+    "ECE___448": {
+      "credits": 4.0,
+      "offered": {
+        "fall": false,
+        "spring": true
+      },
+      "prerequisites": [
+        "ECE___346"
+      ],
+      "type": "elective"
+    },
+    "ECE___449": {
+      "credits": null,
+      "offered": {
+        "fall": false,
+        "spring": true
+      },
+      "prerequisites": [
+        "ECE___347"
+      ],
+      "type": "elective"
+    },
+    "ECE___451": {
+      "credits": 4.0,
+      "offered": {
+        "fall": true,
+        "spring": false
+      },
+      "prerequisites": [
+        "MATH___310",
+        "ECE___350"
+      ],
+      "type": "elective"
+    },
+    "ECE___452": {
+      "credits": 4.0,
+      "offered": {
+        "fall": false,
+        "spring": false
+      },
+      "prerequisites": [
+        "MATH___310",
+        "ECE___310"
+      ],
+      "type": "elective"
+    },
+    "ECE___454": {
+      "credits": null,
+      "offered": {
+        "fall": false,
+        "spring": true
+      },
+      "prerequisites": [
+        "ECE___266",
+        "ECE___310",
+        "ECE___340",
+        "ECE___350",
+        "ECE___412",
+        "ECE___451"
+      ],
+      "type": "elective"
+    },
+    "ECE___458": {
+      "credits": null,
+      "offered": {
+        "fall": true,
+        "spring": false
+      },
+      "prerequisites": [
+        "ECE___225"
+      ],
+      "type": "elective"
+    },
+    "ECE___464": {
+      "credits": 4.0,
+      "offered": {
+        "fall": true,
+        "spring": false
+      },
+      "prerequisites": [
+        "CS___251",
+        "ECE___366"
+      ],
+      "type": "elective"
+    },
+    "ECE___465": {
+      "credits": 4.0,
+      "offered": {
+        "fall": false,
+        "spring": false
+      },
+      "prerequisites": [
+        "PHYS___142",
+        "ECE___366"
+      ],
+      "type": "elective"
+    },
+    "ECE___466": {
+      "credits": 4.0,
+      "offered": {
+        "fall": false,
+        "spring": false
+      },
+      "prerequisites": [
+        "CS___261",
+        "ECE___366"
+      ],
+      "type": "elective"
+    },
+    "ECE___467": {
+      "credits": null,
+      "offered": {
+        "fall": false,
+        "spring": false
+      },
+      "prerequisites": [
+        "ECE___340"
+      ],
+      "type": "elective"
+    },
+    "ECE___469": {
+      "credits": null,
+      "offered": {
+        "fall": false,
+        "spring": true
+      },
+      "prerequisites": [
+        "ECE___366",
+        "ECE___465"
+      ],
+      "type": "elective"
+    },
+    "ECE___491": {
+      "credits": null,
+      "offered": {
+        "fall": false,
+        "spring": false
+      },
+      "prerequisites": [],
+      "type": "elective"
+    },
+    "ECE___493": {
+      "credits": null,
+      "offered": {
+        "fall": false,
+        "spring": false
+      },
+      "prerequisites": [],
+      "type": "elective"
+    },
+    "ECE___499": {
+      "credits": 0.0,
+      "offered": {
+        "fall": false,
+        "spring": false
+      },
+      "prerequisites": [],
+      "type": "elective"
+    },
+    "ECE___508": {
+      "credits": 4.0,
+      "offered": {
+        "fall": true,
+        "spring": false
+      },
+      "prerequisites": [
+        "MATH___310",
+        "ECE___341"
+      ],
+      "type": "other"
+    },
+    "ECE___516": {
+      "credits": 4.0,
+      "offered": {
+        "fall": true,
+        "spring": false
+      },
+      "prerequisites": [
+        "MATH___310",
+        "ECE___317",
+        "MATH___320",
+        "ECE___341"
+      ],
+      "type": "other"
+    },
+    "ECE___517": {
+      "credits": 4.0,
+      "offered": {
+        "fall": true,
+        "spring": false
+      },
+      "prerequisites": [
+        "ECE___317",
+        "ECE___341"
+      ],
+      "type": "other"
+    },
+    "ECE___520": {
+      "credits": 4.0,
+      "offered": {
+        "fall": false,
+        "spring": false
+      },
+      "prerequisites": [
+        "ECE___421"
+      ],
+      "type": "other"
+    },
+    "ECE___521": {
+      "credits": 4.0,
+      "offered": {
+        "fall": true,
+        "spring": false
+      },
+      "prerequisites": [
+        "ECE___520"
+      ],
+      "type": "other"
+    },
+    "ECE___522": {
+      "credits": 4.0,
+      "offered": {
+        "fall": true,
+        "spring": false
+      },
+      "prerequisites": [
+        "ECE___420",
+        "ECE___520"
+      ],
+      "type": "other"
+    },
+    "ECE___523": {
+      "credits": 4.0,
+      "offered": {
+        "fall": true,
+        "spring": false
+      },
+      "prerequisites": [
+        "ECE___421",
+        "ECE___520"
+      ],
+      "type": "other"
+    },
+    "ECE___526": {
+      "credits": 4.0,
+      "offered": {
+        "fall": true,
+        "spring": false
+      },
+      "prerequisites": [
+        "ECE___520"
+      ],
+      "type": "other"
+    },
+    "ECE___532": {
+      "credits": 4.0,
+      "offered": {
+        "fall": true,
+        "spring": false
+      },
+      "prerequisites": [
+        "ECE___432"
+      ],
+      "type": "other"
+    },
+    "ECE___533": {
+      "credits": 4.0,
+      "offered": {
+        "fall": true,
+        "spring": false
+      },
+      "prerequisites": [
+        "ECE___333",
+        "ECE___341"
+      ],
+      "type": "other"
+    },
+    "ECE___534": {
+      "credits": 4.0,
+      "offered": {
+        "fall": true,
+        "spring": false
+      },
+      "prerequisites": [
+        "ECE___341"
+      ],
+      "type": "other"
+    },
+    "ECE___540": {
+      "credits": 4.0,
+      "offered": {
+        "fall": true,
+        "spring": false
+      },
+      "prerequisites": [
+        "ECE___346"
+      ],
+      "type": "other"
+    },
+    "ECE___541": {
+      "credits": 4.0,
+      "offered": {
+        "fall": true,
+        "spring": false
+      },
+      "prerequisites": [
+        "ECE___347",
+        "ECE___449"
+      ],
+      "type": "other"
+    },
+    "ECE___542": {
+      "credits": 4.0,
+      "offered": {
+        "fall": false,
+        "spring": true
+      },
+      "prerequisites": [
+        "ECE___540"
+      ],
+      "type": "other"
+    },
+    "ECE___545": {
+      "credits": 4.0,
+      "offered": {
+        "fall": false,
+        "spring": true
+      },
+      "prerequisites": [
+        "ECE___445"
+      ],
+      "type": "other"
+    },
+    "ECE___550": {
+      "credits": 4.0,
+      "offered": {
+        "fall": false,
+        "spring": true
+      },
+      "prerequisites": [
+        "ECE___350"
+      ],
+      "type": "other"
+    },
+    "ECE___551": {
+      "credits": 4.0,
+      "offered": {
+        "fall": true,
+        "spring": false
+      },
+      "prerequisites": [
+        "ECE___550"
+      ],
+      "type": "other"
+    },
+    "ECE___552": {
+      "credits": 4.0,
+      "offered": {
+        "fall": true,
+        "spring": false
+      },
+      "prerequisites": [
+        "ECE___550"
+      ],
+      "type": "other"
+    },
+    "ECE___559": {
+      "credits": 4.0,
+      "offered": {
+        "fall": true,
+        "spring": false
+      },
+      "prerequisites": [],
+      "type": "other"
+    },
+    "ECE___565": {
+      "credits": 4.0,
+      "offered": {
+        "fall": true,
+        "spring": false
+      },
+      "prerequisites": [
+        "CS___401",
+        "ECE___465",
+        "CS___466"
+      ],
+      "type": "other"
+    },
+    "ECE___566": {
+      "credits": 4.0,
+      "offered": {
+        "fall": false,
+        "spring": false
+      },
+      "prerequisites": [
+        "CS___401",
+        "CS___466",
+        "ECE___466"
+      ],
+      "type": "other"
+    },
+    "ECE___567": {
+      "credits": 4.0,
+      "offered": {
+        "fall": false,
+        "spring": true
+      },
+      "prerequisites": [
+        "ECE___467"
+      ],
+      "type": "other"
+    },
+    "ECE___568": {
+      "credits": 4.0,
+      "offered": {
+        "fall": true,
+        "spring": false
+      },
+      "prerequisites": [
+        "ECE___466"
+      ],
+      "type": "other"
+    },
+    "ECE___569": {
+      "credits": 4.0,
+      "offered": {
+        "fall": false,
+        "spring": true
+      },
+      "prerequisites": [
+        "ECE___466",
+        "CS___466"
+      ],
+      "type": "other"
+    },
+    "ECE___572": {
+      "credits": 4.0,
+      "offered": {
+        "fall": false,
+        "spring": false
+      },
+      "prerequisites": [
+        "PHYS___244",
+        "ECE___346"
+      ],
+      "type": "other"
+    },
+    "ECE___591": {
+      "credits": 1.0,
+      "offered": {
+        "fall": false,
+        "spring": false
+      },
+      "prerequisites": [],
+      "type": "other"
+    },
+    "ECE___594": {
+      "credits": 4.0,
+      "offered": {
+        "fall": false,
+        "spring": false
+      },
+      "prerequisites": [],
+      "type": "other"
+    },
+    "ECE___595": {
+      "credits": 0.0,
+      "offered": {
+        "fall": false,
+        "spring": false
+      },
+      "prerequisites": [],
+      "type": "other"
+    },
+    "ECE___596": {
+      "credits": null,
+      "offered": {
+        "fall": false,
+        "spring": false
+      },
+      "prerequisites": [],
+      "type": "other"
+    },
+    "ECE___598": {
+      "credits": null,
+      "offered": {
+        "fall": false,
+        "spring": false
+      },
+      "prerequisites": [],
+      "type": "other"
+    },
+    "ECE___599": {
+      "credits": null,
+      "offered": {
+        "fall": false,
+        "spring": false
+      },
+      "prerequisites": [],
+      "type": "other"
+    }
   },
   "elective_pool": {
     "min_required": 5,
@@ -64,10 +975,9 @@
       "ECE___448"
     ]
   },
-  "data_paths": {
-    "credits": "majors/ECE/mastercourselist_ECE.txt",
-    "offerings": "majors/ECE/courseoffering_ECE.txt",
-    "prereqs": "majors/ECE/prerequisites_ECE.txt",
-    "timings": "majors/ECE/coursetiming_ECE.txt"
-  }
+  "placeholder_courses": [
+    "ECE___499",
+    "ECE___XXX"
+  ],
+  "min_total_credits": 71
 }

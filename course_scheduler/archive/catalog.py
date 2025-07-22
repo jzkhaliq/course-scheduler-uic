@@ -1,7 +1,7 @@
 # === catalog.py ===
 from collections import defaultdict
 from course import Course
-from prerequisites import PrerequisiteRule
+from course_scheduler.archive.prerequisites import PrerequisiteRule
 
 class CourseCatalog:
     def __init__(self):

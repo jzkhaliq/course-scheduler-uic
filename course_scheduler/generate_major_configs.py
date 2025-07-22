@@ -1,62 +1,104 @@
 import os
 import json
 import re
+from collections import defaultdict
 
-def generate_config_for_major(major_dir):
-    major = os.path.basename(major_dir)
-    prefix = f"{major}___"
-    courses = []
+def generate_config_for_subject(subject_dir):
+    subject = os.path.basename(subject_dir)
+    prefix = f"{subject}___"
 
-    # Load master course list
-    master_path = os.path.join(major_dir, f"mastercourselist_{major}.txt")
-    if not os.path.exists(master_path):
+    paths = {
+        "credits": os.path.join(subject_dir, f"mastercourselist_{subject}.txt"),
+        "offerings": os.path.join(subject_dir, f"courseoffering_{subject}.txt"),
+        "prereqs": os.path.join(subject_dir, f"prerequisites_{subject}.txt"),
+    }
+
+    if not all(os.path.exists(p) for p in paths.values()):
         return None
 
-    with open(master_path) as f:
+    # 1. Load credits
+    credits_map = {}
+    with open(paths["credits"]) as f:
         for line in f:
             parts = line.strip().split("\t")
             if len(parts) != 2:
                 continue
-            code, _ = parts
-            courses.append(code)
+            code, credit = parts
+            try:
+                credits_map[code] = float(credit)
+            except:
+                credits_map[code] = None  # for ???
+    
+    # 2. Load offerings
+    offerings_map = {}
+    with open(paths["offerings"]) as f:
+        for line in f:
+            code, fall, spring = line.strip().split("\t")
+            offerings_map[code] = {
+                "fall": fall == "1",
+                "spring": spring == "1"
+            }
 
-    # Detect intro courses — 100-level
-    intro_courses = [c for c in courses if re.match(f"{prefix}1\\d\\d", c)]
+    # 3. Load prerequisites
+    prereq_map = defaultdict(list)
+    with open(paths["prereqs"]) as f:
+        for line in f:
+            parts = line.strip().split("\t")
+            if len(parts) != 3:
+                continue
+            prereq, course, _ = parts
+            prereq_map[course].append(prereq)
 
-    # Required courses — 200–399 level (excluding XXX)
-    required_courses = [
-        c for c in courses
-        if re.match(f"{prefix}[2-3]\\d\\d", c) and not c.endswith("XXX")
-    ]
+    # 4. Build course data
+    course_data = {}
+    required_courses = []
+    electives = []
+    intro_courses = []
 
-    # Electives — 400-level (limit to top 15)
-    electives = [
-        c for c in courses
-        if re.match(f"{prefix}4\\d\\d", c)
-    ][:15]
+    for course_code in sorted(credits_map.keys()):
+        try:
+            number = int(course_code.split("___")[1])
+        except:
+            continue
 
+        # Categorize course
+        if 100 <= number < 200:
+            ctype = "intro"
+            intro_courses.append(course_code)
+        elif 200 <= number < 400:
+            ctype = "required"
+            required_courses.append(course_code)
+        elif 400 <= number < 500:
+            ctype = "elective"
+            electives.append(course_code)
+        else:
+            ctype = "other"
+
+        course_data[course_code] = {
+            "credits": credits_map[course_code],
+            "offered": offerings_map.get(course_code, {"fall": False, "spring": False}),
+            "prerequisites": prereq_map.get(course_code, []),
+            "type": ctype
+        }
+
+    # 5. Estimate total credits
+    total_credits = sum(
+        credits_map[c] for c in required_courses
+        if c in credits_map and isinstance(credits_map[c], (int, float))
+    )
+    min_total = int(total_credits) if total_credits >= 40 else 128
+
+    # 6. Final JSON structure
     config = {
-        "major": major,
+        "subject": subject,
         "course_prefix": prefix,
-        "intro_courses": intro_courses,
-        "only_one_intro": True,
-        "placeholder_courses": [f"{prefix}499", f"{prefix}XXX"],
-        "exclude_levels": [500, 600],
-        "min_total_credits": 128,
-        "required_courses": required_courses + [f"{prefix}499"],
-        "required_course_equivalents": {
-            intro: [alt for alt in intro_courses if alt != intro] for intro in intro_courses
-        },
+        "courses": course_data,
         "elective_pool": {
             "min_required": 5,
-            "courses": electives
+            "courses": electives[:15]
         },
-        "data_paths": {
-            "credits": os.path.join(major_dir, f"mastercourselist_{major}.txt"),
-            "offerings": os.path.join(major_dir, f"courseoffering_{major}.txt"),
-            "prereqs": os.path.join(major_dir, f"prerequisites_{major}.txt"),
-            "timings": os.path.join(major_dir, f"coursetiming_{major}.txt")
-        }
+        "placeholder_courses": [f"{prefix}499", f"{prefix}XXX"],
+        "min_total_credits": min_total
     }
 
     return config
@@ -64,19 +106,23 @@ def generate_config_for_major(major_dir):
 def main():
     os.makedirs("data", exist_ok=True)
 
-    for major_dir in sorted(os.listdir("majors")):
-        full_path = os.path.join("majors", major_dir)
-        if not os.path.isdir(full_path):
+    test_subjects = ["CS", "MATH", "ECE"]  # 👈 Edit this list to test different subjects
+
+    for subject in test_subjects:
+        subject_dir = os.path.join("subjects", subject)
+        if not os.path.isdir(subject_dir):
+            print(f"⚠️ Skipping {subject} — folder not found")
             continue
 
-        config = generate_config_for_major(full_path)
+        config = generate_config_for_subject(subject_dir)
         if config:
-            output_path = f"data/major_config_{major_dir}.json"
+            output_path = f"data/major_config_{subject}.json"
             with open(output_path, "w") as f:
                 json.dump(config, f, indent=2)
             print(f"✅ Generated {output_path}")
         else:
-            print(f"⚠️ Skipped {major_dir} (missing or invalid mastercourselist)")
+            print(f"⚠️ Skipped {subject} (missing or incomplete files)")
 
 if __name__ == "__main__":
     main()
+
