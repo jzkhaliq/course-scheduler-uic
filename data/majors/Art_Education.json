@@ -1,0 +1,324 @@
+{
+  "major": "Art Education",
+  "subject_code": "ART",
+  "min_total_credits": 132,
+  "courses": {
+    "ART___101": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "ART___110": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "ART___112": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "ART___116": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "ART___130": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "ART___140": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "ART___150": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "ART___151": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "ART___160": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "ART___170": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "ART___190": {
+      "credits": 4.0,
+      "prerequisites": [
+        "ENGL___160"
+      ]
+    },
+    "ART___201": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "ART___210": {
+      "credits": 4.0,
+      "prerequisites": [
+        "ART___201"
+      ]
+    },
+    "ART___212": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "ART___223": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "ART___230": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "ART___240": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "ART___250": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "ART___260": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "ART___261": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "ART___270": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "ART___272": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "ART___274": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "ART___275": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "ART___280": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "ART___290": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "ART___310": {
+      "credits": 4.0,
+      "prerequisites": [
+        "ART___210"
+      ]
+    },
+    "ART___312": {
+      "credits": 4.0,
+      "prerequisites": [
+        "ART___212"
+      ]
+    },
+    "ART___323": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "ART___330": {
+      "credits": 4.0,
+      "prerequisites": [
+        "ART___230"
+      ]
+    },
+    "ART___340": {
+      "credits": 4.0,
+      "prerequisites": [
+        "ART___240"
+      ]
+    },
+    "ART___350": {
+      "credits": 4.0,
+      "prerequisites": [
+        "ART___250"
+      ]
+    },
+    "ART___360": {
+      "credits": 4.0,
+      "prerequisites": [
+        "ART___260"
+      ]
+    },
+    "ART___362": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "ART___370": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "ART___372": {
+      "credits": 4.0,
+      "prerequisites": [
+        "ART___272"
+      ]
+    },
+    "ART___374": {
+      "credits": 4.0,
+      "prerequisites": [
+        "ART___274"
+      ]
+    },
+    "ART___376": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "ART___380": {
+      "credits": 4.0,
+      "prerequisites": [
+        "AH___160"
+      ]
+    },
+    "ART___381": {
+      "credits": 4.0,
+      "prerequisites": [
+        "ART___260",
+        "ART___261",
+        "ART___270",
+        "ART___272",
+        "ART___370",
+        "ART___372"
+      ]
+    },
+    "ART___382": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "ART___400": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "ART___401": {
+      "credits": 6.0,
+      "prerequisites": []
+    },
+    "ART___402": {
+      "credits": 6.0,
+      "prerequisites": [
+        "ART___401"
+      ]
+    },
+    "ART___410": {
+      "credits": 4.0,
+      "prerequisites": [
+        "ART___210"
+      ]
+    },
+    "ART___454": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "ART___456": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "ART___457": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "ART___460": {
+      "credits": 4.0,
+      "prerequisites": [
+        "ART___260"
+      ]
+    },
+    "ART___470": {
+      "credits": 4.0,
+      "prerequisites": [
+        "ART___272"
+      ]
+    },
+    "ART___480": {
+      "credits": null,
+      "prerequisites": []
+    },
+    "ART___484": {
+      "credits": 6.0,
+      "prerequisites": [
+        "ART___210",
+        "ART___310",
+        "ART___410"
+      ]
+    },
+    "ART___485": {
+      "credits": 6.0,
+      "prerequisites": [
+        "ART___210",
+        "ART___310",
+        "ART___410"
+      ]
+    },
+    "ART___499": {
+      "credits": null,
+      "prerequisites": []
+    },
+    "ART___500": {
+      "credits": null,
+      "prerequisites": []
+    },
+    "ART___508": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "ART___509": {
+      "credits": null,
+      "prerequisites": []
+    },
+    "ART___520": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "ART___530": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "ART___531": {
+      "credits": 5.0,
+      "prerequisites": []
+    },
+    "ART___540": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "ART___541": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "ART___560": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "ART___561": {
+      "credits": 5.0,
+      "prerequisites": []
+    },
+    "ART___570": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "ART___571": {
+      "credits": 5.0,
+      "prerequisites": []
+    },
+    "ART___580": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "ART___597": {
+      "credits": null,
+      "prerequisites": []
+    }
+  }
+}

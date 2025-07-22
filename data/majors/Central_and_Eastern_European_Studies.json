@@ -1,0 +1,74 @@
+{
+  "major": "Central and Eastern European Studies",
+  "subject_code": "CEES",
+  "min_total_credits": 120,
+  "courses": {
+    "CEES___208": {
+      "credits": 3.0,
+      "prerequisites": [
+        "ENGL___160"
+      ]
+    },
+    "CEES___246": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "CEES___247": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "CEES___250": {
+      "credits": 4.0,
+      "prerequisites": [
+        "RUSS___150",
+        "ENGL___160"
+      ]
+    },
+    "CEES___320": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "CEES___400": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "CEES___406": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "CEES___418": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "CEES___433": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "CEES___435": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "CEES___439": {
+      "credits": 4.0,
+      "prerequisites": [
+        "GER___212"
+      ]
+    },
+    "CEES___460": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "CEES___515": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "CEES___551": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "CEES___599": {
+      "credits": null,
+      "prerequisites": []
+    }
+  }
+}

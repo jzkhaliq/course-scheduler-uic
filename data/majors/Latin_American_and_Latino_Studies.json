@@ -1,0 +1,325 @@
+{
+  "major": "Latin American and Latino Studies",
+  "subject_code": "LALS",
+  "min_total_credits": 120,
+  "courses": {
+    "LALS___101": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "LALS___102": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "LALS___103": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "LALS___104": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "LALS___105": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "LALS___107": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "LALS___109": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "LALS___110": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "LALS___127": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "LALS___192": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "LALS___200": {
+      "credits": 1.0,
+      "prerequisites": []
+    },
+    "LALS___220": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "LALS___223": {
+      "credits": 3.0,
+      "prerequisites": [
+        "ANTH___102"
+      ]
+    },
+    "LALS___225": {
+      "credits": 3.0,
+      "prerequisites": [
+        "SOC___100"
+      ]
+    },
+    "LALS___229": {
+      "credits": 3.0,
+      "prerequisites": [
+        "SOC___100",
+        "LALS___102",
+        "LALS___103",
+        "SOC___105"
+      ]
+    },
+    "LALS___239": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "LALS___240": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "LALS___242": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "LALS___256": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "LALS___257": {
+      "credits": 3.0,
+      "prerequisites": [
+        "ANTH___102"
+      ]
+    },
+    "LALS___258": {
+      "credits": 3.0,
+      "prerequisites": [
+        "ANTH___102"
+      ]
+    },
+    "LALS___260": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "LALS___261": {
+      "credits": 3.0,
+      "prerequisites": [
+        "ENGL___161"
+      ]
+    },
+    "LALS___262": {
+      "credits": 3.0,
+      "prerequisites": [
+        "ENGL___161"
+      ]
+    },
+    "LALS___263": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "LALS___266": {
+      "credits": 3.0,
+      "prerequisites": [
+        "ENGL___161"
+      ]
+    },
+    "LALS___267": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "LALS___270": {
+      "credits": 3.0,
+      "prerequisites": [
+        "ENGL___161"
+      ]
+    },
+    "LALS___275": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "LALS___276": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "LALS___277": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "LALS___278": {
+      "credits": 4.0,
+      "prerequisites": [
+        "LALS___101",
+        "LALS___102",
+        "LALS___109",
+        "LALS___110"
+      ]
+    },
+    "LALS___283": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "LALS___286": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "LALS___288": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "LALS___289": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "LALS___290": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "LALS___291": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "LALS___292": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "LALS___295": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "LALS___299": {
+      "credits": null,
+      "prerequisites": []
+    },
+    "LALS___301": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "LALS___302": {
+      "credits": 3.0,
+      "prerequisites": [
+        "LALS___301"
+      ]
+    },
+    "LALS___304": {
+      "credits": 3.0,
+      "prerequisites": [
+        "SPAN___204",
+        "SPAN___210"
+      ]
+    },
+    "LALS___382": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "LALS___385": {
+      "credits": 3.0,
+      "prerequisites": [
+        "LALS___102"
+      ]
+    },
+    "LALS___391": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "LALS___395": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "LALS___403": {
+      "credits": 4.0,
+      "prerequisites": [
+        "LALS___301",
+        "LALS___302",
+        "LALS___501"
+      ]
+    },
+    "LALS___408": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "LALS___427": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "LALS___433": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "LALS___461": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "LALS___465": {
+      "credits": 4.0,
+      "prerequisites": [
+        "GLAS___100",
+        "HIST___161",
+        "HIST___264"
+      ]
+    },
+    "LALS___467": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "LALS___491": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "LALS___495": {
+      "credits": 4.0,
+      "prerequisites": [
+        "MUSE___400",
+        "MUSE___400",
+        "SOC___476",
+        "COMM___494",
+        "COMM___494"
+      ]
+    },
+    "LALS___497": {
+      "credits": 4.0,
+      "prerequisites": [
+        "LALS___403",
+        "LALS___498"
+      ]
+    },
+    "LALS___499": {
+      "credits": null,
+      "prerequisites": []
+    },
+    "LALS___500": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "LALS___501": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "LALS___502": {
+      "credits": 4.0,
+      "prerequisites": [
+        "SPAN___523"
+      ]
+    },
+    "LALS___504": {
+      "credits": 1.0,
+      "prerequisites": [
+        "LALS___501",
+        "LALS___502"
+      ]
+    },
+    "LALS___590": {
+      "credits": null,
+      "prerequisites": [
+        "LALS___501",
+        "LALS___502"
+      ]
+    },
+    "LALS___596": {
+      "credits": null,
+      "prerequisites": []
+    }
+  }
+}

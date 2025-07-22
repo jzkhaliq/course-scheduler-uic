@@ -1,18 +1,118 @@
+### --------- generate_major_configs.py --------- ###
 import os
 import json
 import re
 from collections import defaultdict
 
-def generate_config_for_subject(subject_dir):
-    subject = os.path.basename(subject_dir)
-    prefix = f"{subject}___"
+major_to_subject = {
+    "Disability and Human Development": "DHD",
+    "Health Information Management": "HIM",
+    "Kinesiology": "KN",
+    "Nutrition-Nutrition Science": "HN",
+    "Rehabilitation Sciences": "AHS",
+    "Acting": "THTR",
+    "Architecture": "ARCH",
+    "Architectural Studies": "ARCH",
+    "Art": "ART",
+    "Art Education": "ART",
+    "Art History": "AH",
+    "Design Studies": "DES",
+    "Graphic Design": "DES",
+    "Industrial Design": "DES",
+    "Interdisciplinary Education in the Arts": "IDEA",
+    "Music": "MUS",
+    "Music-Jazz Studies": "MUS",
+    "Music-Performance": "MUS",
+    "Music Business": "MUS",
+    "Music Education": "MUS",
+    "Theatre and Performance": "THTR",
+    "Theatre Design, Production, and Technology": "THTR",
+    "Accounting": "ACTG",
+    "Entrepreneurship": "ENTR",
+    "Finance": "FIN",
+    "Human Resource Management": "MGMT",
+    "Information and Decision Sciences": "IDS",
+    "Management": "MGMT",
+    "Marketing": "MKTG",
+    "Real Estate": "FIN",
+    "Urban Education": "ED",
+    "Human Development and Learning": "ED",
+    "Biomedical Engineering": "BME",
+    "Chemical Engineering": "CHE",
+    "Civil Engineering": "CE",
+    "Computer Engineering": "ECE",
+    "Computer Science": "CS",
+    "Computer Science and Design": "CS",
+    "Data Science": "CS",
+    "Electrical Engineering": "ECE",
+    "Engineering Management": "IE",
+    "Engineering Physics": "PHYS",
+    "Environmental Engineering": "CE",
+    "Industrial Engineering": "IE",
+    "Mechanical Engineering": "ME",
+    "Anthropology": "ANTH",
+    "Applied Psychology": "PSCH",
+    "Biochemistry": "BCMG",
+    "Biological Sciences": "BIOS",
+    "Black Studies": "BLST",
+    "Central and Eastern European Studies": "CEES",
+    "Chemistry-BA": "CHEM",
+    "Chemistry-BS": "CHEM",
+    "Classical Studies": "CL",
+    "Communication": "COMM",
+    "Computer Science and Linguistics": "LING",
+    "Computer Science and Philosophy": "PHIL",
+    "Criminology, Law, and Justice": "CLJ",
+    "Earth and Environmental Sciences": "EAES",
+    "Economics": "ECON",
+    "English": "ENGL",
+    "English-Teacher Education": "ENGL",
+    "French and Francophone Studies": "FR",
+    "French-Teacher Education": "FR",
+    "Gender and Women's Studies": "GWS",
+    "Germanic Studies": "GER",
+    "German-Teacher Education": "GER",
+    "Global Asian Studies": "GLAS",
+    "History": "HIST",
+    "History-Teacher Education": "HIST",
+    "Integrated Health Studies": "IHS",
+    "Italian": "ITAL",
+    "Latin American and Latino Studies": "LALS",
+    "Liberal Studies": "LIB",
+    "Mathematics": "MATH",
+    "Mathematics-Teacher Education": "MTHT",
+    "Mathematics and Computer Science": "MCS",
+    "Neuroscience": "NEUS",
+    "Philosophy": "PHIL",
+    "Physics-BA": "PHYS",
+    "Physics-BS": "PHYS",
+    "Political Science": "POLS",
+    "Psychology": "PSCH",
+    "Sociology": "SOC",
+    "Spanish": "SPAN",
+    "Spanish-Teacher Education": "SPAN",
+    "Statistics": "STAT",
+    "Nursing": "NURS",
+    "Pharmaceutical Sciences": "PHAR",
+    "Public Health": "PUBH",
+    "Public Policy": "PPOL",
+    "Urban Studies": "UPA"
+}
 
+def generate_config_for_major(major_name, subject_code, major_credit_requirements):
+    subject_dir = os.path.join("subjects", subject_code)
+    
+    if not os.path.isdir(subject_dir):
+        return None
+
+    prefix = f"{subject_code}___"
+    
     paths = {
-        "credits": os.path.join(subject_dir, f"mastercourselist_{subject}.txt"),
-        "offerings": os.path.join(subject_dir, f"courseoffering_{subject}.txt"),
-        "prereqs": os.path.join(subject_dir, f"prerequisites_{subject}.txt"),
+        "credits": os.path.join(subject_dir, f"mastercourselist_{subject_code}.txt"),
+        "prereqs": os.path.join(subject_dir, f"prerequisites_{subject_code}.txt"),
     }
 
+    # Check if required files exist
     if not all(os.path.exists(p) for p in paths.values()):
         return None
 
@@ -27,19 +127,9 @@ def generate_config_for_subject(subject_dir):
             try:
                 credits_map[code] = float(credit)
             except:
-                credits_map[code] = None  # for ???
-    
-    # 2. Load offerings
-    offerings_map = {}
-    with open(paths["offerings"]) as f:
-        for line in f:
-            code, fall, spring = line.strip().split("\t")
-            offerings_map[code] = {
-                "fall": fall == "1",
-                "spring": spring == "1"
-            }
+                credits_map[code] = None
 
-    # 3. Load prerequisites
+    # 2. Load prerequisites
     prereq_map = defaultdict(list)
     with open(paths["prereqs"]) as f:
         for line in f:
@@ -49,80 +139,56 @@ def generate_config_for_subject(subject_dir):
             prereq, course, _ = parts
             prereq_map[course].append(prereq)
 
-    # 4. Build course data
-    course_data = {}
-    required_courses = []
-    electives = []
-    intro_courses = []
-
+    # 3. Build course data - simplified structure
+    courses = {}
     for course_code in sorted(credits_map.keys()):
-        try:
-            number = int(course_code.split("___")[1])
-        except:
-            continue
-
-        # Categorize course
-        if 100 <= number < 200:
-            ctype = "intro"
-            intro_courses.append(course_code)
-        elif 200 <= number < 400:
-            ctype = "required"
-            required_courses.append(course_code)
-        elif 400 <= number < 500:
-            ctype = "elective"
-            electives.append(course_code)
-        else:
-            ctype = "other"
-
-        course_data[course_code] = {
+        courses[course_code] = {
             "credits": credits_map[course_code],
-            "offered": offerings_map.get(course_code, {"fall": False, "spring": False}),
-            "prerequisites": prereq_map.get(course_code, []),
-            "type": ctype
+            "prerequisites": prereq_map.get(course_code, [])
         }
 
-    # 5. Estimate total credits
-    total_credits = sum(
-        credits_map[c] for c in required_courses
-        if c in credits_map and isinstance(credits_map[c], (int, float))
-    )
-    min_total = int(total_credits) if total_credits >= 40 else 128
+    # 4. Get total credit requirement
+    min_total = major_credit_requirements.get(major_name, 120)
 
-    # 6. Final JSON structure
+    # 5. Simple JSON structure
     config = {
-        "subject": subject,
-        "course_prefix": prefix,
-        "courses": course_data,
-        "elective_pool": {
-            "min_required": 5,
-            "courses": electives[:15]
-        },
-        "placeholder_courses": [f"{prefix}499", f"{prefix}XXX"],
-        "min_total_credits": min_total
+        "major": major_name,
+        "subject_code": subject_code,
+        "min_total_credits": min_total,
+        "courses": courses
     }
 
     return config
 
 def main():
-    os.makedirs("data", exist_ok=True)
+    os.makedirs("data/majors", exist_ok=True)
 
-    test_subjects = ["CS", "MATH", "ECE"]  # 👈 Edit this list to test different subjects
+    # Load credit requirements from existing file
+    with open("data/all_uic_degrees.json") as f:
+        major_credit_requirements = json.load(f)
 
-    for subject in test_subjects:
-        subject_dir = os.path.join("subjects", subject)
-        if not os.path.isdir(subject_dir):
-            print(f"⚠️ Skipping {subject} — folder not found")
+    generated_count = 0
+    
+    # Process each major
+    for major_name, subject_code in major_to_subject.items():
+        if major_name not in major_credit_requirements:
             continue
 
-        config = generate_config_for_subject(subject_dir)
+        config = generate_config_for_major(major_name, subject_code, major_credit_requirements)
         if config:
-            output_path = f"data/major_config_{subject}.json"
+            # Use sanitized filename
+            safe_major_name = re.sub(r'[^\w\s-]', '', major_name).replace(' ', '_')
+            output_path = f"data/majors/{safe_major_name}.json"
+            
             with open(output_path, "w") as f:
                 json.dump(config, f, indent=2)
-            print(f"✅ Generated {output_path}")
+            
+            generated_count += 1
+            print(f"✅ Generated {output_path} ({major_credit_requirements[major_name]} credits)")
         else:
-            print(f"⚠️ Skipped {subject} (missing or incomplete files)")
+            print(f"⚠️ Skipped {major_name} ({subject_code}) - missing files")
+
+    print(f"\n🎉 Generated {generated_count} major configuration files")
 
 if __name__ == "__main__":
     main()
-

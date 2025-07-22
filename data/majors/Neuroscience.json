@@ -1,0 +1,102 @@
+{
+  "major": "Neuroscience",
+  "subject_code": "NEUS",
+  "min_total_credits": 120,
+  "courses": {
+    "NEUS___403": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "NEUS___444": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "NEUS___483": {
+      "credits": 4.0,
+      "prerequisites": [
+        "PSCH___262",
+        "BIOS___272",
+        "BIOS___286",
+        "BIOS___325"
+      ]
+    },
+    "NEUS___501": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "NEUS___502": {
+      "credits": 3.0,
+      "prerequisites": [
+        "NEUS___403",
+        "NEUS___501",
+        "BIOS___584"
+      ]
+    },
+    "NEUS___506": {
+      "credits": null,
+      "prerequisites": []
+    },
+    "NEUS___512": {
+      "credits": 2.0,
+      "prerequisites": [
+        "NEUS___501"
+      ]
+    },
+    "NEUS___513": {
+      "credits": 1.0,
+      "prerequisites": [
+        "NEUS___501",
+        "NEUS___502",
+        "NEUS___511"
+      ]
+    },
+    "NEUS___514": {
+      "credits": 2.0,
+      "prerequisites": [
+        "NEUS___511",
+        "NEUS___512",
+        "NEUS___513"
+      ]
+    },
+    "NEUS___524": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "NEUS___525": {
+      "credits": 2.0,
+      "prerequisites": []
+    },
+    "NEUS___527": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "NEUS___582": {
+      "credits": 2.0,
+      "prerequisites": []
+    },
+    "NEUS___595": {
+      "credits": 1.0,
+      "prerequisites": []
+    },
+    "NEUS___596": {
+      "credits": null,
+      "prerequisites": []
+    },
+    "NEUS___598": {
+      "credits": null,
+      "prerequisites": [
+        "NEUS___501",
+        "NEUS___502",
+        "NEUS___506"
+      ]
+    },
+    "NEUS___599": {
+      "credits": null,
+      "prerequisites": [
+        "NEUS___501",
+        "NEUS___502",
+        "NEUS___506"
+      ]
+    }
+  }
+}

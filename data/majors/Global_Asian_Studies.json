@@ -1,0 +1,242 @@
+{
+  "major": "Global Asian Studies",
+  "subject_code": "GLAS",
+  "min_total_credits": 120,
+  "courses": {
+    "GLAS___100": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "GLAS___105": {
+      "credits": 1.0,
+      "prerequisites": []
+    },
+    "GLAS___109": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "GLAS___120": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "GLAS___123": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "GLAS___125": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "GLAS___200": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "GLAS___209": {
+      "credits": 3.0,
+      "prerequisites": [
+        "CHIN___104",
+        "CHIN___112"
+      ]
+    },
+    "GLAS___210": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "GLAS___215": {
+      "credits": 3.0,
+      "prerequisites": [
+        "GLAS___100"
+      ]
+    },
+    "GLAS___217": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "GLAS___219": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "GLAS___223": {
+      "credits": 3.0,
+      "prerequisites": [
+        "GLAS___100"
+      ]
+    },
+    "GLAS___224": {
+      "credits": 3.0,
+      "prerequisites": [
+        "ANTH___101",
+        "ANTH___102"
+      ]
+    },
+    "GLAS___229": {
+      "credits": 3.0,
+      "prerequisites": [
+        "ENGL___161"
+      ]
+    },
+    "GLAS___230": {
+      "credits": 3.0,
+      "prerequisites": [
+        "GLAS___120"
+      ]
+    },
+    "GLAS___231": {
+      "credits": 3.0,
+      "prerequisites": [
+        "POLS___130"
+      ]
+    },
+    "GLAS___232": {
+      "credits": 3.0,
+      "prerequisites": [
+        "POLS___130"
+      ]
+    },
+    "GLAS___242": {
+      "credits": 3.0,
+      "prerequisites": [
+        "ENGL___161"
+      ]
+    },
+    "GLAS___244": {
+      "credits": 3.0,
+      "prerequisites": [
+        "ENGL___161"
+      ]
+    },
+    "GLAS___248": {
+      "credits": 3.0,
+      "prerequisites": [
+        "ENGL___161"
+      ]
+    },
+    "GLAS___250": {
+      "credits": 3.0,
+      "prerequisites": [
+        "GLAS___120"
+      ]
+    },
+    "GLAS___252": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "GLAS___255": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "GLAS___263": {
+      "credits": 3.0,
+      "prerequisites": [
+        "GWS___101",
+        "GWS___102",
+        "GLAS___120",
+        "GLAS___123"
+      ]
+    },
+    "GLAS___271": {
+      "credits": 3.0,
+      "prerequisites": [
+        "ENGL___161"
+      ]
+    },
+    "GLAS___272": {
+      "credits": 3.0,
+      "prerequisites": [
+        "ENGL___161"
+      ]
+    },
+    "GLAS___275": {
+      "credits": 3.0,
+      "prerequisites": [
+        "ENGL___161"
+      ]
+    },
+    "GLAS___276": {
+      "credits": 3.0,
+      "prerequisites": [
+        "ENGL___161"
+      ]
+    },
+    "GLAS___279": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "GLAS___290": {
+      "credits": null,
+      "prerequisites": []
+    },
+    "GLAS___300": {
+      "credits": 3.0,
+      "prerequisites": [
+        "GLAS___100"
+      ]
+    },
+    "GLAS___328": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "GLAS___390": {
+      "credits": 3.0,
+      "prerequisites": [
+        "GLAS___120"
+      ]
+    },
+    "GLAS___394": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "GLAS___428": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "GLAS___437": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "GLAS___438": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "GLAS___458": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "GLAS___463": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "GLAS___465": {
+      "credits": 4.0,
+      "prerequisites": [
+        "GLAS___100",
+        "HIST___161",
+        "HIST___264"
+      ]
+    },
+    "GLAS___471": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "GLAS___473": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "GLAS___479": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "GLAS___490": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "GLAS___494": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "GLAS___495": {
+      "credits": null,
+      "prerequisites": []
+    }
+  }
+}

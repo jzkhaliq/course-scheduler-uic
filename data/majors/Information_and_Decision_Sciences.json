@@ -1,0 +1,453 @@
+{
+  "major": "Information and Decision Sciences",
+  "subject_code": "IDS",
+  "min_total_credits": 120,
+  "courses": {
+    "IDS___200": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "IDS___201": {
+      "credits": 3.0,
+      "prerequisites": [
+        "MATH___160",
+        "IDS___200"
+      ]
+    },
+    "IDS___270": {
+      "credits": 4.0,
+      "prerequisites": [
+        "MATH___165",
+        "MATH___180",
+        "MATH___181"
+      ]
+    },
+    "IDS___312": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "IDS___313": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "IDS___331": {
+      "credits": 3.0,
+      "prerequisites": [
+        "IDS___200",
+        "ACTG___210"
+      ]
+    },
+    "IDS___355": {
+      "credits": 3.0,
+      "prerequisites": [
+        "ENGL___161"
+      ]
+    },
+    "IDS___371": {
+      "credits": 3.0,
+      "prerequisites": [
+        "MATH___165",
+        "IDS___270"
+      ]
+    },
+    "IDS___400": {
+      "credits": 4.0,
+      "prerequisites": [
+        "IDS___201",
+        "IDS___270"
+      ]
+    },
+    "IDS___401": {
+      "credits": null,
+      "prerequisites": [
+        "IDS___201"
+      ]
+    },
+    "IDS___403": {
+      "credits": 4.0,
+      "prerequisites": [
+        "IDS___200"
+      ]
+    },
+    "IDS___405": {
+      "credits": 4.0,
+      "prerequisites": [
+        "IDS___201",
+        "IDS___331"
+      ]
+    },
+    "IDS___406": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "IDS___410": {
+      "credits": 4.0,
+      "prerequisites": [
+        "CS___141",
+        "IDS___201",
+        "IDS___331"
+      ]
+    },
+    "IDS___413": {
+      "credits": 3.0,
+      "prerequisites": [
+        "IDS___201",
+        "IDS___331",
+        "IDS___410"
+      ]
+    },
+    "IDS___420": {
+      "credits": 4.0,
+      "prerequisites": [
+        "IDS___331",
+        "IDS___355"
+      ]
+    },
+    "IDS___422": {
+      "credits": 4.0,
+      "prerequisites": [
+        "IDS___371"
+      ]
+    },
+    "IDS___435": {
+      "credits": 4.0,
+      "prerequisites": [
+        "IDS___201",
+        "IDS___371"
+      ]
+    },
+    "IDS___446": {
+      "credits": 4.0,
+      "prerequisites": [
+        "IDS___371"
+      ]
+    },
+    "IDS___450": {
+      "credits": 4.0,
+      "prerequisites": [
+        "IDS___355",
+        "IDS___454"
+      ]
+    },
+    "IDS___451": {
+      "credits": null,
+      "prerequisites": [
+        "IDS___200",
+        "IDS___355",
+        "IDS___532"
+      ]
+    },
+    "IDS___453": {
+      "credits": 4.0,
+      "prerequisites": [
+        "IDS___355",
+        "IDS___532"
+      ]
+    },
+    "IDS___454": {
+      "credits": 4.0,
+      "prerequisites": [
+        "IDS___355"
+      ]
+    },
+    "IDS___460": {
+      "credits": 3.0,
+      "prerequisites": [
+        "IDS___371",
+        "STAT___382",
+        "IDS___462",
+        "STAT___481"
+      ]
+    },
+    "IDS___462": {
+      "credits": 4.0,
+      "prerequisites": [
+        "IDS___371"
+      ]
+    },
+    "IDS___470": {
+      "credits": 4.0,
+      "prerequisites": [
+        "MATH___310",
+        "MATH___320",
+        "IDS___371"
+      ]
+    },
+    "IDS___472": {
+      "credits": 4.0,
+      "prerequisites": [
+        "IDS___371"
+      ]
+    },
+    "IDS___473": {
+      "credits": 3.0,
+      "prerequisites": [
+        "IDS___270",
+        "FIN___300"
+      ]
+    },
+    "IDS___475": {
+      "credits": 4.0,
+      "prerequisites": [
+        "IDS___200",
+        "ACTG___211"
+      ]
+    },
+    "IDS___476": {
+      "credits": 4.0,
+      "prerequisites": [
+        "ECON___300",
+        "IDS___371",
+        "ECON___400"
+      ]
+    },
+    "IDS___478": {
+      "credits": 4.0,
+      "prerequisites": [
+        "IDS___371"
+      ]
+    },
+    "IDS___494": {
+      "credits": 4.0,
+      "prerequisites": [
+        "FIN___494",
+        "MGMT___494",
+        "ACTG___494"
+      ]
+    },
+    "IDS___495": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "IDS___499": {
+      "credits": null,
+      "prerequisites": []
+    },
+    "IDS___506": {
+      "credits": 4.0,
+      "prerequisites": [
+        "IDS___472",
+        "IDS___570",
+        "IDS___572"
+      ]
+    },
+    "IDS___507": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "IDS___509": {
+      "credits": 4.0,
+      "prerequisites": [
+        "IDS___371",
+        "IDS___570"
+      ]
+    },
+    "IDS___511": {
+      "credits": 4.0,
+      "prerequisites": [
+        "CS___480"
+      ]
+    },
+    "IDS___515": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "IDS___516": {
+      "credits": 4.0,
+      "prerequisites": [
+        "IDS___270",
+        "IDS___371"
+      ]
+    },
+    "IDS___517": {
+      "credits": 4.0,
+      "prerequisites": [
+        "IDS___201",
+        "IDS___400",
+        "IDS___401",
+        "IDS___410"
+      ]
+    },
+    "IDS___518": {
+      "credits": 4.0,
+      "prerequisites": [
+        "MKTG___500",
+        "MBA___506"
+      ]
+    },
+    "IDS___520": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "IDS___521": {
+      "credits": 4.0,
+      "prerequisites": [
+        "IDS___410"
+      ]
+    },
+    "IDS___524": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "IDS___529": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "IDS___532": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "IDS___534": {
+      "credits": 2.0,
+      "prerequisites": []
+    },
+    "IDS___535": {
+      "credits": 2.0,
+      "prerequisites": []
+    },
+    "IDS___540": {
+      "credits": 4.0,
+      "prerequisites": [
+        "MKTG___360",
+        "MKTG___500",
+        "MKTG___563"
+      ]
+    },
+    "IDS___541": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "IDS___542": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "IDS___544": {
+      "credits": 4.0,
+      "prerequisites": [
+        "IDS___532"
+      ]
+    },
+    "IDS___551": {
+      "credits": 4.0,
+      "prerequisites": [
+        "IDS___532"
+      ]
+    },
+    "IDS___552": {
+      "credits": 4.0,
+      "prerequisites": [
+        "IDS___532"
+      ]
+    },
+    "IDS___555": {
+      "credits": 4.0,
+      "prerequisites": [
+        "IDS___532",
+        "IDS___552"
+      ]
+    },
+    "IDS___558": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "IDS___560": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "IDS___561": {
+      "credits": 4.0,
+      "prerequisites": [
+        "IDS___572"
+      ]
+    },
+    "IDS___564": {
+      "credits": 4.0,
+      "prerequisites": [
+        "IDS___570",
+        "IDS___570"
+      ]
+    },
+    "IDS___566": {
+      "credits": 2.0,
+      "prerequisites": [
+        "IDS___572"
+      ]
+    },
+    "IDS___567": {
+      "credits": 2.0,
+      "prerequisites": []
+    },
+    "IDS___568": {
+      "credits": 2.0,
+      "prerequisites": [
+        "IDS___572",
+        "IDS___575"
+      ]
+    },
+    "IDS___569": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "IDS___570": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "IDS___571": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "IDS___572": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "IDS___575": {
+      "credits": 4.0,
+      "prerequisites": [
+        "IDS___570"
+      ]
+    },
+    "IDS___576": {
+      "credits": 4.0,
+      "prerequisites": [
+        "IDS___572"
+      ]
+    },
+    "IDS___577": {
+      "credits": 4.0,
+      "prerequisites": [
+        "IDS___532"
+      ]
+    },
+    "IDS___583": {
+      "credits": 4.0,
+      "prerequisites": [
+        "ECON___537",
+        "IDS___582"
+      ]
+    },
+    "IDS___584": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "IDS___589": {
+      "credits": null,
+      "prerequisites": []
+    },
+    "IDS___594": {
+      "credits": null,
+      "prerequisites": []
+    },
+    "IDS___595": {
+      "credits": null,
+      "prerequisites": []
+    },
+    "IDS___596": {
+      "credits": null,
+      "prerequisites": []
+    },
+    "IDS___599": {
+      "credits": null,
+      "prerequisites": []
+    }
+  }
+}

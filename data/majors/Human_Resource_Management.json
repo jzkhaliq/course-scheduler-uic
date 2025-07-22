@@ -1,0 +1,259 @@
+{
+  "major": "Human Resource Management",
+  "subject_code": "MGMT",
+  "min_total_credits": 120,
+  "courses": {
+    "MGMT___340": {
+      "credits": 3.0,
+      "prerequisites": [
+        "ENGL___161"
+      ]
+    },
+    "MGMT___350": {
+      "credits": 3.0,
+      "prerequisites": [
+        "MATH___160",
+        "ENGL___161"
+      ]
+    },
+    "MGMT___355": {
+      "credits": 3.0,
+      "prerequisites": [
+        "BA___200",
+        "IDS___200",
+        "ACTG___210",
+        "IDS___270",
+        "MGMT___340"
+      ]
+    },
+    "MGMT___360": {
+      "credits": 3.0,
+      "prerequisites": [
+        "IDS___200",
+        "BA___200",
+        "ACTG___210",
+        "IDS___270",
+        "MGMT___340",
+        "MGMT___355"
+      ]
+    },
+    "MGMT___445": {
+      "credits": 3.0,
+      "prerequisites": [
+        "MGMT___340"
+      ]
+    },
+    "MGMT___447": {
+      "credits": 4.0,
+      "prerequisites": [
+        "SOC___241",
+        "SOC___244",
+        "MGMT___340"
+      ]
+    },
+    "MGMT___452": {
+      "credits": 3.0,
+      "prerequisites": [
+        "MGMT___340"
+      ]
+    },
+    "MGMT___453": {
+      "credits": 3.0,
+      "prerequisites": [
+        "MGMT___340"
+      ]
+    },
+    "MGMT___454": {
+      "credits": 3.0,
+      "prerequisites": [
+        "MGMT___340",
+        "MGMT___350"
+      ]
+    },
+    "MGMT___455": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "MGMT___460": {
+      "credits": 4.0,
+      "prerequisites": [
+        "MGMT___340",
+        "MGMT___350",
+        "MGMT___350"
+      ]
+    },
+    "MGMT___463": {
+      "credits": 3.0,
+      "prerequisites": [
+        "MGMT___340"
+      ]
+    },
+    "MGMT___464": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "MGMT___465": {
+      "credits": 3.0,
+      "prerequisites": [
+        "MGMT___452",
+        "MGMT___455"
+      ]
+    },
+    "MGMT___466": {
+      "credits": 4.0,
+      "prerequisites": [
+        "MGMT___340"
+      ]
+    },
+    "MGMT___470": {
+      "credits": 3.0,
+      "prerequisites": [
+        "MGMT___452",
+        "MGMT___453"
+      ]
+    },
+    "MGMT___471": {
+      "credits": 3.0,
+      "prerequisites": [
+        "MGMT___340",
+        "MGMT___452"
+      ]
+    },
+    "MGMT___475": {
+      "credits": 3.0,
+      "prerequisites": [
+        "MGMT___340"
+      ]
+    },
+    "MGMT___480": {
+      "credits": 3.0,
+      "prerequisites": [
+        "MGMT___340",
+        "MGMT___350"
+      ]
+    },
+    "MGMT___481": {
+      "credits": 3.0,
+      "prerequisites": [
+        "MATH___165",
+        "MATH___180",
+        "MGMT___340"
+      ]
+    },
+    "MGMT___485": {
+      "credits": 3.0,
+      "prerequisites": [
+        "MGMT___340",
+        "MGMT___350"
+      ]
+    },
+    "MGMT___486": {
+      "credits": 3.0,
+      "prerequisites": [
+        "MGMT___452",
+        "MGMT___453"
+      ]
+    },
+    "MGMT___494": {
+      "credits": 3.0,
+      "prerequisites": [
+        "IDS___494",
+        "ACTG___494"
+      ]
+    },
+    "MGMT___495": {
+      "credits": 4.0,
+      "prerequisites": [
+        "FIN___300",
+        "IDS___355",
+        "IE___365"
+      ]
+    },
+    "MGMT___499": {
+      "credits": null,
+      "prerequisites": []
+    },
+    "MGMT___541": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "MGMT___550": {
+      "credits": 4.0,
+      "prerequisites": [
+        "MGMT___541"
+      ]
+    },
+    "MGMT___553": {
+      "credits": 4.0,
+      "prerequisites": [
+        "MGMT___541"
+      ]
+    },
+    "MGMT___555": {
+      "credits": 4.0,
+      "prerequisites": [
+        "MGMT___541",
+        "MGMT___553",
+        "MGMT___553"
+      ]
+    },
+    "MGMT___564": {
+      "credits": 4.0,
+      "prerequisites": [
+        "MGMT___541"
+      ]
+    },
+    "MGMT___568": {
+      "credits": 4.0,
+      "prerequisites": [
+        "MGMT___553"
+      ]
+    },
+    "MGMT___570": {
+      "credits": 4.0,
+      "prerequisites": [
+        "ECON___520"
+      ]
+    },
+    "MGMT___573": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "MGMT___575": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "MGMT___576": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "MGMT___582": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "MGMT___587": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "MGMT___589": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "MGMT___590": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "MGMT___594": {
+      "credits": null,
+      "prerequisites": []
+    },
+    "MGMT___596": {
+      "credits": null,
+      "prerequisites": []
+    },
+    "MGMT___599": {
+      "credits": null,
+      "prerequisites": []
+    }
+  }
+}

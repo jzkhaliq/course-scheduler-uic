@@ -1,0 +1,132 @@
+{
+  "major": "Public Policy",
+  "subject_code": "PPOL",
+  "min_total_credits": 120,
+  "courses": {
+    "PPOL___100": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "PPOL___101": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "PPOL___105": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "PPOL___196": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "PPOL___205": {
+      "credits": 3.0,
+      "prerequisites": [
+        "PPOL___105"
+      ]
+    },
+    "PPOL___210": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "PPOL___212": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "PPOL___220": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "PPOL___230": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "PPOL___231": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "PPOL___232": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "PPOL___240": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "PPOL___296": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "PPOL___300": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "PPOL___303": {
+      "credits": 3.0,
+      "prerequisites": [
+        "PPOL___210"
+      ]
+    },
+    "PPOL___305": {
+      "credits": 3.0,
+      "prerequisites": [
+        "PPOL___210"
+      ]
+    },
+    "PPOL___307": {
+      "credits": 3.0,
+      "prerequisites": [
+        "ENGL___161",
+        "PPOL___210"
+      ]
+    },
+    "PPOL___309": {
+      "credits": 3.0,
+      "prerequisites": [
+        "PPOL___210"
+      ]
+    },
+    "PPOL___330": {
+      "credits": 3.0,
+      "prerequisites": [
+        "PPOL___230"
+      ]
+    },
+    "PPOL___396": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "PPOL___405": {
+      "credits": 4.0,
+      "prerequisites": [
+        "PPOL___205"
+      ]
+    },
+    "PPOL___430": {
+      "credits": 4.0,
+      "prerequisites": [
+        "PPOL___230"
+      ]
+    },
+    "PPOL___467": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "PPOL___490": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "PPOL___491": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "PPOL___496": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "PPOL___499": {
+      "credits": null,
+      "prerequisites": []
+    }
+  }
+}

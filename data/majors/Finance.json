@@ -1,0 +1,333 @@
+{
+  "major": "Finance",
+  "subject_code": "FIN",
+  "min_total_credits": 120,
+  "courses": {
+    "FIN___250": {
+      "credits": 3.0,
+      "prerequisites": [
+        "MATH___110"
+      ]
+    },
+    "FIN___300": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "FIN___301": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "FIN___302": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "FIN___310": {
+      "credits": 3.0,
+      "prerequisites": [
+        "FIN___300",
+        "FIN___301",
+        "FIN___302"
+      ]
+    },
+    "FIN___311": {
+      "credits": 3.0,
+      "prerequisites": [
+        "ECON___120"
+      ]
+    },
+    "FIN___320": {
+      "credits": 3.0,
+      "prerequisites": [
+        "FIN___300",
+        "FIN___301",
+        "FIN___302"
+      ]
+    },
+    "FIN___330": {
+      "credits": 3.0,
+      "prerequisites": [
+        "IDS___270"
+      ]
+    },
+    "FIN___340": {
+      "credits": 3.0,
+      "prerequisites": [
+        "FIN___300",
+        "FIN___301",
+        "FIN___302"
+      ]
+    },
+    "FIN___396": {
+      "credits": null,
+      "prerequisites": []
+    },
+    "FIN___411": {
+      "credits": 3.0,
+      "prerequisites": [
+        "FIN___250"
+      ]
+    },
+    "FIN___412": {
+      "credits": 3.0,
+      "prerequisites": [
+        "FIN___310"
+      ]
+    },
+    "FIN___414": {
+      "credits": 4.0,
+      "prerequisites": [
+        "FIN___250",
+        "FIN___300",
+        "FIN___301",
+        "FIN___302"
+      ]
+    },
+    "FIN___415": {
+      "credits": 3.0,
+      "prerequisites": [
+        "FIN___310"
+      ]
+    },
+    "FIN___416": {
+      "credits": 3.0,
+      "prerequisites": [
+        "FIN___310"
+      ]
+    },
+    "FIN___419": {
+      "credits": 4.0,
+      "prerequisites": [
+        "FIN___300",
+        "FIN___301",
+        "FIN___302"
+      ]
+    },
+    "FIN___421": {
+      "credits": 4.0,
+      "prerequisites": [
+        "FIN___320",
+        "FIN___320"
+      ]
+    },
+    "FIN___422": {
+      "credits": 3.0,
+      "prerequisites": [
+        "FIN___300",
+        "FIN___301",
+        "FIN___302",
+        "FIN___310",
+        "FIN___320"
+      ]
+    },
+    "FIN___423": {
+      "credits": 3.0,
+      "prerequisites": [
+        "FIN___300",
+        "FIN___301",
+        "FIN___302"
+      ]
+    },
+    "FIN___424": {
+      "credits": 3.0,
+      "prerequisites": [
+        "FIN___300",
+        "FIN___301"
+      ]
+    },
+    "FIN___425": {
+      "credits": 3.0,
+      "prerequisites": [
+        "FIN___300",
+        "FIN___301",
+        "FIN___302",
+        "FIN___310",
+        "FIN___320"
+      ]
+    },
+    "FIN___430": {
+      "credits": 3.0,
+      "prerequisites": [
+        "FIN___300",
+        "FIN___301",
+        "FIN___302"
+      ]
+    },
+    "FIN___431": {
+      "credits": 3.0,
+      "prerequisites": [
+        "FIN___300"
+      ]
+    },
+    "FIN___442": {
+      "credits": 3.0,
+      "prerequisites": [
+        "FIN___300",
+        "FIN___301",
+        "FIN___302"
+      ]
+    },
+    "FIN___449": {
+      "credits": 3.0,
+      "prerequisites": [
+        "FIN___310"
+      ]
+    },
+    "FIN___456": {
+      "credits": 3.0,
+      "prerequisites": [
+        "IDS___410",
+        "FIN___412",
+        "FIN___480"
+      ]
+    },
+    "FIN___472": {
+      "credits": 4.0,
+      "prerequisites": [
+        "FIN___300"
+      ]
+    },
+    "FIN___473": {
+      "credits": 3.0,
+      "prerequisites": [
+        "IDS___270",
+        "FIN___300"
+      ]
+    },
+    "FIN___480": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "FIN___494": {
+      "credits": null,
+      "prerequisites": [
+        "IDS___494"
+      ]
+    },
+    "FIN___499": {
+      "credits": null,
+      "prerequisites": []
+    },
+    "FIN___500": {
+      "credits": 4.0,
+      "prerequisites": [
+        "ACTG___500"
+      ]
+    },
+    "FIN___510": {
+      "credits": 4.0,
+      "prerequisites": [
+        "FIN___500"
+      ]
+    },
+    "FIN___512": {
+      "credits": 4.0,
+      "prerequisites": [
+        "FIN___510"
+      ]
+    },
+    "FIN___515": {
+      "credits": 4.0,
+      "prerequisites": [
+        "FIN___510"
+      ]
+    },
+    "FIN___516": {
+      "credits": 4.0,
+      "prerequisites": [
+        "FIN___510"
+      ]
+    },
+    "FIN___519": {
+      "credits": 4.0,
+      "prerequisites": [
+        "FIN___500"
+      ]
+    },
+    "FIN___520": {
+      "credits": 4.0,
+      "prerequisites": [
+        "FIN___500"
+      ]
+    },
+    "FIN___521": {
+      "credits": 4.0,
+      "prerequisites": [
+        "FIN___520"
+      ]
+    },
+    "FIN___522": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "FIN___523": {
+      "credits": 4.0,
+      "prerequisites": [
+        "FIN___500",
+        "FIN___510",
+        "FIN___520"
+      ]
+    },
+    "FIN___524": {
+      "credits": 4.0,
+      "prerequisites": [
+        "FIN___500"
+      ]
+    },
+    "FIN___530": {
+      "credits": 4.0,
+      "prerequisites": [
+        "FIN___500"
+      ]
+    },
+    "FIN___540": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "FIN___542": {
+      "credits": 4.0,
+      "prerequisites": [
+        "FIN___500"
+      ]
+    },
+    "FIN___549": {
+      "credits": 4.0,
+      "prerequisites": [
+        "FIN___510"
+      ]
+    },
+    "FIN___550": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "FIN___551": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "FIN___556": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "FIN___570": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "FIN___580": {
+      "credits": 4.0,
+      "prerequisites": [
+        "FIN___510"
+      ]
+    },
+    "FIN___594": {
+      "credits": null,
+      "prerequisites": []
+    },
+    "FIN___596": {
+      "credits": null,
+      "prerequisites": []
+    },
+    "FIN___599": {
+      "credits": null,
+      "prerequisites": []
+    }
+  }
+}

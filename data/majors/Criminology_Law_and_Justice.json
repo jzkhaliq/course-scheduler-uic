@@ -1,0 +1,300 @@
+{
+  "major": "Criminology, Law, and Justice",
+  "subject_code": "CLJ",
+  "min_total_credits": 120,
+  "courses": {
+    "CLJ___101": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "CLJ___102": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "CLJ___110": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "CLJ___114": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "CLJ___120": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "CLJ___121": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "CLJ___122": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "CLJ___200": {
+      "credits": 3.0,
+      "prerequisites": [
+        "CLJ___101"
+      ]
+    },
+    "CLJ___210": {
+      "credits": 3.0,
+      "prerequisites": [
+        "CLJ___101"
+      ]
+    },
+    "CLJ___220": {
+      "credits": 3.0,
+      "prerequisites": [
+        "CLJ___101"
+      ]
+    },
+    "CLJ___261": {
+      "credits": 3.0,
+      "prerequisites": [
+        "CLJ___101"
+      ]
+    },
+    "CLJ___262": {
+      "credits": 3.0,
+      "prerequisites": [
+        "MATH___090",
+        "MATH___105"
+      ]
+    },
+    "CLJ___265": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "CLJ___271": {
+      "credits": 3.0,
+      "prerequisites": [
+        "SOC___100",
+        "BLST___100",
+        "CLJ___101"
+      ]
+    },
+    "CLJ___303": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "CLJ___311": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "CLJ___321": {
+      "credits": 3.0,
+      "prerequisites": [
+        "CLJ___101"
+      ]
+    },
+    "CLJ___345": {
+      "credits": 3.0,
+      "prerequisites": [
+        "CLJ___101"
+      ]
+    },
+    "CLJ___350": {
+      "credits": 3.0,
+      "prerequisites": [
+        "CLJ___101"
+      ]
+    },
+    "CLJ___355": {
+      "credits": 3.0,
+      "prerequisites": [
+        "CLJ___101"
+      ]
+    },
+    "CLJ___356": {
+      "credits": 3.0,
+      "prerequisites": [
+        "CLJ___101"
+      ]
+    },
+    "CLJ___361": {
+      "credits": 3.0,
+      "prerequisites": [
+        "CLJ___101"
+      ]
+    },
+    "CLJ___363": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "CLJ___374": {
+      "credits": 3.0,
+      "prerequisites": [
+        "CLJ___101",
+        "CLJ___373"
+      ]
+    },
+    "CLJ___375": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "CLJ___394": {
+      "credits": 3.0,
+      "prerequisites": [
+        "CLJ___101"
+      ]
+    },
+    "CLJ___395": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "CLJ___399": {
+      "credits": null,
+      "prerequisites": []
+    },
+    "CLJ___402": {
+      "credits": 4.0,
+      "prerequisites": [
+        "CLJ___261",
+        "CLJ___350"
+      ]
+    },
+    "CLJ___405": {
+      "credits": 4.0,
+      "prerequisites": [
+        "CLJ___101"
+      ]
+    },
+    "CLJ___422": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "CLJ___423": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "CLJ___424": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "CLJ___425": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "CLJ___430": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "CLJ___435": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "CLJ___442": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "CLJ___450": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "CLJ___491": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "CLJ___492": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "CLJ___493": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "CLJ___500": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "CLJ___501": {
+      "credits": 1.0,
+      "prerequisites": []
+    },
+    "CLJ___520": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "CLJ___540": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "CLJ___542": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "CLJ___546": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "CLJ___547": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "CLJ___548": {
+      "credits": 4.0,
+      "prerequisites": [
+        "CLJ___500"
+      ]
+    },
+    "CLJ___560": {
+      "credits": 4.0,
+      "prerequisites": [
+        "CLJ___262"
+      ]
+    },
+    "CLJ___561": {
+      "credits": 4.0,
+      "prerequisites": [
+        "CLJ___262"
+      ]
+    },
+    "CLJ___562": {
+      "credits": 4.0,
+      "prerequisites": [
+        "CLJ___262"
+      ]
+    },
+    "CLJ___564": {
+      "credits": 4.0,
+      "prerequisites": [
+        "CLJ___562"
+      ]
+    },
+    "CLJ___570": {
+      "credits": 4.0,
+      "prerequisites": [
+        "CLJ___560"
+      ]
+    },
+    "CLJ___580": {
+      "credits": 2.0,
+      "prerequisites": []
+    },
+    "CLJ___592": {
+      "credits": null,
+      "prerequisites": []
+    },
+    "CLJ___594": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "CLJ___596": {
+      "credits": null,
+      "prerequisites": []
+    },
+    "CLJ___597": {
+      "credits": null,
+      "prerequisites": []
+    },
+    "CLJ___598": {
+      "credits": null,
+      "prerequisites": []
+    },
+    "CLJ___599": {
+      "credits": null,
+      "prerequisites": []
+    }
+  }
+}

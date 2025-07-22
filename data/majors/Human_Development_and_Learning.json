@@ -1,0 +1,235 @@
+{
+  "major": "Human Development and Learning",
+  "subject_code": "ED",
+  "min_total_credits": 120,
+  "courses": {
+    "ED___100": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "ED___101": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "ED___131": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "ED___135": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "ED___151": {
+      "credits": 1.0,
+      "prerequisites": []
+    },
+    "ED___152": {
+      "credits": 1.0,
+      "prerequisites": []
+    },
+    "ED___160": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "ED___194": {
+      "credits": null,
+      "prerequisites": []
+    },
+    "ED___199": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "ED___200": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "ED___201": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "ED___202": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "ED___205": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "ED___210": {
+      "credits": 3.0,
+      "prerequisites": [
+        "EPSY___210"
+      ]
+    },
+    "ED___217": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "ED___222": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "ED___252": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "ED___258": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "ED___264": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "ED___294": {
+      "credits": null,
+      "prerequisites": []
+    },
+    "ED___307": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "ED___350": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "ED___351": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "ED___374": {
+      "credits": 3.0,
+      "prerequisites": [
+        "CLJ___101",
+        "CLJ___373"
+      ]
+    },
+    "ED___394": {
+      "credits": null,
+      "prerequisites": []
+    },
+    "ED___396": {
+      "credits": null,
+      "prerequisites": []
+    },
+    "ED___402": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "ED___403": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "ED___416": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "ED___417": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "ED___421": {
+      "credits": 3.0,
+      "prerequisites": [
+        "EPSY___210"
+      ]
+    },
+    "ED___422": {
+      "credits": 3.0,
+      "prerequisites": [
+        "PSCH___100",
+        "EPSY___210",
+        "PSCH___259",
+        "PSCH___320"
+      ]
+    },
+    "ED___424": {
+      "credits": 4.0,
+      "prerequisites": [
+        "PSCH___343"
+      ]
+    },
+    "ED___425": {
+      "credits": 4.0,
+      "prerequisites": [
+        "ED___200",
+        "ED___210",
+        "SPED___410"
+      ]
+    },
+    "ED___432": {
+      "credits": 5.0,
+      "prerequisites": [
+        "ED___403",
+        "ED___445"
+      ]
+    },
+    "ED___445": {
+      "credits": 3.0,
+      "prerequisites": [
+        "EPSY___210"
+      ]
+    },
+    "ED___450": {
+      "credits": null,
+      "prerequisites": []
+    },
+    "ED___451": {
+      "credits": null,
+      "prerequisites": [
+        "ED___450"
+      ]
+    },
+    "ED___461": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "ED___470": {
+      "credits": null,
+      "prerequisites": []
+    },
+    "ED___471": {
+      "credits": null,
+      "prerequisites": [
+        "ED___470"
+      ]
+    },
+    "ED___472": {
+      "credits": 3.0,
+      "prerequisites": [
+        "ED___461",
+        "SPED___461"
+      ]
+    },
+    "ED___502": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "ED___503": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "ED___504": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "ED___505": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "ED___506": {
+      "credits": 4.0,
+      "prerequisites": [
+        "ED___505"
+      ]
+    },
+    "ED___594": {
+      "credits": null,
+      "prerequisites": []
+    },
+    "ED___596": {
+      "credits": null,
+      "prerequisites": []
+    }
+  }
+}

@@ -1,0 +1,531 @@
+{
+  "major": "Theatre Design, Production, and Technology",
+  "subject_code": "THTR",
+  "min_total_credits": 120,
+  "courses": {
+    "THTR___101": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "THTR___102": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "THTR___103": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "THTR___105": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "THTR___111": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "THTR___121": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "THTR___122": {
+      "credits": 3.0,
+      "prerequisites": [
+        "THTR___121"
+      ]
+    },
+    "THTR___140": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "THTR___141": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "THTR___145": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "THTR___150": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "THTR___151": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "THTR___153": {
+      "credits": 3.0,
+      "prerequisites": [
+        "THTR___150"
+      ]
+    },
+    "THTR___154": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "THTR___155": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "THTR___156": {
+      "credits": 3.0,
+      "prerequisites": [
+        "THTR___150",
+        "THTR___155"
+      ]
+    },
+    "THTR___157": {
+      "credits": 3.0,
+      "prerequisites": [
+        "THTR___150",
+        "THTR___155"
+      ]
+    },
+    "THTR___158": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "THTR___159": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "THTR___162": {
+      "credits": 3.0,
+      "prerequisites": [
+        "THTR___121"
+      ]
+    },
+    "THTR___170": {
+      "credits": 3.0,
+      "prerequisites": [
+        "THTR___155"
+      ]
+    },
+    "THTR___182": {
+      "credits": 1.0,
+      "prerequisites": []
+    },
+    "THTR___183": {
+      "credits": 1.0,
+      "prerequisites": []
+    },
+    "THTR___201": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "THTR___211": {
+      "credits": 3.0,
+      "prerequisites": [
+        "THTR___111",
+        "THTR___121"
+      ]
+    },
+    "THTR___212": {
+      "credits": 3.0,
+      "prerequisites": [
+        "THTR___211",
+        "THTR___221",
+        "THTR___261"
+      ]
+    },
+    "THTR___219": {
+      "credits": 2.0,
+      "prerequisites": []
+    },
+    "THTR___221": {
+      "credits": 3.0,
+      "prerequisites": [
+        "THTR___111",
+        "THTR___121",
+        "THTR___162"
+      ]
+    },
+    "THTR___222": {
+      "credits": 3.0,
+      "prerequisites": [
+        "THTR___211",
+        "THTR___221",
+        "THTR___261"
+      ]
+    },
+    "THTR___230": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "THTR___240": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "THTR___241": {
+      "credits": 3.0,
+      "prerequisites": [
+        "THTR___141",
+        "THTR___217",
+        "THTR___230"
+      ]
+    },
+    "THTR___246": {
+      "credits": 3.0,
+      "prerequisites": [
+        "THTR___145"
+      ]
+    },
+    "THTR___250": {
+      "credits": 3.0,
+      "prerequisites": [
+        "THTR___150"
+      ]
+    },
+    "THTR___252": {
+      "credits": 3.0,
+      "prerequisites": [
+        "THTR___150",
+        "THTR___152",
+        "THTR___157"
+      ]
+    },
+    "THTR___253": {
+      "credits": 3.0,
+      "prerequisites": [
+        "THTR___150",
+        "THTR___153",
+        "THTR___157"
+      ]
+    },
+    "THTR___254": {
+      "credits": 3.0,
+      "prerequisites": [
+        "JD___401",
+        "LAW___402",
+        "LAW___403",
+        "LAW___404",
+        "JD___405",
+        "JD___406",
+        "JD___407",
+        "JD___411",
+        "LAW___412",
+        "LAW___413",
+        "JD___414",
+        "JD___415",
+        "JD___416"
+      ]
+    },
+    "THTR___255": {
+      "credits": 3.0,
+      "prerequisites": [
+        "THTR___250"
+      ]
+    },
+    "THTR___256": {
+      "credits": 3.0,
+      "prerequisites": [
+        "THTR___150",
+        "THTR___156"
+      ]
+    },
+    "THTR___258": {
+      "credits": 3.0,
+      "prerequisites": [
+        "THTR___257"
+      ]
+    },
+    "THTR___259": {
+      "credits": 3.0,
+      "prerequisites": [
+        "THTR___150",
+        "THTR___151"
+      ]
+    },
+    "THTR___261": {
+      "credits": 3.0,
+      "prerequisites": [
+        "THTR___111",
+        "THTR___122",
+        "THTR___162"
+      ]
+    },
+    "THTR___264": {
+      "credits": 3.0,
+      "prerequisites": [
+        "THTR___211",
+        "THTR___221",
+        "THTR___261"
+      ]
+    },
+    "THTR___271": {
+      "credits": 3.0,
+      "prerequisites": [
+        "THTR___150",
+        "THTR___155",
+        "THTR___157",
+        "THTR___170"
+      ]
+    },
+    "THTR___280": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "THTR___281": {
+      "credits": null,
+      "prerequisites": []
+    },
+    "THTR___282": {
+      "credits": null,
+      "prerequisites": []
+    },
+    "THTR___283": {
+      "credits": null,
+      "prerequisites": []
+    },
+    "THTR___299": {
+      "credits": null,
+      "prerequisites": []
+    },
+    "THTR___311": {
+      "credits": 3.0,
+      "prerequisites": [
+        "THTR___212",
+        "THTR___222",
+        "THTR___264"
+      ]
+    },
+    "THTR___312": {
+      "credits": 3.0,
+      "prerequisites": [
+        "THTR___311",
+        "THTR___321",
+        "THTR___361"
+      ]
+    },
+    "THTR___317": {
+      "credits": 3.0,
+      "prerequisites": [
+        "THTR___217"
+      ]
+    },
+    "THTR___321": {
+      "credits": 3.0,
+      "prerequisites": [
+        "THTR___212",
+        "THTR___222",
+        "THTR___264"
+      ]
+    },
+    "THTR___322": {
+      "credits": 3.0,
+      "prerequisites": [
+        "THTR___311",
+        "THTR___321",
+        "THTR___361"
+      ]
+    },
+    "THTR___331": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "THTR___333": {
+      "credits": 3.0,
+      "prerequisites": [
+        "THTR___101",
+        "THTR___121",
+        "THTR___141",
+        "THTR___201",
+        "THTR___230"
+      ]
+    },
+    "THTR___341": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "THTR___351": {
+      "credits": 3.0,
+      "prerequisites": [
+        "THTR___151"
+      ]
+    },
+    "THTR___355": {
+      "credits": 3.0,
+      "prerequisites": [
+        "THTR___154",
+        "THTR___155",
+        "THTR___157",
+        "THTR___250",
+        "THTR___255"
+      ]
+    },
+    "THTR___358": {
+      "credits": 3.0,
+      "prerequisites": [
+        "THTR___151",
+        "THTR___155",
+        "THTR___158",
+        "THTR___251",
+        "THTR___258"
+      ]
+    },
+    "THTR___361": {
+      "credits": 3.0,
+      "prerequisites": [
+        "THTR___212",
+        "THTR___222",
+        "THTR___264"
+      ]
+    },
+    "THTR___362": {
+      "credits": 3.0,
+      "prerequisites": [
+        "THTR___311",
+        "THTR___321",
+        "THTR___361"
+      ]
+    },
+    "THTR___383": {
+      "credits": null,
+      "prerequisites": [
+        "THTR___250"
+      ]
+    },
+    "THTR___384": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "THTR___385": {
+      "credits": 3.0,
+      "prerequisites": [
+        "THTR___384"
+      ]
+    },
+    "THTR___388": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "THTR___403": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "THTR___413": {
+      "credits": 3.0,
+      "prerequisites": [
+        "THTR___312",
+        "THTR___322",
+        "THTR___362"
+      ]
+    },
+    "THTR___421": {
+      "credits": 4.0,
+      "prerequisites": [
+        "THTR___312",
+        "THTR___322",
+        "THTR___362"
+      ]
+    },
+    "THTR___422": {
+      "credits": 3.0,
+      "prerequisites": [
+        "THTR___321",
+        "THTR___413",
+        "THTR___461"
+      ]
+    },
+    "THTR___431": {
+      "credits": 3.0,
+      "prerequisites": [
+        "THTR___101"
+      ]
+    },
+    "THTR___435": {
+      "credits": 3.0,
+      "prerequisites": [
+        "THTR___101",
+        "THTR___121",
+        "THTR___141",
+        "THTR___201",
+        "THTR___230"
+      ]
+    },
+    "THTR___445": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "THTR___448": {
+      "credits": 3.0,
+      "prerequisites": [
+        "THTR___101",
+        "THTR___141",
+        "THTR___182",
+        "THTR___183",
+        "THTR___201",
+        "THTR___217",
+        "THTR___230",
+        "THTR___241",
+        "THTR___317",
+        "THTR___341"
+      ]
+    },
+    "THTR___449": {
+      "credits": 3.0,
+      "prerequisites": [
+        "THTR___101",
+        "ISA___120",
+        "THTR___141",
+        "THTR___150",
+        "THTR___151",
+        "THTR___201",
+        "THTR___217",
+        "THTR___230",
+        "THTR___231",
+        "THTR___240",
+        "THTR___241",
+        "THTR___317",
+        "THTR___332",
+        "THTR___333",
+        "THTR___341",
+        "THTR___431",
+        "THTR___435"
+      ]
+    },
+    "THTR___450": {
+      "credits": 3.0,
+      "prerequisites": [
+        "THTR___101",
+        "AH___111",
+        "THTR___141",
+        "THTR___150",
+        "THTR___154",
+        "THTR___155",
+        "THTR___157",
+        "THTR___201",
+        "THTR___230",
+        "THTR___254"
+      ]
+    },
+    "THTR___461": {
+      "credits": 3.0,
+      "prerequisites": [
+        "THTR___312",
+        "THTR___322",
+        "THTR___362"
+      ]
+    },
+    "THTR___491": {
+      "credits": null,
+      "prerequisites": []
+    },
+    "THTR___494": {
+      "credits": null,
+      "prerequisites": []
+    },
+    "THTR___498": {
+      "credits": null,
+      "prerequisites": []
+    },
+    "THTR___597": {
+      "credits": null,
+      "prerequisites": []
+    },
+    "THTR___598": {
+      "credits": null,
+      "prerequisites": []
+    }
+  }
+}

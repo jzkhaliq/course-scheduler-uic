@@ -1,0 +1,386 @@
+{
+  "major": "Sociology",
+  "subject_code": "SOC",
+  "min_total_credits": 120,
+  "courses": {
+    "SOC___100": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "SOC___105": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "SOC___120": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "SOC___201": {
+      "credits": 4.0,
+      "prerequisites": [
+        "MATH___090",
+        "SOC___100",
+        "MATH___105",
+        "SOC___105"
+      ]
+    },
+    "SOC___207": {
+      "credits": 3.0,
+      "prerequisites": [
+        "ENGL___160",
+        "ENGL___161"
+      ]
+    },
+    "SOC___212": {
+      "credits": 3.0,
+      "prerequisites": [
+        "SOC___100"
+      ]
+    },
+    "SOC___215": {
+      "credits": 3.0,
+      "prerequisites": [
+        "SOC___100",
+        "SOC___105"
+      ]
+    },
+    "SOC___224": {
+      "credits": 3.0,
+      "prerequisites": [
+        "SOC___100",
+        "GWS___101",
+        "GWS___102"
+      ]
+    },
+    "SOC___225": {
+      "credits": 3.0,
+      "prerequisites": [
+        "SOC___100"
+      ]
+    },
+    "SOC___226": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "SOC___229": {
+      "credits": 3.0,
+      "prerequisites": [
+        "SOC___100",
+        "LALS___102",
+        "LALS___103",
+        "SOC___105"
+      ]
+    },
+    "SOC___231": {
+      "credits": 3.0,
+      "prerequisites": [
+        "CLJ___101"
+      ]
+    },
+    "SOC___241": {
+      "credits": 3.0,
+      "prerequisites": [
+        "SOC___100"
+      ]
+    },
+    "SOC___244": {
+      "credits": 3.0,
+      "prerequisites": [
+        "SOC___100",
+        "SOC___105"
+      ]
+    },
+    "SOC___245": {
+      "credits": 3.0,
+      "prerequisites": [
+        "SOC___100"
+      ]
+    },
+    "SOC___246": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "SOC___251": {
+      "credits": 3.0,
+      "prerequisites": [
+        "SOC___100",
+        "SOC___105"
+      ]
+    },
+    "SOC___258": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "SOC___265": {
+      "credits": 3.0,
+      "prerequisites": [
+        "SOC___100"
+      ]
+    },
+    "SOC___271": {
+      "credits": 3.0,
+      "prerequisites": [
+        "SOC___100",
+        "BLST___100",
+        "CLJ___101"
+      ]
+    },
+    "SOC___276": {
+      "credits": 3.0,
+      "prerequisites": [
+        "SOC___100"
+      ]
+    },
+    "SOC___290": {
+      "credits": 2.0,
+      "prerequisites": [
+        "SOC___100",
+        "SOC___105"
+      ]
+    },
+    "SOC___296": {
+      "credits": null,
+      "prerequisites": []
+    },
+    "SOC___298": {
+      "credits": 3.0,
+      "prerequisites": [
+        "SOC___201",
+        "SOC___202"
+      ]
+    },
+    "SOC___300": {
+      "credits": 4.0,
+      "prerequisites": [
+        "SOC___201"
+      ]
+    },
+    "SOC___385": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "SOC___405": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "SOC___407": {
+      "credits": 4.0,
+      "prerequisites": [
+        "BLST___207",
+        "SOC___207",
+        "BLST___225",
+        "LALS___225",
+        "SOC___225"
+      ]
+    },
+    "SOC___409": {
+      "credits": 3.0,
+      "prerequisites": [
+        "SOC___201",
+        "SOC___300"
+      ]
+    },
+    "SOC___424": {
+      "credits": 4.0,
+      "prerequisites": [
+        "SOC___224"
+      ]
+    },
+    "SOC___425": {
+      "credits": 4.0,
+      "prerequisites": [
+        "SOC___225"
+      ]
+    },
+    "SOC___426": {
+      "credits": 4.0,
+      "prerequisites": [
+        "SOC___224",
+        "SOC___225"
+      ]
+    },
+    "SOC___428": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "SOC___433": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "SOC___440": {
+      "credits": 4.0,
+      "prerequisites": [
+        "SOC___244",
+        "MGMT___340"
+      ]
+    },
+    "SOC___441": {
+      "credits": 4.0,
+      "prerequisites": [
+        "SOC___241"
+      ]
+    },
+    "SOC___445": {
+      "credits": 4.0,
+      "prerequisites": [
+        "SOC___224",
+        "SOC___245"
+      ]
+    },
+    "SOC___447": {
+      "credits": 4.0,
+      "prerequisites": [
+        "SOC___241",
+        "SOC___244",
+        "MGMT___340"
+      ]
+    },
+    "SOC___451": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "SOC___455": {
+      "credits": 4.0,
+      "prerequisites": [
+        "SOC___451"
+      ]
+    },
+    "SOC___465": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "SOC___476": {
+      "credits": 4.0,
+      "prerequisites": [
+        "LALS___495"
+      ]
+    },
+    "SOC___487": {
+      "credits": 4.0,
+      "prerequisites": [
+        "SOC___385"
+      ]
+    },
+    "SOC___490": {
+      "credits": 4.0,
+      "prerequisites": [
+        "SOC___300",
+        "SOC___385"
+      ]
+    },
+    "SOC___496": {
+      "credits": null,
+      "prerequisites": [
+        "SOC___296",
+        "SOC___299"
+      ]
+    },
+    "SOC___499": {
+      "credits": null,
+      "prerequisites": [
+        "SOC___490"
+      ]
+    },
+    "SOC___500": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "SOC___501": {
+      "credits": 4.0,
+      "prerequisites": [
+        "SOC___500"
+      ]
+    },
+    "SOC___502": {
+      "credits": 4.0,
+      "prerequisites": [
+        "SOC___201"
+      ]
+    },
+    "SOC___503": {
+      "credits": 4.0,
+      "prerequisites": [
+        "SOC___502"
+      ]
+    },
+    "SOC___509": {
+      "credits": 4.0,
+      "prerequisites": [
+        "SOC___500",
+        "SOC___501"
+      ]
+    },
+    "SOC___515": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "SOC___520": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "SOC___524": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "SOC___525": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "SOC___528": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "SOC___540": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "SOC___541": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "SOC___542": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "SOC___543": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "SOC___547": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "SOC___549": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "SOC___565": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "SOC___585": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "SOC___587": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "SOC___593": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "SOC___595": {
+      "credits": 1.0,
+      "prerequisites": []
+    },
+    "SOC___596": {
+      "credits": null,
+      "prerequisites": []
+    },
+    "SOC___599": {
+      "credits": null,
+      "prerequisites": []
+    }
+  }
+}

@@ -1,0 +1,331 @@
+{
+  "major": "Pharmaceutical Sciences",
+  "subject_code": "PHAR",
+  "min_total_credits": 120,
+  "courses": {
+    "PHAR___200": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "PHAR___201": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "PHAR___410": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "PHAR___411": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "PHAR___412": {
+      "credits": 2.0,
+      "prerequisites": [
+        "PHAR___411",
+        "PHAR___431"
+      ]
+    },
+    "PHAR___413": {
+      "credits": 2.0,
+      "prerequisites": [
+        "PHAR___411",
+        "PHAR___431"
+      ]
+    },
+    "PHAR___414": {
+      "credits": 2.0,
+      "prerequisites": [
+        "PHAR___412",
+        "PHAR___413"
+      ]
+    },
+    "PHAR___422": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "PHAR___423": {
+      "credits": 4.0,
+      "prerequisites": [
+        "PHAR___422"
+      ]
+    },
+    "PHAR___431": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "PHAR___432": {
+      "credits": 2.0,
+      "prerequisites": []
+    },
+    "PHAR___433": {
+      "credits": 2.0,
+      "prerequisites": [
+        "PHAR___432"
+      ]
+    },
+    "PHAR___434": {
+      "credits": 2.0,
+      "prerequisites": [
+        "PHAR___433"
+      ]
+    },
+    "PHAR___435": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "PHAR___438": {
+      "credits": 1.0,
+      "prerequisites": []
+    },
+    "PHAR___439": {
+      "credits": 1.0,
+      "prerequisites": []
+    },
+    "PHAR___440": {
+      "credits": 2.0,
+      "prerequisites": [
+        "PHAR___438",
+        "PHAR___439"
+      ]
+    },
+    "PHAR___461": {
+      "credits": 2.0,
+      "prerequisites": []
+    },
+    "PHAR___462": {
+      "credits": 2.0,
+      "prerequisites": []
+    },
+    "PHAR___463": {
+      "credits": 2.0,
+      "prerequisites": [
+        "PHAR___461"
+      ]
+    },
+    "PHAR___464": {
+      "credits": 1.0,
+      "prerequisites": []
+    },
+    "PHAR___465": {
+      "credits": 0.0,
+      "prerequisites": []
+    },
+    "PHAR___466": {
+      "credits": 0.0,
+      "prerequisites": []
+    },
+    "PHAR___467": {
+      "credits": 0.0,
+      "prerequisites": [
+        "PHAR___465",
+        "PHAR___466"
+      ]
+    },
+    "PHAR___468": {
+      "credits": 0.0,
+      "prerequisites": [
+        "PHAR___465",
+        "PHAR___466"
+      ]
+    },
+    "PHAR___469": {
+      "credits": 0.0,
+      "prerequisites": [
+        "PHAR___467",
+        "PHAR___468"
+      ]
+    },
+    "PHAR___470": {
+      "credits": 0.0,
+      "prerequisites": [
+        "PHAR___467",
+        "PHAR___468"
+      ]
+    },
+    "PHAR___471": {
+      "credits": 0.0,
+      "prerequisites": [
+        "PHAR___469",
+        "PHAR___470"
+      ]
+    },
+    "PHAR___472": {
+      "credits": 0.0,
+      "prerequisites": [
+        "PHAR___469",
+        "PHAR___470"
+      ]
+    },
+    "PHAR___501": {
+      "credits": 3.0,
+      "prerequisites": [
+        "PHAR___410",
+        "PHAR___422",
+        "PHAR___435"
+      ]
+    },
+    "PHAR___502": {
+      "credits": 3.0,
+      "prerequisites": [
+        "PHAR___410",
+        "PHAR___422",
+        "PHAR___435"
+      ]
+    },
+    "PHAR___503": {
+      "credits": 3.0,
+      "prerequisites": [
+        "PHAR___410",
+        "PHAR___422",
+        "PHAR___423",
+        "PHAR___435",
+        "PHAR___501",
+        "PHAR___502"
+      ]
+    },
+    "PHAR___504": {
+      "credits": 4.0,
+      "prerequisites": [
+        "PHAR___410",
+        "PHAR___422",
+        "PHAR___423",
+        "PHAR___435",
+        "PHAR___501",
+        "PHAR___502"
+      ]
+    },
+    "PHAR___505": {
+      "credits": 4.0,
+      "prerequisites": [
+        "PHAR___410",
+        "PHAR___422",
+        "PHAR___423",
+        "PHAR___435"
+      ]
+    },
+    "PHAR___506": {
+      "credits": 4.0,
+      "prerequisites": [
+        "PHAR___410",
+        "PHAR___422",
+        "PHAR___423",
+        "PHAR___435",
+        "PHAR___504"
+      ]
+    },
+    "PHAR___507": {
+      "credits": 4.0,
+      "prerequisites": [
+        "PHAR___410",
+        "PHAR___422",
+        "PHAR___423",
+        "PHAR___435",
+        "PHAR___501",
+        "PHAR___502",
+        "PHAR___503",
+        "PHAR___504",
+        "PHAR___505",
+        "PHAR___506"
+      ]
+    },
+    "PHAR___508": {
+      "credits": 3.0,
+      "prerequisites": [
+        "PHAR___410",
+        "PHAR___422",
+        "PHAR___423",
+        "PHAR___435",
+        "PHAR___501",
+        "PHAR___502",
+        "PHAR___503",
+        "PHAR___504",
+        "PHAR___505",
+        "PHAR___506"
+      ]
+    },
+    "PHAR___509": {
+      "credits": 3.0,
+      "prerequisites": [
+        "PHAR___410",
+        "PHAR___422",
+        "PHAR___423",
+        "PHAR___435"
+      ]
+    },
+    "PHAR___510": {
+      "credits": 3.0,
+      "prerequisites": [
+        "PHAR___440",
+        "PHAR___501",
+        "PHAR___502",
+        "PHAR___503",
+        "PHAR___504",
+        "PHAR___505",
+        "PHAR___506",
+        "PHAR___507",
+        "PHAR___508",
+        "PHAR___520"
+      ]
+    },
+    "PHAR___515": {
+      "credits": 2.0,
+      "prerequisites": [
+        "PHAR___414",
+        "PHAR___501",
+        "PHAR___502",
+        "PHAR___503",
+        "PHAR___504",
+        "PHAR___505",
+        "PHAR___506"
+      ]
+    },
+    "PHAR___516": {
+      "credits": 2.0,
+      "prerequisites": [
+        "PHAR___414",
+        "PHAR___501",
+        "PHAR___502",
+        "PHAR___503",
+        "PHAR___504",
+        "PHAR___505",
+        "PHAR___506"
+      ]
+    },
+    "PHAR___520": {
+      "credits": 3.0,
+      "prerequisites": [
+        "PHAR___434",
+        "PHAR___435"
+      ]
+    },
+    "PHAR___565": {
+      "credits": 2.0,
+      "prerequisites": []
+    },
+    "PHAR___566": {
+      "credits": 2.0,
+      "prerequisites": []
+    },
+    "PHAR___567": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "PHAR___601": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "PHAR___602": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "PHAR___603": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "PHAR___604": {
+      "credits": 4.0,
+      "prerequisites": []
+    }
+  }
+}

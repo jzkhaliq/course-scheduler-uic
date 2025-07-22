@@ -1,0 +1,508 @@
+{
+  "major": "Political Science",
+  "subject_code": "POLS",
+  "min_total_credits": 120,
+  "courses": {
+    "POLS___101": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "POLS___111": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "POLS___112": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "POLS___120": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "POLS___130": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "POLS___184": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "POLS___190": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "POLS___200": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "POLS___201": {
+      "credits": 3.0,
+      "prerequisites": [
+        "MATH___090",
+        "MATH___105"
+      ]
+    },
+    "POLS___202": {
+      "credits": 3.0,
+      "prerequisites": [
+        "POLS___101",
+        "POLS___190"
+      ]
+    },
+    "POLS___203": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "POLS___204": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "POLS___206": {
+      "credits": 3.0,
+      "prerequisites": [
+        "POLS___101"
+      ]
+    },
+    "POLS___207": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "POLS___209": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "POLS___210": {
+      "credits": 3.0,
+      "prerequisites": [
+        "POLS___101"
+      ]
+    },
+    "POLS___211": {
+      "credits": 3.0,
+      "prerequisites": [
+        "POLS___101"
+      ]
+    },
+    "POLS___212": {
+      "credits": 3.0,
+      "prerequisites": [
+        "POLS___101",
+        "POLS___190"
+      ]
+    },
+    "POLS___221": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "POLS___225": {
+      "credits": 3.0,
+      "prerequisites": [
+        "POLS___101"
+      ]
+    },
+    "POLS___227": {
+      "credits": 3.0,
+      "prerequisites": [
+        "POLS___101"
+      ]
+    },
+    "POLS___228": {
+      "credits": 3.0,
+      "prerequisites": [
+        "POLS___101"
+      ]
+    },
+    "POLS___229": {
+      "credits": 3.0,
+      "prerequisites": [
+        "POLS___101"
+      ]
+    },
+    "POLS___231": {
+      "credits": 3.0,
+      "prerequisites": [
+        "POLS___130"
+      ]
+    },
+    "POLS___232": {
+      "credits": 3.0,
+      "prerequisites": [
+        "POLS___130"
+      ]
+    },
+    "POLS___234": {
+      "credits": 3.0,
+      "prerequisites": [
+        "POLS___130"
+      ]
+    },
+    "POLS___242": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "POLS___243": {
+      "credits": 3.0,
+      "prerequisites": [
+        "POLS___130",
+        "POLS___190"
+      ]
+    },
+    "POLS___246": {
+      "credits": 3.0,
+      "prerequisites": [
+        "ENGL___161"
+      ]
+    },
+    "POLS___258": {
+      "credits": 3.0,
+      "prerequisites": [
+        "POLS___101"
+      ]
+    },
+    "POLS___259": {
+      "credits": 3.0,
+      "prerequisites": [
+        "POLS___101"
+      ]
+    },
+    "POLS___267": {
+      "credits": 3.0,
+      "prerequisites": [
+        "ENGL___161"
+      ]
+    },
+    "POLS___268": {
+      "credits": 3.0,
+      "prerequisites": [
+        "ENGL___161"
+      ]
+    },
+    "POLS___275": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "POLS___281": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "POLS___283": {
+      "credits": 3.0,
+      "prerequisites": [
+        "POLS___184",
+        "INST___184"
+      ]
+    },
+    "POLS___284": {
+      "credits": 3.0,
+      "prerequisites": [
+        "INST___184",
+        "POLS___184"
+      ]
+    },
+    "POLS___286": {
+      "credits": 3.0,
+      "prerequisites": [
+        "POLS___184"
+      ]
+    },
+    "POLS___287": {
+      "credits": 3.0,
+      "prerequisites": [
+        "POLS___184"
+      ]
+    },
+    "POLS___296": {
+      "credits": 3.0,
+      "prerequisites": [
+        "ENGL___161"
+      ]
+    },
+    "POLS___300": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "POLS___301": {
+      "credits": 6.0,
+      "prerequisites": []
+    },
+    "POLS___303": {
+      "credits": null,
+      "prerequisites": []
+    },
+    "POLS___305": {
+      "credits": null,
+      "prerequisites": []
+    },
+    "POLS___307": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "POLS___311": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "POLS___329": {
+      "credits": 3.0,
+      "prerequisites": [
+        "POLS___101",
+        "POLS___200"
+      ]
+    },
+    "POLS___342": {
+      "credits": 3.0,
+      "prerequisites": [
+        "POLS___130",
+        "POLS___286"
+      ]
+    },
+    "POLS___348": {
+      "credits": 3.0,
+      "prerequisites": [
+        "POLS___130",
+        "POLS___200"
+      ]
+    },
+    "POLS___349": {
+      "credits": 3.0,
+      "prerequisites": [
+        "POLS___130",
+        "INST___130",
+        "POLS___200"
+      ]
+    },
+    "POLS___353": {
+      "credits": 3.0,
+      "prerequisites": [
+        "POLS___101"
+      ]
+    },
+    "POLS___354": {
+      "credits": 3.0,
+      "prerequisites": [
+        "POLS___101"
+      ]
+    },
+    "POLS___356": {
+      "credits": 3.0,
+      "prerequisites": [
+        "BLST___100",
+        "GWS___101",
+        "POLS___101",
+        "BLST___103",
+        "POLS___112"
+      ]
+    },
+    "POLS___358": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "POLS___359": {
+      "credits": 3.0,
+      "prerequisites": [
+        "POLS___258",
+        "POLS___353",
+        "POLS___354",
+        "POLS___356",
+        "POLS___358"
+      ]
+    },
+    "POLS___384": {
+      "credits": 3.0,
+      "prerequisites": [
+        "POLS___283",
+        "POLS___284"
+      ]
+    },
+    "POLS___389": {
+      "credits": 3.0,
+      "prerequisites": [
+        "POLS___184",
+        "INST___184",
+        "POLS___200"
+      ]
+    },
+    "POLS___399": {
+      "credits": 3.0,
+      "prerequisites": [
+        "POLS___120",
+        "POLS___200"
+      ]
+    },
+    "POLS___401": {
+      "credits": 4.0,
+      "prerequisites": [
+        "POLS___200",
+        "POLS___201"
+      ]
+    },
+    "POLS___405": {
+      "credits": 4.0,
+      "prerequisites": [
+        "CLJ___101"
+      ]
+    },
+    "POLS___459": {
+      "credits": 4.0,
+      "prerequisites": [
+        "POLS___210"
+      ]
+    },
+    "POLS___465": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "POLS___467": {
+      "credits": 4.0,
+      "prerequisites": [
+        "POLS___200"
+      ]
+    },
+    "POLS___469": {
+      "credits": 4.0,
+      "prerequisites": [
+        "POLS___101",
+        "POLS___329"
+      ]
+    },
+    "POLS___479": {
+      "credits": 4.0,
+      "prerequisites": [
+        "POLS___130",
+        "POLS___349"
+      ]
+    },
+    "POLS___482": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "POLS___489": {
+      "credits": 4.0,
+      "prerequisites": [
+        "POLS___290",
+        "POLS___291"
+      ]
+    },
+    "POLS___494": {
+      "credits": 4.0,
+      "prerequisites": [
+        "POLS___190",
+        "POLS___200"
+      ]
+    },
+    "POLS___497": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "POLS___498": {
+      "credits": null,
+      "prerequisites": []
+    },
+    "POLS___500": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "POLS___501": {
+      "credits": 4.0,
+      "prerequisites": [
+        "POLS___401",
+        "PPA___401"
+      ]
+    },
+    "POLS___504": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "POLS___505": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "POLS___507": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "POLS___551": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "POLS___557": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "POLS___558": {
+      "credits": null,
+      "prerequisites": []
+    },
+    "POLS___559": {
+      "credits": 4.0,
+      "prerequisites": [
+        "POLS___500",
+        "POLS___541"
+      ]
+    },
+    "POLS___560": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "POLS___567": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "POLS___569": {
+      "credits": 4.0,
+      "prerequisites": [
+        "POLS___560"
+      ]
+    },
+    "POLS___570": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "POLS___571": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "POLS___578": {
+      "credits": 4.0,
+      "prerequisites": [
+        "POLS___571"
+      ]
+    },
+    "POLS___579": {
+      "credits": 4.0,
+      "prerequisites": [
+        "POLS___570"
+      ]
+    },
+    "POLS___590": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "POLS___591": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "POLS___593": {
+      "credits": 2.0,
+      "prerequisites": [
+        "POLS___401",
+        "POLS___482",
+        "POLS___505"
+      ]
+    },
+    "POLS___596": {
+      "credits": null,
+      "prerequisites": [
+        "POLS___401",
+        "POLS___404"
+      ]
+    },
+    "POLS___598": {
+      "credits": null,
+      "prerequisites": []
+    },
+    "POLS___599": {
+      "credits": null,
+      "prerequisites": []
+    }
+  }
+}

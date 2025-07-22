@@ -75,7 +75,7 @@ def main():
             else:
                 print(f"⚠️ Duplicate ignored: {major}")
 
-    with open("all_uic_degrees.json", "w") as f:
+    with open("data/all_uic_degrees.json", "w") as f:
         json.dump(degree_data, f, indent=2)
 
     print(f"\n🎉 Done. Extracted {len(degree_data)} majors.")

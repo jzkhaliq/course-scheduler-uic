@@ -1,0 +1,15 @@
+{
+  "major": "Liberal Studies",
+  "subject_code": "LIB",
+  "min_total_credits": 120,
+  "courses": {
+    "LIB___399": {
+      "credits": null,
+      "prerequisites": []
+    },
+    "LIB___573": {
+      "credits": 1.0,
+      "prerequisites": []
+    }
+  }
+}

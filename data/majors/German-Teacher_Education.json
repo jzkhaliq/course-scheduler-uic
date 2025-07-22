@@ -1,0 +1,265 @@
+{
+  "major": "German-Teacher Education",
+  "subject_code": "GER",
+  "min_total_credits": 120,
+  "courses": {
+    "GER___101": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "GER___102": {
+      "credits": 4.0,
+      "prerequisites": [
+        "GER___101"
+      ]
+    },
+    "GER___103": {
+      "credits": 4.0,
+      "prerequisites": [
+        "GER___102",
+        "GER___106"
+      ]
+    },
+    "GER___104": {
+      "credits": 4.0,
+      "prerequisites": [
+        "GER___103"
+      ]
+    },
+    "GER___120": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "GER___123": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "GER___125": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "GER___207": {
+      "credits": 3.0,
+      "prerequisites": [
+        "ENGL___160"
+      ]
+    },
+    "GER___211": {
+      "credits": 3.0,
+      "prerequisites": [
+        "GER___104"
+      ]
+    },
+    "GER___212": {
+      "credits": 3.0,
+      "prerequisites": [
+        "GER___104"
+      ]
+    },
+    "GER___214": {
+      "credits": 3.0,
+      "prerequisites": [
+        "GER___104"
+      ]
+    },
+    "GER___217": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "GER___219": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "GER___240": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "GER___299": {
+      "credits": null,
+      "prerequisites": []
+    },
+    "GER___300": {
+      "credits": 1.0,
+      "prerequisites": []
+    },
+    "GER___302": {
+      "credits": 3.0,
+      "prerequisites": [
+        "MOVI___102",
+        "ENGL___102",
+        "ENGL___120",
+        "ENGL___121",
+        "MOVI___121",
+        "GER___207",
+        "LCSL___207",
+        "SPAN___207",
+        "GER___217",
+        "AH___232",
+        "ENGL___232",
+        "MOVI___232",
+        "ENGL___233",
+        "AH___233",
+        "MOVI___233"
+      ]
+    },
+    "GER___310": {
+      "credits": 3.0,
+      "prerequisites": [
+        "GER___211",
+        "GER___212",
+        "GER___214"
+      ]
+    },
+    "GER___311": {
+      "credits": 3.0,
+      "prerequisites": [
+        "GER___211",
+        "GER___212",
+        "GER___214"
+      ]
+    },
+    "GER___318": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "GER___333": {
+      "credits": 3.0,
+      "prerequisites": [
+        "GER___211",
+        "GER___212"
+      ]
+    },
+    "GER___398": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "GER___399": {
+      "credits": null,
+      "prerequisites": []
+    },
+    "GER___401": {
+      "credits": 4.0,
+      "prerequisites": [
+        "GER___211",
+        "GER___212",
+        "GER___310"
+      ]
+    },
+    "GER___408": {
+      "credits": 4.0,
+      "prerequisites": [
+        "GER___212"
+      ]
+    },
+    "GER___411": {
+      "credits": 4.0,
+      "prerequisites": [
+        "GER___212"
+      ]
+    },
+    "GER___437": {
+      "credits": 4.0,
+      "prerequisites": [
+        "GER___211"
+      ]
+    },
+    "GER___439": {
+      "credits": 4.0,
+      "prerequisites": [
+        "GER___212"
+      ]
+    },
+    "GER___448": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "GER___461": {
+      "credits": null,
+      "prerequisites": [
+        "GER___104"
+      ]
+    },
+    "GER___487": {
+      "credits": 4.0,
+      "prerequisites": [
+        "SPAN___448",
+        "GER___448",
+        "FR___448",
+        "FR___449",
+        "GER___449",
+        "SPAN___449",
+        "LING___483",
+        "FR___502",
+        "SPAN___502"
+      ]
+    },
+    "GER___492": {
+      "credits": null,
+      "prerequisites": [
+        "GER___211",
+        "GER___493"
+      ]
+    },
+    "GER___493": {
+      "credits": null,
+      "prerequisites": [
+        "GER___211",
+        "GER___492"
+      ]
+    },
+    "GER___494": {
+      "credits": 6.0,
+      "prerequisites": []
+    },
+    "GER___495": {
+      "credits": 6.0,
+      "prerequisites": [
+        "GER___494"
+      ]
+    },
+    "GER___500": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "GER___513": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "GER___514": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "GER___515": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "GER___531": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "GER___540": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "GER___550": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "GER___593": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "GER___596": {
+      "credits": null,
+      "prerequisites": []
+    },
+    "GER___598": {
+      "credits": null,
+      "prerequisites": []
+    },
+    "GER___599": {
+      "credits": null,
+      "prerequisites": []
+    }
+  }
+}

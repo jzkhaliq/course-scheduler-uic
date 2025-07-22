@@ -1,0 +1,301 @@
+{
+  "major": "Architectural Studies",
+  "subject_code": "ARCH",
+  "min_total_credits": 120,
+  "courses": {
+    "ARCH___105": {
+      "credits": 5.0,
+      "prerequisites": []
+    },
+    "ARCH___106": {
+      "credits": 5.0,
+      "prerequisites": [
+        "ARCH___105"
+      ]
+    },
+    "ARCH___151": {
+      "credits": 2.0,
+      "prerequisites": []
+    },
+    "ARCH___200": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "ARCH___205": {
+      "credits": 5.0,
+      "prerequisites": [
+        "ARCH___105",
+        "ARCH___105",
+        "ARCH___106",
+        "ARCH___106"
+      ]
+    },
+    "ARCH___206": {
+      "credits": 5.0,
+      "prerequisites": [
+        "ARCH___205"
+      ]
+    },
+    "ARCH___210": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "ARCH___251": {
+      "credits": 3.0,
+      "prerequisites": [
+        "ARCH___105",
+        "ARCH___106",
+        "ARCH___205"
+      ]
+    },
+    "ARCH___252": {
+      "credits": 3.0,
+      "prerequisites": [
+        "ARCH___200",
+        "ARCH___205",
+        "ARCH___206",
+        "ARCH___251"
+      ]
+    },
+    "ARCH___359": {
+      "credits": 4.0,
+      "prerequisites": [
+        "ARCH___365"
+      ]
+    },
+    "ARCH___360": {
+      "credits": 4.0,
+      "prerequisites": [
+        "ARCH___359",
+        "ARCH___366"
+      ]
+    },
+    "ARCH___365": {
+      "credits": 6.0,
+      "prerequisites": [
+        "ARCH___205",
+        "ARCH___205",
+        "ARCH___206"
+      ]
+    },
+    "ARCH___366": {
+      "credits": 6.0,
+      "prerequisites": [
+        "ARCH___365"
+      ]
+    },
+    "ARCH___371": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "ARCH___372": {
+      "credits": 3.0,
+      "prerequisites": [
+        "ARCH___366",
+        "ARCH___371"
+      ]
+    },
+    "ARCH___391": {
+      "credits": null,
+      "prerequisites": []
+    },
+    "ARCH___395": {
+      "credits": 1.0,
+      "prerequisites": []
+    },
+    "ARCH___399": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "ARCH___414": {
+      "credits": 3.0,
+      "prerequisites": [
+        "ARCH___252",
+        "ARCH___371",
+        "ARCH___465"
+      ]
+    },
+    "ARCH___440": {
+      "credits": 3.0,
+      "prerequisites": [
+        "ARCH___106"
+      ]
+    },
+    "ARCH___465": {
+      "credits": 6.0,
+      "prerequisites": [
+        "ARCH___360",
+        "ARCH___365",
+        "ARCH___365",
+        "ARCH___366",
+        "ARCH___372"
+      ]
+    },
+    "ARCH___466": {
+      "credits": 6.0,
+      "prerequisites": [
+        "ARCH___365",
+        "ARCH___366",
+        "ARCH___465"
+      ]
+    },
+    "ARCH___470": {
+      "credits": 3.0,
+      "prerequisites": [
+        "PHYS___131",
+        "MATH___180"
+      ]
+    },
+    "ARCH___471": {
+      "credits": 3.0,
+      "prerequisites": [
+        "ARCH___470"
+      ]
+    },
+    "ARCH___499": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "ARCH___520": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "ARCH___522": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "ARCH___531": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "ARCH___532": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "ARCH___544": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "ARCH___551": {
+      "credits": 6.0,
+      "prerequisites": []
+    },
+    "ARCH___552": {
+      "credits": 6.0,
+      "prerequisites": [
+        "ARCH___551"
+      ]
+    },
+    "ARCH___553": {
+      "credits": 6.0,
+      "prerequisites": [
+        "ARCH___551",
+        "ARCH___552"
+      ]
+    },
+    "ARCH___554": {
+      "credits": 6.0,
+      "prerequisites": [
+        "ARCH___553"
+      ]
+    },
+    "ARCH___555": {
+      "credits": 4.0,
+      "prerequisites": [
+        "ARCH___553",
+        "ARCH___563"
+      ]
+    },
+    "ARCH___561": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "ARCH___562": {
+      "credits": 4.0,
+      "prerequisites": [
+        "ARCH___561"
+      ]
+    },
+    "ARCH___563": {
+      "credits": 4.0,
+      "prerequisites": [
+        "ARCH___562"
+      ]
+    },
+    "ARCH___564": {
+      "credits": 4.0,
+      "prerequisites": [
+        "ARCH___561",
+        "ARCH___562",
+        "ARCH___563",
+        "ARCH___573",
+        "ARCH___574"
+      ]
+    },
+    "ARCH___565": {
+      "credits": 6.0,
+      "prerequisites": [
+        "ARCH___553",
+        "ARCH___554"
+      ]
+    },
+    "ARCH___566": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "ARCH___567": {
+      "credits": 6.0,
+      "prerequisites": [
+        "ARCH___566"
+      ]
+    },
+    "ARCH___573": {
+      "credits": 4.0,
+      "prerequisites": [
+        "ARCH___561"
+      ]
+    },
+    "ARCH___574": {
+      "credits": 4.0,
+      "prerequisites": [
+        "ARCH___561"
+      ]
+    },
+    "ARCH___585": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "ARCH___586": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "ARCH___587": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "ARCH___588": {
+      "credits": 4.0,
+      "prerequisites": [
+        "ARCH___587"
+      ]
+    },
+    "ARCH___589": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "ARCH___590": {
+      "credits": 4.0,
+      "prerequisites": [
+        "ARCH___589"
+      ]
+    },
+    "ARCH___591": {
+      "credits": null,
+      "prerequisites": []
+    },
+    "ARCH___596": {
+      "credits": null,
+      "prerequisites": []
+    }
+  }
+}

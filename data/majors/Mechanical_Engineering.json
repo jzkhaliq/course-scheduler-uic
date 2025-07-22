@@ -1,0 +1,452 @@
+{
+  "major": "Mechanical Engineering",
+  "subject_code": "ME",
+  "min_total_credits": 128,
+  "courses": {
+    "ME___118": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "ME___205": {
+      "credits": 3.0,
+      "prerequisites": [
+        "PHYS___141",
+        "MATH___181"
+      ]
+    },
+    "ME___210": {
+      "credits": 3.0,
+      "prerequisites": [
+        "CME___201"
+      ]
+    },
+    "ME___211": {
+      "credits": 4.0,
+      "prerequisites": [
+        "PHYS___141",
+        "MATH___220",
+        "MATH___220"
+      ]
+    },
+    "ME___250": {
+      "credits": 3.0,
+      "prerequisites": [
+        "ENGL___160",
+        "ENGL___160"
+      ]
+    },
+    "ME___261": {
+      "credits": 2.0,
+      "prerequisites": [
+        "CHEM___122",
+        "CHEM___123",
+        "PHYS___141",
+        "MATH___181"
+      ]
+    },
+    "ME___293": {
+      "credits": null,
+      "prerequisites": []
+    },
+    "ME___308": {
+      "credits": 3.0,
+      "prerequisites": [
+        "CS___109",
+        "ME___210",
+        "MATH___220"
+      ]
+    },
+    "ME___312": {
+      "credits": 3.0,
+      "prerequisites": [
+        "CS___109",
+        "ECE___210",
+        "MATH___220"
+      ]
+    },
+    "ME___320": {
+      "credits": 4.0,
+      "prerequisites": [
+        "ME___210"
+      ]
+    },
+    "ME___321": {
+      "credits": 4.0,
+      "prerequisites": [
+        "ME___205",
+        "ME___211"
+      ]
+    },
+    "ME___325": {
+      "credits": 3.0,
+      "prerequisites": [
+        "ME___205",
+        "ME___211"
+      ]
+    },
+    "ME___328": {
+      "credits": 3.0,
+      "prerequisites": [
+        "CS___109",
+        "MATH___310"
+      ]
+    },
+    "ME___341": {
+      "credits": 3.0,
+      "prerequisites": [
+        "CME___203",
+        "ME___211"
+      ]
+    },
+    "ME___347": {
+      "credits": 3.0,
+      "prerequisites": [
+        "CME___203",
+        "MATH___220",
+        "ME___250",
+        "MATH___310"
+      ]
+    },
+    "ME___370": {
+      "credits": 3.0,
+      "prerequisites": [
+        "CME___203",
+        "ME___230",
+        "ME___250"
+      ]
+    },
+    "ME___380": {
+      "credits": 3.0,
+      "prerequisites": [
+        "CME___203"
+      ]
+    },
+    "ME___391": {
+      "credits": 1.0,
+      "prerequisites": []
+    },
+    "ME___392": {
+      "credits": null,
+      "prerequisites": []
+    },
+    "ME___394": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "ME___396": {
+      "credits": 3.0,
+      "prerequisites": [
+        "IE___201",
+        "IE___345",
+        "ME___347"
+      ]
+    },
+    "ME___397": {
+      "credits": 3.0,
+      "prerequisites": [
+        "ME___396",
+        "IE___396",
+        "ME___499",
+        "IE___499"
+      ]
+    },
+    "ME___401": {
+      "credits": 4.0,
+      "prerequisites": [
+        "CME___203"
+      ]
+    },
+    "ME___408": {
+      "credits": 4.0,
+      "prerequisites": [
+        "ME___308"
+      ]
+    },
+    "ME___410": {
+      "credits": 4.0,
+      "prerequisites": [
+        "ME___210"
+      ]
+    },
+    "ME___411": {
+      "credits": null,
+      "prerequisites": []
+    },
+    "ME___412": {
+      "credits": 4.0,
+      "prerequisites": [
+        "ME___308"
+      ]
+    },
+    "ME___413": {
+      "credits": 4.0,
+      "prerequisites": [
+        "ME___320"
+      ]
+    },
+    "ME___415": {
+      "credits": 4.0,
+      "prerequisites": [
+        "ME___419"
+      ]
+    },
+    "ME___416": {
+      "credits": 4.0,
+      "prerequisites": [
+        "ME___413"
+      ]
+    },
+    "ME___419": {
+      "credits": 4.0,
+      "prerequisites": [
+        "ME___321"
+      ]
+    },
+    "ME___421": {
+      "credits": 4.0,
+      "prerequisites": [
+        "ME___321"
+      ]
+    },
+    "ME___422": {
+      "credits": 4.0,
+      "prerequisites": [
+        "ME___321"
+      ]
+    },
+    "ME___423": {
+      "credits": 4.0,
+      "prerequisites": [
+        "ME___211",
+        "ME___321"
+      ]
+    },
+    "ME___424": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "ME___426": {
+      "credits": 4.0,
+      "prerequisites": [
+        "ME___325"
+      ]
+    },
+    "ME___429": {
+      "credits": 4.0,
+      "prerequisites": [
+        "ME___325"
+      ]
+    },
+    "ME___444": {
+      "credits": 4.0,
+      "prerequisites": [
+        "IE___201",
+        "IE___345",
+        "ME___347"
+      ]
+    },
+    "ME___445": {
+      "credits": 4.0,
+      "prerequisites": [
+        "IE___444",
+        "ME___444"
+      ]
+    },
+    "ME___449": {
+      "credits": null,
+      "prerequisites": [
+        "ECE___347"
+      ]
+    },
+    "ME___464": {
+      "credits": null,
+      "prerequisites": [
+        "CS___107",
+        "CS___108"
+      ]
+    },
+    "ME___481": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "ME___494": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "ME___496": {
+      "credits": null,
+      "prerequisites": []
+    },
+    "ME___497": {
+      "credits": null,
+      "prerequisites": []
+    },
+    "ME___499": {
+      "credits": 0.0,
+      "prerequisites": []
+    },
+    "ME___501": {
+      "credits": 4.0,
+      "prerequisites": [
+        "ME___325"
+      ]
+    },
+    "ME___502": {
+      "credits": 4.0,
+      "prerequisites": [
+        "ME___401"
+      ]
+    },
+    "ME___504": {
+      "credits": 4.0,
+      "prerequisites": [
+        "ME___413"
+      ]
+    },
+    "ME___505": {
+      "credits": 4.0,
+      "prerequisites": [
+        "ME___504"
+      ]
+    },
+    "ME___508": {
+      "credits": 4.0,
+      "prerequisites": [
+        "ME___408",
+        "CME___435"
+      ]
+    },
+    "ME___510": {
+      "credits": 4.0,
+      "prerequisites": [
+        "ME___409",
+        "ME___410",
+        "ME___413"
+      ]
+    },
+    "ME___512": {
+      "credits": 4.0,
+      "prerequisites": [
+        "ME___412"
+      ]
+    },
+    "ME___514": {
+      "credits": 4.0,
+      "prerequisites": [
+        "ME___417"
+      ]
+    },
+    "ME___515": {
+      "credits": 4.0,
+      "prerequisites": [
+        "ME___205",
+        "ME___211"
+      ]
+    },
+    "ME___517": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "ME___518": {
+      "credits": 4.0,
+      "prerequisites": [
+        "ME___417"
+      ]
+    },
+    "ME___520": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "ME___521": {
+      "credits": 4.0,
+      "prerequisites": [
+        "ME___321"
+      ]
+    },
+    "ME___524": {
+      "credits": 4.0,
+      "prerequisites": [
+        "ME___421"
+      ]
+    },
+    "ME___525": {
+      "credits": 4.0,
+      "prerequisites": [
+        "ME___421"
+      ]
+    },
+    "ME___528": {
+      "credits": 4.0,
+      "prerequisites": [
+        "CS___108",
+        "ME___421"
+      ]
+    },
+    "ME___533": {
+      "credits": 4.0,
+      "prerequisites": [
+        "ME___433"
+      ]
+    },
+    "ME___536": {
+      "credits": 4.0,
+      "prerequisites": [
+        "ME___514",
+        "ME___516",
+        "ME___522"
+      ]
+    },
+    "ME___541": {
+      "credits": 4.0,
+      "prerequisites": [
+        "ECE___347",
+        "ECE___449"
+      ]
+    },
+    "ME___542": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "ME___547": {
+      "credits": 4.0,
+      "prerequisites": [
+        "ME___413",
+        "ME___447"
+      ]
+    },
+    "ME___562": {
+      "credits": 4.0,
+      "prerequisites": [
+        "BME___460"
+      ]
+    },
+    "ME___574": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "ME___591": {
+      "credits": 1.0,
+      "prerequisites": []
+    },
+    "ME___594": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "ME___595": {
+      "credits": null,
+      "prerequisites": []
+    },
+    "ME___596": {
+      "credits": null,
+      "prerequisites": []
+    },
+    "ME___598": {
+      "credits": null,
+      "prerequisites": []
+    },
+    "ME___599": {
+      "credits": null,
+      "prerequisites": []
+    }
+  }
+}

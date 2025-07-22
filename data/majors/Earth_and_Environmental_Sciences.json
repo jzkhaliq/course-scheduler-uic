@@ -1,0 +1,290 @@
+{
+  "major": "Earth and Environmental Sciences",
+  "subject_code": "EAES",
+  "min_total_credits": 120,
+  "courses": {
+    "EAES___101": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "EAES___111": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "EAES___180": {
+      "credits": 1.0,
+      "prerequisites": [
+        "EAES___101",
+        "EAES___111"
+      ]
+    },
+    "EAES___200": {
+      "credits": 2.0,
+      "prerequisites": [
+        "EAES___101",
+        "EAES___101",
+        "EAES___111",
+        "EAES___111",
+        "EAES___230"
+      ]
+    },
+    "EAES___203": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "EAES___230": {
+      "credits": 4.0,
+      "prerequisites": [
+        "EAES___101",
+        "EAES___111"
+      ]
+    },
+    "EAES___285": {
+      "credits": 4.0,
+      "prerequisites": [
+        "EAES___101",
+        "EAES___111"
+      ]
+    },
+    "EAES___290": {
+      "credits": 2.0,
+      "prerequisites": []
+    },
+    "EAES___350": {
+      "credits": 3.0,
+      "prerequisites": [
+        "EAES___230",
+        "EAES___320"
+      ]
+    },
+    "EAES___360": {
+      "credits": 4.0,
+      "prerequisites": [
+        "BIOS___100",
+        "EAES___101",
+        "BIOS___101",
+        "BIOS___110",
+        "EAES___111",
+        "BIOS___120"
+      ]
+    },
+    "EAES___396": {
+      "credits": null,
+      "prerequisites": []
+    },
+    "EAES___400": {
+      "credits": null,
+      "prerequisites": []
+    },
+    "EAES___415": {
+      "credits": 4.0,
+      "prerequisites": [
+        "CHEM___114",
+        "CHEM___124",
+        "CHEM___125",
+        "EAES___230",
+        "EAES___285"
+      ]
+    },
+    "EAES___416": {
+      "credits": 3.0,
+      "prerequisites": [
+        "CHEM___114",
+        "CHEM___124",
+        "CHEM___125",
+        "CHEM___130",
+        "EAES___230",
+        "EAES___320"
+      ]
+    },
+    "EAES___418": {
+      "credits": 3.0,
+      "prerequisites": [
+        "BIOS___100",
+        "BIOS___101",
+        "EAES___111",
+        "CHEM___112",
+        "CHEM___114",
+        "CHEM___122",
+        "CHEM___123",
+        "CHEM___124",
+        "CHEM___125",
+        "EAES___230",
+        "EAES___285"
+      ]
+    },
+    "EAES___422": {
+      "credits": 4.0,
+      "prerequisites": [
+        "EAES___320"
+      ]
+    },
+    "EAES___440": {
+      "credits": 3.0,
+      "prerequisites": [
+        "EAES___111",
+        "EAES___230"
+      ]
+    },
+    "EAES___444": {
+      "credits": 4.0,
+      "prerequisites": [
+        "EAES___111",
+        "EAES___285"
+      ]
+    },
+    "EAES___448": {
+      "credits": 3.0,
+      "prerequisites": [
+        "EAES___111"
+      ]
+    },
+    "EAES___460": {
+      "credits": 4.0,
+      "prerequisites": [
+        "EAES___230",
+        "EAES___285",
+        "EAES___350",
+        "EAES___360",
+        "EAES___440"
+      ]
+    },
+    "EAES___470": {
+      "credits": 4.0,
+      "prerequisites": [
+        "MATH___181",
+        "EAES___230",
+        "EAES___285"
+      ]
+    },
+    "EAES___473": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "EAES___475": {
+      "credits": 3.0,
+      "prerequisites": [
+        "EAES___111",
+        "MATH___181",
+        "EAES___230",
+        "EAES___285"
+      ]
+    },
+    "EAES___478": {
+      "credits": 1.0,
+      "prerequisites": []
+    },
+    "EAES___480": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "EAES___484": {
+      "credits": 3.0,
+      "prerequisites": [
+        "EAES___230",
+        "EAES___285"
+      ]
+    },
+    "EAES___490": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "EAES___492": {
+      "credits": 1.0,
+      "prerequisites": []
+    },
+    "EAES___494": {
+      "credits": null,
+      "prerequisites": []
+    },
+    "EAES___510": {
+      "credits": null,
+      "prerequisites": [
+        "EAES___410"
+      ]
+    },
+    "EAES___511": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "EAES___512": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "EAES___513": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "EAES___514": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "EAES___516": {
+      "credits": 4.0,
+      "prerequisites": [
+        "EAES___416"
+      ]
+    },
+    "EAES___518": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "EAES___525": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "EAES___543": {
+      "credits": 4.0,
+      "prerequisites": [
+        "EAES___444",
+        "EAES___448"
+      ]
+    },
+    "EAES___545": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "EAES___547": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "EAES___560": {
+      "credits": null,
+      "prerequisites": []
+    },
+    "EAES___577": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "EAES___578": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "EAES___579": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "EAES___580": {
+      "credits": 3.0,
+      "prerequisites": [
+        "EAES___475"
+      ]
+    },
+    "EAES___595": {
+      "credits": 1.0,
+      "prerequisites": []
+    },
+    "EAES___596": {
+      "credits": null,
+      "prerequisites": []
+    },
+    "EAES___598": {
+      "credits": null,
+      "prerequisites": []
+    },
+    "EAES___599": {
+      "credits": null,
+      "prerequisites": []
+    }
+  }
+}

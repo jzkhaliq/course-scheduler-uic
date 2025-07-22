@@ -1,0 +1,229 @@
+{
+  "major": "Black Studies",
+  "subject_code": "BLST",
+  "min_total_credits": 120,
+  "courses": {
+    "BLST___100": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "BLST___101": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "BLST___103": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "BLST___104": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "BLST___105": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "BLST___110": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "BLST___111": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "BLST___125": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "BLST___191": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "BLST___206": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "BLST___207": {
+      "credits": 3.0,
+      "prerequisites": [
+        "ENGL___160",
+        "ENGL___161"
+      ]
+    },
+    "BLST___221": {
+      "credits": 3.0,
+      "prerequisites": [
+        "ENGL___161"
+      ]
+    },
+    "BLST___225": {
+      "credits": 3.0,
+      "prerequisites": [
+        "SOC___100"
+      ]
+    },
+    "BLST___229": {
+      "credits": 3.0,
+      "prerequisites": [
+        "BLST___100",
+        "BLST___101"
+      ]
+    },
+    "BLST___246": {
+      "credits": 3.0,
+      "prerequisites": [
+        "BLST___100"
+      ]
+    },
+    "BLST___247": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "BLST___248": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "BLST___249": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "BLST___250": {
+      "credits": 3.0,
+      "prerequisites": [
+        "ENGL___161"
+      ]
+    },
+    "BLST___252": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "BLST___258": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "BLST___261": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "BLST___262": {
+      "credits": 3.0,
+      "prerequisites": [
+        "BLST___100"
+      ]
+    },
+    "BLST___264": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "BLST___266": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "BLST___271": {
+      "credits": 3.0,
+      "prerequisites": [
+        "BLST___100",
+        "SOC___100",
+        "CLJ___101"
+      ]
+    },
+    "BLST___272": {
+      "credits": 3.0,
+      "prerequisites": [
+        "ENGL___161"
+      ]
+    },
+    "BLST___294": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "BLST___306": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "BLST___351": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "BLST___356": {
+      "credits": 3.0,
+      "prerequisites": [
+        "BLST___100",
+        "GWS___101",
+        "POLS___101",
+        "BLST___103",
+        "POLS___112"
+      ]
+    },
+    "BLST___358": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "BLST___394": {
+      "credits": 3.0,
+      "prerequisites": [
+        "BLST___100"
+      ]
+    },
+    "BLST___398": {
+      "credits": null,
+      "prerequisites": []
+    },
+    "BLST___406": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "BLST___407": {
+      "credits": 4.0,
+      "prerequisites": [
+        "BLST___207",
+        "SOC___207",
+        "SOC___225",
+        "LALS___225",
+        "BLST___225"
+      ]
+    },
+    "BLST___408": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "BLST___410": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "BLST___490": {
+      "credits": 4.0,
+      "prerequisites": [
+        "BLST___100"
+      ]
+    },
+    "BLST___492": {
+      "credits": 4.0,
+      "prerequisites": [
+        "BLST___100"
+      ]
+    },
+    "BLST___494": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "BLST___501": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "BLST___502": {
+      "credits": 1.0,
+      "prerequisites": [
+        "BLST___501"
+      ]
+    },
+    "BLST___503": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "BLST___596": {
+      "credits": null,
+      "prerequisites": []
+    }
+  }
+}

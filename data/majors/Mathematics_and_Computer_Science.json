@@ -1,0 +1,233 @@
+{
+  "major": "Mathematics and Computer Science",
+  "subject_code": "MCS",
+  "min_total_credits": 120,
+  "courses": {
+    "MCS___160": {
+      "credits": 4.0,
+      "prerequisites": [
+        "MATH___180"
+      ]
+    },
+    "MCS___260": {
+      "credits": 4.0,
+      "prerequisites": [
+        "MATH___180"
+      ]
+    },
+    "MCS___275": {
+      "credits": 4.0,
+      "prerequisites": [
+        "CS___107",
+        "CS___109",
+        "CS___111",
+        "MCS___260"
+      ]
+    },
+    "MCS___320": {
+      "credits": 3.0,
+      "prerequisites": [
+        "CS___107",
+        "CS___109",
+        "CS___111",
+        "MCS___260"
+      ]
+    },
+    "MCS___360": {
+      "credits": 4.0,
+      "prerequisites": [
+        "MCS___260",
+        "MCS___275"
+      ]
+    },
+    "MCS___361": {
+      "credits": 3.0,
+      "prerequisites": [
+        "CS___107",
+        "CS___109",
+        "CS___111",
+        "MATH___215"
+      ]
+    },
+    "MCS___394": {
+      "credits": null,
+      "prerequisites": []
+    },
+    "MCS___401": {
+      "credits": 4.0,
+      "prerequisites": [
+        "CS___251",
+        "MCS___360"
+      ]
+    },
+    "MCS___415": {
+      "credits": 4.0,
+      "prerequisites": [
+        "CS___341",
+        "MCS___360"
+      ]
+    },
+    "MCS___421": {
+      "credits": 4.0,
+      "prerequisites": [
+        "MATH___215",
+        "MATH___310",
+        "MATH___320"
+      ]
+    },
+    "MCS___423": {
+      "credits": 4.0,
+      "prerequisites": [
+        "MATH___215",
+        "MATH___310",
+        "MATH___320"
+      ]
+    },
+    "MCS___425": {
+      "credits": 4.0,
+      "prerequisites": [
+        "MATH___215",
+        "MATH___310",
+        "MATH___320"
+      ]
+    },
+    "MCS___441": {
+      "credits": 4.0,
+      "prerequisites": [
+        "MATH___215"
+      ]
+    },
+    "MCS___471": {
+      "credits": 4.0,
+      "prerequisites": [
+        "CS___107",
+        "CS___109",
+        "CS___111",
+        "MCS___260"
+      ]
+    },
+    "MCS___472": {
+      "credits": 4.0,
+      "prerequisites": [
+        "MCS___471"
+      ]
+    },
+    "MCS___481": {
+      "credits": 4.0,
+      "prerequisites": [
+        "MCS___401"
+      ]
+    },
+    "MCS___496": {
+      "credits": null,
+      "prerequisites": []
+    },
+    "MCS___501": {
+      "credits": 4.0,
+      "prerequisites": [
+        "MCS___401",
+        "CS___401"
+      ]
+    },
+    "MCS___507": {
+      "credits": 4.0,
+      "prerequisites": [
+        "MCS___360"
+      ]
+    },
+    "MCS___521": {
+      "credits": 4.0,
+      "prerequisites": [
+        "MCS___423",
+        "STAT___471"
+      ]
+    },
+    "MCS___541": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "MCS___548": {
+      "credits": 4.0,
+      "prerequisites": [
+        "MCS___541"
+      ]
+    },
+    "MCS___549": {
+      "credits": 4.0,
+      "prerequisites": [
+        "MCS___401",
+        "MCS___441"
+      ]
+    },
+    "MCS___563": {
+      "credits": 4.0,
+      "prerequisites": [
+        "MCS___460",
+        "MATH___480"
+      ]
+    },
+    "MCS___571": {
+      "credits": 4.0,
+      "prerequisites": [
+        "MCS___471",
+        "MATH___481"
+      ]
+    },
+    "MCS___572": {
+      "credits": 4.0,
+      "prerequisites": [
+        "MCS___471",
+        "MCS___571"
+      ]
+    },
+    "MCS___573": {
+      "credits": 4.0,
+      "prerequisites": [
+        "MCS___471",
+        "MATH___481"
+      ]
+    },
+    "MCS___582": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "MCS___583": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "MCS___584": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "MCS___590": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "MCS___591": {
+      "credits": 4.0,
+      "prerequisites": [
+        "MCS___423"
+      ]
+    },
+    "MCS___593": {
+      "credits": 1.0,
+      "prerequisites": []
+    },
+    "MCS___595": {
+      "credits": 1.0,
+      "prerequisites": []
+    },
+    "MCS___596": {
+      "credits": null,
+      "prerequisites": []
+    },
+    "MCS___598": {
+      "credits": null,
+      "prerequisites": []
+    },
+    "MCS___599": {
+      "credits": null,
+      "prerequisites": []
+    }
+  }
+}

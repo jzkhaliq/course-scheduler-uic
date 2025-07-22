@@ -1,0 +1,411 @@
+{
+  "major": "Communication",
+  "subject_code": "COMM",
+  "min_total_credits": 120,
+  "courses": {
+    "COMM___100": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "COMM___101": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "COMM___102": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "COMM___103": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "COMM___105": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "COMM___140": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "COMM___200": {
+      "credits": 3.0,
+      "prerequisites": [
+        "COMM___101",
+        "COMM___102",
+        "COMM___103",
+        "ENGL___160",
+        "ENGL___161"
+      ]
+    },
+    "COMM___203": {
+      "credits": 3.0,
+      "prerequisites": [
+        "ENGL___160",
+        "ENGL___161"
+      ]
+    },
+    "COMM___204": {
+      "credits": 3.0,
+      "prerequisites": [
+        "GWS___101",
+        "COMM___102",
+        "GWS___102",
+        "COMM___103"
+      ]
+    },
+    "COMM___205": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "COMM___206": {
+      "credits": 3.0,
+      "prerequisites": [
+        "ENGL___160",
+        "ENGL___161"
+      ]
+    },
+    "COMM___207": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "COMM___210": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "COMM___216": {
+      "credits": 3.0,
+      "prerequisites": [
+        "ENGL___160",
+        "ENGL___161"
+      ]
+    },
+    "COMM___220": {
+      "credits": 3.0,
+      "prerequisites": [
+        "ENGL___160",
+        "ENGL___161"
+      ]
+    },
+    "COMM___230": {
+      "credits": 3.0,
+      "prerequisites": [
+        "ENGL___160",
+        "ENGL___161"
+      ]
+    },
+    "COMM___234": {
+      "credits": 3.0,
+      "prerequisites": [
+        "ENGL___160",
+        "ENGL___161"
+      ]
+    },
+    "COMM___240": {
+      "credits": 3.0,
+      "prerequisites": [
+        "ENGL___160",
+        "ENGL___161"
+      ]
+    },
+    "COMM___250": {
+      "credits": 3.0,
+      "prerequisites": [
+        "ENGL___160",
+        "ENGL___161"
+      ]
+    },
+    "COMM___260": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "COMM___270": {
+      "credits": 3.0,
+      "prerequisites": [
+        "ENGL___160",
+        "ENGL___161"
+      ]
+    },
+    "COMM___294": {
+      "credits": 3.0,
+      "prerequisites": [
+        "ENGL___160",
+        "ENGL___161",
+        "GLAS___290",
+        "GWS___294"
+      ]
+    },
+    "COMM___301": {
+      "credits": 3.0,
+      "prerequisites": [
+        "COMM___101",
+        "COMM___102",
+        "COMM___103",
+        "COMM___200"
+      ]
+    },
+    "COMM___303": {
+      "credits": 3.0,
+      "prerequisites": [
+        "COMM___101",
+        "COMM___102",
+        "COMM___103",
+        "COMM___200"
+      ]
+    },
+    "COMM___311": {
+      "credits": 3.0,
+      "prerequisites": [
+        "COMM___101",
+        "COMM___102",
+        "COMM___103",
+        "COMM___200"
+      ]
+    },
+    "COMM___315": {
+      "credits": 3.0,
+      "prerequisites": [
+        "COMM___101",
+        "COMM___102",
+        "COMM___103",
+        "COMM___200"
+      ]
+    },
+    "COMM___323": {
+      "credits": 3.0,
+      "prerequisites": [
+        "COMM___101",
+        "COMM___102",
+        "COMM___103",
+        "COMM___200"
+      ]
+    },
+    "COMM___326": {
+      "credits": 3.0,
+      "prerequisites": [
+        "COMM___101",
+        "COMM___102",
+        "COMM___103",
+        "COMM___200"
+      ]
+    },
+    "COMM___330": {
+      "credits": 3.0,
+      "prerequisites": [
+        "COMM___101",
+        "COMM___102",
+        "COMM___103",
+        "COMM___200"
+      ]
+    },
+    "COMM___335": {
+      "credits": 3.0,
+      "prerequisites": [
+        "COMM___101",
+        "COMM___102",
+        "COMM___103",
+        "COMM___200"
+      ]
+    },
+    "COMM___350": {
+      "credits": 3.0,
+      "prerequisites": [
+        "COMM___101",
+        "COMM___102",
+        "COMM___103",
+        "COMM___200"
+      ]
+    },
+    "COMM___360": {
+      "credits": 3.0,
+      "prerequisites": [
+        "COMM___101",
+        "COMM___102",
+        "COMM___103",
+        "COMM___200"
+      ]
+    },
+    "COMM___394": {
+      "credits": 3.0,
+      "prerequisites": [
+        "COMM___101",
+        "COMM___102",
+        "COMM___103",
+        "COMM___200",
+        "LALS___395"
+      ]
+    },
+    "COMM___410": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "COMM___416": {
+      "credits": 4.0,
+      "prerequisites": [
+        "COMM___301"
+      ]
+    },
+    "COMM___425": {
+      "credits": 3.0,
+      "prerequisites": [
+        "COMM___301"
+      ]
+    },
+    "COMM___430": {
+      "credits": 4.0,
+      "prerequisites": [
+        "COMM___301"
+      ]
+    },
+    "COMM___435": {
+      "credits": 3.0,
+      "prerequisites": [
+        "COMM___301"
+      ]
+    },
+    "COMM___445": {
+      "credits": 3.0,
+      "prerequisites": [
+        "COMM___301"
+      ]
+    },
+    "COMM___458": {
+      "credits": 4.0,
+      "prerequisites": [
+        "COMM___301"
+      ]
+    },
+    "COMM___460": {
+      "credits": 4.0,
+      "prerequisites": [
+        "COMM___301"
+      ]
+    },
+    "COMM___465": {
+      "credits": 3.0,
+      "prerequisites": [
+        "COMM___301"
+      ]
+    },
+    "COMM___467": {
+      "credits": 4.0,
+      "prerequisites": [
+        "POLS___200"
+      ]
+    },
+    "COMM___470": {
+      "credits": 3.0,
+      "prerequisites": [
+        "COMM___301"
+      ]
+    },
+    "COMM___474": {
+      "credits": null,
+      "prerequisites": []
+    },
+    "COMM___490": {
+      "credits": 3.0,
+      "prerequisites": [
+        "COMM___301"
+      ]
+    },
+    "COMM___491": {
+      "credits": 3.0,
+      "prerequisites": [
+        "COMM___301"
+      ]
+    },
+    "COMM___493": {
+      "credits": 3.0,
+      "prerequisites": [
+        "COMM___301"
+      ]
+    },
+    "COMM___494": {
+      "credits": 4.0,
+      "prerequisites": [
+        "COMM___301",
+        "HIST___492",
+        "LALS___495",
+        "LALS___495"
+      ]
+    },
+    "COMM___498": {
+      "credits": null,
+      "prerequisites": []
+    },
+    "COMM___500": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "COMM___501": {
+      "credits": 4.0,
+      "prerequisites": [
+        "COMM___500"
+      ]
+    },
+    "COMM___502": {
+      "credits": 4.0,
+      "prerequisites": [
+        "COMM___500"
+      ]
+    },
+    "COMM___504": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "COMM___508": {
+      "credits": 4.0,
+      "prerequisites": [
+        "COMM___504"
+      ]
+    },
+    "COMM___522": {
+      "credits": 4.0,
+      "prerequisites": [
+        "CS___422"
+      ]
+    },
+    "COMM___554": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "COMM___567": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "COMM___570": {
+      "credits": 4.0,
+      "prerequisites": [
+        "COMM___504"
+      ]
+    },
+    "COMM___580": {
+      "credits": 4.0,
+      "prerequisites": [
+        "COMM___501"
+      ]
+    },
+    "COMM___591": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "COMM___594": {
+      "credits": null,
+      "prerequisites": []
+    },
+    "COMM___596": {
+      "credits": null,
+      "prerequisites": []
+    },
+    "COMM___598": {
+      "credits": null,
+      "prerequisites": [
+        "COMM___501"
+      ]
+    },
+    "COMM___599": {
+      "credits": null,
+      "prerequisites": []
+    }
+  }
+}

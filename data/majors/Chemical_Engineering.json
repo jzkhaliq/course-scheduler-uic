@@ -1,0 +1,250 @@
+{
+  "major": "Chemical Engineering",
+  "subject_code": "CHE",
+  "min_total_credits": 128,
+  "courses": {
+    "CHE___150": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "CHE___201": {
+      "credits": 3.0,
+      "prerequisites": [
+        "PHYS___141",
+        "MATH___181"
+      ]
+    },
+    "CHE___205": {
+      "credits": 3.0,
+      "prerequisites": [
+        "CHE___201",
+        "MATH___210"
+      ]
+    },
+    "CHE___210": {
+      "credits": 4.0,
+      "prerequisites": [
+        "CHE___201",
+        "CHE___205"
+      ]
+    },
+    "CHE___230": {
+      "credits": 3.0,
+      "prerequisites": [
+        "CHEM___232"
+      ]
+    },
+    "CHE___301": {
+      "credits": 3.0,
+      "prerequisites": [
+        "CHE___201",
+        "CHE___205"
+      ]
+    },
+    "CHE___311": {
+      "credits": 3.0,
+      "prerequisites": [
+        "CHE___205",
+        "CHE___210",
+        "MATH___220"
+      ]
+    },
+    "CHE___312": {
+      "credits": 3.0,
+      "prerequisites": [
+        "CHE___311"
+      ]
+    },
+    "CHE___313": {
+      "credits": 3.0,
+      "prerequisites": [
+        "CHE___301"
+      ]
+    },
+    "CHE___321": {
+      "credits": 3.0,
+      "prerequisites": [
+        "CHE___210",
+        "MATH___220",
+        "CHE___301"
+      ]
+    },
+    "CHE___330": {
+      "credits": 3.0,
+      "prerequisites": [
+        "CHE___230",
+        "CHEM___232",
+        "CME___260"
+      ]
+    },
+    "CHE___341": {
+      "credits": 3.0,
+      "prerequisites": [
+        "MATH___220",
+        "CHE___312",
+        "CHE___313",
+        "CHE___321"
+      ]
+    },
+    "CHE___381": {
+      "credits": 2.0,
+      "prerequisites": [
+        "CHE___312"
+      ]
+    },
+    "CHE___382": {
+      "credits": 2.0,
+      "prerequisites": [
+        "CHE___313",
+        "CHE___381"
+      ]
+    },
+    "CHE___391": {
+      "credits": 1.0,
+      "prerequisites": []
+    },
+    "CHE___392": {
+      "credits": null,
+      "prerequisites": []
+    },
+    "CHE___396": {
+      "credits": 4.0,
+      "prerequisites": [
+        "CHE___312",
+        "CHE___313",
+        "CHE___321"
+      ]
+    },
+    "CHE___397": {
+      "credits": 4.0,
+      "prerequisites": [
+        "CHE___396"
+      ]
+    },
+    "CHE___425": {
+      "credits": 4.0,
+      "prerequisites": [
+        "CHE___301",
+        "CHE___311",
+        "CHE___312"
+      ]
+    },
+    "CHE___427": {
+      "credits": null,
+      "prerequisites": []
+    },
+    "CHE___433": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "CHE___438": {
+      "credits": 4.0,
+      "prerequisites": [
+        "CHE___301"
+      ]
+    },
+    "CHE___451": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "CHE___453": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "CHE___454": {
+      "credits": 4.0,
+      "prerequisites": [
+        "CHE___330"
+      ]
+    },
+    "CHE___455": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "CHE___457": {
+      "credits": 4.0,
+      "prerequisites": [
+        "CHE___301",
+        "CHE___312"
+      ]
+    },
+    "CHE___494": {
+      "credits": null,
+      "prerequisites": []
+    },
+    "CHE___496": {
+      "credits": null,
+      "prerequisites": []
+    },
+    "CHE___499": {
+      "credits": 0.0,
+      "prerequisites": []
+    },
+    "CHE___501": {
+      "credits": 4.0,
+      "prerequisites": [
+        "MATH___220"
+      ]
+    },
+    "CHE___502": {
+      "credits": 4.0,
+      "prerequisites": [
+        "CHE___301"
+      ]
+    },
+    "CHE___511": {
+      "credits": 4.0,
+      "prerequisites": [
+        "CHE___410"
+      ]
+    },
+    "CHE___520": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "CHE___524": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "CHE___527": {
+      "credits": 4.0,
+      "prerequisites": [
+        "CHE___321"
+      ]
+    },
+    "CHE___531": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "CHE___545": {
+      "credits": 4.0,
+      "prerequisites": [
+        "MATH___220"
+      ]
+    },
+    "CHE___592": {
+      "credits": null,
+      "prerequisites": []
+    },
+    "CHE___594": {
+      "credits": null,
+      "prerequisites": []
+    },
+    "CHE___595": {
+      "credits": 1.0,
+      "prerequisites": []
+    },
+    "CHE___597": {
+      "credits": null,
+      "prerequisites": []
+    },
+    "CHE___598": {
+      "credits": null,
+      "prerequisites": []
+    },
+    "CHE___599": {
+      "credits": null,
+      "prerequisites": []
+    }
+  }
+}

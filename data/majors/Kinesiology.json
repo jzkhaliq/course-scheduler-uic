@@ -1,0 +1,495 @@
+{
+  "major": "Kinesiology",
+  "subject_code": "KN",
+  "min_total_credits": 120,
+  "courses": {
+    "KN___100": {
+      "credits": 2.0,
+      "prerequisites": []
+    },
+    "KN___110": {
+      "credits": 2.0,
+      "prerequisites": []
+    },
+    "KN___130": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "KN___136": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "KN___137": {
+      "credits": 1.0,
+      "prerequisites": []
+    },
+    "KN___150": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "KN___151": {
+      "credits": 1.0,
+      "prerequisites": []
+    },
+    "KN___152": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "KN___194": {
+      "credits": null,
+      "prerequisites": []
+    },
+    "KN___200": {
+      "credits": 3.0,
+      "prerequisites": [
+        "MATH___121"
+      ]
+    },
+    "KN___230": {
+      "credits": 3.0,
+      "prerequisites": [
+        "BIOS___110"
+      ]
+    },
+    "KN___231": {
+      "credits": 3.0,
+      "prerequisites": [
+        "KN___230",
+        "KN___252",
+        "KN___254"
+      ]
+    },
+    "KN___232": {
+      "credits": 2.0,
+      "prerequisites": [
+        "KN___230"
+      ]
+    },
+    "KN___233": {
+      "credits": 2.0,
+      "prerequisites": [
+        "KN___231"
+      ]
+    },
+    "KN___237": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "KN___243": {
+      "credits": 3.0,
+      "prerequisites": [
+        "KN___136"
+      ]
+    },
+    "KN___245": {
+      "credits": 3.0,
+      "prerequisites": [
+        "KN___136",
+        "KN___243"
+      ]
+    },
+    "KN___246": {
+      "credits": 2.0,
+      "prerequisites": [
+        "KN___245"
+      ]
+    },
+    "KN___253": {
+      "credits": 4.0,
+      "prerequisites": [
+        "BIOS___110"
+      ]
+    },
+    "KN___254": {
+      "credits": 4.0,
+      "prerequisites": [
+        "KN___251",
+        "KN___253"
+      ]
+    },
+    "KN___261": {
+      "credits": 3.0,
+      "prerequisites": [
+        "KN___230",
+        "KN___251",
+        "KN___253"
+      ]
+    },
+    "KN___262": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "KN___294": {
+      "credits": null,
+      "prerequisites": []
+    },
+    "KN___299": {
+      "credits": null,
+      "prerequisites": []
+    },
+    "KN___300": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "KN___331": {
+      "credits": 3.0,
+      "prerequisites": [
+        "KN___261"
+      ]
+    },
+    "KN___336": {
+      "credits": 3.0,
+      "prerequisites": [
+        "KN___237"
+      ]
+    },
+    "KN___337": {
+      "credits": 3.0,
+      "prerequisites": [
+        "KN___237",
+        "KN___237"
+      ]
+    },
+    "KN___345": {
+      "credits": 3.0,
+      "prerequisites": [
+        "KN___230",
+        "KN___232",
+        "KN___243",
+        "KN___245",
+        "KN___251"
+      ]
+    },
+    "KN___350": {
+      "credits": 3.0,
+      "prerequisites": [
+        "KN___232",
+        "KN___251",
+        "KN___255"
+      ]
+    },
+    "KN___351": {
+      "credits": 3.0,
+      "prerequisites": [
+        "KN___233",
+        "KN___252",
+        "KN___256"
+      ]
+    },
+    "KN___352": {
+      "credits": 4.0,
+      "prerequisites": [
+        "KN___152",
+        "KN___231",
+        "KN___252",
+        "KN___254"
+      ]
+    },
+    "KN___361": {
+      "credits": 3.0,
+      "prerequisites": [
+        "MATH___121",
+        "PHYS___131",
+        "KN___261"
+      ]
+    },
+    "KN___362": {
+      "credits": 3.0,
+      "prerequisites": [
+        "MATH___121",
+        "PHYS___131"
+      ]
+    },
+    "KN___372": {
+      "credits": 3.0,
+      "prerequisites": [
+        "KN___231",
+        "KN___233",
+        "KN___252"
+      ]
+    },
+    "KN___393": {
+      "credits": 6.0,
+      "prerequisites": []
+    },
+    "KN___394": {
+      "credits": null,
+      "prerequisites": []
+    },
+    "KN___396": {
+      "credits": null,
+      "prerequisites": []
+    },
+    "KN___397": {
+      "credits": 1.0,
+      "prerequisites": [
+        "KN___396"
+      ]
+    },
+    "KN___398": {
+      "credits": null,
+      "prerequisites": []
+    },
+    "KN___399": {
+      "credits": 1.0,
+      "prerequisites": [
+        "KN___398"
+      ]
+    },
+    "KN___400": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "KN___410": {
+      "credits": 3.0,
+      "prerequisites": [
+        "KN___231",
+        "KN___233",
+        "KN___252"
+      ]
+    },
+    "KN___431": {
+      "credits": 3.0,
+      "prerequisites": [
+        "KN___261",
+        "KN___331"
+      ]
+    },
+    "KN___432": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "KN___433": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "KN___434": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "KN___435": {
+      "credits": 3.0,
+      "prerequisites": [
+        "KN___237",
+        "KN___335"
+      ]
+    },
+    "KN___438": {
+      "credits": 3.0,
+      "prerequisites": [
+        "KN___237"
+      ]
+    },
+    "KN___441": {
+      "credits": 3.0,
+      "prerequisites": [
+        "KN___352"
+      ]
+    },
+    "KN___442": {
+      "credits": 3.0,
+      "prerequisites": [
+        "KN___352"
+      ]
+    },
+    "KN___445": {
+      "credits": 3.0,
+      "prerequisites": [
+        "KN___243"
+      ]
+    },
+    "KN___447": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "KN___448": {
+      "credits": 3.0,
+      "prerequisites": [
+        "KN___345"
+      ]
+    },
+    "KN___450": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "KN___465": {
+      "credits": 3.0,
+      "prerequisites": [
+        "KN___361"
+      ]
+    },
+    "KN___472": {
+      "credits": 3.0,
+      "prerequisites": [
+        "KN___231",
+        "KN___233",
+        "KN___252",
+        "KN___352",
+        "KN___372"
+      ]
+    },
+    "KN___491": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "KN___493": {
+      "credits": null,
+      "prerequisites": []
+    },
+    "KN___494": {
+      "credits": null,
+      "prerequisites": []
+    },
+    "KN___495": {
+      "credits": 1.0,
+      "prerequisites": []
+    },
+    "KN___496": {
+      "credits": null,
+      "prerequisites": []
+    },
+    "KN___500": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "KN___501": {
+      "credits": 1.0,
+      "prerequisites": []
+    },
+    "KN___503": {
+      "credits": 2.0,
+      "prerequisites": []
+    },
+    "KN___511": {
+      "credits": 3.0,
+      "prerequisites": [
+        "KN___237",
+        "KN___438"
+      ]
+    },
+    "KN___521": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "KN___531": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "KN___532": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "KN___533": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "KN___534": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "KN___536": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "KN___538": {
+      "credits": null,
+      "prerequisites": []
+    },
+    "KN___540": {
+      "credits": 3.0,
+      "prerequisites": [
+        "KN___441",
+        "KN___442"
+      ]
+    },
+    "KN___542": {
+      "credits": 2.0,
+      "prerequisites": []
+    },
+    "KN___545": {
+      "credits": 3.0,
+      "prerequisites": [
+        "KN___452"
+      ]
+    },
+    "KN___547": {
+      "credits": 2.0,
+      "prerequisites": [
+        "KN___441",
+        "KN___442"
+      ]
+    },
+    "KN___550": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "KN___552": {
+      "credits": 3.0,
+      "prerequisites": [
+        "KN___352"
+      ]
+    },
+    "KN___554": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "KN___571": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "KN___574": {
+      "credits": 3.0,
+      "prerequisites": [
+        "PT___571",
+        "KN___571"
+      ]
+    },
+    "KN___581": {
+      "credits": 3.0,
+      "prerequisites": [
+        "KN___545"
+      ]
+    },
+    "KN___585": {
+      "credits": null,
+      "prerequisites": [
+        "KN___500",
+        "KN___505"
+      ]
+    },
+    "KN___591": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "KN___593": {
+      "credits": null,
+      "prerequisites": []
+    },
+    "KN___594": {
+      "credits": null,
+      "prerequisites": []
+    },
+    "KN___596": {
+      "credits": null,
+      "prerequisites": [
+        "KN___500"
+      ]
+    },
+    "KN___597": {
+      "credits": null,
+      "prerequisites": [
+        "KN___500"
+      ]
+    },
+    "KN___598": {
+      "credits": null,
+      "prerequisites": [
+        "KN___500"
+      ]
+    },
+    "KN___599": {
+      "credits": null,
+      "prerequisites": []
+    }
+  }
+}

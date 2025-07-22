@@ -1,0 +1,185 @@
+{
+  "major": "Computer Science and Linguistics",
+  "subject_code": "LING",
+  "min_total_credits": 120,
+  "courses": {
+    "LING___150": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "LING___160": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "LING___170": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "LING___201": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "LING___210": {
+      "credits": 3.0,
+      "prerequisites": [
+        "LING___150",
+        "ENGL___200"
+      ]
+    },
+    "LING___220": {
+      "credits": 3.0,
+      "prerequisites": [
+        "LING___150"
+      ]
+    },
+    "LING___230": {
+      "credits": 3.0,
+      "prerequisites": [
+        "LING___150"
+      ]
+    },
+    "LING___260": {
+      "credits": 3.0,
+      "prerequisites": [
+        "LING___150",
+        "LING___160",
+        "ENGL___160"
+      ]
+    },
+    "LING___270": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "LING___300": {
+      "credits": 3.0,
+      "prerequisites": [
+        "LING___150",
+        "LING___210",
+        "LING___220",
+        "LING___230"
+      ]
+    },
+    "LING___330": {
+      "credits": 3.0,
+      "prerequisites": [
+        "CHIN___101",
+        "LING___150"
+      ]
+    },
+    "LING___360": {
+      "credits": 3.0,
+      "prerequisites": [
+        "LING___150",
+        "MATH___180",
+        "MATH___180",
+        "LING___200"
+      ]
+    },
+    "LING___370": {
+      "credits": 3.0,
+      "prerequisites": [
+        "LING___150",
+        "LING___200"
+      ]
+    },
+    "LING___402": {
+      "credits": 4.0,
+      "prerequisites": [
+        "CLJ___261",
+        "CLJ___350"
+      ]
+    },
+    "LING___405": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "LING___406": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "LING___480": {
+      "credits": 4.0,
+      "prerequisites": [
+        "LING___405"
+      ]
+    },
+    "LING___483": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "LING___487": {
+      "credits": 4.0,
+      "prerequisites": [
+        "SPAN___448",
+        "GER___448",
+        "FR___448",
+        "SPAN___449",
+        "FR___449",
+        "GER___449",
+        "LING___483",
+        "FR___502",
+        "SPAN___502"
+      ]
+    },
+    "LING___496": {
+      "credits": null,
+      "prerequisites": []
+    },
+    "LING___506": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "LING___531": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "LING___551": {
+      "credits": 4.0,
+      "prerequisites": [
+        "LING___480"
+      ]
+    },
+    "LING___554": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "LING___556": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "LING___558": {
+      "credits": 4.0,
+      "prerequisites": [
+        "FR___448",
+        "SPAN___448",
+        "GER___448",
+        "FR___449",
+        "GER___449",
+        "SPAN___449",
+        "LING___483",
+        "CI___483",
+        "LCSL___502"
+      ]
+    },
+    "LING___559": {
+      "credits": 4.0,
+      "prerequisites": [
+        "LING___405"
+      ]
+    },
+    "LING___594": {
+      "credits": 9.0,
+      "prerequisites": [
+        "LING___593"
+      ]
+    },
+    "LING___596": {
+      "credits": null,
+      "prerequisites": []
+    },
+    "LING___598": {
+      "credits": null,
+      "prerequisites": []
+    }
+  }
+}

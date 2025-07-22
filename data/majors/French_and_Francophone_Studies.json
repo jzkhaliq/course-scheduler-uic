@@ -1,0 +1,206 @@
+{
+  "major": "French and Francophone Studies",
+  "subject_code": "FR",
+  "min_total_credits": 120,
+  "courses": {
+    "FR___101": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "FR___102": {
+      "credits": 4.0,
+      "prerequisites": [
+        "FR___101"
+      ]
+    },
+    "FR___103": {
+      "credits": 4.0,
+      "prerequisites": [
+        "FR___102"
+      ]
+    },
+    "FR___104": {
+      "credits": 4.0,
+      "prerequisites": [
+        "FR___103"
+      ]
+    },
+    "FR___191": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "FR___196": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "FR___210": {
+      "credits": 3.0,
+      "prerequisites": [
+        "FR___104"
+      ]
+    },
+    "FR___211": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "FR___212": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "FR___213": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "FR___214": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "FR___215": {
+      "credits": 3.0,
+      "prerequisites": [
+        "FR___104"
+      ]
+    },
+    "FR___295": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "FR___296": {
+      "credits": null,
+      "prerequisites": []
+    },
+    "FR___297": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "FR___298": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "FR___300": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "FR___301": {
+      "credits": 3.0,
+      "prerequisites": [
+        "FR___211",
+        "FR___212",
+        "FR___213",
+        "FR___214"
+      ]
+    },
+    "FR___302": {
+      "credits": 3.0,
+      "prerequisites": [
+        "FR___211",
+        "FR___212",
+        "FR___213",
+        "FR___214"
+      ]
+    },
+    "FR___303": {
+      "credits": 1.0,
+      "prerequisites": [
+        "FR___300",
+        "FR___301",
+        "FR___302"
+      ]
+    },
+    "FR___398": {
+      "credits": null,
+      "prerequisites": [
+        "FR___211",
+        "FR___212",
+        "FR___213",
+        "FR___214"
+      ]
+    },
+    "FR___400": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "FR___417": {
+      "credits": 4.0,
+      "prerequisites": [
+        "FR___300",
+        "FR___301",
+        "FR___302"
+      ]
+    },
+    "FR___418": {
+      "credits": 4.0,
+      "prerequisites": [
+        "FR___300",
+        "FR___301",
+        "FR___302"
+      ]
+    },
+    "FR___420": {
+      "credits": 4.0,
+      "prerequisites": [
+        "FR___300",
+        "FR___301",
+        "FR___302"
+      ]
+    },
+    "FR___422": {
+      "credits": 4.0,
+      "prerequisites": [
+        "FR___300",
+        "FR___301",
+        "FR___302"
+      ]
+    },
+    "FR___440": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "FR___448": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "FR___449": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "FR___464": {
+      "credits": 4.0,
+      "prerequisites": [
+        "FR___300",
+        "FR___301",
+        "FR___302"
+      ]
+    },
+    "FR___470": {
+      "credits": 6.0,
+      "prerequisites": []
+    },
+    "FR___471": {
+      "credits": 6.0,
+      "prerequisites": [
+        "FR___470"
+      ]
+    },
+    "FR___496": {
+      "credits": null,
+      "prerequisites": []
+    },
+    "FR___510": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "FR___575": {
+      "credits": null,
+      "prerequisites": []
+    },
+    "FR___590": {
+      "credits": 1.0,
+      "prerequisites": []
+    },
+    "FR___596": {
+      "credits": null,
+      "prerequisites": []
+    }
+  }
+}

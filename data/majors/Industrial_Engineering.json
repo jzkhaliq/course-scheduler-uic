@@ -1,0 +1,250 @@
+{
+  "major": "Industrial Engineering",
+  "subject_code": "IE",
+  "min_total_credits": 128,
+  "courses": {
+    "IE___118": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "IE___201": {
+      "credits": 3.0,
+      "prerequisites": [
+        "MATH___181"
+      ]
+    },
+    "IE___312": {
+      "credits": 3.0,
+      "prerequisites": [
+        "CS___109",
+        "ECE___210",
+        "MATH___220"
+      ]
+    },
+    "IE___342": {
+      "credits": 3.0,
+      "prerequisites": [
+        "MATH___181"
+      ]
+    },
+    "IE___345": {
+      "credits": 3.0,
+      "prerequisites": [
+        "IE___342"
+      ]
+    },
+    "IE___365": {
+      "credits": 4.0,
+      "prerequisites": [
+        "IE___342"
+      ]
+    },
+    "IE___380": {
+      "credits": 3.0,
+      "prerequisites": [
+        "CME___203"
+      ]
+    },
+    "IE___391": {
+      "credits": 1.0,
+      "prerequisites": []
+    },
+    "IE___392": {
+      "credits": null,
+      "prerequisites": []
+    },
+    "IE___394": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "IE___396": {
+      "credits": 3.0,
+      "prerequisites": [
+        "IE___201",
+        "IE___345",
+        "ME___347"
+      ]
+    },
+    "IE___397": {
+      "credits": 3.0,
+      "prerequisites": [
+        "ME___396",
+        "IE___396",
+        "ME___499",
+        "IE___499"
+      ]
+    },
+    "IE___411": {
+      "credits": null,
+      "prerequisites": []
+    },
+    "IE___412": {
+      "credits": 4.0,
+      "prerequisites": [
+        "ME___308"
+      ]
+    },
+    "IE___441": {
+      "credits": 4.0,
+      "prerequisites": [
+        "IE___342"
+      ]
+    },
+    "IE___442": {
+      "credits": null,
+      "prerequisites": [
+        "IE___342"
+      ]
+    },
+    "IE___444": {
+      "credits": 4.0,
+      "prerequisites": [
+        "IE___201",
+        "IE___345",
+        "ME___347"
+      ]
+    },
+    "IE___445": {
+      "credits": 4.0,
+      "prerequisites": [
+        "ME___396",
+        "IE___396",
+        "ME___397",
+        "IE___397",
+        "ME___444",
+        "IE___444",
+        "ME___445"
+      ]
+    },
+    "IE___446": {
+      "credits": 4.0,
+      "prerequisites": [
+        "IE___342"
+      ]
+    },
+    "IE___461": {
+      "credits": 4.0,
+      "prerequisites": [
+        "IE___342",
+        "IE___365"
+      ]
+    },
+    "IE___463": {
+      "credits": 4.0,
+      "prerequisites": [
+        "IE___201",
+        "IE___345",
+        "IE___365",
+        "IE___472"
+      ]
+    },
+    "IE___464": {
+      "credits": null,
+      "prerequisites": [
+        "CS___107",
+        "CS___108"
+      ]
+    },
+    "IE___465": {
+      "credits": null,
+      "prerequisites": []
+    },
+    "IE___466": {
+      "credits": 4.0,
+      "prerequisites": [
+        "IE___345",
+        "IE___472"
+      ]
+    },
+    "IE___467": {
+      "credits": 4.0,
+      "prerequisites": [
+        "IE___342"
+      ]
+    },
+    "IE___471": {
+      "credits": 4.0,
+      "prerequisites": [
+        "MATH___310"
+      ]
+    },
+    "IE___472": {
+      "credits": 4.0,
+      "prerequisites": [
+        "CS___107",
+        "CS___109",
+        "IE___471"
+      ]
+    },
+    "IE___473": {
+      "credits": 4.0,
+      "prerequisites": [
+        "MATH___210",
+        "IE___342",
+        "IE___471"
+      ]
+    },
+    "IE___481": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "IE___494": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "IE___496": {
+      "credits": null,
+      "prerequisites": []
+    },
+    "IE___497": {
+      "credits": null,
+      "prerequisites": []
+    },
+    "IE___499": {
+      "credits": 0.0,
+      "prerequisites": []
+    },
+    "IE___542": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "IE___567": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "IE___571": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "IE___576": {
+      "credits": 4.0,
+      "prerequisites": [
+        "IE___471"
+      ]
+    },
+    "IE___591": {
+      "credits": 1.0,
+      "prerequisites": []
+    },
+    "IE___594": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "IE___595": {
+      "credits": null,
+      "prerequisites": []
+    },
+    "IE___596": {
+      "credits": null,
+      "prerequisites": []
+    },
+    "IE___598": {
+      "credits": null,
+      "prerequisites": []
+    },
+    "IE___599": {
+      "credits": null,
+      "prerequisites": []
+    }
+  }
+}

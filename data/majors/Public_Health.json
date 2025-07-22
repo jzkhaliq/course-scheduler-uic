@@ -1,0 +1,115 @@
+{
+  "major": "Public Health",
+  "subject_code": "PUBH",
+  "min_total_credits": 120,
+  "courses": {
+    "PUBH___100": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "PUBH___105": {
+      "credits": 2.0,
+      "prerequisites": []
+    },
+    "PUBH___110": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "PUBH___120": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "PUBH___299": {
+      "credits": null,
+      "prerequisites": []
+    },
+    "PUBH___300": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "PUBH___301": {
+      "credits": 2.0,
+      "prerequisites": [
+        "PUBH___300"
+      ]
+    },
+    "PUBH___310": {
+      "credits": 3.0,
+      "prerequisites": [
+        "PUBH___110"
+      ]
+    },
+    "PUBH___320": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "PUBH___330": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "PUBH___340": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "PUBH___350": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "PUBH___360": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "PUBH___370": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "PUBH___390": {
+      "credits": 3.0,
+      "prerequisites": [
+        "PHYS___116",
+        "US___130"
+      ]
+    },
+    "PUBH___393": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "PUBH___394": {
+      "credits": null,
+      "prerequisites": []
+    },
+    "PUBH___395": {
+      "credits": 0.0,
+      "prerequisites": []
+    },
+    "PUBH___396": {
+      "credits": null,
+      "prerequisites": []
+    },
+    "PUBH___397": {
+      "credits": 3.0,
+      "prerequisites": [
+        "PUBH___370",
+        "PUBH___411"
+      ]
+    },
+    "PUBH___399": {
+      "credits": null,
+      "prerequisites": []
+    },
+    "PUBH___410": {
+      "credits": 2.0,
+      "prerequisites": []
+    },
+    "PUBH___411": {
+      "credits": 2.0,
+      "prerequisites": [
+        "PUBH___410"
+      ]
+    },
+    "PUBH___420": {
+      "credits": 3.0,
+      "prerequisites": []
+    }
+  }
+}

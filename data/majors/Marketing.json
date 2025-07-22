@@ -1,0 +1,304 @@
+{
+  "major": "Marketing",
+  "subject_code": "MKTG",
+  "min_total_credits": 120,
+  "courses": {
+    "MKTG___360": {
+      "credits": 3.0,
+      "prerequisites": [
+        "ENGL___161"
+      ]
+    },
+    "MKTG___370": {
+      "credits": 3.0,
+      "prerequisites": [
+        "MKTG___360"
+      ]
+    },
+    "MKTG___452": {
+      "credits": 3.0,
+      "prerequisites": [
+        "MKTG___360"
+      ]
+    },
+    "MKTG___455": {
+      "credits": 3.0,
+      "prerequisites": [
+        "MKTG___360"
+      ]
+    },
+    "MKTG___458": {
+      "credits": 3.0,
+      "prerequisites": [
+        "MKTG___360",
+        "MKTG___462"
+      ]
+    },
+    "MKTG___460": {
+      "credits": 3.0,
+      "prerequisites": [
+        "IDS___270",
+        "MKTG___360"
+      ]
+    },
+    "MKTG___461": {
+      "credits": 3.0,
+      "prerequisites": [
+        "MKTG___360"
+      ]
+    },
+    "MKTG___462": {
+      "credits": 3.0,
+      "prerequisites": [
+        "STAT___101",
+        "IDS___270",
+        "MKTG___360",
+        "MKTG___370"
+      ]
+    },
+    "MKTG___463": {
+      "credits": 3.0,
+      "prerequisites": [
+        "MKTG___360"
+      ]
+    },
+    "MKTG___464": {
+      "credits": 3.0,
+      "prerequisites": [
+        "MKTG___360",
+        "MKTG___360"
+      ]
+    },
+    "MKTG___465": {
+      "credits": 3.0,
+      "prerequisites": [
+        "MKTG___461",
+        "MKTG___462"
+      ]
+    },
+    "MKTG___467": {
+      "credits": 3.0,
+      "prerequisites": [
+        "IDS___270",
+        "IDS___270",
+        "MKTG___460",
+        "MKTG___460",
+        "MKTG___462"
+      ]
+    },
+    "MKTG___468": {
+      "credits": 3.0,
+      "prerequisites": [
+        "IDS___270",
+        "IDS___270",
+        "MKTG___462"
+      ]
+    },
+    "MKTG___469": {
+      "credits": 3.0,
+      "prerequisites": [
+        "BA___200",
+        "MKTG___360"
+      ]
+    },
+    "MKTG___470": {
+      "credits": 3.0,
+      "prerequisites": [
+        "MKTG___360",
+        "MKTG___360",
+        "MKTG___462",
+        "MKTG___462"
+      ]
+    },
+    "MKTG___471": {
+      "credits": 3.0,
+      "prerequisites": [
+        "MKTG___360"
+      ]
+    },
+    "MKTG___473": {
+      "credits": 3.0,
+      "prerequisites": [
+        "MKTG___360"
+      ]
+    },
+    "MKTG___474": {
+      "credits": 3.0,
+      "prerequisites": [
+        "MKTG___461"
+      ]
+    },
+    "MKTG___475": {
+      "credits": 3.0,
+      "prerequisites": [
+        "MKTG___462"
+      ]
+    },
+    "MKTG___476": {
+      "credits": 3.0,
+      "prerequisites": [
+        "MKTG___360"
+      ]
+    },
+    "MKTG___477": {
+      "credits": 3.0,
+      "prerequisites": [
+        "MKTG___360",
+        "MKTG___478"
+      ]
+    },
+    "MKTG___479": {
+      "credits": 3.0,
+      "prerequisites": [
+        "BA___200",
+        "MKTG___360",
+        "MKTG___461"
+      ]
+    },
+    "MKTG___482": {
+      "credits": 3.0,
+      "prerequisites": [
+        "MKTG___360",
+        "MKTG___462"
+      ]
+    },
+    "MKTG___485": {
+      "credits": 3.0,
+      "prerequisites": [
+        "MKTG___360"
+      ]
+    },
+    "MKTG___494": {
+      "credits": null,
+      "prerequisites": []
+    },
+    "MKTG___499": {
+      "credits": null,
+      "prerequisites": []
+    },
+    "MKTG___500": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "MKTG___518": {
+      "credits": 4.0,
+      "prerequisites": [
+        "MKTG___500",
+        "MBA___506"
+      ]
+    },
+    "MKTG___560": {
+      "credits": 4.0,
+      "prerequisites": [
+        "MKTG___500"
+      ]
+    },
+    "MKTG___561": {
+      "credits": 4.0,
+      "prerequisites": [
+        "MKTG___500"
+      ]
+    },
+    "MKTG___562": {
+      "credits": 4.0,
+      "prerequisites": [
+        "MKTG___360",
+        "MKTG___500",
+        "MKTG___563"
+      ]
+    },
+    "MKTG___563": {
+      "credits": 4.0,
+      "prerequisites": [
+        "MKTG___360",
+        "MKTG___500",
+        "MKTG___562"
+      ]
+    },
+    "MKTG___565": {
+      "credits": 4.0,
+      "prerequisites": [
+        "MKTG___500"
+      ]
+    },
+    "MKTG___567": {
+      "credits": 4.0,
+      "prerequisites": [
+        "MKTG___360",
+        "MKTG___500",
+        "MKTG___561"
+      ]
+    },
+    "MKTG___569": {
+      "credits": 4.0,
+      "prerequisites": [
+        "MKTG___360",
+        "MKTG___500",
+        "MKTG___561"
+      ]
+    },
+    "MKTG___570": {
+      "credits": 4.0,
+      "prerequisites": [
+        "MKTG___360",
+        "MKTG___500",
+        "MKTG___561",
+        "MKTG___563"
+      ]
+    },
+    "MKTG___571": {
+      "credits": 4.0,
+      "prerequisites": [
+        "MKTG___500"
+      ]
+    },
+    "MKTG___572": {
+      "credits": 4.0,
+      "prerequisites": [
+        "MKTG___500"
+      ]
+    },
+    "MKTG___574": {
+      "credits": 4.0,
+      "prerequisites": [
+        "MKTG___500"
+      ]
+    },
+    "MKTG___575": {
+      "credits": 4.0,
+      "prerequisites": [
+        "MKTG___360",
+        "MKTG___500"
+      ]
+    },
+    "MKTG___577": {
+      "credits": 4.0,
+      "prerequisites": [
+        "MKTG___500",
+        "MKTG___578"
+      ]
+    },
+    "MKTG___581": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "MKTG___584": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "MKTG___594": {
+      "credits": null,
+      "prerequisites": [
+        "MKTG___500"
+      ]
+    },
+    "MKTG___596": {
+      "credits": null,
+      "prerequisites": []
+    },
+    "MKTG___599": {
+      "credits": null,
+      "prerequisites": []
+    }
+  }
+}

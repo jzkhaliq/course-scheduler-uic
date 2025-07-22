@@ -1,0 +1,99 @@
+{
+  "major": "Mathematics-Teacher Education",
+  "subject_code": "MTHT",
+  "min_total_credits": 120,
+  "courses": {
+    "MTHT___400": {
+      "credits": 4.0,
+      "prerequisites": [
+        "MATH___215"
+      ]
+    },
+    "MTHT___401": {
+      "credits": 4.0,
+      "prerequisites": [
+        "MATH___210"
+      ]
+    },
+    "MTHT___411": {
+      "credits": 4.0,
+      "prerequisites": [
+        "MATH___215"
+      ]
+    },
+    "MTHT___430": {
+      "credits": 4.0,
+      "prerequisites": [
+        "MATH___210",
+        "MATH___215"
+      ]
+    },
+    "MTHT___435": {
+      "credits": 4.0,
+      "prerequisites": [
+        "MATH___210",
+        "MATH___215"
+      ]
+    },
+    "MTHT___438": {
+      "credits": 6.0,
+      "prerequisites": []
+    },
+    "MTHT___439": {
+      "credits": 6.0,
+      "prerequisites": [
+        "MTHT___438"
+      ]
+    },
+    "MTHT___450": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "MTHT___465": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "MTHT___467": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "MTHT___468": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "MTHT___490": {
+      "credits": null,
+      "prerequisites": []
+    },
+    "MTHT___491": {
+      "credits": null,
+      "prerequisites": []
+    },
+    "MTHT___496": {
+      "credits": null,
+      "prerequisites": []
+    },
+    "MTHT___510": {
+      "credits": 4.0,
+      "prerequisites": [
+        "MATH___330"
+      ]
+    },
+    "MTHT___589": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "MTHT___590": {
+      "credits": null,
+      "prerequisites": []
+    },
+    "MTHT___591": {
+      "credits": null,
+      "prerequisites": []
+    },
+    "MTHT___596": {
+      "credits": null,
+      "prerequisites": []
+    }
+  }
+}

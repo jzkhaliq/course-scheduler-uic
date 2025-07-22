@@ -1,0 +1,506 @@
+{
+  "major": "Music Education",
+  "subject_code": "MUS",
+  "min_total_credits": 122,
+  "courses": {
+    "MUS___100": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "MUS___101": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "MUS___102": {
+      "credits": 3.0,
+      "prerequisites": [
+        "MUS___101",
+        "MUS___104",
+        "MUS___171"
+      ]
+    },
+    "MUS___103": {
+      "credits": 1.0,
+      "prerequisites": []
+    },
+    "MUS___104": {
+      "credits": 1.0,
+      "prerequisites": [
+        "MUS___102",
+        "MUS___103",
+        "MUS___171"
+      ]
+    },
+    "MUS___107": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "MUS___108": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "MUS___109": {
+      "credits": 3.0,
+      "prerequisites": [
+        "MUS___102",
+        "MUS___108"
+      ]
+    },
+    "MUS___110": {
+      "credits": 0.0,
+      "prerequisites": []
+    },
+    "MUS___111": {
+      "credits": 0.0,
+      "prerequisites": []
+    },
+    "MUS___113": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "MUS___114": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "MUS___115": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "MUS___116": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "MUS___117": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "MUS___118": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "MUS___119": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "MUS___120": {
+      "credits": 3.0,
+      "prerequisites": [
+        "MUS___101",
+        "MUS___102",
+        "MUS___150",
+        "MUS___159",
+        "MUS___160"
+      ]
+    },
+    "MUS___127": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "MUS___150": {
+      "credits": 1.0,
+      "prerequisites": []
+    },
+    "MUS___151": {
+      "credits": 1.0,
+      "prerequisites": []
+    },
+    "MUS___152": {
+      "credits": 1.0,
+      "prerequisites": []
+    },
+    "MUS___153": {
+      "credits": 1.0,
+      "prerequisites": []
+    },
+    "MUS___154": {
+      "credits": 1.0,
+      "prerequisites": []
+    },
+    "MUS___155": {
+      "credits": 1.0,
+      "prerequisites": []
+    },
+    "MUS___156": {
+      "credits": 1.0,
+      "prerequisites": [
+        "MUS___151"
+      ]
+    },
+    "MUS___157": {
+      "credits": 1.0,
+      "prerequisites": []
+    },
+    "MUS___159": {
+      "credits": 1.0,
+      "prerequisites": []
+    },
+    "MUS___160": {
+      "credits": 1.0,
+      "prerequisites": []
+    },
+    "MUS___161": {
+      "credits": 1.0,
+      "prerequisites": []
+    },
+    "MUS___165": {
+      "credits": 1.0,
+      "prerequisites": []
+    },
+    "MUS___167": {
+      "credits": 1.0,
+      "prerequisites": []
+    },
+    "MUS___170": {
+      "credits": 2.0,
+      "prerequisites": [
+        "MUS___101"
+      ]
+    },
+    "MUS___171": {
+      "credits": 2.0,
+      "prerequisites": [
+        "MUS___102",
+        "MUS___104",
+        "MUS___170"
+      ]
+    },
+    "MUS___180": {
+      "credits": 2.0,
+      "prerequisites": []
+    },
+    "MUS___181": {
+      "credits": 1.0,
+      "prerequisites": []
+    },
+    "MUS___182": {
+      "credits": 2.0,
+      "prerequisites": []
+    },
+    "MUS___183": {
+      "credits": 1.0,
+      "prerequisites": []
+    },
+    "MUS___190": {
+      "credits": 1.0,
+      "prerequisites": [
+        "MUS___153",
+        "MUS___155",
+        "MUS___180"
+      ]
+    },
+    "MUS___191": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "MUS___201": {
+      "credits": 3.0,
+      "prerequisites": [
+        "MUS___102",
+        "MUS___104"
+      ]
+    },
+    "MUS___202": {
+      "credits": 3.0,
+      "prerequisites": [
+        "MUS___201",
+        "MUS___203"
+      ]
+    },
+    "MUS___203": {
+      "credits": 1.0,
+      "prerequisites": [
+        "MUS___104",
+        "MUS___201"
+      ]
+    },
+    "MUS___204": {
+      "credits": 1.0,
+      "prerequisites": [
+        "MUS___202",
+        "MUS___203"
+      ]
+    },
+    "MUS___220": {
+      "credits": 3.0,
+      "prerequisites": [
+        "MUS___102",
+        "MUS___104",
+        "MUS___114",
+        "MUS___150",
+        "MUS___159",
+        "MUS___160"
+      ]
+    },
+    "MUS___221": {
+      "credits": 3.0,
+      "prerequisites": [
+        "MUS___102",
+        "MUS___104",
+        "MUS___120",
+        "MUS___171"
+      ]
+    },
+    "MUS___223": {
+      "credits": 3.0,
+      "prerequisites": [
+        "MUS___107"
+      ]
+    },
+    "MUS___227": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "MUS___230": {
+      "credits": 3.0,
+      "prerequisites": [
+        "MUS___102",
+        "MUS___104",
+        "MUS___231",
+        "MUS___232"
+      ]
+    },
+    "MUS___231": {
+      "credits": 3.0,
+      "prerequisites": [
+        "MUS___202",
+        "MUS___204",
+        "MUS___230",
+        "MUS___230",
+        "MUS___232"
+      ]
+    },
+    "MUS___232": {
+      "credits": 3.0,
+      "prerequisites": [
+        "MUS___202",
+        "MUS___204",
+        "MUS___230",
+        "MUS___231"
+      ]
+    },
+    "MUS___240": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "MUS___270": {
+      "credits": 2.0,
+      "prerequisites": [
+        "MUS___171",
+        "MUS___201",
+        "MUS___203"
+      ]
+    },
+    "MUS___271": {
+      "credits": 2.0,
+      "prerequisites": [
+        "MUS___202",
+        "MUS___204",
+        "MUS___270"
+      ]
+    },
+    "MUS___280": {
+      "credits": 3.0,
+      "prerequisites": [
+        "MUS___180"
+      ]
+    },
+    "MUS___282": {
+      "credits": 3.0,
+      "prerequisites": [
+        "MUS___182"
+      ]
+    },
+    "MUS___298": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "MUS___299": {
+      "credits": null,
+      "prerequisites": [
+        "MUS___202",
+        "MUS___204"
+      ]
+    },
+    "MUS___300": {
+      "credits": 3.0,
+      "prerequisites": [
+        "MUS___202",
+        "MUS___204"
+      ]
+    },
+    "MUS___301": {
+      "credits": 3.0,
+      "prerequisites": [
+        "MUS___202"
+      ]
+    },
+    "MUS___302": {
+      "credits": 3.0,
+      "prerequisites": [
+        "MUS___202",
+        "MUS___204"
+      ]
+    },
+    "MUS___303": {
+      "credits": 3.0,
+      "prerequisites": [
+        "MUS___302"
+      ]
+    },
+    "MUS___304": {
+      "credits": 3.0,
+      "prerequisites": [
+        "MUS___202",
+        "MUS___204"
+      ]
+    },
+    "MUS___306": {
+      "credits": 3.0,
+      "prerequisites": [
+        "MUS___202",
+        "MUS___204"
+      ]
+    },
+    "MUS___310": {
+      "credits": 3.0,
+      "prerequisites": [
+        "MUS___202",
+        "MUS___204",
+        "MUS___271"
+      ]
+    },
+    "MUS___311": {
+      "credits": 3.0,
+      "prerequisites": [
+        "MUS___310"
+      ]
+    },
+    "MUS___312": {
+      "credits": 3.0,
+      "prerequisites": [
+        "MUS___120",
+        "MUS___221"
+      ]
+    },
+    "MUS___314": {
+      "credits": 3.0,
+      "prerequisites": [
+        "MUS___221"
+      ]
+    },
+    "MUS___320": {
+      "credits": null,
+      "prerequisites": []
+    },
+    "MUS___323": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "MUS___324": {
+      "credits": 3.0,
+      "prerequisites": [
+        "MUS___101",
+        "MUS___102",
+        "MUS___103",
+        "MUS___104",
+        "MUS___170",
+        "MUS___304"
+      ]
+    },
+    "MUS___325": {
+      "credits": 3.0,
+      "prerequisites": [
+        "MUS___101",
+        "MUS___102",
+        "MUS___103",
+        "MUS___104"
+      ]
+    },
+    "MUS___326": {
+      "credits": 4.0,
+      "prerequisites": [
+        "MUS___101",
+        "MUS___102",
+        "MUS___103",
+        "MUS___104",
+        "MUS___170"
+      ]
+    },
+    "MUS___330": {
+      "credits": 3.0,
+      "prerequisites": [
+        "MUS___101",
+        "MUS___102",
+        "MUS___113",
+        "MUS___114",
+        "MUS___115",
+        "MUS___116",
+        "MUS___117",
+        "MUS___118",
+        "MUS___230",
+        "MUS___231",
+        "MUS___232"
+      ]
+    },
+    "MUS___340": {
+      "credits": 2.0,
+      "prerequisites": []
+    },
+    "MUS___350": {
+      "credits": 3.0,
+      "prerequisites": [
+        "ED___100",
+        "EPSY___255"
+      ]
+    },
+    "MUS___351": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "MUS___390": {
+      "credits": 3.0,
+      "prerequisites": [
+        "MUS___201",
+        "MUS___202",
+        "ACTG___210",
+        "MUS___290",
+        "MKTG___360"
+      ]
+    },
+    "MUS___391": {
+      "credits": null,
+      "prerequisites": []
+    },
+    "MUS___395": {
+      "credits": 3.0,
+      "prerequisites": [
+        "MUS___390"
+      ]
+    },
+    "MUS___396": {
+      "credits": 3.0,
+      "prerequisites": [
+        "MUS___201",
+        "MUS___202",
+        "ACTG___210",
+        "MUS___290",
+        "MKTG___360"
+      ]
+    },
+    "MUS___397": {
+      "credits": 3.0,
+      "prerequisites": [
+        "MUS___201",
+        "MUS___202",
+        "ACTG___210",
+        "MUS___290",
+        "MKTG___360",
+        "MUS___390"
+      ]
+    },
+    "MUS___498": {
+      "credits": 1.0,
+      "prerequisites": []
+    }
+  }
+}

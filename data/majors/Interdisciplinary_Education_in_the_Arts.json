@@ -1,0 +1,29 @@
+{
+  "major": "Interdisciplinary Education in the Arts",
+  "subject_code": "IDEA",
+  "min_total_credits": 120,
+  "courses": {
+    "IDEA___110": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "IDEA___120": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "IDEA___130": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "IDEA___322": {
+      "credits": 4.0,
+      "prerequisites": [
+        "DES___222"
+      ]
+    },
+    "IDEA___410": {
+      "credits": 4.0,
+      "prerequisites": []
+    }
+  }
+}

@@ -1,0 +1,167 @@
+{
+  "major": "Classical Studies",
+  "subject_code": "CL",
+  "min_total_credits": 120,
+  "courses": {
+    "CL___100": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "CL___101": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "CL___102": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "CL___103": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "CL___124": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "CL___128": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "CL___201": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "CL___202": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "CL___203": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "CL___204": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "CL___205": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "CL___208": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "CL___211": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "CL___218": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "CL___219": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "CL___220": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "CL___225": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "CL___232": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "CL___242": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "CL___250": {
+      "credits": 3.0,
+      "prerequisites": [
+        "CL___100",
+        "CL___101",
+        "CL___102",
+        "CL___103"
+      ]
+    },
+    "CL___251": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "CL___252": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "CL___291": {
+      "credits": 3.0,
+      "prerequisites": [
+        "CL___102",
+        "LAT___104",
+        "LAT___291"
+      ]
+    },
+    "CL___297": {
+      "credits": 3.0,
+      "prerequisites": [
+        "CL___102"
+      ]
+    },
+    "CL___298": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "CL___299": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "CL___340": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "CL___390": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "CL___391": {
+      "credits": 3.0,
+      "prerequisites": [
+        "CL___102",
+        "CL___250",
+        "CL___252",
+        "CL___253",
+        "LAT___291",
+        "LAT___391"
+      ]
+    },
+    "CL___398": {
+      "credits": null,
+      "prerequisites": []
+    },
+    "CL___405": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "CL___408": {
+      "credits": 4.0,
+      "prerequisites": [
+        "CL___202",
+        "CL___251",
+        "CL___252",
+        "CL___405",
+        "HIST___405"
+      ]
+    },
+    "CL___466": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "CL___499": {
+      "credits": 4.0,
+      "prerequisites": []
+    }
+  }
+}

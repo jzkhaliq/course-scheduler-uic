@@ -1,0 +1,345 @@
+{
+  "major": "Physics-BS",
+  "subject_code": "PHYS",
+  "min_total_credits": 120,
+  "courses": {
+    "PHYS___100": {
+      "credits": 3.0,
+      "prerequisites": [
+        "MATH___121"
+      ]
+    },
+    "PHYS___112": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "PHYS___118": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "PHYS___131": {
+      "credits": 4.0,
+      "prerequisites": [
+        "PHYS___105",
+        "PHYS___141"
+      ]
+    },
+    "PHYS___132": {
+      "credits": 4.0,
+      "prerequisites": [
+        "PHYS___105",
+        "PHYS___106",
+        "PHYS___107",
+        "PHYS___131",
+        "PHYS___142"
+      ]
+    },
+    "PHYS___141": {
+      "credits": 4.0,
+      "prerequisites": [
+        "PHYS___100",
+        "MATH___180"
+      ]
+    },
+    "PHYS___142": {
+      "credits": 4.0,
+      "prerequisites": [
+        "PHYS___141",
+        "MATH___181"
+      ]
+    },
+    "PHYS___144": {
+      "credits": 1.0,
+      "prerequisites": []
+    },
+    "PHYS___145": {
+      "credits": 1.0,
+      "prerequisites": []
+    },
+    "PHYS___215": {
+      "credits": 4.0,
+      "prerequisites": [
+        "PHYS___107",
+        "PHYS___132",
+        "PHYS___142",
+        "MATH___181",
+        "MATH___210"
+      ]
+    },
+    "PHYS___230": {
+      "credits": 3.0,
+      "prerequisites": [
+        "PHYS___107",
+        "PHYS___132",
+        "PHYS___142",
+        "MATH___181"
+      ]
+    },
+    "PHYS___240": {
+      "credits": 3.0,
+      "prerequisites": [
+        "PHYS___107",
+        "PHYS___132",
+        "PHYS___142",
+        "MATH___181",
+        "PHYS___241"
+      ]
+    },
+    "PHYS___241": {
+      "credits": 1.0,
+      "prerequisites": [
+        "PHYS___107",
+        "PHYS___132",
+        "PHYS___142",
+        "MATH___181",
+        "PHYS___240"
+      ]
+    },
+    "PHYS___245": {
+      "credits": 4.0,
+      "prerequisites": [
+        "PHYS___107",
+        "PHYS___132",
+        "PHYS___142",
+        "MATH___181",
+        "MATH___220"
+      ]
+    },
+    "PHYS___260": {
+      "credits": 2.0,
+      "prerequisites": [
+        "PHYS___141",
+        "MATH___181"
+      ]
+    },
+    "PHYS___391": {
+      "credits": 1.0,
+      "prerequisites": []
+    },
+    "PHYS___392": {
+      "credits": null,
+      "prerequisites": []
+    },
+    "PHYS___393": {
+      "credits": null,
+      "prerequisites": []
+    },
+    "PHYS___401": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "PHYS___402": {
+      "credits": 4.0,
+      "prerequisites": [
+        "PHYS___230",
+        "PHYS___401"
+      ]
+    },
+    "PHYS___411": {
+      "credits": 4.0,
+      "prerequisites": [
+        "PHYS___215",
+        "MATH___220",
+        "PHYS___240",
+        "PHYS___245"
+      ]
+    },
+    "PHYS___412": {
+      "credits": 4.0,
+      "prerequisites": [
+        "PHYS___411"
+      ]
+    },
+    "PHYS___421": {
+      "credits": 4.0,
+      "prerequisites": [
+        "PHYS___411"
+      ]
+    },
+    "PHYS___425": {
+      "credits": 4.0,
+      "prerequisites": [
+        "PHYS___240"
+      ]
+    },
+    "PHYS___431": {
+      "credits": 4.0,
+      "prerequisites": [
+        "PHYS___411",
+        "PHYS___461"
+      ]
+    },
+    "PHYS___441": {
+      "credits": 4.0,
+      "prerequisites": [
+        "PHYS___215",
+        "PHYS___245"
+      ]
+    },
+    "PHYS___450": {
+      "credits": 4.0,
+      "prerequisites": [
+        "PHYS___245"
+      ]
+    },
+    "PHYS___451": {
+      "credits": 4.0,
+      "prerequisites": [
+        "PHYS___411"
+      ]
+    },
+    "PHYS___461": {
+      "credits": 4.0,
+      "prerequisites": [
+        "PHYS___245"
+      ]
+    },
+    "PHYS___469": {
+      "credits": 4.0,
+      "prerequisites": [
+        "PHYS___107",
+        "PHYS___108",
+        "PHYS___142"
+      ]
+    },
+    "PHYS___475": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "PHYS___480": {
+      "credits": 1.0,
+      "prerequisites": []
+    },
+    "PHYS___481": {
+      "credits": 4.0,
+      "prerequisites": [
+        "PHYS___240",
+        "PHYS___499"
+      ]
+    },
+    "PHYS___491": {
+      "credits": null,
+      "prerequisites": [
+        "PHYS___215"
+      ]
+    },
+    "PHYS___499": {
+      "credits": 1.0,
+      "prerequisites": []
+    },
+    "PHYS___501": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "PHYS___511": {
+      "credits": 4.0,
+      "prerequisites": [
+        "PHYS___412"
+      ]
+    },
+    "PHYS___512": {
+      "credits": 4.0,
+      "prerequisites": [
+        "PHYS___511"
+      ]
+    },
+    "PHYS___513": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "PHYS___515": {
+      "credits": 3.0,
+      "prerequisites": [
+        "PHYS___215"
+      ]
+    },
+    "PHYS___531": {
+      "credits": 4.0,
+      "prerequisites": [
+        "PHYS___511"
+      ]
+    },
+    "PHYS___532": {
+      "credits": 4.0,
+      "prerequisites": [
+        "PHYS___512",
+        "PHYS___531"
+      ]
+    },
+    "PHYS___533": {
+      "credits": 4.0,
+      "prerequisites": [
+        "PHYS___532"
+      ]
+    },
+    "PHYS___540": {
+      "credits": 4.0,
+      "prerequisites": [
+        "ECE___346"
+      ]
+    },
+    "PHYS___545": {
+      "credits": 3.0,
+      "prerequisites": [
+        "PHYS___502",
+        "PHYS___541"
+      ]
+    },
+    "PHYS___551": {
+      "credits": 4.0,
+      "prerequisites": [
+        "PHYS___513"
+      ]
+    },
+    "PHYS___552": {
+      "credits": 4.0,
+      "prerequisites": [
+        "PHYS___551"
+      ]
+    },
+    "PHYS___561": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "PHYS___571": {
+      "credits": 4.0,
+      "prerequisites": [
+        "PHYS___450"
+      ]
+    },
+    "PHYS___572": {
+      "credits": 4.0,
+      "prerequisites": [
+        "PHYS___571"
+      ]
+    },
+    "PHYS___581": {
+      "credits": 2.0,
+      "prerequisites": [
+        "PHYS___431"
+      ]
+    },
+    "PHYS___594": {
+      "credits": null,
+      "prerequisites": [
+        "PHYS___512"
+      ]
+    },
+    "PHYS___595": {
+      "credits": 1.0,
+      "prerequisites": []
+    },
+    "PHYS___596": {
+      "credits": null,
+      "prerequisites": []
+    },
+    "PHYS___598": {
+      "credits": null,
+      "prerequisites": []
+    },
+    "PHYS___599": {
+      "credits": null,
+      "prerequisites": []
+    }
+  }
+}

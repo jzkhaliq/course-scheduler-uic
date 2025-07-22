@@ -1,0 +1,59 @@
+{
+  "major": "Biochemistry",
+  "subject_code": "BCMG",
+  "min_total_credits": 120,
+  "courses": {
+    "BCMG___399": {
+      "credits": null,
+      "prerequisites": []
+    },
+    "BCMG___411": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "BCMG___501": {
+      "credits": 1.0,
+      "prerequisites": []
+    },
+    "BCMG___503": {
+      "credits": 5.0,
+      "prerequisites": []
+    },
+    "BCMG___513": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "BCMG___515": {
+      "credits": 1.0,
+      "prerequisites": []
+    },
+    "BCMG___526": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "BCMG___531": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "BCMG___575": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "BCMG___594": {
+      "credits": null,
+      "prerequisites": []
+    },
+    "BCMG___595": {
+      "credits": 1.0,
+      "prerequisites": []
+    },
+    "BCMG___598": {
+      "credits": null,
+      "prerequisites": []
+    },
+    "BCMG___599": {
+      "credits": null,
+      "prerequisites": []
+    }
+  }
+}

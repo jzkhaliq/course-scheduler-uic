@@ -1,0 +1,136 @@
+{
+  "major": "Entrepreneurship",
+  "subject_code": "ENTR",
+  "min_total_credits": 120,
+  "courses": {
+    "ENTR___200": {
+      "credits": 3.0,
+      "prerequisites": [
+        "ENGL___161"
+      ]
+    },
+    "ENTR___310": {
+      "credits": 3.0,
+      "prerequisites": [
+        "ENGL___161",
+        "ENGL___161",
+        "ENTR___200",
+        "BA___200"
+      ]
+    },
+    "ENTR___320": {
+      "credits": 3.0,
+      "prerequisites": [
+        "ENTR___310"
+      ]
+    },
+    "ENTR___360": {
+      "credits": 3.0,
+      "prerequisites": [
+        "IDS___200",
+        "BA___200",
+        "ACTG___210",
+        "IDS___270",
+        "MGMT___340",
+        "MGMT___355"
+      ]
+    },
+    "ENTR___430": {
+      "credits": 3.0,
+      "prerequisites": [
+        "ENTR___310"
+      ]
+    },
+    "ENTR___435": {
+      "credits": 3.0,
+      "prerequisites": [
+        "ENTR___310"
+      ]
+    },
+    "ENTR___444": {
+      "credits": 3.0,
+      "prerequisites": [
+        "ENTR___310"
+      ]
+    },
+    "ENTR___445": {
+      "credits": 3.0,
+      "prerequisites": [
+        "ENTR___310"
+      ]
+    },
+    "ENTR___454": {
+      "credits": 3.0,
+      "prerequisites": [
+        "ENTR___310"
+      ]
+    },
+    "ENTR___464": {
+      "credits": 3.0,
+      "prerequisites": [
+        "ENTR___310"
+      ]
+    },
+    "ENTR___494": {
+      "credits": null,
+      "prerequisites": [
+        "ENTR___310"
+      ]
+    },
+    "ENTR___499": {
+      "credits": null,
+      "prerequisites": []
+    },
+    "ENTR___502": {
+      "credits": 4.0,
+      "prerequisites": [
+        "ACTG___500",
+        "MKTG___500"
+      ]
+    },
+    "ENTR___515": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "ENTR___523": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "ENTR___541": {
+      "credits": 1.0,
+      "prerequisites": [
+        "ENTR___523"
+      ]
+    },
+    "ENTR___555": {
+      "credits": 4.0,
+      "prerequisites": [
+        "ENTR___554"
+      ]
+    },
+    "ENTR___559": {
+      "credits": 4.0,
+      "prerequisites": [
+        "ENTR___502"
+      ]
+    },
+    "ENTR___565": {
+      "credits": 2.0,
+      "prerequisites": []
+    },
+    "ENTR___566": {
+      "credits": 2.0,
+      "prerequisites": []
+    },
+    "ENTR___594": {
+      "credits": 4.0,
+      "prerequisites": [
+        "ENTR___502"
+      ]
+    },
+    "ENTR___596": {
+      "credits": null,
+      "prerequisites": []
+    }
+  }
+}

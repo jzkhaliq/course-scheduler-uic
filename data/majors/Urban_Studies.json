@@ -1,0 +1,19 @@
+{
+  "major": "Urban Studies",
+  "subject_code": "UPA",
+  "min_total_credits": 120,
+  "courses": {
+    "UPA___120": {
+      "credits": 1.0,
+      "prerequisites": []
+    },
+    "UPA___121": {
+      "credits": 1.0,
+      "prerequisites": []
+    },
+    "UPA___498": {
+      "credits": null,
+      "prerequisites": []
+    }
+  }
+}

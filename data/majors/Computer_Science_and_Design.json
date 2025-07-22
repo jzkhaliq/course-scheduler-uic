@@ -1,0 +1,697 @@
+{
+  "major": "Computer Science and Design",
+  "subject_code": "CS",
+  "min_total_credits": 122,
+  "courses": {
+    "CS___100": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "CS___107": {
+      "credits": 4.0,
+      "prerequisites": [
+        "MATH___180"
+      ]
+    },
+    "CS___109": {
+      "credits": 3.0,
+      "prerequisites": [
+        "MATH___180"
+      ]
+    },
+    "CS___111": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "CS___112": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "CS___141": {
+      "credits": 3.0,
+      "prerequisites": [
+        "CS___107",
+        "CS___109",
+        "CS___111",
+        "CS___112",
+        "CS___113",
+        "MATH___180"
+      ]
+    },
+    "CS___151": {
+      "credits": 3.0,
+      "prerequisites": [
+        "CS___107",
+        "CS___109",
+        "CS___111",
+        "CS___112",
+        "CS___113",
+        "MATH___180"
+      ]
+    },
+    "CS___194": {
+      "credits": null,
+      "prerequisites": []
+    },
+    "CS___211": {
+      "credits": 3.0,
+      "prerequisites": [
+        "CS___107",
+        "CS___141"
+      ]
+    },
+    "CS___251": {
+      "credits": 4.0,
+      "prerequisites": [
+        "CS___107",
+        "CS___141",
+        "CS___151",
+        "CS___211",
+        "ECE___266"
+      ]
+    },
+    "CS___261": {
+      "credits": 4.0,
+      "prerequisites": [
+        "CS___141",
+        "CS___211"
+      ]
+    },
+    "CS___277": {
+      "credits": 3.0,
+      "prerequisites": [
+        "CS___141",
+        "CS___141"
+      ]
+    },
+    "CS___294": {
+      "credits": null,
+      "prerequisites": []
+    },
+    "CS___301": {
+      "credits": 3.0,
+      "prerequisites": [
+        "CS___151",
+        "CS___251"
+      ]
+    },
+    "CS___341": {
+      "credits": 3.0,
+      "prerequisites": [
+        "CS___211",
+        "CS___251"
+      ]
+    },
+    "CS___342": {
+      "credits": 3.0,
+      "prerequisites": [
+        "CS___211",
+        "CS___251"
+      ]
+    },
+    "CS___351": {
+      "credits": 3.0,
+      "prerequisites": [
+        "CS___251"
+      ]
+    },
+    "CS___361": {
+      "credits": 4.0,
+      "prerequisites": [
+        "CS___211",
+        "CS___251",
+        "CS___261"
+      ]
+    },
+    "CS___362": {
+      "credits": 4.0,
+      "prerequisites": [
+        "CS___211",
+        "CS___261"
+      ]
+    },
+    "CS___377": {
+      "credits": 3.0,
+      "prerequisites": [
+        "CS___251"
+      ]
+    },
+    "CS___378": {
+      "credits": 3.0,
+      "prerequisites": [
+        "CS___342",
+        "CS___342"
+      ]
+    },
+    "CS___394": {
+      "credits": null,
+      "prerequisites": []
+    },
+    "CS___398": {
+      "credits": null,
+      "prerequisites": []
+    },
+    "CS___401": {
+      "credits": 4.0,
+      "prerequisites": [
+        "CS___251",
+        "MCS___360"
+      ]
+    },
+    "CS___402": {
+      "credits": 4.0,
+      "prerequisites": [
+        "CS___401"
+      ]
+    },
+    "CS___407": {
+      "credits": 4.0,
+      "prerequisites": [
+        "CS___251"
+      ]
+    },
+    "CS___411": {
+      "credits": 4.0,
+      "prerequisites": [
+        "CS___251"
+      ]
+    },
+    "CS___412": {
+      "credits": 4.0,
+      "prerequisites": [
+        "CS___251",
+        "ECE___341",
+        "IE___342",
+        "STAT___381"
+      ]
+    },
+    "CS___415": {
+      "credits": 4.0,
+      "prerequisites": [
+        "CS___202",
+        "MCS___360"
+      ]
+    },
+    "CS___418": {
+      "credits": 4.0,
+      "prerequisites": [
+        "CS___251",
+        "ECE___341",
+        "IE___342",
+        "STAT___381"
+      ]
+    },
+    "CS___421": {
+      "credits": 4.0,
+      "prerequisites": [
+        "CS___301",
+        "MCS___441"
+      ]
+    },
+    "CS___422": {
+      "credits": 4.0,
+      "prerequisites": [
+        "CS___342"
+      ]
+    },
+    "CS___423": {
+      "credits": 4.0,
+      "prerequisites": [
+        "CS___342",
+        "CS___422",
+        "CS___522"
+      ]
+    },
+    "CS___424": {
+      "credits": 4.0,
+      "prerequisites": [
+        "CS___251"
+      ]
+    },
+    "CS___425": {
+      "credits": null,
+      "prerequisites": [
+        "CS___251"
+      ]
+    },
+    "CS___426": {
+      "credits": 4.0,
+      "prerequisites": [
+        "CS___251"
+      ]
+    },
+    "CS___427": {
+      "credits": 4.0,
+      "prerequisites": [
+        "CS___251"
+      ]
+    },
+    "CS___428": {
+      "credits": 4.0,
+      "prerequisites": [
+        "CS___342"
+      ]
+    },
+    "CS___440": {
+      "credits": 4.0,
+      "prerequisites": [
+        "CS___342",
+        "CS___342"
+      ]
+    },
+    "CS___441": {
+      "credits": 4.0,
+      "prerequisites": [
+        "CS___341",
+        "CS___342",
+        "CS___361"
+      ]
+    },
+    "CS___442": {
+      "credits": 4.0,
+      "prerequisites": [
+        "CS___440"
+      ]
+    },
+    "CS___450": {
+      "credits": 4.0,
+      "prerequisites": [
+        "CS___361"
+      ]
+    },
+    "CS___453": {
+      "credits": 4.0,
+      "prerequisites": [
+        "CS___251",
+        "CS___401"
+      ]
+    },
+    "CS___454": {
+      "credits": 4.0,
+      "prerequisites": [
+        "CS___361"
+      ]
+    },
+    "CS___455": {
+      "credits": 4.0,
+      "prerequisites": [
+        "CS___361"
+      ]
+    },
+    "CS___461": {
+      "credits": 4.0,
+      "prerequisites": [
+        "CS___361"
+      ]
+    },
+    "CS___463": {
+      "credits": 4.0,
+      "prerequisites": [
+        "CS___361",
+        "CS___461"
+      ]
+    },
+    "CS___466": {
+      "credits": 4.0,
+      "prerequisites": [
+        "CS___261",
+        "ECE___366"
+      ]
+    },
+    "CS___468": {
+      "credits": 4.0,
+      "prerequisites": [
+        "CS___361"
+      ]
+    },
+    "CS___472": {
+      "credits": 4.0,
+      "prerequisites": [
+        "CS___341"
+      ]
+    },
+    "CS___473": {
+      "credits": 4.0,
+      "prerequisites": [
+        "CS___251",
+        "CS___261",
+        "CS___301",
+        "MCS___360",
+        "MCS___441"
+      ]
+    },
+    "CS___474": {
+      "credits": 4.0,
+      "prerequisites": [
+        "CS___342"
+      ]
+    },
+    "CS___475": {
+      "credits": 4.0,
+      "prerequisites": [
+        "CS___202"
+      ]
+    },
+    "CS___476": {
+      "credits": 4.0,
+      "prerequisites": [
+        "CS___341",
+        "MCS___360"
+      ]
+    },
+    "CS___477": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "CS___478": {
+      "credits": 4.0,
+      "prerequisites": [
+        "CS___342",
+        "CS___342"
+      ]
+    },
+    "CS___479": {
+      "credits": 4.0,
+      "prerequisites": [
+        "CS___109",
+        "ECE___210",
+        "BME___240",
+        "CS___251"
+      ]
+    },
+    "CS___480": {
+      "credits": 4.0,
+      "prerequisites": [
+        "CS___251"
+      ]
+    },
+    "CS___483": {
+      "credits": 4.0,
+      "prerequisites": [
+        "CS___251",
+        "ECE___341",
+        "IE___342",
+        "STAT___381",
+        "CS___401",
+        "CS___480"
+      ]
+    },
+    "CS___484": {
+      "credits": 4.0,
+      "prerequisites": [
+        "CS___341"
+      ]
+    },
+    "CS___485": {
+      "credits": 5.0,
+      "prerequisites": [
+        "CS___385"
+      ]
+    },
+    "CS___487": {
+      "credits": 4.0,
+      "prerequisites": [
+        "CS___385"
+      ]
+    },
+    "CS___488": {
+      "credits": 4.0,
+      "prerequisites": [
+        "CS___251",
+        "IE___342",
+        "STAT___381",
+        "STAT___401"
+      ]
+    },
+    "CS___489": {
+      "credits": 4.0,
+      "prerequisites": [
+        "CS___251"
+      ]
+    },
+    "CS___491": {
+      "credits": null,
+      "prerequisites": []
+    },
+    "CS___494": {
+      "credits": null,
+      "prerequisites": []
+    },
+    "CS___499": {
+      "credits": 0.0,
+      "prerequisites": []
+    },
+    "CS___501": {
+      "credits": 4.0,
+      "prerequisites": [
+        "MCS___401",
+        "CS___401"
+      ]
+    },
+    "CS___502": {
+      "credits": 4.0,
+      "prerequisites": [
+        "CS___401",
+        "CS___501"
+      ]
+    },
+    "CS___505": {
+      "credits": 4.0,
+      "prerequisites": [
+        "CS___301"
+      ]
+    },
+    "CS___506": {
+      "credits": 4.0,
+      "prerequisites": [
+        "CS___401",
+        "CS___501"
+      ]
+    },
+    "CS___511": {
+      "credits": 4.0,
+      "prerequisites": [
+        "CS___411"
+      ]
+    },
+    "CS___512": {
+      "credits": 4.0,
+      "prerequisites": [
+        "MATH___310",
+        "MATH___320",
+        "CS___412"
+      ]
+    },
+    "CS___514": {
+      "credits": 4.0,
+      "prerequisites": [
+        "CS___411"
+      ]
+    },
+    "CS___515": {
+      "credits": 4.0,
+      "prerequisites": [
+        "CS___415"
+      ]
+    },
+    "CS___516": {
+      "credits": 4.0,
+      "prerequisites": [
+        "CS___401",
+        "CS___412"
+      ]
+    },
+    "CS___517": {
+      "credits": 4.0,
+      "prerequisites": [
+        "CS___401",
+        "CS___412",
+        "CS___418"
+      ]
+    },
+    "CS___519": {
+      "credits": 4.0,
+      "prerequisites": [
+        "CS___401",
+        "CS___412",
+        "CS___418",
+        "CS___512"
+      ]
+    },
+    "CS___520": {
+      "credits": 4.0,
+      "prerequisites": [
+        "CS___412"
+      ]
+    },
+    "CS___521": {
+      "credits": 4.0,
+      "prerequisites": [
+        "CS___421"
+      ]
+    },
+    "CS___522": {
+      "credits": 4.0,
+      "prerequisites": [
+        "CS___422"
+      ]
+    },
+    "CS___524": {
+      "credits": 4.0,
+      "prerequisites": [
+        "CS___342",
+        "CS___401",
+        "CS___424"
+      ]
+    },
+    "CS___526": {
+      "credits": 4.0,
+      "prerequisites": [
+        "CS___488"
+      ]
+    },
+    "CS___529": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "CS___532": {
+      "credits": 4.0,
+      "prerequisites": [
+        "CS___421",
+        "CS___521",
+        "CS___582",
+        "CS___583"
+      ]
+    },
+    "CS___533": {
+      "credits": 4.0,
+      "prerequisites": [
+        "CS___412",
+        "CS___421",
+        "CS___521"
+      ]
+    },
+    "CS___535": {
+      "credits": 4.0,
+      "prerequisites": [
+        "CS___422",
+        "CS___522"
+      ]
+    },
+    "CS___540": {
+      "credits": 4.0,
+      "prerequisites": [
+        "CS___440"
+      ]
+    },
+    "CS___550": {
+      "credits": 4.0,
+      "prerequisites": [
+        "CS___450",
+        "CS___450"
+      ]
+    },
+    "CS___553": {
+      "credits": 4.0,
+      "prerequisites": [
+        "CS___366",
+        "CS___385",
+        "CS___385"
+      ]
+    },
+    "CS___554": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "CS___559": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "CS___565": {
+      "credits": 4.0,
+      "prerequisites": [
+        "CS___401",
+        "ECE___465",
+        "CS___466"
+      ]
+    },
+    "CS___566": {
+      "credits": 4.0,
+      "prerequisites": [
+        "CS___401",
+        "ECE___466",
+        "CS___466"
+      ]
+    },
+    "CS___568": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "CS___569": {
+      "credits": 4.0,
+      "prerequisites": [
+        "CS___466",
+        "ECE___466"
+      ]
+    },
+    "CS___582": {
+      "credits": 4.0,
+      "prerequisites": [
+        "CS___480"
+      ]
+    },
+    "CS___583": {
+      "credits": 4.0,
+      "prerequisites": [
+        "CS___401"
+      ]
+    },
+    "CS___584": {
+      "credits": 4.0,
+      "prerequisites": [
+        "CS___583"
+      ]
+    },
+    "CS___586": {
+      "credits": 4.0,
+      "prerequisites": [
+        "CS___480"
+      ]
+    },
+    "CS___587": {
+      "credits": 4.0,
+      "prerequisites": [
+        "CS___450",
+        "CS___485"
+      ]
+    },
+    "CS___588": {
+      "credits": 4.0,
+      "prerequisites": [
+        "CS___401",
+        "CS___450",
+        "CS___485"
+      ]
+    },
+    "CS___590": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "CS___594": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "CS___597": {
+      "credits": null,
+      "prerequisites": []
+    },
+    "CS___598": {
+      "credits": null,
+      "prerequisites": []
+    },
+    "CS___599": {
+      "credits": null,
+      "prerequisites": []
+    }
+  }
+}

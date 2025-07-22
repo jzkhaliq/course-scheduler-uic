@@ -1,0 +1,408 @@
+{
+  "major": "Economics",
+  "subject_code": "ECON",
+  "min_total_credits": 120,
+  "courses": {
+    "ECON___111": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "ECON___120": {
+      "credits": null,
+      "prerequisites": []
+    },
+    "ECON___121": {
+      "credits": null,
+      "prerequisites": []
+    },
+    "ECON___212": {
+      "credits": 3.0,
+      "prerequisites": [
+        "ECON___120"
+      ]
+    },
+    "ECON___213": {
+      "credits": 3.0,
+      "prerequisites": [
+        "ECON___120"
+      ]
+    },
+    "ECON___214": {
+      "credits": 3.0,
+      "prerequisites": [
+        "ECON___120"
+      ]
+    },
+    "ECON___215": {
+      "credits": 3.0,
+      "prerequisites": [
+        "ECON___120"
+      ]
+    },
+    "ECON___216": {
+      "credits": 3.0,
+      "prerequisites": [
+        "ECON___120"
+      ]
+    },
+    "ECON___220": {
+      "credits": 3.0,
+      "prerequisites": [
+        "ECON___120",
+        "MATH___121"
+      ]
+    },
+    "ECON___221": {
+      "credits": 3.0,
+      "prerequisites": [
+        "ECON___120",
+        "MATH___121",
+        "ECON___121"
+      ]
+    },
+    "ECON___270": {
+      "credits": 4.0,
+      "prerequisites": [
+        "MATH___121"
+      ]
+    },
+    "ECON___300": {
+      "credits": 3.0,
+      "prerequisites": [
+        "STAT___101",
+        "ECON___120",
+        "ECON___121",
+        "MATH___121",
+        "IDS___270",
+        "ECON___270"
+      ]
+    },
+    "ECON___311": {
+      "credits": 3.0,
+      "prerequisites": [
+        "ECON___120"
+      ]
+    },
+    "ECON___322": {
+      "credits": 3.0,
+      "prerequisites": [
+        "ECON___220",
+        "ECON___270",
+        "IDS___270"
+      ]
+    },
+    "ECON___326": {
+      "credits": 3.0,
+      "prerequisites": [
+        "ECON___220",
+        "ECON___221"
+      ]
+    },
+    "ECON___328": {
+      "credits": 3.0,
+      "prerequisites": [
+        "ECON___220"
+      ]
+    },
+    "ECON___329": {
+      "credits": 3.0,
+      "prerequisites": [
+        "ECON___220"
+      ]
+    },
+    "ECON___330": {
+      "credits": 3.0,
+      "prerequisites": [
+        "ECON___220"
+      ]
+    },
+    "ECON___331": {
+      "credits": 3.0,
+      "prerequisites": [
+        "ECON___220"
+      ]
+    },
+    "ECON___332": {
+      "credits": 3.0,
+      "prerequisites": [
+        "ECON___220"
+      ]
+    },
+    "ECON___333": {
+      "credits": 3.0,
+      "prerequisites": [
+        "ECON___220",
+        "INST___221",
+        "ECON___221"
+      ]
+    },
+    "ECON___334": {
+      "credits": 3.0,
+      "prerequisites": [
+        "ECON___220",
+        "ECON___221",
+        "INST___221"
+      ]
+    },
+    "ECON___339": {
+      "credits": 3.0,
+      "prerequisites": [
+        "ECON___221",
+        "FIN___300"
+      ]
+    },
+    "ECON___342": {
+      "credits": 3.0,
+      "prerequisites": [
+        "ECON___220",
+        "INST___221",
+        "ECON___221"
+      ]
+    },
+    "ECON___344": {
+      "credits": 3.0,
+      "prerequisites": [
+        "ECON___220"
+      ]
+    },
+    "ECON___353": {
+      "credits": 3.0,
+      "prerequisites": [
+        "ECON___220"
+      ]
+    },
+    "ECON___370": {
+      "credits": 3.0,
+      "prerequisites": [
+        "ECON___220"
+      ]
+    },
+    "ECON___390": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "ECON___395": {
+      "credits": 1.0,
+      "prerequisites": [
+        "ECON___326",
+        "ECON___329"
+      ]
+    },
+    "ECON___399": {
+      "credits": null,
+      "prerequisites": []
+    },
+    "ECON___400": {
+      "credits": 4.0,
+      "prerequisites": [
+        "ECON___120",
+        "ECON___121",
+        "MATH___180",
+        "IDS___270",
+        "ECON___270"
+      ]
+    },
+    "ECON___436": {
+      "credits": 4.0,
+      "prerequisites": [
+        "MATH___165",
+        "MATH___180",
+        "ECON___220"
+      ]
+    },
+    "ECON___453": {
+      "credits": 4.0,
+      "prerequisites": [
+        "ECON___220",
+        "ECON___300",
+        "ECON___331",
+        "ECON___353",
+        "ECON___400"
+      ]
+    },
+    "ECON___473": {
+      "credits": 4.0,
+      "prerequisites": [
+        "ECON___270",
+        "STAT___381"
+      ]
+    },
+    "ECON___475": {
+      "credits": 4.0,
+      "prerequisites": [
+        "ECON___220",
+        "ECON___300",
+        "ECON___328",
+        "ECON___331",
+        "ECON___332",
+        "ECON___400"
+      ]
+    },
+    "ECON___499": {
+      "credits": null,
+      "prerequisites": []
+    },
+    "ECON___501": {
+      "credits": 4.0,
+      "prerequisites": [
+        "ECON___481",
+        "ECON___482"
+      ]
+    },
+    "ECON___502": {
+      "credits": 4.0,
+      "prerequisites": [
+        "ECON___501",
+        "ECON___509",
+        "ECON___510"
+      ]
+    },
+    "ECON___503": {
+      "credits": 4.0,
+      "prerequisites": [
+        "ECON___481",
+        "ECON___482"
+      ]
+    },
+    "ECON___505": {
+      "credits": 4.0,
+      "prerequisites": [
+        "ECON___481",
+        "ECON___482"
+      ]
+    },
+    "ECON___506": {
+      "credits": 4.0,
+      "prerequisites": [
+        "ECON___505",
+        "ECON___534"
+      ]
+    },
+    "ECON___507": {
+      "credits": 4.0,
+      "prerequisites": [
+        "ECON___481",
+        "ECON___482"
+      ]
+    },
+    "ECON___509": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "ECON___510": {
+      "credits": 4.0,
+      "prerequisites": [
+        "ECON___509"
+      ]
+    },
+    "ECON___511": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "ECON___512": {
+      "credits": 4.0,
+      "prerequisites": [
+        "ECON___511"
+      ]
+    },
+    "ECON___514": {
+      "credits": 4.0,
+      "prerequisites": [
+        "ECON___509"
+      ]
+    },
+    "ECON___515": {
+      "credits": 4.0,
+      "prerequisites": [
+        "ECON___511"
+      ]
+    },
+    "ECON___516": {
+      "credits": 4.0,
+      "prerequisites": [
+        "ECON___509"
+      ]
+    },
+    "ECON___520": {
+      "credits": 4.0,
+      "prerequisites": [
+        "MATH___165",
+        "MATH___181"
+      ]
+    },
+    "ECON___531": {
+      "credits": 4.0,
+      "prerequisites": [
+        "ECON___509"
+      ]
+    },
+    "ECON___534": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "ECON___535": {
+      "credits": 4.0,
+      "prerequisites": [
+        "ECON___534"
+      ]
+    },
+    "ECON___537": {
+      "credits": 4.0,
+      "prerequisites": [
+        "ECON___534"
+      ]
+    },
+    "ECON___539": {
+      "credits": 4.0,
+      "prerequisites": [
+        "ECON___509",
+        "ECON___535"
+      ]
+    },
+    "ECON___551": {
+      "credits": 4.0,
+      "prerequisites": [
+        "ECON___509"
+      ]
+    },
+    "ECON___555": {
+      "credits": 4.0,
+      "prerequisites": [
+        "ECON___509"
+      ]
+    },
+    "ECON___575": {
+      "credits": 4.0,
+      "prerequisites": [
+        "ECON___509"
+      ]
+    },
+    "ECON___593": {
+      "credits": null,
+      "prerequisites": []
+    },
+    "ECON___594": {
+      "credits": null,
+      "prerequisites": [
+        "ECON___509"
+      ]
+    },
+    "ECON___596": {
+      "credits": null,
+      "prerequisites": []
+    },
+    "ECON___598": {
+      "credits": null,
+      "prerequisites": [
+        "ECON___501",
+        "ECON___505",
+        "ECON___509",
+        "ECON___534"
+      ]
+    },
+    "ECON___599": {
+      "credits": null,
+      "prerequisites": []
+    }
+  }
+}

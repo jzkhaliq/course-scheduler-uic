@@ -1,0 +1,106 @@
+{
+  "major": "Italian",
+  "subject_code": "ITAL",
+  "min_total_credits": 120,
+  "courses": {
+    "ITAL___101": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "ITAL___102": {
+      "credits": 4.0,
+      "prerequisites": [
+        "ITAL___101"
+      ]
+    },
+    "ITAL___103": {
+      "credits": 4.0,
+      "prerequisites": [
+        "ITAL___102",
+        "ITAL___102",
+        "ITAL___140"
+      ]
+    },
+    "ITAL___104": {
+      "credits": 4.0,
+      "prerequisites": [
+        "ITAL___103"
+      ]
+    },
+    "ITAL___196": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "ITAL___200": {
+      "credits": 3.0,
+      "prerequisites": [
+        "ITAL___104"
+      ]
+    },
+    "ITAL___201": {
+      "credits": 3.0,
+      "prerequisites": [
+        "ITAL___104"
+      ]
+    },
+    "ITAL___210": {
+      "credits": 3.0,
+      "prerequisites": [
+        "ITAL___104"
+      ]
+    },
+    "ITAL___230": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "ITAL___270": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "ITAL___280": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "ITAL___293": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "ITAL___300": {
+      "credits": 3.0,
+      "prerequisites": [
+        "ITAL___200",
+        "ITAL___201",
+        "ITAL___210"
+      ]
+    },
+    "ITAL___301": {
+      "credits": 3.0,
+      "prerequisites": [
+        "ITAL___200",
+        "ITAL___201",
+        "ITAL___210",
+        "ITAL___280"
+      ]
+    },
+    "ITAL___302": {
+      "credits": 3.0,
+      "prerequisites": [
+        "ITAL___200",
+        "ITAL___201",
+        "ITAL___210"
+      ]
+    },
+    "ITAL___303": {
+      "credits": 3.0,
+      "prerequisites": [
+        "ITAL___200",
+        "ITAL___201",
+        "ITAL___210"
+      ]
+    },
+    "ITAL___399": {
+      "credits": null,
+      "prerequisites": []
+    }
+  }
+}

@@ -1,0 +1,245 @@
+{
+  "major": "Nutrition-Nutrition Science",
+  "subject_code": "HN",
+  "min_total_credits": 120,
+  "courses": {
+    "HN___100": {
+      "credits": 2.0,
+      "prerequisites": []
+    },
+    "HN___110": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "HN___190": {
+      "credits": 1.0,
+      "prerequisites": []
+    },
+    "HN___196": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "HN___201": {
+      "credits": 3.0,
+      "prerequisites": [
+        "HN___196"
+      ]
+    },
+    "HN___202": {
+      "credits": 2.0,
+      "prerequisites": []
+    },
+    "HN___203": {
+      "credits": 2.0,
+      "prerequisites": []
+    },
+    "HN___296": {
+      "credits": 3.0,
+      "prerequisites": [
+        "HN___196"
+      ]
+    },
+    "HN___300": {
+      "credits": 3.0,
+      "prerequisites": [
+        "HN___110"
+      ]
+    },
+    "HN___302": {
+      "credits": 3.0,
+      "prerequisites": [
+        "HN___196"
+      ]
+    },
+    "HN___306": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "HN___307": {
+      "credits": 3.0,
+      "prerequisites": [
+        "HN___196"
+      ]
+    },
+    "HN___308": {
+      "credits": 3.0,
+      "prerequisites": [
+        "HN___196",
+        "KN___230",
+        "KN___231",
+        "CHEM___352"
+      ]
+    },
+    "HN___309": {
+      "credits": 3.0,
+      "prerequisites": [
+        "HN___308"
+      ]
+    },
+    "HN___311": {
+      "credits": 3.0,
+      "prerequisites": [
+        "HN___307",
+        "HN___308",
+        "HN___309"
+      ]
+    },
+    "HN___313": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "HN___318": {
+      "credits": 3.0,
+      "prerequisites": [
+        "KN___230"
+      ]
+    },
+    "HN___320": {
+      "credits": 3.0,
+      "prerequisites": [
+        "HN___308"
+      ]
+    },
+    "HN___330": {
+      "credits": 3.0,
+      "prerequisites": [
+        "HN___110"
+      ]
+    },
+    "HN___332": {
+      "credits": 2.0,
+      "prerequisites": [
+        "HN___110"
+      ]
+    },
+    "HN___355": {
+      "credits": null,
+      "prerequisites": [
+        "HN___320"
+      ]
+    },
+    "HN___396": {
+      "credits": null,
+      "prerequisites": []
+    },
+    "HN___405": {
+      "credits": 2.0,
+      "prerequisites": [
+        "HN___110"
+      ]
+    },
+    "HN___406": {
+      "credits": 2.0,
+      "prerequisites": [
+        "HN___110"
+      ]
+    },
+    "HN___407": {
+      "credits": 2.0,
+      "prerequisites": [
+        "HN___110",
+        "ENGL___160",
+        "ENGL___161",
+        "HN___196"
+      ]
+    },
+    "HN___410": {
+      "credits": 4.0,
+      "prerequisites": [
+        "BIOS___350",
+        "BIOS___351"
+      ]
+    },
+    "HN___414": {
+      "credits": 2.0,
+      "prerequisites": []
+    },
+    "HN___420": {
+      "credits": 3.0,
+      "prerequisites": [
+        "HN___308"
+      ]
+    },
+    "HN___423": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "HN___425": {
+      "credits": 3.0,
+      "prerequisites": [
+        "HN___302"
+      ]
+    },
+    "HN___440": {
+      "credits": 3.0,
+      "prerequisites": [
+        "HN___196"
+      ]
+    },
+    "HN___455": {
+      "credits": null,
+      "prerequisites": [
+        "HN___420"
+      ]
+    },
+    "HN___502": {
+      "credits": 1.0,
+      "prerequisites": []
+    },
+    "HN___503": {
+      "credits": 3.0,
+      "prerequisites": [
+        "KN___251",
+        "KN___252",
+        "HN___318"
+      ]
+    },
+    "HN___510": {
+      "credits": 3.0,
+      "prerequisites": [
+        "PHYB___341",
+        "HN___410"
+      ]
+    },
+    "HN___555": {
+      "credits": 3.0,
+      "prerequisites": [
+        "HN___309",
+        "HN___440"
+      ]
+    },
+    "HN___560": {
+      "credits": 3.0,
+      "prerequisites": [
+        "HN___413"
+      ]
+    },
+    "HN___581": {
+      "credits": 1.0,
+      "prerequisites": [
+        "HN___320",
+        "HN___420"
+      ]
+    },
+    "HN___594": {
+      "credits": null,
+      "prerequisites": []
+    },
+    "HN___596": {
+      "credits": null,
+      "prerequisites": []
+    },
+    "HN___597": {
+      "credits": null,
+      "prerequisites": []
+    },
+    "HN___598": {
+      "credits": null,
+      "prerequisites": []
+    },
+    "HN___599": {
+      "credits": null,
+      "prerequisites": []
+    }
+  }
+}

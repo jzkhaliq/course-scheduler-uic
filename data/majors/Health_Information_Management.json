@@ -1,0 +1,195 @@
+{
+  "major": "Health Information Management",
+  "subject_code": "HIM",
+  "min_total_credits": 123,
+  "courses": {
+    "HIM___101": {
+      "credits": 1.0,
+      "prerequisites": []
+    },
+    "HIM___317": {
+      "credits": 4.0,
+      "prerequisites": [
+        "HIM___410"
+      ]
+    },
+    "HIM___319": {
+      "credits": 4.0,
+      "prerequisites": [
+        "HIM___317",
+        "HIM___410"
+      ]
+    },
+    "HIM___320": {
+      "credits": 2.0,
+      "prerequisites": []
+    },
+    "HIM___329": {
+      "credits": 3.0,
+      "prerequisites": [
+        "HIM___317",
+        "HIM___410"
+      ]
+    },
+    "HIM___337": {
+      "credits": 4.0,
+      "prerequisites": [
+        "HIM___317",
+        "BHIS___406",
+        "HIM___410",
+        "BHIS___460"
+      ]
+    },
+    "HIM___343": {
+      "credits": 3.0,
+      "prerequisites": [
+        "HIM___317",
+        "HIM___329"
+      ]
+    },
+    "HIM___361": {
+      "credits": 3.0,
+      "prerequisites": [
+        "BHIS___480"
+      ]
+    },
+    "HIM___367": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "HIM___374": {
+      "credits": 4.0,
+      "prerequisites": [
+        "HIM___337"
+      ]
+    },
+    "HIM___377": {
+      "credits": 2.0,
+      "prerequisites": []
+    },
+    "HIM___384": {
+      "credits": 5.0,
+      "prerequisites": []
+    },
+    "HIM___386": {
+      "credits": null,
+      "prerequisites": []
+    },
+    "HIM___410": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "HIM___432": {
+      "credits": 3.0,
+      "prerequisites": [
+        "HIM___317",
+        "HIM___317",
+        "BHIS___405",
+        "BHIS___406"
+      ]
+    },
+    "HIM___433": {
+      "credits": 4.0,
+      "prerequisites": [
+        "BHIS___405",
+        "HIM___432"
+      ]
+    },
+    "HIM___450": {
+      "credits": 3.0,
+      "prerequisites": [
+        "HIM___451"
+      ]
+    },
+    "HIM___451": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "HIM___452": {
+      "credits": 4.0,
+      "prerequisites": [
+        "HIM___534",
+        "HIM___557",
+        "HIM___557"
+      ]
+    },
+    "HIM___453": {
+      "credits": 4.0,
+      "prerequisites": [
+        "HIM___450",
+        "HIM___451",
+        "HIM___451"
+      ]
+    },
+    "HIM___454": {
+      "credits": 3.0,
+      "prerequisites": [
+        "HIM___450",
+        "HIM___451"
+      ]
+    },
+    "HIM___455": {
+      "credits": 4.0,
+      "prerequisites": [
+        "HIM___534",
+        "HIM___557"
+      ]
+    },
+    "HIM___481": {
+      "credits": 2.0,
+      "prerequisites": [
+        "BHIS___480"
+      ]
+    },
+    "HIM___486": {
+      "credits": 2.0,
+      "prerequisites": []
+    },
+    "HIM___574": {
+      "credits": 3.0,
+      "prerequisites": [
+        "HIM___451",
+        "HIM___452",
+        "HIM___534",
+        "HIM___557"
+      ]
+    },
+    "HIM___581": {
+      "credits": 3.0,
+      "prerequisites": [
+        "HIM___453",
+        "HIM___557"
+      ]
+    },
+    "HIM___593": {
+      "credits": 2.0,
+      "prerequisites": [
+        "HIM___450",
+        "HIM___452",
+        "HIM___453",
+        "HIM___454",
+        "HIM___455",
+        "HIM___534",
+        "HIM___557",
+        "HIM___574",
+        "HIM___581",
+        "HIM___595"
+      ]
+    },
+    "HIM___595": {
+      "credits": 1.0,
+      "prerequisites": [
+        "HIM___450",
+        "HIM___451",
+        "HIM___452",
+        "HIM___453",
+        "HIM___454",
+        "HIM___455",
+        "HIM___534",
+        "HIM___557",
+        "HIM___574",
+        "HIM___581"
+      ]
+    }
+  }
+}

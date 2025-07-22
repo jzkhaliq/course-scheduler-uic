@@ -1,0 +1,106 @@
+{
+  "major": "Rehabilitation Sciences",
+  "subject_code": "AHS",
+  "min_total_credits": 120,
+  "courses": {
+    "AHS___100": {
+      "credits": 1.0,
+      "prerequisites": []
+    },
+    "AHS___101": {
+      "credits": 1.0,
+      "prerequisites": []
+    },
+    "AHS___102": {
+      "credits": 3.0,
+      "prerequisites": [
+        "AHS___101"
+      ]
+    },
+    "AHS___200": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "AHS___210": {
+      "credits": 3.0,
+      "prerequisites": [
+        "AHS___100",
+        "AHS___101"
+      ]
+    },
+    "AHS___294": {
+      "credits": null,
+      "prerequisites": []
+    },
+    "AHS___299": {
+      "credits": null,
+      "prerequisites": []
+    },
+    "AHS___304": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "AHS___325": {
+      "credits": 3.0,
+      "prerequisites": [
+        "AHS___102",
+        "AHS___210"
+      ]
+    },
+    "AHS___330": {
+      "credits": 3.0,
+      "prerequisites": [
+        "AHS___210"
+      ]
+    },
+    "AHS___365": {
+      "credits": 3.0,
+      "prerequisites": [
+        "STAT___101",
+        "STAT___130",
+        "AHS___210"
+      ]
+    },
+    "AHS___375": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "AHS___393": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "AHS___396": {
+      "credits": null,
+      "prerequisites": []
+    },
+    "AHS___402": {
+      "credits": 2.0,
+      "prerequisites": []
+    },
+    "AHS___405": {
+      "credits": 3.0,
+      "prerequisites": [
+        "AHS___325"
+      ]
+    },
+    "AHS___511": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "AHS___512": {
+      "credits": 5.0,
+      "prerequisites": [
+        "BSTT___400",
+        "AHS___511"
+      ]
+    },
+    "AHS___596": {
+      "credits": null,
+      "prerequisites": []
+    },
+    "AHS___599": {
+      "credits": null,
+      "prerequisites": []
+    }
+  }
+}

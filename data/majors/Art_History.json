@@ -1,0 +1,420 @@
+{
+  "major": "Art History",
+  "subject_code": "AH",
+  "min_total_credits": 120,
+  "courses": {
+    "AH___100": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "AH___110": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "AH___111": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "AH___122": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "AH___125": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "AH___130": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "AH___160": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "AH___172": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "AH___180": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "AH___201": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "AH___204": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "AH___205": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "AH___206": {
+      "credits": 3.0,
+      "prerequisites": [
+        "AH___180"
+      ]
+    },
+    "AH___207": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "AH___208": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "AH___209": {
+      "credits": 3.0,
+      "prerequisites": [
+        "AH___110"
+      ]
+    },
+    "AH___210": {
+      "credits": 3.0,
+      "prerequisites": [
+        "AH___100",
+        "AH___110"
+      ]
+    },
+    "AH___211": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "AH___218": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "AH___219": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "AH___221": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "AH___222": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "AH___225": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "AH___230": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "AH___232": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "AH___233": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "AH___234": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "AH___235": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "AH___236": {
+      "credits": 3.0,
+      "prerequisites": [
+        "AH___235",
+        "DES___235"
+      ]
+    },
+    "AH___243": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "AH___244": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "AH___246": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "AH___248": {
+      "credits": 3.0,
+      "prerequisites": [
+        "ENGL___160"
+      ]
+    },
+    "AH___250": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "AH___251": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "AH___252": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "AH___259": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "AH___260": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "AH___261": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "AH___262": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "AH___263": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "AH___264": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "AH___265": {
+      "credits": 3.0,
+      "prerequisites": [
+        "AH___160",
+        "AH___260"
+      ]
+    },
+    "AH___270": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "AH___271": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "AH___273": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "AH___274": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "AH___275": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "AH___278": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "AH___300": {
+      "credits": 3.0,
+      "prerequisites": [
+        "AH___110",
+        "AH___111"
+      ]
+    },
+    "AH___301": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "AH___302": {
+      "credits": 3.0,
+      "prerequisites": [
+        "AH___180"
+      ]
+    },
+    "AH___303": {
+      "credits": 1.0,
+      "prerequisites": []
+    },
+    "AH___304": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "AH___399": {
+      "credits": null,
+      "prerequisites": [
+        "AH___301",
+        "AH___303"
+      ]
+    },
+    "AH___404": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "AH___407": {
+      "credits": 4.0,
+      "prerequisites": [
+        "CL___101",
+        "CL___103",
+        "AH___110",
+        "CL___203",
+        "HIST___203",
+        "AH___204",
+        "CL___204",
+        "HIST___205",
+        "CL___205",
+        "AH___205"
+      ]
+    },
+    "AH___422": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "AH___423": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "AH___430": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "AH___431": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "AH___450": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "AH___455": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "AH___460": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "AH___463": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "AH___465": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "AH___466": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "AH___470": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "AH___471": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "AH___480": {
+      "credits": 4.0,
+      "prerequisites": [
+        "AH___110",
+        "AH___111"
+      ]
+    },
+    "AH___481": {
+      "credits": 4.0,
+      "prerequisites": [
+        "AH___480"
+      ]
+    },
+    "AH___482": {
+      "credits": 8.0,
+      "prerequisites": [
+        "AH___481"
+      ]
+    },
+    "AH___483": {
+      "credits": null,
+      "prerequisites": []
+    },
+    "AH___490": {
+      "credits": 3.0,
+      "prerequisites": []
+    },
+    "AH___491": {
+      "credits": null,
+      "prerequisites": []
+    },
+    "AH___492": {
+      "credits": null,
+      "prerequisites": []
+    },
+    "AH___510": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "AH___511": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "AH___512": {
+      "credits": 0.0,
+      "prerequisites": []
+    },
+    "AH___513": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "AH___522": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "AH___531": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "AH___540": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "AH___550": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "AH___560": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "AH___561": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "AH___562": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "AH___570": {
+      "credits": 4.0,
+      "prerequisites": []
+    },
+    "AH___590": {
+      "credits": null,
+      "prerequisites": []
+    },
+    "AH___592": {
+      "credits": null,
+      "prerequisites": []
+    },
+    "AH___596": {
+      "credits": null,
+      "prerequisites": []
+    },
+    "AH___598": {
+      "credits": null,
+      "prerequisites": []
+    },
+    "AH___599": {
+      "credits": null,
+      "prerequisites": []
+    }
+  }
+}
