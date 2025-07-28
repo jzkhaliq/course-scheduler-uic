@@ -234,22 +234,13 @@ def parse_course_table(url, term, subject):
                         building = col_texts[5]
                         
                         # Only process lecture sections
-                        keep_types = ["LEC", "LEC-DIS", "LEC/LAB", "LBD", "LCD"]
+                        keep_types = ["LEC", "LEC-DIS", "LEC/LAB", "LCD"]
                         if not any(t in course_type.upper() for t in keep_types):
                             continue
 
 
-                        ## print(f"[LEC] {norm_code} — CRN {crn}, Time: {time}, Days: {days}")
-
-
-                        ## if not time or not days:
-                        ##    print(f"[SKIP] {norm_code} CRN {crn} — missing time or days: '{time}', '{days}'")
-
                         if not representative_crn:
                             representative_crn = crn  # Save first valid lecture CRN
-
-                        
-                        ## print(f"  Found lecture: CRN={crn}, Time={time}, Days={days}")
                         
                         # Parse timing
                         time_blocks = minutes_from_monday(time, days)
@@ -259,7 +250,33 @@ def parse_course_table(url, term, subject):
                         
                         
                         found_lecture = True
-                
+                # If no timing was captured, look for fallback LBD section
+                if not found_lecture:
+                    for row in rows:
+                        cols = row.find_all('td')
+                        if len(cols) < 6:
+                            continue
+
+                        col_texts = [col.get_text(strip=True) for col in cols]
+                        crn = col_texts[0]
+                        course_type = col_texts[1].strip().upper()
+                        time = col_texts[2]
+                        days = col_texts[3]
+
+                        if course_type != "LBD":
+                            continue
+
+                        # Store first CRN if still missing
+                        if not representative_crn:
+                            representative_crn = crn
+
+                        # Parse timing
+                        time_blocks = minutes_from_monday(time, days)
+                        for start, end in time_blocks:
+                            timings[f"{norm_code}_{crn}"].append((crn, start, end))
+                        found_lecture = True
+                        break  # Only take the first valid LBD
+
                     
 
                         
