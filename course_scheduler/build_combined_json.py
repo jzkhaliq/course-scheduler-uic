@@ -47,30 +47,41 @@ def load_course_offerings(path):
     return offerings
 
 def load_course_timings(path):
-    timings = {}
+    timing_by_course = defaultdict(lambda: defaultdict(list))
+
     with open(path) as f:
         for line in f:
             parts = line.strip().split('\t')
             if len(parts) < 3:
                 continue
-            code = normalize_code(parts[0])
+
+            course_code = normalize_code(parts[0])
             num_sections = int(parts[1])
             num_sessions = int(parts[2])
             crn_blocks = parts[3:]
-            times = [(int(crn_blocks[i+1]), int(crn_blocks[i+2]))
-                     for i in range(0, len(crn_blocks), 3)]
-            days = set(t // (24*60) for _, t in times)
-            start = min(s for s, _ in times) if times else None
-            end = max(e for _, e in times) if times else None
 
-            timings[code] = {
-                "sessions": num_sections,
-                "lectures": len(times),
-                "days": len(days),
-                "start": start,
-                "end": end
-            }
-    return timings
+            for i in range(0, len(crn_blocks), 3):
+                try:
+                    crn = crn_blocks[i]
+                    start = int(crn_blocks[i + 1])
+                    end = int(crn_blocks[i + 2])
+                    timing_by_course[course_code][crn].append({
+                        "start": start,
+                        "end": end
+                    })
+                except (IndexError, ValueError):
+                    continue
+
+    # flatten structure to match final format
+    formatted = {}
+    for course_code, crn_dict in timing_by_course.items():
+        formatted[course_code] = [
+            { "crn": crn, "times": times }
+            for crn, times in crn_dict.items()
+        ]
+
+    return formatted
+
 
 def build_combined_json():
     base_dir = "data/subjects"
@@ -109,13 +120,8 @@ def build_combined_json():
                 "credits": credits[course_code],
                 "prerequisites": prereqs.get(course_code, {"strict": [], "concurrent": []}),
                 "offered": offerings.get(course_code, {"fall": True, "spring": True}),
-                "timing": timings.get(course_code, {
-                    "sessions": 0,
-                    "lectures": 0,
-                    "days": 0,
-                    "start": None,
-                    "end": None
-                })
+                "timing": timings.get(course_code, [])
+
             }
 
         if subject in official_subjects:
