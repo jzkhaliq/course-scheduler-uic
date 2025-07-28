@@ -108,7 +108,7 @@ def build_combined_json():
             major_courses[course_code] = {
                 "credits": credits[course_code],
                 "prerequisites": prereqs.get(course_code, {"strict": [], "concurrent": []}),
-                "offered": offerings.get(course_code, {"fall": False, "spring": False}),
+                "offered": offerings.get(course_code, {"fall": True, "spring": True}),
                 "timing": timings.get(course_code, {
                     "sessions": 0,
                     "lectures": 0,
