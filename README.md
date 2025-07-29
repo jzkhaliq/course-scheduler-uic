@@ -94,7 +94,7 @@ This repository contains two active branches for different JSON formats:
   }
 
 
-  ### 🗃️ DuckDB: `data/combined.duckdb`
+### 🗃️ DuckDB: `data/combined.duckdb`
 
 A compact SQL database is generated using DuckDB with the following tables:
 
