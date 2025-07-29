@@ -53,3 +53,42 @@ This project scrapes and models course data from the University of Illinois Chic
       }
     }
   }
+
+## 🌿 Branch Overview
+
+This repository contains two active branches for different JSON formats:
+
+### `main`
+> 🎓 **Major-Centric Format**
+
+- Top-level keys: undergraduate majors (e.g. `"computer_science"`)
+- Contains:
+  - `subject_code`
+  - `min_total_credits`
+  - Dictionary of courses keyed by 8-character course code
+  - Fallback `"unmapped_subjects"` section
+
+### `subject_json_format`
+> 🧾 **Subject-Centric Format**
+
+- Top-level keys: subject codes (e.g. `"CS"`, `"MATH"`, `"ECE"`)
+- Each subject contains a list of course dictionaries:
+  ```json
+  {
+    "id": "CS_141",
+    "credits": [4],
+    "offerings": { "fall": true, "spring": true },
+    "prerequisites": [
+      { "id": "CS_107", "type": "0" }
+    ],
+    "timing": {
+      "0": {
+        "days": 2,
+        "time": [840, 930, 960, 1050]
+      },
+      "1": {
+        "days": 1,
+        "time": [660, 750]
+      }
+    }
+  }
