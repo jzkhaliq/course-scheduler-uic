@@ -92,3 +92,24 @@ This repository contains two active branches for different JSON formats:
       }
     }
   }
+
+
+  ### 🗃️ DuckDB: `data/combined.duckdb`
+
+A compact SQL database is generated using DuckDB with the following tables:
+
+- `courses`:  
+  - `subject`, `course_id`, `credits`, `offered_fall`, `offered_spring`
+
+- `prerequisites`:  
+  - `subject`, `course_id`, `prereq_id`, `type` (`-1` for OR-group, `0` for AND)
+
+- `timings`:  
+  - `subject`, `course_id`, `crn`, `start`, `end`
+
+- `lecture_counts`:  
+  - `subject`, `course_id`, `crn`, `lecture_count`
+
+You can query this database directly using the DuckDB CLI or Python DuckDB client.
+(This is found in the branch subject_json_format)
+
