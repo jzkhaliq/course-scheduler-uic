@@ -3,9 +3,6 @@ import json
 from collections import defaultdict
 from generate_major_configs import major_to_subject  # or paste it directly if needed
 
-with open("data/all_uic_degrees.json") as f:
-    major_credit_requirements = json.load(f)
-
 
 def normalize_code(code):
     return code.strip().ljust(8, '_')
@@ -21,7 +18,7 @@ def load_master_course_list(path):
     return credits
 
 def load_prerequisites(path):
-    prereqs = defaultdict(lambda: {"strict": [], "concurrent": []})
+    prereqs = defaultdict(list)
     with open(path) as f:
         for line in f:
             parts = line.strip().split('\t')
@@ -29,8 +26,10 @@ def load_prerequisites(path):
                 prereq, course, flag = parts
                 prereq = normalize_code(prereq)
                 course = normalize_code(course)
-                group = "strict" if flag == "0" else "concurrent"
-                prereqs[course][group].append([prereq])
+                prereqs[course].append({
+                    "id": prereq,
+                    "type": flag
+                })
     return prereqs
 
 def load_course_offerings(path):
@@ -65,20 +64,20 @@ def load_course_timings(path):
                     crn = crn_blocks[i]
                     start = int(crn_blocks[i + 1])
                     end = int(crn_blocks[i + 2])
-                    timing_by_course[course_code][crn].append({
-                        "start": start,
-                        "end": end
-                    })
+                    timing_by_course[course_code][crn].append(start)
+                    timing_by_course[course_code][crn].append(end)
                 except (IndexError, ValueError):
                     continue
 
-    # flatten structure to match final format
     formatted = {}
     for course_code, crn_dict in timing_by_course.items():
-        formatted[course_code] = [
-            { "crn": crn, "times": times }
-            for crn, times in crn_dict.items()
-        ]
+        formatted[course_code] = []
+        for times in crn_dict.values():
+            days = len(times) // 2
+            formatted[course_code].append({
+                "days": days,
+                "time": times
+            })
 
     return formatted
 
@@ -86,17 +85,12 @@ def load_course_timings(path):
 def build_combined_json():
     base_dir = "data/subjects"
     combined = {}
-    official_subjects = set(major_to_subject.values())
-    reverse_lookup = defaultdict(list)
-    for major, subject in major_to_subject.items():
-        reverse_lookup[subject].append(major)
 
     for subject in sorted(os.listdir(base_dir)):
         subject_path = os.path.join(base_dir, subject)
         if not os.path.isdir(subject_path):
             continue
 
-        prefix = f"{subject}___"
         files = {
             "credits": os.path.join(subject_path, f"mastercourselist_{subject}.txt"),
             "prereqs": os.path.join(subject_path, f"prerequisites_{subject}.txt"),
@@ -113,48 +107,33 @@ def build_combined_json():
         offerings = load_course_offerings(files["offerings"])
         timings = load_course_timings(files["timings"])
 
-        major_courses = {}
-
+        course_array = []
         for course_code in sorted(credits.keys()):
-            major_courses[course_code] = {
-                "credits": credits[course_code],
-                "prerequisites": prereqs.get(course_code, {"strict": [], "concurrent": []}),
-                "offered": offerings.get(course_code, {"fall": True, "spring": True}),
-                "timing": timings.get(course_code, [])
+            credit_str = credits[course_code]
+            credits_list = [float(c.strip()) for c in credit_str.split(',') if c.strip().replace('.', '', 1).isdigit()]
 
+            course_data = {
+                "id": course_code,
+                "credits": credits_list,
+                "offerings": offerings.get(course_code, {"fall": True, "spring": True}),
+                "prerequisites": prereqs.get(course_code, [])
             }
 
-        if subject in official_subjects:
-            for major_name in reverse_lookup[subject]:
-                safe_key = major_name.strip().lower().replace(" ", "_").replace("-", "_")
-                combined[safe_key] = {
-                    "subject_code": subject,
-                    "min_total_credits": major_credit_requirements.get(major_name, 120),
-                    "courses": major_courses
-                }
+            if course_code in timings:
+                course_data["timing"] = timings[course_code]
 
-        else:
-            if "unmapped_subjects" not in combined:
-                combined["unmapped_subjects"] = {}
-            combined["unmapped_subjects"][subject] = {
-                "courses": major_courses
-            }
+            course_array.append(course_data)
 
-        print(f"✅ Processed {subject} → {len(major_courses)} courses")
+        combined[subject] = {"courses": course_array}
+        print(f"✅ Processed {subject} → {len(course_array)} courses")
 
-    # Move "unmapped_subjects" to the bottom
-    if "unmapped_subjects" in combined:
-        unmapped = combined.pop("unmapped_subjects")
-        combined["unmapped_subjects"] = unmapped
-
-    # Save final output
     os.makedirs("data", exist_ok=True)
     output_path = "data/combined.json"
-    
+
     with open(output_path, "w") as f:
         json.dump(combined, f, indent=2)
 
-    print(f"\n🎉 combined.json saved with {len(combined)} top-level entries at {output_path}")
+    print(f"\n🎉 combined.json saved with {len(combined)} subjects at {output_path}")
 
 if __name__ == "__main__":
     build_combined_json()

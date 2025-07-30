@@ -86,7 +86,7 @@ def normalize_course_code(subject, course_number):
 def parse_course_table(url, term, subject):
     """Parse course table from UIC schedule page"""
     try:
-        print(f"Fetching {url}")
+        #print(f"Fetching {url}")
         response = requests.get(url, headers=HEADERS, timeout=10)
         response.raise_for_status()
         
@@ -307,17 +307,23 @@ def write_outputs(subject):
                 fall = 1 if term in ["fall", "both"] else 0
                 spring = 1 if term in ["spring", "both"] else 0
                 f.write(f"{code}\t{fall}\t{spring}\n")
-        print(f"Wrote {len(offering_term)} course offerings")
+        #print(f"Wrote {len(offering_term)} course offerings")
         
-        # Course timings (one line per CRN, with total section count at front)
+        # Group all (start, end) pairs per course, ignoring CRNs
+        #course_timings = defaultdict(set)  # course_code → set of (start, end)
+
+        # Group all (start, end) pairs per course but preserve CRNs
         crn_grouped = defaultdict(lambda: defaultdict(list))  # course → crn → [(start, end)]
+        seen_times_per_course = defaultdict(set)  # course → set of (start, end)
 
         for section_id, time_blocks in timings.items():
             if "_" not in section_id:
                 continue
             course_code, crn = section_id.rsplit("_", 1)
             for _, start, end in time_blocks:
-                crn_grouped[course_code][crn].append((start, end))
+                if (start, end) not in seen_times_per_course[course_code]:
+                    crn_grouped[course_code][crn].append((start, end))
+                    seen_times_per_course[course_code].add((start, end))
 
         with open(os.path.join(major_dir, f"coursetiming_{subject}.txt"), "w") as f:
             for course_code in sorted(crn_grouped.keys()):
@@ -325,6 +331,8 @@ def write_outputs(subject):
                 num_sections = len(all_crns)
                 for crn in sorted(all_crns.keys()):
                     sessions = all_crns[crn]
+                    if not sessions:
+                        continue
                     f.write(f"{course_code}\t{num_sections}\t{len(sessions)}")
                     for start, end in sessions:
                         f.write(f"\t{crn}\t{start}\t{end}")
@@ -354,7 +362,7 @@ def write_outputs(subject):
 
 
 
-        print(f"Wrote {len(prereqs)} prerequisite placeholders")
+        #print(f"Wrote {len(prereqs)} prerequisite placeholders")
 
         # Rebuild master course list from offering_term and timings keys
         with open(os.path.join(major_dir, f"mastercourselist_{subject}.txt"), "w") as f:
@@ -372,7 +380,7 @@ def write_outputs(subject):
 
 
 
-        print(f"Wrote {len(added)} to mastercourselist_{subject}.txt")
+        #print(f"Wrote {len(added)} to mastercourselist_{subject}.txt")
 
         
     except Exception as e:
@@ -450,7 +458,7 @@ if __name__ == "__main__":
 
         urls = subjects[subject]
 
-        print(f"\n=== Scraping {subject} ===")
+        # print(f"\n=== Scraping {subject} ===")
 
         # Clear data between subjects
         master.clear()
@@ -477,3 +485,4 @@ if __name__ == "__main__":
         write_outputs(subject)
 
         seen_in_term.clear()
+    print("Done")
