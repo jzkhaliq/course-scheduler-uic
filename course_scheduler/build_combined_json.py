@@ -72,16 +72,15 @@ def load_course_timings(path):
     formatted = {}
     for course_code, crn_dict in timing_by_course.items():
         formatted[course_code] = []
-        for i, (crn, times) in enumerate(crn_dict.items()):
+        for times in crn_dict.values():
             days = len(times) // 2
             formatted[course_code].append({
-                str(i): {
-                    "days": days,
-                    "time": times
-                }
+                "days": days,
+                "time": times
             })
 
     return formatted
+
 
 def build_combined_json():
     base_dir = "data/subjects"
