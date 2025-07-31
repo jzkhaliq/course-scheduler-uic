@@ -2,6 +2,10 @@ import json
 import duckdb
 import os
 
+def normalize_course_code(subject, course_number):
+    """Pads subject and number to form an 8-character course code (e.g., CS___141)."""
+    return f"{subject}{'_' * (8 - len(subject) - len(course_number))}{course_number}"
+
 with open("data/combined.json") as f:
     data = json.load(f)
 
@@ -19,7 +23,10 @@ con.execute("CREATE TABLE lecture_counts (subject TEXT, course_id TEXT, group_id
 for subject, subject_data in data.items():
     courses = subject_data.get("courses", [])
     for course in courses:
-        course_id = course.get("id")
+        raw_id = course.get("id")  # e.g., "CS_141" or "CS___141"
+        course_number = raw_id[-3:]  # last 3 characters
+        course_id = normalize_course_code(subject, course_number)  # force 8-char format
+
         credit_list = course.get("credits", [])
         credits = float(credit_list[0]) if credit_list else None
         offered = course.get("offerings", {})
@@ -29,10 +36,13 @@ for subject, subject_data in data.items():
         con.execute("INSERT INTO courses VALUES (?, ?, ?, ?, ?)", (subject, course_id, credits, fall, spring))
 
         for prereq in course.get("prerequisites", []):
+            prereq_id = prereq.get("id")
+            prereq_number = prereq_id[-3:]
+            normalized_prereq = normalize_course_code(prereq_id[:len(prereq_id) - 4].rstrip('_'), prereq_number)
             con.execute("INSERT INTO prerequisites VALUES (?, ?, ?, ?)", (
                 subject,
                 course_id,
-                prereq.get("id"),
+                normalized_prereq,
                 int(prereq.get("type", -1))
             ))
 
@@ -55,7 +65,5 @@ for subject, subject_data in data.items():
                     con.execute("INSERT INTO timings VALUES (?, ?, ?, ?, ?)", (subject, course_id, group_idx, start, end))
                 except IndexError:
                     continue
-
-
 
 print("✅ DuckDB fully built from combined.json")

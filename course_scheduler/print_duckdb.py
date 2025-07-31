@@ -7,7 +7,7 @@ tables = ["courses", "timings", "prerequisites", "lecture_counts"]
 for table in tables:
     print(f"\n=== {table.upper()} ===")
     try:
-        results = con.execute(f"SELECT * FROM {table} LIMIT 100").fetchall()
+        results = con.execute(f"SELECT * FROM {table} LIMIT 1000").fetchall()
         for row in results:
             print(row)
     except Exception as e:
