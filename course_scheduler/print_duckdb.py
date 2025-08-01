@@ -2,7 +2,7 @@ import duckdb
 
 con = duckdb.connect("data/combined.duckdb")
 
-tables = ["courses", "timings", "prerequisites", "lecture_counts"]
+tables = ["courses", "timings", "prerequisites", "lecture_days"]
 
 for table in tables:
     print(f"\n=== {table.upper()} ===")

@@ -18,7 +18,7 @@ con = duckdb.connect("data/combined.duckdb")
 con.execute("CREATE TABLE courses (subject TEXT, course_id TEXT, credits FLOAT, offered_fall BOOLEAN, offered_spring BOOLEAN)")
 con.execute("CREATE TABLE timings (subject TEXT, course_id TEXT, group_idx INT, start INT, end_time INT)")
 con.execute("CREATE TABLE prerequisites (subject TEXT, course_id TEXT, prereq_id TEXT, type INT)")
-con.execute("CREATE TABLE lecture_counts (subject TEXT, course_id TEXT, group_idx INT, count INT)")
+con.execute("CREATE TABLE lecture_days (subject TEXT, course_id TEXT, group_idx INT, days INT)")
 
 for subject, subject_data in data.items():
     courses = subject_data.get("courses", [])
@@ -56,7 +56,7 @@ for subject, subject_data in data.items():
                 continue
 
             lecture_count = len(time_blocks) // 2
-            con.execute("INSERT INTO lecture_counts VALUES (?, ?, ?, ?)", (subject, course_id, group_idx, lecture_count))
+            con.execute("INSERT INTO lecture_days VALUES (?, ?, ?, ?)", (subject, course_id, group_idx, lecture_count))
 
             for i in range(0, len(time_blocks), 2):
                 try:
