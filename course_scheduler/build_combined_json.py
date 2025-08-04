@@ -86,6 +86,21 @@ def build_combined_json():
     base_dir = "data/subjects"
     combined = {}
 
+    # Load list of backfilled courses
+    credit_cache_path = "data/credit_cache.json"
+    backfilled_courses = set()
+
+    if os.path.exists(credit_cache_path):
+        with open(credit_cache_path) as f:
+            credit_cache = json.load(f)
+            for key in credit_cache.keys():  # key is like "CS 113"
+                subject_part, number_part = key.split(" ")
+                underscores = 8 - len(subject_part) - len(number_part)
+                normalized = f"{subject_part}{'_' * underscores}{number_part}"
+                backfilled_courses.add(normalized)
+
+
+
     for subject in sorted(os.listdir(base_dir)):
         subject_path = os.path.join(base_dir, subject)
         if not os.path.isdir(subject_path):
@@ -115,14 +130,23 @@ def build_combined_json():
             course_data = {
                 "id": course_code,
                 "credits": credits_list,
-                "offerings": offerings.get(course_code, {"fall": True, "spring": True}),
                 "prerequisites": prereqs.get(course_code, [])
             }
 
+            # Offerings logic
+            if course_code in offerings:
+                course_data["offerings"] = offerings[course_code]
+            elif course_code in backfilled_courses:
+                course_data["offerings"] = {"fall": False, "spring": False}
+            else:
+                course_data["offerings"] = {"fall": True, "spring": True}
+
+            # Timing
             if course_code in timings:
                 course_data["timing"] = timings[course_code]
 
             course_array.append(course_data)
+
 
         combined[subject] = {"courses": course_array}
         print(f"✅ Processed {subject} → {len(course_array)} courses")

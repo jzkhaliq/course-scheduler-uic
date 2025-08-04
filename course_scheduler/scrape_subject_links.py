@@ -4,6 +4,7 @@ from bs4 import BeautifulSoup
 import re
 from datetime import datetime
 from collections import defaultdict
+from credit_lookup import get_credit_from_uic_catalog
 
 
 
@@ -365,18 +366,42 @@ def write_outputs(subject):
         #print(f"Wrote {len(prereqs)} prerequisite placeholders")
 
         # Rebuild master course list from offering_term and timings keys
+                # Rebuild master course list from offering_term, timings, and prereqs
         with open(os.path.join(major_dir, f"mastercourselist_{subject}.txt"), "w") as f:
             added = set()
+
+            # Gather all seen course codes
             all_seen = set(seen_in_term.keys()) | {key.rsplit("_", 1)[0] for key in timings.keys()}
-            for code in sorted(all_seen):
-                if len(code) == 8 and code not in added:  # All codes should be exactly 8 characters
-                    # Convert back to "SUBJECT NUMBER" format for master lookup
-                    subject_part = code.rstrip('_0123456789')
-                    number_part = code[-3:]
-                    original_format = f"{subject_part} {number_part}"
-                    credit = master.get(original_format, "???")
-                    f.write(f"{code}\t{credit}\n")
-                    added.add(code)
+
+            # Only include prereqs that belong to the current subject
+            prereq_courses = {
+                prereq for prereq, _, _ in prereqs
+                if prereq[:len(subject)] == subject and prereq[len(subject)] == '_'
+            }
+
+
+            all_codes = all_seen | prereq_courses
+
+            for code in sorted(all_codes):
+                if len(code) != 8 or code in added:
+                    continue
+                subject_part = code.rstrip('_0123456789')
+                number_part = code[-3:]
+                original_format = f"{subject_part} {number_part}"
+                if original_format in master:
+                    credit = master[original_format]
+                else:
+                    credit = "???"
+                    # Try live UIC catalog lookup if missing
+                    fetched = get_credit_from_uic_catalog(subject_part, number_part)
+                    if fetched != "???":
+                        credit = fetched
+                if credit == "???" or not credit:
+                    continue  # ❌ Skip courses without valid credit
+
+                f.write(f"{code}\t{credit}\n")
+                added.add(code)
+
 
 
 
