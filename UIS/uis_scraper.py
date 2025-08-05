@@ -136,37 +136,47 @@ with open(f"{output_dir}/coursetiming_{subject_code}.txt", "w") as f:
 
 
 # --------------- MASTER COURSE LIST ---------------
-
-
 master_file = f"{output_dir}/mastercourselist_{subject_code}.txt"
+written = set()
+
 with open(master_file, "w") as f:
-    seen = set()
-    for code, sessions in timings.items():
-        subject, number = code.split("___") if "___" in code else (code[:3], code[3:])
-        norm_code = normalize_code(subject, number)
-
-        # Avoid duplicates
-        if norm_code in seen:
+    for course in all_courses:
+        code = normalize_code(course["crs_subj_cd"], course["crs_nbr"].zfill(3))
+        if code in written:
             continue
-        seen.add(norm_code)
 
-        # Match course by subject + number
-        crs_data = next(
-            (c for c in all_courses if c["crs_nbr"].zfill(3) == number and c["crs_subj_cd"] == subject), 
-            None
-        )
+        desc = course.get("crs_desc_catalog", "")
+        min_raw = course.get("crs_min_credit_hour_nbr")
+        max_raw = course.get("crs_max_credit_hour_nbr")
 
-        if crs_data:
-            credit = crs_data.get("crs_min_credit_hour_nbr") or crs_data.get("sect_credit_hours")
-        else:
-            credit = "???"
+        try:
+            min_credit = int(float(min_raw)) if min_raw else 0
 
-        f.write(f"{norm_code}\t{credit}\n")
+            if max_raw:
+                max_credit = int(float(max_raw))
+            elif re.search(r"(\d+)\s*-\s*(\d+)\s*Hours", desc):
+                max_credit = int(re.search(r"(\d+)\s*-\s*(\d+)\s*Hours", desc).group(2))
+            elif re.search(r"maximum of (\d+) hours", desc.lower()):
+                max_credit = int(re.search(r"maximum of (\d+) hours", desc.lower()).group(1))
+            else:
+                max_credit = min_credit
+
+            if max_credit > min_credit:
+                credits = list(range(min_credit, max_credit + 1))
+            else:
+                credits = [min_credit]
+
+        except:
+            credits = ["???"]
+
+        credit_str = ",".join(str(c) for c in credits)
+        f.write(f"{code}\t{credit_str}\n")
+        written.add(code)
 
 print(f"✅ Wrote mastercourselist to {master_file}")
 
 
-print(f"✅ Wrote mastercourselist to {master_file}")
+
 
 # --------------- PREREQUISITES ---------------
 
@@ -208,3 +218,5 @@ print(f"✅ Wrote prerequisites to {reqs_file}")
 
 
 print("\n✅ Combined Fall + Spring data written to uis/data/")
+
+
