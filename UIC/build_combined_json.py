@@ -1,7 +1,7 @@
 import os
 import json
 from collections import defaultdict
-from generate_major_configs import major_to_subject  # or paste it directly if needed
+from UIC.archive.generate_major_configs import major_to_subject  # or paste it directly if needed
 
 
 def normalize_code(code):
@@ -83,11 +83,11 @@ def load_course_timings(path):
 
 
 def build_combined_json():
-    base_dir = "data/subjects"
+    base_dir = "UIC/data/subjects"
     combined = {}
 
     # Load list of backfilled courses
-    credit_cache_path = "data/credit_cache.json"
+    credit_cache_path = "UIC/data/data_archive/credit_cache.json"
     backfilled_courses = set()
 
     if os.path.exists(credit_cache_path):
@@ -151,8 +151,8 @@ def build_combined_json():
         combined[subject] = {"courses": course_array}
         print(f"✅ Processed {subject} → {len(course_array)} courses")
 
-    os.makedirs("data", exist_ok=True)
-    output_path = "data/combined.json"
+    os.makedirs("UIC/data", exist_ok=True)
+    output_path = "UIC/data/combined.json"
 
     with open(output_path, "w") as f:
         json.dump(combined, f, indent=2)

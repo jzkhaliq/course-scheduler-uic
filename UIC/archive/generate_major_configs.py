@@ -100,7 +100,7 @@ major_to_subject = {
 }
 
 def generate_config_for_major(major_name, subject_code, major_credit_requirements):
-    subject_dir = os.path.join("data/subjects", subject_code)
+    subject_dir = os.path.join("UIC/data/subjects", subject_code)
     
     if not os.path.isdir(subject_dir):
         return None
@@ -192,7 +192,7 @@ def generate_config_for_major(major_name, subject_code, major_credit_requirement
     return config
 
 def main():
-    os.makedirs("data/majors", exist_ok=True)
+    os.makedirs("UIC/data/data_archive/majors", exist_ok=True)
 
     # Load credit requirements from existing file
     with open("data/all_uic_degrees.json") as f:

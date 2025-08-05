@@ -4,7 +4,7 @@ from bs4 import BeautifulSoup
 import re
 from datetime import datetime
 from collections import defaultdict
-from credit_lookup import get_credit_from_uic_catalog
+from UIC.archive.credit_lookup import get_credit_from_uic_catalog
 
 
 
@@ -295,7 +295,7 @@ def parse_course_table(url, term, subject):
 
 def write_outputs(subject):
     # Create subfolder for this subject
-    major_dir = os.path.join("data/subjects", subject)
+    major_dir = os.path.join("UIC/data/subjects", subject)
     os.makedirs(major_dir, exist_ok=True)
 
     """Write output files"""

@@ -6,13 +6,13 @@ def normalize_course_code(subject, course_number):
     """Pads subject and number to form an 8-character course code (e.g., CS___141)."""
     return f"{subject}{'_' * (8 - len(subject) - len(course_number))}{course_number}"
 
-with open("data/combined.json") as f:
+with open("UIC/data/combined.json") as f:
     data = json.load(f)
 
-if os.path.exists("data/combined.duckdb"):
-    os.remove("data/combined.duckdb")
+if os.path.exists("UIC/data/combined.duckdb"):
+    os.remove("UIC/data/combined.duckdb")
 
-con = duckdb.connect("data/combined.duckdb")
+con = duckdb.connect("UIC/data/combined.duckdb")
 
 # Create tables
 con.execute("CREATE TABLE courses (subject TEXT, course_id TEXT, credits FLOAT, offered_fall BOOLEAN, offered_spring BOOLEAN)")

@@ -1,6 +1,6 @@
 import json
 import time
-from credit_lookup import get_credit_from_uic_catalog
+from UIC.archive.credit_lookup import get_credit_from_uic_catalog
 
 # Load the credit cache
 with open("data/credit_cache.json", "r") as f:
