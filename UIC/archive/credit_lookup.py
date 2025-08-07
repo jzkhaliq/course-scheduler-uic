@@ -4,7 +4,7 @@ import requests
 from bs4 import BeautifulSoup
 import re
 
-CACHE_FILE = "data/credit_cache.json"
+CACHE_FILE = "UIC/data/data_archive/credit_cache.json"
 
 # Load or initialize the cache
 if os.path.exists(CACHE_FILE):
@@ -25,7 +25,7 @@ def get_credit_from_uic_catalog(subject, course_num):
     from selenium.webdriver.support import expected_conditions as EC
     from selenium.common.exceptions import TimeoutException, WebDriverException
 
-    CACHE_FILE = "data/credit_cache.json"
+    CACHE_FILE = "UIC/data/data_archive/credit_cache.json"
     key = f"{subject} {course_num}"
 
     # Load or init cache

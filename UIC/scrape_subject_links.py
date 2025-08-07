@@ -4,19 +4,113 @@ from bs4 import BeautifulSoup
 import re
 from datetime import datetime
 from collections import defaultdict
-from UIC.archive.credit_lookup import get_credit_from_uic_catalog
+import json
+
+CACHE_FILE = "UIC/data/data_archive/credit_cache.json"
+
+# Load or initialize the cache
+if os.path.exists(CACHE_FILE):
+    with open(CACHE_FILE, "r") as f:
+        credit_cache = json.load(f)
+else:
+    credit_cache = {}
+
+def get_credit_from_uic_catalog(subject, course_num):
+    import os
+    import json
+    import re
+    from selenium import webdriver
+    from selenium.webdriver.chrome.options import Options
+    from selenium.webdriver.common.by import By
+    from selenium.webdriver.chrome.service import Service
+    from selenium.webdriver.support.ui import WebDriverWait
+    from selenium.webdriver.support import expected_conditions as EC
+    from selenium.common.exceptions import TimeoutException, WebDriverException
+
+    CACHE_FILE = "UIC/data/data_archive/credit_cache.json"
+    key = f"{subject} {course_num}"
+
+    # Load or init cache
+    if os.path.exists(CACHE_FILE):
+        with open(CACHE_FILE, "r") as f:
+            credit_cache = json.load(f)
+    else:
+        credit_cache = {}
+
+    if key in credit_cache and credit_cache[key] != "???":
+        return credit_cache[key]
+
+    # Set up headless Chrome
+    options = Options()
+    options.add_argument("--headless")
+    options.add_argument("--no-sandbox")
+    options.add_argument("--disable-dev-shm-usage")
+
+    try:
+        driver = webdriver.Chrome(options=options)
+    except WebDriverException as e:
+        print(f"[ERROR] Could not start ChromeDriver: {e}")
+        credit_cache[key] = "???"
+        with open(CACHE_FILE, "w") as f:
+            json.dump(credit_cache, f, indent=2)
+        return "???"
+
+    try:
+        url = f"https://catalog.uic.edu/search/?P={subject}%20{course_num}"
+        driver.get(url)
+
+        # Wait for <h3> elements to load
+        WebDriverWait(driver, 8).until(
+            EC.presence_of_element_located((By.TAG_NAME, "h3"))
+        )
+
+        h3_tags = driver.find_elements(By.TAG_NAME, "h3")
+        for tag in h3_tags:
+            text = tag.text.strip()
+            if f"{subject} {course_num}" in text:
+                match = re.search(r"(\d+(?:\.\d+)?)\s+hours", text, re.IGNORECASE)
+                if match:
+                    credit = match.group(1)
+                    credit_cache[key] = credit
+                    with open(CACHE_FILE, "w") as f:
+                        json.dump(credit_cache, f, indent=2)
+                    print(f"✅ {key}: {credit}")
+                    driver.quit()
+                    return credit
+
+    except TimeoutException:
+        print(f"[TIMEOUT] {key} took too long to load")
+    except Exception as e:
+        print(f"[ERROR] {key}: {e}")
+    finally:
+        driver.quit()
+
+    credit_cache[key] = "???"
+    with open(CACHE_FILE, "w") as f:
+        json.dump(credit_cache, f, indent=2)
+    print(f"❌ {key}: ???")
+    return "???"
 
 
 
-BASE_URLS = {
-    "fall": "https://webcs7.osss.uic.edu/schedule-of-classes/static/schedules/fall-2024/",
-    "spring": "https://webcs7.osss.uic.edu/schedule-of-classes/static/schedules/spring-2025/",
-}
 
-CS_URLS = {
-    "fall": BASE_URLS["fall"] + "CS.html",
-    "spring": BASE_URLS["spring"] + "CS.html"
-}
+TERMS = [
+    ("fall", 2022),
+    ("spring", 2023),
+    ("fall", 2023),
+    ("spring", 2024),
+    ("fall", 2024),
+    ("spring", 2025)
+]
+
+BASE_URL = "https://webcs7.osss.uic.edu/schedule-of-classes/static/schedules"
+
+def generate_term_urls(subject):
+    return {
+        f"{term}-{year}": f"{BASE_URL}/{term}-{year}/{subject}.html"
+        for term, year in TERMS
+    }
+
 
 # Request headers to avoid being blocked
 HEADERS = {
@@ -27,8 +121,19 @@ master = {}
 offering_term = {}  # norm_code → "fall" or "spring"
 excluded_courses = set()  # courses seen in both terms
 seen_in_term = defaultdict(set)  # term → set of course codes seen in that term
-timings = defaultdict(list)  # CS_111_CRN → [(crn, start, end)]
+timing_fall = defaultdict(list)
+timing_spring = defaultdict(list)
+latest_prereq_year = {}  # norm_code → year
+prereq_map = {}          # norm_code → set of (prereq, flag)
+
+
+# Also store term tracking for fallback
+latest_fall_year = {}
+latest_spring_year = {}
+
 prereqs = set()
+all_seen_terms = defaultdict(set)  # norm_code → set of terms like "fall-2022"
+
 
 
 def frange(start, stop, step=1):
@@ -84,7 +189,7 @@ def normalize_course_code(subject, course_number):
     return f"{subject}{'_' * underscores_needed}{course_number}"
 
 
-def parse_course_table(url, term, subject):
+def parse_course_table(url, term, year, subject):
     """Parse course table from UIC schedule page"""
     try:
         #print(f"Fetching {url}")
@@ -124,6 +229,7 @@ def parse_course_table(url, term, subject):
                 code = f"{subject} {course_number}"
                 norm_code = normalize_course_code(subject, course_number)
                 seen_in_term[norm_code].add(term)
+                all_seen_terms[norm_code].add(f"{term}-{year}")
                 
 
 
@@ -131,31 +237,31 @@ def parse_course_table(url, term, subject):
                 # Extract prerequisite sentence (e.g., "Prerequisite(s): CS 111 and CS 151.")
                 prereq_match = re.search(r"Prerequisite\s*\(s\):\s*(.+)", text, re.IGNORECASE)
                 if prereq_match:
-                        
-                    prereq_text = prereq_match.group(1)
-                    
-                    # Split prereq sentence into chunks by ; or " and "
-                    chunks = re.split(r";|\band\b", prereq_text, flags=re.IGNORECASE)
+                    # Only update if this is the latest year
+                    if norm_code not in latest_prereq_year or year > latest_prereq_year[norm_code]:
+                        prereq_text = prereq_match.group(1)
+                        chunks = re.split(r";|\band\b", prereq_text, flags=re.IGNORECASE)
 
-                    for chunk in chunks:
-                        flag = -1 if " or " in chunk.lower() else 0
-                        course_refs = re.findall(r"\b([A-Z]{2,4})\s+(\d{3})\b", chunk)
+                        current_prereqs = set()
 
-                        for dept, num in course_refs:
-                            prereq_code = normalize_course_code(dept, num)
+                        for chunk in chunks:
+                            flag = -1 if " or " in chunk.lower() else 0
+                            course_refs = re.findall(r"\b([A-Z]{2,4})\s+(\d{3})\b", chunk)
 
-                            if prereq_code == norm_code:
-                                continue
+                            for dept, num in course_refs:
+                                prereq_code = normalize_course_code(dept, num)
 
-                            if dept not in VALID_SUBJECTS:
-                                continue
+                                if prereq_code == norm_code:
+                                    continue
+                                if dept not in VALID_SUBJECTS:
+                                    continue
 
-                            prereqs.add((prereq_code, norm_code, flag))
+                                current_prereqs.add((prereq_code, norm_code, flag))
 
+                        # Overwrite if this year is newer
+                        prereq_map[norm_code] = current_prereqs
+                        latest_prereq_year[norm_code] = year
 
-
-
-                    ## print(f"[PREREQ RAW] {norm_code}: {prereq_text}")
 
                                                 
                 match = re.search(rf"{subject}\s+(\d{{3}})", text)
@@ -246,7 +352,21 @@ def parse_course_table(url, term, subject):
                         # Parse timing
                         time_blocks = minutes_from_monday(time, days)
                         for start, end in time_blocks:
-                            timings[f"{norm_code}_{crn}"].append((crn, start, end))
+                            if term == "fall":
+                                # Only keep latest fall
+                                if norm_code not in latest_fall_year or year > latest_fall_year[norm_code]:
+                                    timing_fall[norm_code] = [(crn, start, end)]
+                                    latest_fall_year[norm_code] = year
+                                elif year == latest_fall_year[norm_code]:
+                                    timing_fall[norm_code].append((crn, start, end))
+
+                            elif term == "spring":
+                                if norm_code not in latest_spring_year or year > latest_spring_year[norm_code]:
+                                    timing_spring[norm_code] = [(crn, start, end)]
+                                    latest_spring_year[norm_code] = year
+                                elif year == latest_spring_year[norm_code]:
+                                    timing_spring[norm_code].append((crn, start, end))
+
                         
                         
                         
@@ -274,7 +394,15 @@ def parse_course_table(url, term, subject):
                         # Parse timing
                         time_blocks = minutes_from_monday(time, days)
                         for start, end in time_blocks:
-                            timings[f"{norm_code}_{crn}"].append((crn, start, end))
+                            if term == "fall":
+                                if norm_code not in latest_fall_year or year > latest_fall_year[norm_code]:
+                                    timing_fall[norm_code] = [(crn, start, end)]
+                                    latest_fall_year[norm_code] = year
+                            elif term == "spring":
+                                if norm_code not in latest_spring_year or year > latest_spring_year[norm_code]:
+                                    timing_spring[norm_code] = [(crn, start, end)]
+                                    latest_spring_year[norm_code] = year
+
                         found_lecture = True
                         break  # Only take the first valid LBD
 
@@ -304,48 +432,59 @@ def write_outputs(subject):
         with open(os.path.join(major_dir, f"courseoffering_{subject}.txt"), "w") as f:
             # print(f"[DEBUG] Sample offering_term: {list(offering_term.items())[:3]}")
             for code in sorted(offering_term.keys()):
+                # ✅ Skip if course is not from this subject
+                if not code.startswith(subject + "_"):
+                    continue
+
                 term = offering_term[code]
-                fall = 1 if term in ["fall", "both"] else 0
-                spring = 1 if term in ["spring", "both"] else 0
+                if term == "both":
+                    continue  # ❌ skip courses offered in both terms
+
+                fall = 1 if term == "fall" else 0
+                spring = 1 if term == "spring" else 0
                 f.write(f"{code}\t{fall}\t{spring}\n")
+
+
         #print(f"Wrote {len(offering_term)} course offerings")
         
         # Group all (start, end) pairs per course, ignoring CRNs
         #course_timings = defaultdict(set)  # course_code → set of (start, end)
 
         # Group all (start, end) pairs per course but preserve CRNs
-        crn_grouped = defaultdict(lambda: defaultdict(list))  # course → crn → [(start, end)]
-        seen_times_per_course = defaultdict(set)  # course → set of (start, end)
-
-        for section_id, time_blocks in timings.items():
-            if "_" not in section_id:
-                continue
-            course_code, crn = section_id.rsplit("_", 1)
-            for _, start, end in time_blocks:
-                if (start, end) not in seen_times_per_course[course_code]:
-                    crn_grouped[course_code][crn].append((start, end))
-                    seen_times_per_course[course_code].add((start, end))
 
         with open(os.path.join(major_dir, f"coursetiming_{subject}.txt"), "w") as f:
-            for course_code in sorted(crn_grouped.keys()):
-                all_crns = crn_grouped[course_code]
-                num_sections = len(all_crns)
-                for crn in sorted(all_crns.keys()):
-                    sessions = all_crns[crn]
+            for course_code in sorted(set(timing_fall.keys()) | set(timing_spring.keys())):
+                for term, timing_dict in [("fall", timing_fall), ("spring", timing_spring)]:
+                    if course_code not in timing_dict:
+                        continue
+
+                    sessions = timing_dict[course_code]
                     if not sessions:
                         continue
-                    f.write(f"{course_code}\t{num_sections}\t{len(sessions)}")
-                    for start, end in sessions:
-                        f.write(f"\t{crn}\t{start}\t{end}")
-                    f.write("\n")
+
+                    # Group by CRN
+                    crn_sessions = defaultdict(list)
+                    for crn, start, end in sessions:
+                        crn_sessions[crn].append((start, end))
+
+                    num_sections = len(crn_sessions)
+
+                    for crn, blocks in sorted(crn_sessions.items()):
+                        f.write(f"{course_code}\t{term}\t{num_sections}\t{len(blocks)}")
+                        for start, end in blocks:
+                            f.write(f"\t{crn}\t{start}\t{end}")
+                        f.write("\n")
+
 
         
         # Clean and filter prereqs
+        # Flatten prereq_map into list
         prereqs_cleaned = [
             (prereq, course, flag)
-            for prereq, course, flag in prereqs
-            if prereq != course and isinstance(prereq, str) and isinstance(course, str)
+            for course, prereq_set in prereq_map.items()
+            for (prereq, course, flag) in prereq_set
         ]
+
 
         # Sort: first by course (middle column), then by prereq (left column)
         prereqs_sorted = sorted(
@@ -371,7 +510,12 @@ def write_outputs(subject):
             added = set()
 
             # Gather all seen course codes
-            all_seen = set(seen_in_term.keys()) | {key.rsplit("_", 1)[0] for key in timings.keys()}
+            all_seen = (
+                set(seen_in_term.keys()) |
+                set(timing_fall.keys()) |
+                set(timing_spring.keys())
+            )
+
 
             # Only include prereqs that belong to the current subject
             prereq_courses = {
@@ -489,21 +633,41 @@ if __name__ == "__main__":
         master.clear()
         offering_term.clear()
         excluded_courses.clear()
-        
-        timings.clear()
+        timing_fall.clear()
+        timing_spring.clear()
+        latest_fall_year.clear()
+        latest_spring_year.clear()
+        offering_term.clear()
         prereqs.clear()
+        seen_in_term.clear()
+        latest_prereq_year.clear()
+        prereq_map.clear()
+        all_seen_terms.clear()
 
-        parse_course_table(urls["fall"], "fall", subject)
-        parse_course_table(urls["spring"], "spring", subject)
+
+
+
+        term_urls = generate_term_urls(subject)
+        for term, year in TERMS:
+            term_key = f"{term}-{year}"
+            if term_key not in term_urls:
+                continue
+            parse_course_table(term_urls[term_key], term, year, subject)
+
+
 
         # Determine offering term for each course
-        for norm_code, terms in seen_in_term.items():
-            if "fall" in terms and "spring" in terms:
-                continue  # Skip both-term courses
-            elif "fall" in terms:
+        for norm_code, terms in all_seen_terms.items():
+            offered_fall = any(t.startswith("fall") for t in terms)
+            offered_spring = any(t.startswith("spring") for t in terms)
+
+            if offered_fall and offered_spring:
+                offering_term[norm_code] = "both"
+            elif offered_fall:
                 offering_term[norm_code] = "fall"
-            elif "spring" in terms:
+            elif offered_spring:
                 offering_term[norm_code] = "spring"
+
 
         
 

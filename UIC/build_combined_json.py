@@ -1,7 +1,7 @@
 import os
 import json
 from collections import defaultdict
-from UIC.archive.generate_major_configs import major_to_subject  # or paste it directly if needed
+# from UIC.archive.generate_major_configs import major_to_subject  # or paste it directly if needed
 
 
 def normalize_code(code):
@@ -46,40 +46,49 @@ def load_course_offerings(path):
     return offerings
 
 def load_course_timings(path):
-    timing_by_course = defaultdict(lambda: defaultdict(list))
+    # course_code → { "fall": [...], "spring": [...] }
+    timing_by_course = defaultdict(lambda: {"fall": [], "spring": []})
 
     with open(path) as f:
         for line in f:
             parts = line.strip().split('\t')
-            if len(parts) < 3:
+            if len(parts) < 5:
                 continue
 
             course_code = normalize_code(parts[0])
-            num_sections = int(parts[1])
-            num_sessions = int(parts[2])
-            crn_blocks = parts[3:]
+            term = parts[1]  # "fall" or "spring"
+            try:
+                num_sections = int(parts[2])
+                num_sessions = int(parts[3])
+            except ValueError:
+                continue
+
+            crn_blocks = parts[4:]
+            times = []
 
             for i in range(0, len(crn_blocks), 3):
                 try:
                     crn = crn_blocks[i]
                     start = int(crn_blocks[i + 1])
                     end = int(crn_blocks[i + 2])
-                    timing_by_course[course_code][crn].append(start)
-                    timing_by_course[course_code][crn].append(end)
+                    times.append((crn, start, end))
                 except (IndexError, ValueError):
                     continue
 
-    formatted = {}
-    for course_code, crn_dict in timing_by_course.items():
-        formatted[course_code] = []
-        for times in crn_dict.values():
-            days = len(times) // 2
-            formatted[course_code].append({
-                "days": days,
-                "time": times
-            })
+            crn_sessions = defaultdict(list)
+            for crn, start, end in times:
+                crn_sessions[crn].append((start, end))
 
-    return formatted
+            for crn, session_list in crn_sessions.items():
+                time_flat = [t for pair in session_list for t in pair]
+                timing_by_course[course_code][term].append({
+                    "crn": crn,
+                    "days": len(session_list),
+                    "time": time_flat
+                })
+
+    return timing_by_course
+
 
 
 def build_combined_json():
@@ -143,7 +152,12 @@ def build_combined_json():
 
             # Timing
             if course_code in timings:
-                course_data["timing"] = timings[course_code]
+                timing_info = timings[course_code]
+                if timing_info.get("fall"):
+                    course_data["timing_fall"] = timing_info["fall"]
+                if timing_info.get("spring"):
+                    course_data["timing_spring"] = timing_info["spring"]
+
 
             course_array.append(course_data)
 

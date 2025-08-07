@@ -16,19 +16,20 @@ con = duckdb.connect("UIC/data/combined.duckdb")
 
 # Create tables
 con.execute("CREATE TABLE courses (subject TEXT, course_id TEXT, credits FLOAT, offered_fall BOOLEAN, offered_spring BOOLEAN)")
-con.execute("CREATE TABLE timings (subject TEXT, course_id TEXT, group_idx INT, start INT, end_time INT)")
+con.execute("CREATE TABLE timings (subject TEXT, course_id TEXT, term TEXT, group_idx INT, start INT, end_time INT)")
 con.execute("CREATE TABLE prerequisites (subject TEXT, course_id TEXT, prereq_id TEXT, type INT)")
-con.execute("CREATE TABLE lecture_days (subject TEXT, course_id TEXT, group_idx INT, days INT)")
+con.execute("CREATE TABLE lecture_days (subject TEXT, course_id TEXT, term TEXT, group_idx INT, days INT)")
 
 for subject, subject_data in data.items():
     courses = subject_data.get("courses", [])
     for course in courses:
-        raw_id = course.get("id")  # e.g., "CS_141" or "CS___141"
-        course_number = raw_id[-3:]  # last 3 characters
-        course_id = normalize_course_code(subject, course_number)  # force 8-char format
+        raw_id = course.get("id")  # e.g., "CS___141"
+        course_number = raw_id[-3:]
+        course_id = normalize_course_code(subject, course_number)
 
         credit_list = course.get("credits", [])
         credits = float(credit_list[0]) if credit_list else None
+
         offered = course.get("offerings", {})
         fall = offered.get("fall", True)
         spring = offered.get("spring", True)
@@ -46,24 +47,30 @@ for subject, subject_data in data.items():
                 int(prereq.get("type", -1))
             ))
 
-        timing_data = course.get("timing", [])
-        for group_idx, session in enumerate(timing_data):
-            if not isinstance(session, dict):
-                continue
+        # ✅ Handle timing_fall and timing_spring
+        for term in ["fall", "spring"]:
+            key = f"timing_{term}"
+            timing_data = course.get(key, [])
 
-            time_blocks = session.get("time", [])
-            if not time_blocks:
-                continue
-
-            lecture_count = len(time_blocks) // 2
-            con.execute("INSERT INTO lecture_days VALUES (?, ?, ?, ?)", (subject, course_id, group_idx, lecture_count))
-
-            for i in range(0, len(time_blocks), 2):
-                try:
-                    start = time_blocks[i]
-                    end = time_blocks[i + 1]
-                    con.execute("INSERT INTO timings VALUES (?, ?, ?, ?, ?)", (subject, course_id, group_idx, start, end))
-                except IndexError:
+            for group_idx, session in enumerate(timing_data):
+                if not isinstance(session, dict):
                     continue
+
+                time_blocks = session.get("time", [])
+                if not time_blocks:
+                    continue
+
+                lecture_count = len(time_blocks) // 2
+                con.execute("INSERT INTO lecture_days VALUES (?, ?, ?, ?, ?)",
+                            (subject, course_id, term, group_idx, lecture_count))
+
+                for i in range(0, len(time_blocks), 2):
+                    try:
+                        start = time_blocks[i]
+                        end = time_blocks[i + 1]
+                        con.execute("INSERT INTO timings VALUES (?, ?, ?, ?, ?, ?)",
+                                    (subject, course_id, term, group_idx, start, end))
+                    except IndexError:
+                        continue
 
 print("✅ DuckDB fully built from combined.json")

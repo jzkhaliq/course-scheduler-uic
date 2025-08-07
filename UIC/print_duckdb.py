@@ -1,6 +1,6 @@
 import duckdb
 
-con = duckdb.connect("data/combined.duckdb")
+con = duckdb.connect("UIC/data/combined.duckdb")
 
 tables = ["courses", "timings", "prerequisites", "lecture_days"]
 
