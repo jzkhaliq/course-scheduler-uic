@@ -6,102 +6,19 @@ from datetime import datetime
 from collections import defaultdict
 import json
 
-CACHE_FILE = "UIC/data/data_archive/credit_cache.json"
+def generate_terms(start_year, end_year):
+    terms = []
+    for year in range(start_year, end_year + 1):
+        terms.append(("fall", year))
+        if year + 1 <= end_year:
+            terms.append(("spring", year + 1))
+    return terms
 
-# Load or initialize the cache
-if os.path.exists(CACHE_FILE):
-    with open(CACHE_FILE, "r") as f:
-        credit_cache = json.load(f)
-else:
-    credit_cache = {}
+# Adjust these 2 values to control scraping range
+start_year = 2022
+end_year = 2025
+TERMS = generate_terms(start_year, end_year)
 
-def get_credit_from_uic_catalog(subject, course_num):
-    import os
-    import json
-    import re
-    from selenium import webdriver
-    from selenium.webdriver.chrome.options import Options
-    from selenium.webdriver.common.by import By
-    from selenium.webdriver.chrome.service import Service
-    from selenium.webdriver.support.ui import WebDriverWait
-    from selenium.webdriver.support import expected_conditions as EC
-    from selenium.common.exceptions import TimeoutException, WebDriverException
-
-    CACHE_FILE = "UIC/data/data_archive/credit_cache.json"
-    key = f"{subject} {course_num}"
-
-    # Load or init cache
-    if os.path.exists(CACHE_FILE):
-        with open(CACHE_FILE, "r") as f:
-            credit_cache = json.load(f)
-    else:
-        credit_cache = {}
-
-    if key in credit_cache and credit_cache[key] != "???":
-        return credit_cache[key]
-
-    # Set up headless Chrome
-    options = Options()
-    options.add_argument("--headless")
-    options.add_argument("--no-sandbox")
-    options.add_argument("--disable-dev-shm-usage")
-
-    try:
-        driver = webdriver.Chrome(options=options)
-    except WebDriverException as e:
-        print(f"[ERROR] Could not start ChromeDriver: {e}")
-        credit_cache[key] = "???"
-        with open(CACHE_FILE, "w") as f:
-            json.dump(credit_cache, f, indent=2)
-        return "???"
-
-    try:
-        url = f"https://catalog.uic.edu/search/?P={subject}%20{course_num}"
-        driver.get(url)
-
-        # Wait for <h3> elements to load
-        WebDriverWait(driver, 8).until(
-            EC.presence_of_element_located((By.TAG_NAME, "h3"))
-        )
-
-        h3_tags = driver.find_elements(By.TAG_NAME, "h3")
-        for tag in h3_tags:
-            text = tag.text.strip()
-            if f"{subject} {course_num}" in text:
-                match = re.search(r"(\d+(?:\.\d+)?)\s+hours", text, re.IGNORECASE)
-                if match:
-                    credit = match.group(1)
-                    credit_cache[key] = credit
-                    with open(CACHE_FILE, "w") as f:
-                        json.dump(credit_cache, f, indent=2)
-                    print(f"✅ {key}: {credit}")
-                    driver.quit()
-                    return credit
-
-    except TimeoutException:
-        print(f"[TIMEOUT] {key} took too long to load")
-    except Exception as e:
-        print(f"[ERROR] {key}: {e}")
-    finally:
-        driver.quit()
-
-    credit_cache[key] = "???"
-    with open(CACHE_FILE, "w") as f:
-        json.dump(credit_cache, f, indent=2)
-    print(f"❌ {key}: ???")
-    return "???"
-
-
-
-
-TERMS = [
-    ("fall", 2022),
-    ("spring", 2023),
-    ("fall", 2023),
-    ("spring", 2024),
-    ("fall", 2024),
-    ("spring", 2025)
-]
 
 BASE_URL = "https://webcs7.osss.uic.edu/schedule-of-classes/static/schedules"
 
@@ -192,7 +109,7 @@ def normalize_course_code(subject, course_number):
 def parse_course_table(url, term, year, subject):
     """Parse course table from UIC schedule page"""
     try:
-        #print(f"Fetching {url}")
+        print(f"Fetching {url}")
         response = requests.get(url, headers=HEADERS, timeout=10)
         response.raise_for_status()
         
@@ -537,9 +454,9 @@ def write_outputs(subject):
                 else:
                     credit = "???"
                     # Try live UIC catalog lookup if missing
-                    fetched = get_credit_from_uic_catalog(subject_part, number_part)
-                    if fetched != "???":
-                        credit = fetched
+                    # fetched = get_credit_from_uic_catalog(subject_part, number_part)
+                    # if fetched != "???":
+                    #     credit = fetched
                 if credit == "???" or not credit:
                     continue  # ❌ Skip courses without valid credit
 
@@ -627,7 +544,7 @@ if __name__ == "__main__":
 
         urls = subjects[subject]
 
-        # print(f"\n=== Scraping {subject} ===")
+        print(f"\n=== Scraping {subject} ===")
 
         # Clear data between subjects
         master.clear()
