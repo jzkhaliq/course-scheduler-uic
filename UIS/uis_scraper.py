@@ -16,8 +16,9 @@ subject = "Computer Science"
 subject_code = "CSC"
 
 base_url = "https://apps.uis.edu/dynamic-course-schedule/api/course"
-output_dir = "uis/data"
+output_dir = os.path.join("uis", "data", subject_code)
 os.makedirs(output_dir, exist_ok=True)
+
 
 # Master course data
 offerings = defaultdict(lambda: {"fall": 0, "spring": 0})
@@ -96,7 +97,7 @@ for term_name, term_code in terms.items():
                 base = offset * 24 * 60
                 timings[code].append((crn, base + start_min, base + end_min))
 
-# Write courseoffering_CSC.txt (exclude both-term courses)
+# --------------- COURSE OFFERING ---------------
 valid_courses = []
 
 with open(f"{output_dir}/courseoffering_{subject_code}.txt", "w") as f:
@@ -114,7 +115,7 @@ with open(f"{output_dir}/courseoffering_{subject_code}.txt", "w") as f:
 
 
 
-# Write coursetiming_CSC.txt
+# --------------- COURSE TIMING ---------------
 with open(f"{output_dir}/coursetiming_{subject_code}.txt", "w") as f:
     for code, sessions in timings.items():
         subject, number = code.split("___") if "___" in code else (code[:3], code[3:])
@@ -137,46 +138,96 @@ with open(f"{output_dir}/coursetiming_{subject_code}.txt", "w") as f:
 
 # --------------- MASTER COURSE LIST ---------------
 master_file = f"{output_dir}/mastercourselist_{subject_code}.txt"
-written = set()
 
-with open(master_file, "w") as f:
-    for course in all_courses:
-        code = normalize_code(course["crs_subj_cd"], course["crs_nbr"].zfill(3))
-        if code in written:
-            continue
+# 1) Build credits from API (do NOT parse generic hours from description)
+api_credits = {}
+for course in all_courses:
+    code = normalize_code(course["crs_subj_cd"], course["crs_nbr"].zfill(3))
+    desc = (course.get("crs_desc_catalog") or "").strip()
+    min_raw = course.get("crs_min_credit_hour_nbr")
+    max_raw = course.get("crs_max_credit_hour_nbr")
 
-        desc = course.get("crs_desc_catalog", "")
-        min_raw = course.get("crs_min_credit_hour_nbr")
-        max_raw = course.get("crs_max_credit_hour_nbr")
-
+    def parse_api_credits(min_raw, max_raw, desc):
         try:
-            min_credit = int(float(min_raw)) if min_raw else 0
+            min_credit = int(float(min_raw)) if min_raw is not None else None
+            max_credit = int(float(max_raw)) if max_raw is not None else None
 
-            if max_raw:
-                max_credit = int(float(max_raw))
-            elif re.search(r"(\d+)\s*-\s*(\d+)\s*Hours", desc):
-                max_credit = int(re.search(r"(\d+)\s*-\s*(\d+)\s*Hours", desc).group(2))
-            elif re.search(r"maximum of (\d+) hours", desc.lower()):
-                max_credit = int(re.search(r"maximum of (\d+) hours", desc.lower()).group(1))
-            else:
-                max_credit = min_credit
+            if min_credit is not None and max_credit is not None:
+                return list(range(min_credit, max_credit + 1))
+            if min_credit is not None:
+                return [min_credit]
 
-            if max_credit > min_credit:
-                credits = list(range(min_credit, max_credit + 1))
-            else:
-                credits = [min_credit]
-
+            # VERY narrow fallback: only support "maximum of X hours"
+            m = re.search(r"maximum of\s+(\d+)\s+hours", desc, flags=re.I)
+            if m:
+                x = int(m.group(1))
+                return list(range(1, x + 1))
         except:
-            credits = ["???"]
+            pass
+        return ["???"]
 
+    api_credits[code] = parse_api_credits(min_raw, max_raw, desc)
+
+# 2) Build credits from catalog (hours span OR end of title ONLY; never from description)
+catalog_url = f"https://catalog.uis.edu/coursedescriptions/{subject_code.lower()}/"
+resp = requests.get(catalog_url, timeout=30)
+soup = BeautifulSoup(resp.text, "html.parser")
+
+def parse_hours_text(text: str):
+    text = text.strip()
+
+    # Range like "1-12 Hours" or with en dash "1–12 Hours"
+    m = re.search(r"(\d+)\s*[-–]\s*(\d+)\s*Hours?\s*(?:\.|\)|$)", text, flags=re.I)
+    if m:
+        a, b = int(m.group(1)), int(m.group(2))
+        lo, hi = (a, b) if a <= b else (b, a)
+        return list(range(lo, hi + 1))
+
+    # Single like "4 Hours"
+    m = re.search(r"(\d+)\s*Hours?\s*(?:\.|\)|$)", text, flags=re.I)
+    if m:
+        return [int(m.group(1))]
+
+    return None
+
+catalog_credits = {}
+for blk in soup.select("div.courseblock"):
+    title_el = blk.select_one(".courseblocktitle")
+    if not title_el:
+        continue
+    title_text = title_el.get_text(" ", strip=True)
+
+    # e.g., "CSC 399. Tutorial. 1-12 Hours."
+    m = re.search(r"\b([A-Z]{3,4})\s+(\d{3})\b", title_text)
+    if not m:
+        continue
+    subj, num = m.group(1), m.group(2)
+    code = normalize_code(subj, num)
+
+    # Prefer explicit hours element if present
+    hours_el = blk.select_one(".courseblockhours, .hours")
+    credits = None
+    if hours_el:
+        credits = parse_hours_text(hours_el.get_text(" ", strip=True))
+
+    # Fallback: parse ONLY from the end of the title
+    if credits is None:
+        credits = parse_hours_text(title_text)
+
+    # No description parsing at all (prevents "last 12 hours" false positives)
+    catalog_credits[code] = credits if credits is not None else ["???"]
+
+# 3) Merge API + Catalog (prefer API unless it's ??? or 0)
+all_codes = sorted(set(api_credits.keys()) | set(catalog_credits.keys()))
+with open(master_file, "w") as f:
+    for code in all_codes:
+        credits = api_credits.get(code)
+        if not credits or credits == ["???"] or credits == [0]:
+            credits = catalog_credits.get(code, ["???"])
         credit_str = ",".join(str(c) for c in credits)
         f.write(f"{code}\t{credit_str}\n")
-        written.add(code)
 
-print(f"✅ Wrote mastercourselist to {master_file}")
-
-
-
+print(f"✅ Wrote mastercourselist to {master_file} (API ∪ Catalog)")
 
 # --------------- PREREQUISITES ---------------
 
