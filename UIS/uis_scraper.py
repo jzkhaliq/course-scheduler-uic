@@ -60,7 +60,7 @@ TERMS = {
 }
 
 BASE_API = "https://apps.uis.edu/dynamic-course-schedule/api/course"
-BASE_OUT = os.path.join("uis", "data")
+BASE_OUT = os.path.join("uis", "data", "subjects")
 os.makedirs(BASE_OUT, exist_ok=True)
 
 # ===================== HELPERS =====================
