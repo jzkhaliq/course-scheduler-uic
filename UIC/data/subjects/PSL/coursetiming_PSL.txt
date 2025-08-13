@@ -1,0 +1,12 @@
+PSL__402	fall	1	1	32641	0	0
+PSL__403	spring	1	1	44475	0	0
+PSL__404	spring	1	1	44481	0	0
+PSL__413	spring	1	1	45757	0	0
+PSL__501	fall	1	1	35107	0	0
+PSL__502	fall	1	1	35113	0	0
+PSL__502	spring	1	1	44477	0	0
+PSL__503	fall	1	1	40396	0	0
+PSL__503	spring	1	1	44484	0	0
+PSL__504	spring	1	1	44479	0	0
+PSL__597	fall	1	1	32628	0	0
+PSL__597	spring	1	1	44486	0	0

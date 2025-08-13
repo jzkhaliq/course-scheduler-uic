@@ -1,0 +1,2 @@
+MHUM_496	fall	1	1	17055	0	0
+MHUM_496	spring	1	1	39343	0	0

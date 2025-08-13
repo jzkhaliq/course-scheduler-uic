@@ -1,0 +1,2 @@
+PERI_698	fall	1	1	20629	0	0
+PERI_698	spring	1	1	26967	0	0

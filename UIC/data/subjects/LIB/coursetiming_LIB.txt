@@ -1,0 +1,4 @@
+LIB__399	fall	1	1	35731	0	0
+LIB__399	spring	1	1	30699	0	0
+LIB__573	fall	1	1	42724	0	0
+LIB__573	spring	1	1	41429	0	0

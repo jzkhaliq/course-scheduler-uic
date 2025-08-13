@@ -1,0 +1,4 @@
+RELE_621	fall	1	1	48911	0	0
+RELE_621	spring	1	1	46981	0	0
+RELE_665	fall	1	1	48912	0	0
+RELE_665	spring	1	1	46982	0	0

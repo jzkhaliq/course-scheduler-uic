@@ -1,2 +1,9 @@
-HLP__525	spring	2	1		5280	5360
-HLP__525	spring	2	1	40801	930	1010
+HLP__500	fall	1	1	41689	0	0
+HLP__505	fall	1	1	41690	0	0
+HLP__505	spring	1	1	40488	0	0
+HLP__510	fall	1	1	41691	0	0
+HLP__520	fall	1	1	41692	0	0
+HLP__525	spring	1	1	40801	0	0
+HLP__530	spring	1	1	40802	0	0
+HLP__535	fall	1	1	41777	0	0
+HLP__560	spring	1	1	41665	0	0

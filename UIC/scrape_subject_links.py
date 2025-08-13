@@ -107,235 +107,163 @@ def normalize_course_code(subject, course_number):
 
 
 def parse_course_table(url, term, year, subject):
-    """Parse course table from UIC schedule page"""
+    """Parse a single subject's schedule page for a given term/year.
+       - Captures concrete lecture timings (LEC/LCD/LBD, etc.)
+       - If offered but no concrete time (ARRANGED/CNF), inserts placeholder (0,0)
+       - Keeps 'latest year wins' behavior per term (fall/spring)
+    """
     try:
         print(f"Fetching {url}")
         response = requests.get(url, headers=HEADERS, timeout=10)
         response.raise_for_status()
-        
         soup = BeautifulSoup(response.text, "html.parser")
-        
-        # Debug: Print page structure
-        ## print(f"Page title: {soup.title.string if soup.title else 'No title'}")
-        
-        # Try different selectors to find course information
+
+        # Try to locate course containers
         courses = soup.find_all("div", class_="course")
         if not courses:
-            # Try alternative selectors
             courses = soup.find_all("div", class_="course-block")
         if not courses:
+            # Fallback: entire page tables (some pages are just big tables)
             courses = soup.find_all("table")
-        
-        ## print(f"Found {len(courses)} potential course containers in {term}")
-        
         if not courses:
-            print("No courses found. Printing page structure:")
-            print(soup.prettify()[:1000])  # First 1000 chars
+            print("No courses found on page.")
             return
-        
+
         for i, course in enumerate(courses):
             try:
-                
                 text = course.get_text(" ", strip=True)
 
-                match = re.search(rf"{subject}\s+(\d{{3}})", text)
+                # Find "[SUBJ] [NNN]"
+                match = re.search(rf"\b{subject}\s+(\d{{3}})\b", text)
                 if not match:
                     continue
 
                 course_number = match.group(1)
                 code = f"{subject} {course_number}"
                 norm_code = normalize_course_code(subject, course_number)
-                seen_in_term[norm_code].add(term)
-                all_seen_terms[norm_code].add(f"{term}-{year}")
-                
 
-
-                
-                # Extract prerequisite sentence (e.g., "Prerequisite(s): CS 111 and CS 151.")
+                # ===== Prerequisites (latest year wins) =====
                 prereq_match = re.search(r"Prerequisite\s*\(s\):\s*(.+)", text, re.IGNORECASE)
                 if prereq_match:
-                    # Only update if this is the latest year
                     if norm_code not in latest_prereq_year or year > latest_prereq_year[norm_code]:
                         prereq_text = prereq_match.group(1)
-                        chunks = re.split(r";|\band\b", prereq_text, flags=re.IGNORECASE)
 
+                        # split on ";" or " and " (keeps "or" inside chunk for OR grouping)
+                        chunks = re.split(r";|\band\b", prereq_text, flags=re.IGNORECASE)
                         current_prereqs = set()
 
                         for chunk in chunks:
-                            flag = -1 if " or " in chunk.lower() else 0
+                            flag = -1 if re.search(r"\bor\b", chunk, re.IGNORECASE) else 0
                             course_refs = re.findall(r"\b([A-Z]{2,4})\s+(\d{3})\b", chunk)
-
                             for dept, num in course_refs:
-                                prereq_code = normalize_course_code(dept, num)
-
-                                if prereq_code == norm_code:
-                                    continue
+                                # ignore self-refs and non-subject codes
                                 if dept not in VALID_SUBJECTS:
                                     continue
-
+                                prereq_code = normalize_course_code(dept, num)
+                                if prereq_code == norm_code:
+                                    continue
                                 current_prereqs.add((prereq_code, norm_code, flag))
 
-                        # Overwrite if this year is newer
                         prereq_map[norm_code] = current_prereqs
                         latest_prereq_year[norm_code] = year
 
-
-                                                
-                match = re.search(rf"{subject}\s+(\d{{3}})", text)
-                if not match:
-                    continue
-
-                course_number = match.group(1)
-                code = f"{subject} {course_number}"
-                norm_code = normalize_course_code(subject, course_number)
-
-
-                # Always mark this course as seen, even if no table rows
-                seen_in_term[norm_code].add(term)
-
-                # Also try to extract credits here
-                credit_match = re.search(r"(\d+(?:\.\d+)?)(?:\s+to\s+\d+(?:\.\d+)?)?\s+hours", text, re.IGNORECASE)
-                if credit_match:
-                    master[code] = credit_match.group(1)
-                else:
-                    master[code] = "???"
-
-
-                # Try to extract course credit from "... 3 hours." or "... 4.0 hours."
-                # Match variable range: "1 to 3 hours"
+                # ===== Credits extraction (range or single) =====
+                # Try range: "X to Y hours"
                 range_match = re.search(r"(\d+(?:\.\d+)?)\s+to\s+(\d+(?:\.\d+)?)\s+hours", text, re.IGNORECASE)
                 if range_match:
                     start = float(range_match.group(1))
                     end = float(range_match.group(2))
-                    # Build comma-separated range like "1,2,3"
-                    credit = ",".join(str(int(i)) if i.is_integer() else str(i)
-                                    for i in frange(start, end + 1))
+                    credit = ",".join(str(int(v)) if float(v).is_integer() else str(v) for v in frange(start, end, 1))
                 else:
-                    # Fallback to single credit match: "3 hours"
-                    credit_match = re.search(r"(\d+(?:\.\d+)?)\s+hours", text, re.IGNORECASE)
-                    credit = credit_match.group(1) if credit_match else "???"
-
-                # Save scraped credit to master (overwrite or create)
+                    single_match = re.search(r"(\d+(?:\.\d+)?)\s+hours", text, re.IGNORECASE)
+                    credit = single_match.group(1) if single_match else "???"
                 master[code] = credit
 
-                seen_in_term[norm_code].add(term)
-
-                # Ensure the course is tracked even if no valid LEC time
-                ## prereqs.add(norm_code)
-                
-
-
-                
-                ## print(f"Processing course: {code}")
-                
-                # Find table rows within this course block
-                rows = course.find_all('tr')
+                # ===== Rows parsing (sections/times) =====
+                rows = course.find_all("tr")
                 if not rows:
-                    # If no table, try to parse text directly
-                    print(f"No table rows found for {code}, trying text parsing")
-                    continue
-                
-                found_lecture = False
+                    # Some course blocks might not have a table
+                    # We still allow placeholder logic below if CNF/LEC appears in text
+                    rows = []
 
+                captured_any_time = False       # parsed at least one concrete timing block
+                offered_any_section = False     # course has a relevant section this term
                 representative_crn = None
+
+                # Section types that indicate the course is offered in this term
+                relevant_types = {"LEC", "LEC-DIS", "LEC/LAB", "LCD", "LBD", "CNF"}
+                # Only these types produce concrete timing blocks
+                keep_types = {"LEC", "LEC-DIS", "LEC/LAB", "LCD"}
 
                 for row in rows:
                     cols = row.find_all('td')
-                    
                     if len(cols) < 6:
                         continue
-                    
-                    # Extract column data
+
                     col_texts = [col.get_text(strip=True) for col in cols]
-                    
-                    # Assuming column order: CRN, Type, Time, Days, Room, Building, ...
-                    if len(col_texts) >= 6:
-                        crn = col_texts[0]
-                        course_type = col_texts[1]
-                        time = col_texts[2]
-                        days = col_texts[3]
-                        room = col_texts[4]
-                        building = col_texts[5]
-                        
-                        # Only process lecture sections
-                        keep_types = ["LEC", "LEC-DIS", "LEC/LAB", "LCD"]
-                        if not any(t in course_type.upper() for t in keep_types):
-                            continue
+                    crn = col_texts[0]
+                    course_type = col_texts[1].strip().upper()
+                    time = col_texts[2]
+                    days = col_texts[3]
 
-
-                        if not representative_crn:
-                            representative_crn = crn  # Save first valid lecture CRN
-                        
-                        # Parse timing
-                        time_blocks = minutes_from_monday(time, days)
-                        for start, end in time_blocks:
-                            if term == "fall":
-                                # Only keep latest fall
-                                if norm_code not in latest_fall_year or year > latest_fall_year[norm_code]:
-                                    timing_fall[norm_code] = [(crn, start, end)]
-                                    latest_fall_year[norm_code] = year
-                                elif year == latest_fall_year[norm_code]:
-                                    timing_fall[norm_code].append((crn, start, end))
-
-                            elif term == "spring":
-                                if norm_code not in latest_spring_year or year > latest_spring_year[norm_code]:
-                                    timing_spring[norm_code] = [(crn, start, end)]
-                                    latest_spring_year[norm_code] = year
-                                elif year == latest_spring_year[norm_code]:
-                                    timing_spring[norm_code].append((crn, start, end))
-
-                        
-                        
-                        
-                        found_lecture = True
-                # If no timing was captured, look for fallback LBD section
-                if not found_lecture:
-                    for row in rows:
-                        cols = row.find_all('td')
-                        if len(cols) < 6:
-                            continue
-
-                        col_texts = [col.get_text(strip=True) for col in cols]
-                        crn = col_texts[0]
-                        course_type = col_texts[1].strip().upper()
-                        time = col_texts[2]
-                        days = col_texts[3]
-
-                        if course_type != "LBD":
-                            continue
-
-                        # Store first CRN if still missing
+                    # Offered if we see any relevant type
+                    if any(t in course_type for t in relevant_types):
+                        offered_any_section = True
                         if not representative_crn:
                             representative_crn = crn
 
-                        # Parse timing
-                        time_blocks = minutes_from_monday(time, days)
-                        for start, end in time_blocks:
-                            if term == "fall":
-                                if norm_code not in latest_fall_year or year > latest_fall_year[norm_code]:
-                                    timing_fall[norm_code] = [(crn, start, end)]
-                                    latest_fall_year[norm_code] = year
-                            elif term == "spring":
-                                if norm_code not in latest_spring_year or year > latest_spring_year[norm_code]:
-                                    timing_spring[norm_code] = [(crn, start, end)]
-                                    latest_spring_year[norm_code] = year
+                    # Only try to parse concrete timing for keep_types
+                    if not any(t in course_type for t in keep_types):
+                        continue
 
-                        found_lecture = True
-                        break  # Only take the first valid LBD
+                    # Skip explicit ARRANGED (no parseable time window)
+                    if "ARRANGED" in time.upper() or not days.strip():
+                        continue
 
-                    
+                    time_blocks = minutes_from_monday(time, days)
+                    for start_min, end_min in time_blocks:
+                        captured_any_time = True
+                        if term == "fall":
+                            if norm_code not in latest_fall_year or year > latest_fall_year[norm_code]:
+                                timing_fall[norm_code] = [(crn, start_min, end_min)]
+                                latest_fall_year[norm_code] = year
+                            elif year == latest_fall_year[norm_code]:
+                                timing_fall[norm_code].append((crn, start_min, end_min))
+                        elif term == "spring":
+                            if norm_code not in latest_spring_year or year > latest_spring_year[norm_code]:
+                                timing_spring[norm_code] = [(crn, start_min, end_min)]
+                                latest_spring_year[norm_code] = year
+                            elif year == latest_spring_year[norm_code]:
+                                timing_spring[norm_code].append((crn, start_min, end_min))
 
-                        
+                # ===== FLEXIBLE-TIME PLACEHOLDER =====
+                # If the course is offered in this term but we captured no concrete times,
+                # write a single (0,0) block (12:00 AM Monday) for that term/year.
+                if offered_any_section and not captured_any_time:
+                    placeholder_crn = representative_crn or "00000"
+                    if term == "fall":
+                        if norm_code not in latest_fall_year or year >= latest_fall_year[norm_code]:
+                            timing_fall[norm_code] = [(placeholder_crn, 0, 0)]
+                            latest_fall_year[norm_code] = year
+                    elif term == "spring":
+                        if norm_code not in latest_spring_year or year >= latest_spring_year[norm_code]:
+                            timing_spring[norm_code] = [(placeholder_crn, 0, 0)]
+                            latest_spring_year[norm_code] = year
+
+                # Mark seen/offered for this term if we found any relevant section
+                if offered_any_section:
+                    seen_in_term[norm_code].add(term)
+                    all_seen_terms[norm_code].add(f"{term}-{year}")
+
             except Exception as e:
-                print(f"Error processing course {i}: {e}")
+                print(f"Error processing course block #{i}: {e}")
                 continue
-                
+
     except requests.RequestException as e:
         print(f"Failed to fetch {url}: {e}")
-        return
     except Exception as e:
         print(f"Error parsing {url}: {e}")
-        return
+
 
 
 def write_outputs(subject):

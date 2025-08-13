@@ -1,0 +1,9 @@
+MDC__601	fall	1	1	41732	0	0
+MDC__602	fall	1	1	41733	0	0
+MDC__603	spring	1	1	41400	0	0
+MDC__604	spring	1	1	41401	0	0
+MDC__606	fall	1	1	42967	0	0
+MDC__607	fall	1	1	42968	0	0
+MDC__631	fall	1	1	41736	0	0
+MDC__632	spring	1	1	41403	0	0
+MDC__634	fall	1	1	42971	0	0

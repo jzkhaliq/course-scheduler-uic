@@ -1,0 +1,9 @@
+MDR__601	fall	1	1	41743	0	0
+MDR__602	fall	1	1	41744	0	0
+MDR__603	spring	1	1	41410	0	0
+MDR__604	spring	1	1	41411	0	0
+MDR__606	fall	1	1	42972	0	0
+MDR__607	fall	1	1	42973	0	0
+MDR__631	fall	1	1	41746	0	0
+MDR__632	spring	1	1	41413	0	0
+MDR__634	fall	1	1	42976	0	0

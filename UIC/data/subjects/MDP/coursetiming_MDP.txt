@@ -1,0 +1,9 @@
+MDP__601	fall	1	1	41738	0	0
+MDP__602	fall	1	1	41739	0	0
+MDP__603	spring	1	1	41405	0	0
+MDP__604	spring	1	1	41406	0	0
+MDP__606	fall	1	1	42977	0	0
+MDP__607	fall	1	1	42978	0	0
+MDP__631	fall	1	1	41741	0	0
+MDP__632	spring	1	1	41408	0	0
+MDP__634	fall	1	1	42981	0	0

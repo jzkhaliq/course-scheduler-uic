@@ -1,0 +1,3 @@
+NUPR_506	spring	1	1	44574	0	0
+NUPR_591	spring	1	1	44577	0	0
+NUPR_597	fall	1	1	39376	0	0
