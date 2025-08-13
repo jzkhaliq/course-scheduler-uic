@@ -1,0 +1,14 @@
+HCI__513	fall	1	1	15385	0	0
+HCI__513	spring	1	1	15248	0	0
+HCI__542	fall	1	1	15389	0	0
+HCI__542	spring	1	1	15273	0	0
+HCI__552	spring	1	1	15274	0	0
+HCI__556	fall	1	1	15393	0	0
+HCI__558	fall	1	1	15394	0	0
+HCI__558	spring	1	1	15414	0	0
+HCI__564	fall	1	1	15411	0	0
+HCI__576	fall	1	1	15390	0	0
+HCI__578	fall	1	1	15391	0	0
+HCI__578	spring	1	1	15415	0	0
+HCI__586	fall	1	1	15395	0	0
+HCI__586	spring	1	1	15339	0	0
