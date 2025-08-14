@@ -18,17 +18,25 @@ if os.path.exists(db_path):
     os.remove(db_path)
 con = duckdb.connect(db_path)
 
-# Create tables
+# ---- Schemas ----
+con.execute("""
+CREATE TABLE subjects (
+  subject TEXT PRIMARY KEY,
+  subject_name TEXT
+)
+""")
+
 con.execute("""
 CREATE TABLE courses (
   subject TEXT,
+  subject_name TEXT,
   course_id TEXT,
   credits FLOAT,
   offered_fall BOOLEAN,
   offered_spring BOOLEAN
-)""")
+)
+""")
 
-# Note: include CRN + term + group_idx; one row per contiguous [start,end] block
 con.execute("""
 CREATE TABLE timings (
   subject TEXT,
@@ -38,9 +46,9 @@ CREATE TABLE timings (
   crn TEXT,
   start INT,
   end_time INT
-)""")
+)
+""")
 
-# Also store per-CRN "days" (number of sessions) for quick queries
 con.execute("""
 CREATE TABLE lecture_days (
   subject TEXT,
@@ -49,7 +57,8 @@ CREATE TABLE lecture_days (
   group_idx INT,
   crn TEXT,
   days INT
-)""")
+)
+""")
 
 con.execute("""
 CREATE TABLE prerequisites (
@@ -57,16 +66,24 @@ CREATE TABLE prerequisites (
   course_id TEXT,
   prereq_id TEXT,
   type INT
-)""")
+)
+""")
 
+# ---- Load ----
 for subject, subject_data in data.items():
+    # lowercase subject_name; fallback to code.lower()
+    subject_name = (subject_data.get("subject_name") or subject).lower()
+
+    # subjects table
+    con.execute("INSERT INTO subjects VALUES (?, ?)", (subject, subject_name))
+
     courses = subject_data.get("courses", [])
     for course in courses:
         raw_id = course.get("id")  # e.g., "CSC__225"
         if not raw_id or len(raw_id) < 3:
             continue
 
-        # Rebuild normalized id from JSON subject key + last 3 digits
+        # Normalized ID from subject key + last 3 digits
         course_number = raw_id[-3:]
         course_id = normalize_course_code(subject, course_number)
 
@@ -80,8 +97,8 @@ for subject, subject_data in data.items():
         spring = offered.get("spring", True)
 
         con.execute(
-            "INSERT INTO courses VALUES (?, ?, ?, ?, ?)",
-            (subject, course_id, credits, fall, spring),
+            "INSERT INTO courses VALUES (?, ?, ?, ?, ?, ?)",
+            (subject, subject_name, course_id, credits, fall, spring),
         )
 
         # Prereqs
@@ -92,7 +109,6 @@ for subject, subject_data in data.items():
             prereq_number = prereq_id[-3:]
             prereq_subj = prereq_id[: len(prereq_id) - 3].rstrip("_")
             normalized_prereq = normalize_course_code(prereq_subj, prereq_number)
-            # default to -1 when missing/invalid
             try:
                 ptype = int(prereq.get("type", -1))
             except Exception:
@@ -109,13 +125,13 @@ for subject, subject_data in data.items():
             for group_idx, session in enumerate(timing_data):
                 if not isinstance(session, dict):
                     continue
+
                 crn = str(session.get("crn", "")).strip()
 
                 # Prefer explicit 'days' if present; otherwise compute from time blocks
                 time_blocks = session.get("time", []) or []
                 if isinstance(time_blocks, list):
-                    # must be even-length: [s1,e1,s2,e2,...]
-                    blocks_len = max(0, len(time_blocks) // 2)
+                    blocks_len = max(0, len(time_blocks) // 2)  # [s1,e1,s2,e2,...]
                 else:
                     blocks_len = 0
                     time_blocks = []
@@ -126,14 +142,13 @@ for subject, subject_data in data.items():
                 except Exception:
                     days = blocks_len
 
-                # Store lecture_days row (even if 0/0 only)
+                # lecture_days (store even if 0/0 only)
                 con.execute(
                     "INSERT INTO lecture_days VALUES (?, ?, ?, ?, ?, ?)",
                     (subject, course_id, term, group_idx, crn, days),
                 )
 
-                # Insert each [start,end] pair as a row in timings
-                # Includes 0/0 pairs (flexible/TBA) so downstream can detect them
+                # timings rows (include 0/0 pairs)
                 for i in range(0, len(time_blocks), 2):
                     try:
                         start = int(time_blocks[i])
@@ -145,4 +160,4 @@ for subject, subject_data in data.items():
                         (subject, course_id, term, group_idx, crn, start, end),
                     )
 
-print("✅ UIS DuckDB fully built from uis/data/uis.json")
+print("✅ UIS DuckDB fully built from uis/data/uis.json with lowercase subject_name stored in subjects & courses")

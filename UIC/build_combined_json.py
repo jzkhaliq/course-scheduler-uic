@@ -1,8 +1,55 @@
 import os
+import re
 import json
+import requests
+from bs4 import BeautifulSoup
 from collections import defaultdict
-# from UIC.archive.generate_major_configs import major_to_subject  # or paste it directly if needed
 
+# ===================== Subject-name helper (UIC) =====================
+
+BASE_UIC_SCHEDULE = "https://webcs7.osss.uic.edu/schedule-of-classes/static/schedules"
+
+def _extract_subject_name_from_html(html: str) -> str | None:
+    soup = BeautifulSoup(html, "html.parser")
+    # Gather all visible text chunks
+    texts = []
+    for el in soup.find_all(text=True):
+        txt = el.strip()
+        if txt and len(txt) < 120:  # ignore long paragraphs
+            texts.append(txt)
+
+    for txt in texts:
+        m = re.search(r"(Fall|Spring)\s+\d{4}\s+([A-Za-z0-9&/\-.,\s]+)", txt, flags=re.I)
+        if m:
+            name = m.group(2).strip()
+            # Remove trailing stuff after "Location:" or "Phone:"
+            name = re.split(r"\bLocation\b|\bPhone\b|Last generated:", name, maxsplit=1)[0].strip(" -:.,")
+            if len(name) > 3 and name.lower() != "semester":
+                return name.lower()
+    return None
+
+
+def get_uic_subject_name(subject_code: str, fallback_years=(2025, 2024)) -> str:
+    """
+    Fetch one or more subject pages until we can extract a readable subject name.
+    Tries Fall then Spring for each year in fallback_years.
+    Falls back to the subject_code if nothing is found.
+    """
+    for year in fallback_years:
+        for term in ("fall", "spring"):
+            url = f"{BASE_UIC_SCHEDULE}/{term}-{year}/{subject_code}.html"
+            try:
+                resp = requests.get(url, timeout=20)
+                if resp.status_code != 200:
+                    continue
+                name = _extract_subject_name_from_html(resp.text)
+                if name:
+                    return name.lower()
+            except Exception:
+                continue
+    return subject_code.lower()  # safe fallback
+
+# ===================== Your existing helpers =====================
 
 def normalize_code(code):
     return code.strip().ljust(8, '_')
@@ -56,10 +103,11 @@ def load_course_timings(path):
                 continue
 
             course_code = normalize_code(parts[0])
-            term = parts[1]  # "fall" or "spring"
+            term = parts[1].strip().lower()  # "fall" or "spring"
             try:
-                num_sections = int(parts[2])
-                num_sessions = int(parts[3])
+                # we don't need these, but parsing advances the offset
+                _num_sections = int(parts[2])
+                _num_sessions = int(parts[3])
             except ValueError:
                 continue
 
@@ -89,7 +137,7 @@ def load_course_timings(path):
 
     return timing_by_course
 
-
+# ===================== Builder =====================
 
 def build_combined_json():
     base_dir = "UIC/data/subjects"
@@ -100,15 +148,19 @@ def build_combined_json():
     backfilled_courses = set()
 
     if os.path.exists(credit_cache_path):
-        with open(credit_cache_path) as f:
-            credit_cache = json.load(f)
-            for key in credit_cache.keys():  # key is like "CS 113"
-                subject_part, number_part = key.split(" ")
-                underscores = 8 - len(subject_part) - len(number_part)
-                normalized = f"{subject_part}{'_' * underscores}{number_part}"
-                backfilled_courses.add(normalized)
+        try:
+            with open(credit_cache_path) as f:
+                credit_cache = json.load(f)
+                for key in credit_cache.keys():  # key is like "CS 113"
+                    subject_part, number_part = key.split(" ")
+                    underscores = 8 - len(subject_part) - len(number_part)
+                    normalized = f"{subject_part}{'_' * underscores}{number_part}"
+                    backfilled_courses.add(normalized)
+        except Exception:
+            pass
 
-
+    if not os.path.isdir(base_dir):
+        raise FileNotFoundError(f"Base directory not found: {base_dir}")
 
     for subject in sorted(os.listdir(base_dir)):
         subject_path = os.path.join(base_dir, subject)
@@ -126,6 +178,9 @@ def build_combined_json():
             print(f"⚠️ Skipping {subject}: missing one or more files")
             continue
 
+        # NEW: pull human-readable subject name
+        subject_name = get_uic_subject_name(subject)
+
         credits = load_master_course_list(files["credits"])
         prereqs = load_prerequisites(files["prereqs"])
         offerings = load_course_offerings(files["offerings"])
@@ -134,11 +189,20 @@ def build_combined_json():
         course_array = []
         for course_code in sorted(credits.keys()):
             credit_str = credits[course_code]
-            credits_list = [float(c.strip()) for c in credit_str.split(',') if c.strip().replace('.', '', 1).isdigit()]
+            credits_list = [
+                float(c.strip())
+                for c in credit_str.split(',')
+                if c.strip().replace('.', '', 1).isdigit()
+            ]
+
+            # keep courses even if credits couldn't parse? (your original kept all)
+            # if you want to skip non-numeric credits, uncomment:
+            # if not credits_list:
+            #     continue
 
             course_data = {
                 "id": course_code,
-                "credits": credits_list,
+                "credits": credits_list if credits_list else [],  # [] when "???"
                 "prerequisites": prereqs.get(course_code, [])
             }
 
@@ -158,12 +222,14 @@ def build_combined_json():
                 if timing_info.get("spring"):
                     course_data["timing_spring"] = timing_info["spring"]
 
-
             course_array.append(course_data)
 
-
-        combined[subject] = {"courses": course_array}
-        print(f"✅ Processed {subject} → {len(course_array)} courses")
+        # ⬅️ NEW: store subject_name at the subject header level
+        combined[subject] = {
+            "subject_name": subject_name,
+            "courses": course_array
+        }
+        print(f"✅ Processed {subject} ({subject_name}) → {len(course_array)} courses")
 
     os.makedirs("UIC/data", exist_ok=True)
     output_path = "UIC/data/combined.json"

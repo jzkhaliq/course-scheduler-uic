@@ -15,7 +15,7 @@ def generate_terms(start_year, end_year):
     return terms
 
 # Adjust these 2 values to control scraping range
-start_year = 2022
+start_year = 2024
 end_year = 2025
 TERMS = generate_terms(start_year, end_year)
 

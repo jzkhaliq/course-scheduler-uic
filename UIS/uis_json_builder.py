@@ -1,5 +1,8 @@
 import os
+import re
 import json
+import requests
+from bs4 import BeautifulSoup
 from collections import defaultdict
 
 # ---------- helpers ----------
@@ -45,10 +48,10 @@ def load_course_timings(path):
     """
     Supports BOTH formats:
 
-    A) With term (UIC-style):
+    A) With term:
        code  term  num_sections  num_sessions  crn  start  end  [crn start end]...
 
-    B) Without term (some UIS writers):
+    B) Without term:
        code  num_sections  num_sessions  crn  start  end  [crn start end]...
        -> stored as 'both' and later fanned out to offered terms.
     """
@@ -63,17 +66,15 @@ def load_course_timings(path):
             code = normalize_code(parts[0])
 
             # Detect format
-            has_term = parts[1].lower() in {"fall", "spring"}
+            has_term = len(parts) > 1 and parts[1].lower() in {"fall", "spring"}
             idx = 2 if has_term else 1  # index where num_sections should be
 
             try:
                 # num_sections, num_sessions (not used directly, but parsed for offset)
                 _num_sections = int(parts[idx]); _num_sessions = int(parts[idx + 1])
-            except ValueError:
-                # If can't parse counts, try to continue anyway
+            except Exception:
+                # If counts malformed, still try to parse triplets
                 pass
-            except IndexError:
-                continue
 
             # Triplets start after counts
             triplet_start = idx + 2
@@ -111,10 +112,50 @@ def load_course_timings(path):
 
     return timing_by_course
 
+# ---------- subject name scraper (UIS) ----------
+CATALOG_INDEX = "https://catalog.uis.edu/coursedescriptions/"
+
+def get_uis_subject_name_map() -> dict:
+    """
+    Scrape the UIS catalog index and return a map:
+      code -> lowercase subject name
+    e.g., {"CSC": "computer science", "ACC": "accounting", ...}
+    """
+    try:
+        resp = requests.get(CATALOG_INDEX, timeout=30)
+        resp.raise_for_status()
+    except Exception:
+        return {}
+
+    soup = BeautifulSoup(resp.text, "html.parser")
+    mapping = {}
+
+    # Links look like: "Computer Science (CSC)" → href="/coursedescriptions/csc/"
+    for a in soup.find_all("a", href=True):
+        href = (a.get("href") or "").strip()
+        if not re.match(r"^/coursedescriptions/[a-z0-9-]+/?$", href):
+            continue
+
+        text = a.get_text(" ", strip=True)
+        m = re.search(r"^(.*?)\s*\(([^)]+)\)\s*$", text)
+        if not m:
+            continue
+
+        name = m.group(1).strip().lower()
+        code_raw = m.group(2).strip()
+        code = re.sub(r"[^A-Za-z]", "", code_raw).upper()
+        if 2 <= len(code) <= 5 and name and name != "semester":
+            mapping[code] = name
+
+    return mapping
+
 # ---------- main builder ----------
 def build_combined_json_uis():
     base_dir = "uis/data/subjects"  # <--- UIS outputs live here: uis/data/<SUBJECT_CODE>/
     combined = {}
+
+    # Fetch subject name map once
+    code_to_name = get_uis_subject_name_map()
 
     # Optional: mark backfilled courses as having no offerings by default (if present)
     credit_cache_path = "UIC/data/data_archive/credit_cache.json"
@@ -149,6 +190,9 @@ def build_combined_json_uis():
         if not all(os.path.exists(p) for p in files.values()):
             print(f"⚠️ Skipping {subject}: missing one or more files")
             continue
+
+        # subject_name: from map, else fallback to code lowercased
+        subject_name = code_to_name.get(subject, subject.lower())
 
         credits = load_master_course_list(files["credits"])
         prereqs = load_prerequisites(files["prereqs"])
@@ -203,8 +247,11 @@ def build_combined_json_uis():
 
             course_array.append(course_data)
 
-        combined[subject] = {"courses": course_array}
-        print(f"✅ Processed {subject} → {len(course_array)} courses")
+        combined[subject] = {
+            "subject_name": subject_name,  # ⬅️ added (lowercase)
+            "courses": course_array
+        }
+        print(f"✅ Processed {subject} ({subject_name}) → {len(course_array)} courses")
 
     os.makedirs("uis/data", exist_ok=True)
     output_path = "uis/data/uis.json"
