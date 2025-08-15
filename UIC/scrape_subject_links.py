@@ -6,6 +6,10 @@ from datetime import datetime
 from collections import defaultdict
 import json
 
+COREQ_PHRASES = re.compile(r'\b(concurrent registration|co-?requisite|corequisite)\b', re.IGNORECASE)
+RECOMMENDED_PHRASES = re.compile(r'\brecommended background\b', re.IGNORECASE)
+
+
 def generate_terms(start_year, end_year):
     terms = []
     for year in range(start_year, end_year + 1):
@@ -148,24 +152,34 @@ def parse_course_table(url, term, year, subject):
                     if norm_code not in latest_prereq_year or year > latest_prereq_year[norm_code]:
                         prereq_text = prereq_match.group(1)
 
-                        # split on ";" or " and " (keeps "or" inside chunk for OR grouping)
-                        chunks = re.split(r";|\band\b", prereq_text, flags=re.IGNORECASE)
-                        current_prereqs = set()
+                        # Split the prereq line into segments; we’ll classify each segment.
+                        segments = re.split(r"[;.\n]", prereq_text)
+                        current_links = set()
 
-                        for chunk in chunks:
-                            flag = -1 if re.search(r"\bor\b", chunk, re.IGNORECASE) else 0
-                            course_refs = re.findall(r"\b([A-Z]{2,4})\s+(\d{3})\b", chunk)
+                        for seg in segments:
+                            seg = seg.strip()
+                            if not seg or RECOMMENDED_PHRASES.search(seg):
+                                # e.g., "Recommended background: Concurrent registration in CHEM 233" → ignore entirely
+                                continue
+
+                            # coreq if segment mentions “concurrent registration” / “corequisite”
+                            is_coreq = bool(COREQ_PHRASES.search(seg))
+
+                            # pull all course refs in the segment
+                            course_refs = re.findall(r"\b([A-Z]{2,5})\s+(\d{3})\b", seg)
                             for dept, num in course_refs:
-                                # ignore self-refs and non-subject codes
                                 if dept not in VALID_SUBJECTS:
                                     continue
                                 prereq_code = normalize_course_code(dept, num)
                                 if prereq_code == norm_code:
                                     continue
-                                current_prereqs.add((prereq_code, norm_code, flag))
 
-                        prereq_map[norm_code] = current_prereqs
+                                flag = 0 if is_coreq else -1   # 0 = coreq, -1 = prereq
+                                current_links.add((prereq_code, norm_code, flag))
+
+                        prereq_map[norm_code] = current_links
                         latest_prereq_year[norm_code] = year
+
 
                 # ===== Credits extraction (range or single) =====
                 # Try range: "X to Y hours"
@@ -364,9 +378,10 @@ def write_outputs(subject):
 
             # Only include prereqs that belong to the current subject
             prereq_courses = {
-                prereq for prereq, _, _ in prereqs
-                if prereq[:len(subject)] == subject and prereq[len(subject)] == '_'
+                prereq for prereq, _, _ in prereqs_cleaned
+                if prereq.startswith(subject + "_")
             }
+
 
 
             all_codes = all_seen | prereq_courses
