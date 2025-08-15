@@ -1,6 +1,6 @@
 {
   "ACTG": {
-    "subject_name": "accounting",
+    "subject": "accounting",
     "courses": [
       {
         "id": "ACTG_210",
@@ -3074,7 +3074,7 @@
     ]
   },
   "AH": {
-    "subject_name": "art history",
+    "subject": "art history",
     "courses": [
       {
         "id": "AH___100",
@@ -6026,7 +6026,7 @@
     ]
   },
   "AHS": {
-    "subject_name": "applied health sciences",
+    "subject": "applied health sciences",
     "courses": [
       {
         "id": "AHS__100",
@@ -6695,7 +6695,7 @@
     ]
   },
   "ANAT": {
-    "subject_name": "anatomy and cell biology",
+    "subject": "anatomy and cell biology",
     "courses": [
       {
         "id": "ANAT_399",
@@ -7111,7 +7111,7 @@
     ]
   },
   "ANTH": {
-    "subject_name": "anthropology",
+    "subject": "anthropology",
     "courses": [
       {
         "id": "ANTH_100",
@@ -9788,7 +9788,7 @@
     ]
   },
   "ARAB": {
-    "subject_name": "arabic",
+    "subject": "arabic",
     "courses": [
       {
         "id": "ARAB_101",
@@ -10297,7 +10297,7 @@
     ]
   },
   "ARCH": {
-    "subject_name": "architecture",
+    "subject": "architecture",
     "courses": [
       {
         "id": "ARCH_105",
@@ -11887,7 +11887,7 @@
     ]
   },
   "ART": {
-    "subject_name": "art",
+    "subject": "art",
     "courses": [
       {
         "id": "ART__101",
@@ -14292,7 +14292,7 @@
     ]
   },
   "ASP": {
-    "subject_name": "academic skills program",
+    "subject": "academic skills program",
     "courses": [
       {
         "id": "ASP__021",
@@ -14682,7 +14682,7 @@
     ]
   },
   "BA": {
-    "subject_name": "business administration",
+    "subject": "business administration",
     "courses": [
       {
         "id": "BA___100",
@@ -16600,7 +16600,7 @@
     ]
   },
   "BCMG": {
-    "subject_name": "biochem & molecular genetics",
+    "subject": "biochem & molecular genetics",
     "courses": [
       {
         "id": "BCMG_399",
@@ -17003,7 +17003,7 @@
     ]
   },
   "BHIS": {
-    "subject_name": "biomedical &hlth info sciences",
+    "subject": "biomedical &hlth info sciences",
     "courses": [
       {
         "id": "BHIS_399",
@@ -18530,7 +18530,7 @@
     ]
   },
   "BIOS": {
-    "subject_name": "biological sciences",
+    "subject": "biological sciences",
     "courses": [
       {
         "id": "BIOS_102",
@@ -21765,7 +21765,7 @@
     ]
   },
   "BLST": {
-    "subject_name": "black studies",
+    "subject": "black studies",
     "courses": [
       {
         "id": "BLST_100",
@@ -23033,7 +23033,7 @@
     ]
   },
   "BME": {
-    "subject_name": "biomedical engineering",
+    "subject": "biomedical engineering",
     "courses": [
       {
         "id": "BME__101",
@@ -25329,7 +25329,7 @@
     ]
   },
   "BPS": {
-    "subject_name": "biopharmaceutical sciences",
+    "subject": "biopharmaceutical sciences",
     "courses": [
       {
         "id": "BPS__421",
@@ -25784,7 +25784,7 @@
     ]
   },
   "BSTT": {
-    "subject_name": "biostatistics",
+    "subject": "biostatistics",
     "courses": [
       {
         "id": "BSTT_400",
@@ -26668,7 +26668,7 @@
     ]
   },
   "BVIS": {
-    "subject_name": "biomedical visualization",
+    "subject": "biomedical visualization",
     "courses": [
       {
         "id": "BVIS_250",
@@ -27608,7 +27608,7 @@
     ]
   },
   "CC": {
-    "subject_name": "campus courses",
+    "subject": "campus courses",
     "courses": [
       {
         "id": "CC___100",
@@ -27644,7 +27644,7 @@
     ]
   },
   "CD": {
-    "subject_name": "city design",
+    "subject": "city design",
     "courses": [
       {
         "id": "CD___503",
@@ -27809,7 +27809,7 @@
     ]
   },
   "CEES": {
-    "subject_name": "central &east european studies",
+    "subject": "central &east european studies",
     "courses": [
       {
         "id": "CEES_208",
@@ -28288,11 +28288,11 @@
     ]
   },
   "CELE": {
-    "subject_name": "clerkship electives-chicago",
+    "subject": "clerkship electives-chicago",
     "courses": []
   },
   "CEP": {
-    "subject_name": "clinical exercise physiology",
+    "subject": "clinical exercise physiology",
     "courses": [
       {
         "id": "CEP__600",
@@ -28425,7 +28425,7 @@
     ]
   },
   "CHE": {
-    "subject_name": "chemical engineering",
+    "subject": "chemical engineering",
     "courses": [
       {
         "id": "CHE__150",
@@ -30087,7 +30087,7 @@
     ]
   },
   "CHEM": {
-    "subject_name": "chemistry",
+    "subject": "chemistry",
     "courses": [
       {
         "id": "CHEM_100",
@@ -33866,7 +33866,7 @@
     ]
   },
   "CHIN": {
-    "subject_name": "chinese",
+    "subject": "chinese",
     "courses": [
       {
         "id": "CHIN_101",
@@ -34210,7 +34210,7 @@
     ]
   },
   "CHSC": {
-    "subject_name": "community health sciences",
+    "subject": "community health sciences",
     "courses": [
       {
         "id": "CHSC_411",
@@ -35369,7 +35369,7 @@
     ]
   },
   "CI": {
-    "subject_name": "curriculum and instruction",
+    "subject": "curriculum and instruction",
     "courses": [
       {
         "id": "CI___401",
@@ -37188,7 +37188,7 @@
     ]
   },
   "CL": {
-    "subject_name": "classics",
+    "subject": "classics",
     "courses": [
       {
         "id": "CL___100",
@@ -38265,7 +38265,7 @@
     ]
   },
   "CLER": {
-    "subject_name": "clerkship - medicine",
+    "subject": "clerkship - medicine",
     "courses": [
       {
         "id": "CLER_614",
@@ -38291,7 +38291,7 @@
     ]
   },
   "CLJ": {
-    "subject_name": "criminology, law, and justice",
+    "subject": "criminology, law, and justice",
     "courses": [
       {
         "id": "CLJ__101",
@@ -40688,7 +40688,7 @@
     ]
   },
   "CME": {
-    "subject_name": "civil, matls & env engineering",
+    "subject": "civil, matls & env engineering",
     "courses": [
       {
         "id": "CME__111",
@@ -44301,7 +44301,7 @@
     ]
   },
   "COMM": {
-    "subject_name": "communication",
+    "subject": "communication",
     "courses": [
       {
         "id": "COMM_100",
@@ -47264,7 +47264,7 @@
     ]
   },
   "CS": {
-    "subject_name": "computer science",
+    "subject": "computer science",
     "courses": [
       {
         "id": "CS___100",
@@ -52812,7 +52812,7 @@
     ]
   },
   "CST": {
-    "subject_name": "catholic studies",
+    "subject": "catholic studies",
     "courses": [
       {
         "id": "CST__120",
@@ -53000,7 +53000,7 @@
     ]
   },
   "DADM": {
-    "subject_name": "dental administration",
+    "subject": "dental administration",
     "courses": [
       {
         "id": "DADM_396",
@@ -53048,7 +53048,7 @@
     ]
   },
   "DAOB": {
-    "subject_name": "dent-applied oral & behav sci",
+    "subject": "dent-applied oral & behav sci",
     "courses": [
       {
         "id": "DAOB_301",
@@ -53220,7 +53220,7 @@
     ]
   },
   "DBCS": {
-    "subject_name": "dent-biomedical & clinical sci",
+    "subject": "dent-biomedical & clinical sci",
     "courses": [
       {
         "id": "DBCS_301",
@@ -53345,11 +53345,11 @@
     ]
   },
   "DCLE": {
-    "subject_name": "dent-community learning exper",
+    "subject": "dent-community learning exper",
     "courses": []
   },
   "DES": {
-    "subject_name": "design",
+    "subject": "design",
     "courses": [
       {
         "id": "DES__110",
@@ -55861,7 +55861,7 @@
     ]
   },
   "DHD": {
-    "subject_name": "disability & human development",
+    "subject": "disability & human development",
     "courses": [
       {
         "id": "DHD__100",
@@ -57800,7 +57800,7 @@
     ]
   },
   "DLG": {
-    "subject_name": "dialogue",
+    "subject": "dialogue",
     "courses": [
       {
         "id": "DLG__120",
@@ -58028,11 +58028,11 @@
     ]
   },
   "DOSI": {
-    "subject_name": "dent-oral/systemic issues",
+    "subject": "dent-oral/systemic issues",
     "courses": []
   },
   "DOST": {
-    "subject_name": "dent-oral/systemic topics",
+    "subject": "dent-oral/systemic topics",
     "courses": [
       {
         "id": "DOST_332",
@@ -58089,7 +58089,7 @@
     ]
   },
   "EAES": {
-    "subject_name": "earth & environmental sciences",
+    "subject": "earth & environmental sciences",
     "courses": [
       {
         "id": "EAES_101",
@@ -59731,7 +59731,7 @@
     ]
   },
   "EB": {
-    "subject_name": "employee benefits",
+    "subject": "employee benefits",
     "courses": [
       {
         "id": "EB___460",
@@ -60176,7 +60176,7 @@
     ]
   },
   "ECE": {
-    "subject_name": "electrical and computer engr",
+    "subject": "electrical and computer engr",
     "courses": [
       {
         "id": "ECE__115",
@@ -63802,7 +63802,7 @@
     ]
   },
   "ECON": {
-    "subject_name": "economics",
+    "subject": "economics",
     "courses": [
       {
         "id": "ECON_111",
@@ -66248,7 +66248,7 @@
     ]
   },
   "ED": {
-    "subject_name": "education",
+    "subject": "education",
     "courses": [
       {
         "id": "ED___100",
@@ -68057,7 +68057,7 @@
     ]
   },
   "EDPS": {
-    "subject_name": "educational policy studies",
+    "subject": "educational policy studies",
     "courses": [
       {
         "id": "EDPS_104",
@@ -69205,7 +69205,7 @@
     ]
   },
   "ELSI": {
-    "subject_name": "engl lang & support for intls",
+    "subject": "engl lang & support for intls",
     "courses": [
       {
         "id": "ELSI_010",
@@ -71352,7 +71352,7 @@
     ]
   },
   "ENDO": {
-    "subject_name": "endodontics",
+    "subject": "endodontics",
     "courses": [
       {
         "id": "ENDO_610",
@@ -71610,7 +71610,7 @@
     ]
   },
   "ENER": {
-    "subject_name": "energy engineering",
+    "subject": "energy engineering",
     "courses": [
       {
         "id": "ENER_420",
@@ -71855,7 +71855,7 @@
     ]
   },
   "ENGL": {
-    "subject_name": "english",
+    "subject": "english",
     "courses": [
       {
         "id": "ENGL_060",
@@ -80794,7 +80794,7 @@
     ]
   },
   "ENGR": {
-    "subject_name": "engineering",
+    "subject": "engineering",
     "courses": [
       {
         "id": "ENGR_100",
@@ -81597,7 +81597,7 @@
     ]
   },
   "ENTR": {
-    "subject_name": "entrepreneurship",
+    "subject": "entrepreneurship",
     "courses": [
       {
         "id": "ENTR_200",
@@ -82315,7 +82315,7 @@
     ]
   },
   "EOHS": {
-    "subject_name": "environmtl & occuptnl hlth sci",
+    "subject": "environmtl & occuptnl hlth sci",
     "courses": [
       {
         "id": "EOHS_400",
@@ -83413,7 +83413,7 @@
     ]
   },
   "EPID": {
-    "subject_name": "epidemiology",
+    "subject": "epidemiology",
     "courses": [
       {
         "id": "EPID_400",
@@ -84401,7 +84401,7 @@
     ]
   },
   "EPL": {
-    "subject_name": "estate planning",
+    "subject": "estate planning",
     "courses": [
       {
         "id": "EPL__470",
@@ -84584,7 +84584,7 @@
     ]
   },
   "EPSY": {
-    "subject_name": "educational psychology",
+    "subject": "educational psychology",
     "courses": [
       {
         "id": "EPSY_100",
@@ -87343,7 +87343,7 @@
     ]
   },
   "FIN": {
-    "subject_name": "finance",
+    "subject": "finance",
     "courses": [
       {
         "id": "FIN__250",
@@ -90394,7 +90394,7 @@
     ]
   },
   "FR": {
-    "subject_name": "french",
+    "subject": "french",
     "courses": [
       {
         "id": "FR___101",
@@ -91842,11 +91842,11 @@
     ]
   },
   "GAMD": {
-    "subject_name": "guaranteed admissions medicine",
+    "subject": "guaranteed admissions medicine",
     "courses": []
   },
   "GC": {
-    "subject_name": "graduate college",
+    "subject": "graduate college",
     "courses": [
       {
         "id": "GC___470",
@@ -92327,7 +92327,7 @@
     ]
   },
   "GEMS": {
-    "subject_name": "graduate educ medical sciences",
+    "subject": "graduate educ medical sciences",
     "courses": [
       {
         "id": "GEMS_500",
@@ -92722,7 +92722,7 @@
     ]
   },
   "GEOG": {
-    "subject_name": "geography",
+    "subject": "geography",
     "courses": [
       {
         "id": "GEOG_100",
@@ -93252,7 +93252,7 @@
     ]
   },
   "GER": {
-    "subject_name": "germanic studies",
+    "subject": "germanic studies",
     "courses": [
       {
         "id": "GER__101",
@@ -94782,7 +94782,7 @@
     ]
   },
   "GKA": {
-    "subject_name": "greek, ancient",
+    "subject": "greek, ancient",
     "courses": [
       {
         "id": "GKA__299",
@@ -94881,7 +94881,7 @@
     ]
   },
   "GKM": {
-    "subject_name": "greek, modern",
+    "subject": "greek, modern",
     "courses": [
       {
         "id": "GKM__101",
@@ -95162,7 +95162,7 @@
     ]
   },
   "GLAS": {
-    "subject_name": "global asian studies",
+    "subject": "global asian studies",
     "courses": [
       {
         "id": "GLAS_100",
@@ -96742,7 +96742,7 @@
     ]
   },
   "GWS": {
-    "subject_name": "gender and women",
+    "subject": "gender and women",
     "courses": [
       {
         "id": "GWS__101",
@@ -98817,7 +98817,7 @@
     ]
   },
   "HEB": {
-    "subject_name": "hebrew",
+    "subject": "hebrew",
     "courses": [
       {
         "id": "HEB__101",
@@ -98881,7 +98881,7 @@
     ]
   },
   "HIM": {
-    "subject_name": "health information management",
+    "subject": "health information management",
     "courses": [
       {
         "id": "HIM__101",
@@ -99874,7 +99874,7 @@
     ]
   },
   "HIST": {
-    "subject_name": "history",
+    "subject": "history",
     "courses": [
       {
         "id": "HIST_100",
@@ -104027,7 +104027,7 @@
     ]
   },
   "HLP": {
-    "subject_name": "healthy living practitioner",
+    "subject": "healthy living practitioner",
     "courses": [
       {
         "id": "HLP__500",
@@ -104210,7 +104210,7 @@
     ]
   },
   "HN": {
-    "subject_name": "human nutrition",
+    "subject": "human nutrition",
     "courses": [
       {
         "id": "HN___100",
@@ -105488,7 +105488,7 @@
     ]
   },
   "HNUR": {
-    "subject_name": "hindi-urdu",
+    "subject": "hindi-urdu",
     "courses": [
       {
         "id": "HNUR_101",
@@ -105590,7 +105590,7 @@
     ]
   },
   "HON": {
-    "subject_name": "honors college",
+    "subject": "honors college",
     "courses": [
       {
         "id": "HON__101",
@@ -107178,7 +107178,7 @@
     ]
   },
   "HPA": {
-    "subject_name": "health policy & administration",
+    "subject": "health policy & administration",
     "courses": [
       {
         "id": "HPA__403",
@@ -108871,7 +108871,7 @@
     ]
   },
   "HUM": {
-    "subject_name": "humanities",
+    "subject": "humanities",
     "courses": [
       {
         "id": "HUM__100",
@@ -109226,7 +109226,7 @@
     ]
   },
   "IBT": {
-    "subject_name": "international business & trade",
+    "subject": "international business & trade",
     "courses": [
       {
         "id": "IBT__418",
@@ -109835,7 +109835,7 @@
     ]
   },
   "IDEA": {
-    "subject_name": "interdisc educ in the arts",
+    "subject": "interdisc educ in the arts",
     "courses": [
       {
         "id": "IDEA_110",
@@ -109976,7 +109976,7 @@
     ]
   },
   "IDS": {
-    "subject_name": "information &decision sciences",
+    "subject": "information &decision sciences",
     "courses": [
       {
         "id": "IDS__200",
@@ -113131,7 +113131,7 @@
     ]
   },
   "IE": {
-    "subject_name": "industrial engineering",
+    "subject": "industrial engineering",
     "courses": [
       {
         "id": "IE___118",
@@ -114944,7 +114944,7 @@
     ]
   },
   "INST": {
-    "subject_name": "international studies",
+    "subject": "international studies",
     "courses": [
       {
         "id": "INST_105",
@@ -115407,7 +115407,7 @@
     ]
   },
   "IP": {
-    "subject_name": "intellectual property",
+    "subject": "intellectual property",
     "courses": [
       {
         "id": "IP___400",
@@ -116182,7 +116182,7 @@
     ]
   },
   "IPHS": {
-    "subject_name": "interdisc public hlth sciences",
+    "subject": "interdisc public hlth sciences",
     "courses": [
       {
         "id": "IPHS_401",
@@ -117310,7 +117310,7 @@
     ]
   },
   "ISA": {
-    "subject_name": "interdisc studies in the arts",
+    "subject": "interdisc studies in the arts",
     "courses": [
       {
         "id": "ISA__100",
@@ -117463,7 +117463,7 @@
     ]
   },
   "IT": {
-    "subject_name": "information technology",
+    "subject": "information technology",
     "courses": [
       {
         "id": "IT___202",
@@ -117532,7 +117532,7 @@
     ]
   },
   "ITAL": {
-    "subject_name": "italian",
+    "subject": "italian",
     "courses": [
       {
         "id": "ITAL_101",
@@ -118273,7 +118273,7 @@
     ]
   },
   "JD": {
-    "subject_name": "juris doctor",
+    "subject": "juris doctor",
     "courses": [
       {
         "id": "JD___400",
@@ -122222,7 +122222,7 @@
     ]
   },
   "JPN": {
-    "subject_name": "japanese",
+    "subject": "japanese",
     "courses": [
       {
         "id": "JPN__101",
@@ -122491,7 +122491,7 @@
     ]
   },
   "JST": {
-    "subject_name": "jewish studies",
+    "subject": "jewish studies",
     "courses": [
       {
         "id": "JST__101",
@@ -122949,7 +122949,7 @@
     ]
   },
   "KN": {
-    "subject_name": "kinesiology",
+    "subject": "kinesiology",
     "courses": [
       {
         "id": "KN___100",
@@ -125788,7 +125788,7 @@
     ]
   },
   "KOR": {
-    "subject_name": "korean",
+    "subject": "korean",
     "courses": [
       {
         "id": "KOR__101",
@@ -125976,7 +125976,7 @@
     ]
   },
   "LALS": {
-    "subject_name": "latin american &latino studies",
+    "subject": "latin american &latino studies",
     "courses": [
       {
         "id": "LALS_101",
@@ -128282,7 +128282,7 @@
     ]
   },
   "LAS": {
-    "subject_name": "liberal arts and sciences",
+    "subject": "liberal arts and sciences",
     "courses": [
       {
         "id": "LAS__110",
@@ -128978,7 +128978,7 @@
     ]
   },
   "LAT": {
-    "subject_name": "latin",
+    "subject": "latin",
     "courses": [
       {
         "id": "LAT__101",
@@ -129214,7 +129214,7 @@
     ]
   },
   "LAW": {
-    "subject_name": "law",
+    "subject": "law",
     "courses": [
       {
         "id": "LAW__400",
@@ -135760,7 +135760,7 @@
     ]
   },
   "LCSL": {
-    "subject_name": "literatures, cultrl stdy &ling",
+    "subject": "literatures, cultrl stdy &ling",
     "courses": [
       {
         "id": "LCSL_103",
@@ -136158,7 +136158,7 @@
     ]
   },
   "LIB": {
-    "subject_name": "library & information science",
+    "subject": "library & information science",
     "courses": [
       {
         "id": "LIB__399",
@@ -136227,7 +136227,7 @@
     ]
   },
   "LING": {
-    "subject_name": "linguistics",
+    "subject": "linguistics",
     "courses": [
       {
         "id": "LING_150",
@@ -137420,7 +137420,7 @@
     ]
   },
   "LITH": {
-    "subject_name": "lithuanian",
+    "subject": "lithuanian",
     "courses": [
       {
         "id": "LITH_101",
@@ -137691,7 +137691,7 @@
     ]
   },
   "LRSC": {
-    "subject_name": "learning sciences",
+    "subject": "learning sciences",
     "courses": [
       {
         "id": "LRSC_500",
@@ -138077,7 +138077,7 @@
     ]
   },
   "MATH": {
-    "subject_name": "mathematics",
+    "subject": "mathematics",
     "courses": [
       {
         "id": "MATH_088",
@@ -143628,7 +143628,7 @@
     ]
   },
   "MBA": {
-    "subject_name": "master of business admin",
+    "subject": "master of business admin",
     "courses": [
       {
         "id": "MBA__500",
@@ -143944,7 +143944,7 @@
     ]
   },
   "MBT": {
-    "subject_name": "medical biotechnology",
+    "subject": "medical biotechnology",
     "courses": [
       {
         "id": "MBT__501",
@@ -144735,7 +144735,7 @@
     ]
   },
   "MCS": {
-    "subject_name": "mathematical computer science",
+    "subject": "mathematical computer science",
     "courses": [
       {
         "id": "MCS__160",
@@ -146416,7 +146416,7 @@
     ]
   },
   "MDC": {
-    "subject_name": "doctor of medicine - chicago",
+    "subject": "doctor of medicine - chicago",
     "courses": [
       {
         "id": "MDC__601",
@@ -146610,7 +146610,7 @@
     ]
   },
   "MDCH": {
-    "subject_name": "medicinal chemistry",
+    "subject": "medicinal chemistry",
     "courses": [
       {
         "id": "MDCH_595",
@@ -146740,7 +146740,7 @@
     ]
   },
   "MDP": {
-    "subject_name": "doctor of medicine - peoria",
+    "subject": "doctor of medicine - peoria",
     "courses": [
       {
         "id": "MDP__601",
@@ -146934,7 +146934,7 @@
     ]
   },
   "MDR": {
-    "subject_name": "doctor of medicine - rockford",
+    "subject": "doctor of medicine - rockford",
     "courses": [
       {
         "id": "MDR__601",
@@ -147128,7 +147128,7 @@
     ]
   },
   "ME": {
-    "subject_name": "mechanical engineering",
+    "subject": "mechanical engineering",
     "courses": [
       {
         "id": "ME___118",
@@ -150310,7 +150310,7 @@
     ]
   },
   "MENG": {
-    "subject_name": "master of engineering",
+    "subject": "master of engineering",
     "courses": [
       {
         "id": "MENG_401",
@@ -150779,7 +150779,7 @@
     ]
   },
   "MGMT": {
-    "subject_name": "management",
+    "subject": "management",
     "courses": [
       {
         "id": "MGMT_340",
@@ -152580,7 +152580,7 @@
     ]
   },
   "MHPE": {
-    "subject_name": "medical education",
+    "subject": "medical education",
     "courses": [
       {
         "id": "MHPE_494",
@@ -153069,7 +153069,7 @@
     ]
   },
   "MHUM": {
-    "subject_name": "medical humanities",
+    "subject": "medical humanities",
     "courses": [
       {
         "id": "MHUM_496",
@@ -153108,7 +153108,7 @@
     ]
   },
   "MILS": {
-    "subject_name": "military science",
+    "subject": "military science",
     "courses": [
       {
         "id": "MILS_101",
@@ -153433,7 +153433,7 @@
     ]
   },
   "MIM": {
-    "subject_name": "microbiology and immunology",
+    "subject": "microbiology and immunology",
     "courses": [
       {
         "id": "MIM__399",
@@ -153771,7 +153771,7 @@
     ]
   },
   "MJ": {
-    "subject_name": "master of jurisprudence",
+    "subject": "master of jurisprudence",
     "courses": [
       {
         "id": "MJ___401",
@@ -153818,7 +153818,7 @@
     ]
   },
   "MKTG": {
-    "subject_name": "marketing",
+    "subject": "marketing",
     "courses": [
       {
         "id": "MKTG_360",
@@ -156021,7 +156021,7 @@
     ]
   },
   "MOVI": {
-    "subject_name": "moving image arts",
+    "subject": "moving image arts",
     "courses": [
       {
         "id": "MOVI_105",
@@ -156600,7 +156600,7 @@
     ]
   },
   "MTHT": {
-    "subject_name": "mathematics teaching",
+    "subject": "mathematics teaching",
     "courses": [
       {
         "id": "MTHT_400",
@@ -157227,7 +157227,7 @@
     ]
   },
   "MUS": {
-    "subject_name": "music",
+    "subject": "music",
     "courses": [
       {
         "id": "MUS__100",
@@ -159693,7 +159693,7 @@
     ]
   },
   "MUSE": {
-    "subject_name": "museum and exhibition studies",
+    "subject": "museum and exhibition studies",
     "courses": [
       {
         "id": "MUSE_400",
@@ -160024,7 +160024,7 @@
     ]
   },
   "NAST": {
-    "subject_name": "native american studies",
+    "subject": "native american studies",
     "courses": [
       {
         "id": "NAST_244",
@@ -160108,7 +160108,7 @@
     ]
   },
   "NATS": {
-    "subject_name": "natural sciences",
+    "subject": "natural sciences",
     "courses": [
       {
         "id": "NATS_105",
@@ -160216,7 +160216,7 @@
     ]
   },
   "NEUS": {
-    "subject_name": "neuroscience",
+    "subject": "neuroscience",
     "courses": [
       {
         "id": "NEUS_403",
@@ -160747,7 +160747,7 @@
     ]
   },
   "NS": {
-    "subject_name": "naval science",
+    "subject": "naval science",
     "courses": [
       {
         "id": "NS___101",
@@ -161106,7 +161106,7 @@
     ]
   },
   "NUEL": {
-    "subject_name": "nursing elective",
+    "subject": "nursing elective",
     "courses": [
       {
         "id": "NUEL_244",
@@ -161799,7 +161799,7 @@
     ]
   },
   "NUPR": {
-    "subject_name": "nursing practicum",
+    "subject": "nursing practicum",
     "courses": [
       {
         "id": "NUPR_506",
@@ -161886,7 +161886,7 @@
     ]
   },
   "NURS": {
-    "subject_name": "nursing core",
+    "subject": "nursing core",
     "courses": [
       {
         "id": "NURS_204",
@@ -164924,7 +164924,7 @@
     ]
   },
   "NUSP": {
-    "subject_name": "nursing specialty",
+    "subject": "nursing specialty",
     "courses": [
       {
         "id": "NUSP_512",
@@ -165872,7 +165872,7 @@
     ]
   },
   "OMDS": {
-    "subject_name": "oral medicine & diagnostic sci",
+    "subject": "oral medicine & diagnostic sci",
     "courses": [
       {
         "id": "OMDS_503",
@@ -165955,7 +165955,7 @@
     ]
   },
   "ORTD": {
-    "subject_name": "orthodontics",
+    "subject": "orthodontics",
     "courses": [
       {
         "id": "ORTD_513",
@@ -166085,7 +166085,7 @@
     ]
   },
   "OSCI": {
-    "subject_name": "oral sciences",
+    "subject": "oral sciences",
     "courses": [
       {
         "id": "OSCI_399",
@@ -166667,7 +166667,7 @@
     ]
   },
   "OT": {
-    "subject_name": "occupational therapy",
+    "subject": "occupational therapy",
     "courses": [
       {
         "id": "OT___350",
@@ -168000,7 +168000,7 @@
     ]
   },
   "PA": {
-    "subject_name": "public administration",
+    "subject": "public administration",
     "courses": [
       {
         "id": "PA___401",
@@ -169758,7 +169758,7 @@
     ]
   },
   "PATH": {
-    "subject_name": "pathology",
+    "subject": "pathology",
     "courses": [
       {
         "id": "PATH_399",
@@ -170006,7 +170006,7 @@
     ]
   },
   "PCOL": {
-    "subject_name": "pharmacology",
+    "subject": "pharmacology",
     "courses": [
       {
         "id": "PCOL_399",
@@ -170235,7 +170235,7 @@
     ]
   },
   "PEDD": {
-    "subject_name": "pediatric dentistry",
+    "subject": "pediatric dentistry",
     "courses": [
       {
         "id": "PEDD_410",
@@ -170450,11 +170450,11 @@
     ]
   },
   "PELE": {
-    "subject_name": "clerkship electives-peoria",
+    "subject": "clerkship electives-peoria",
     "courses": []
   },
   "PERI": {
-    "subject_name": "periodontics",
+    "subject": "periodontics",
     "courses": [
       {
         "id": "PERI_698",
@@ -170499,7 +170499,7 @@
     ]
   },
   "PHAR": {
-    "subject_name": "pharmacy",
+    "subject": "pharmacy",
     "courses": [
       {
         "id": "PHAR_200",
@@ -171952,7 +171952,7 @@
     ]
   },
   "PHIL": {
-    "subject_name": "philosophy",
+    "subject": "philosophy",
     "courses": [
       {
         "id": "PHIL_100",
@@ -173949,7 +173949,7 @@
     ]
   },
   "PHYB": {
-    "subject_name": "physiology and biophysics",
+    "subject": "physiology and biophysics",
     "courses": [
       {
         "id": "PHYB_396",
@@ -174479,7 +174479,7 @@
     ]
   },
   "PHYS": {
-    "subject_name": "physics",
+    "subject": "physics",
     "courses": [
       {
         "id": "PHYS_100",
@@ -176547,7 +176547,7 @@
     ]
   },
   "PMPG": {
-    "subject_name": "pharmacognosy",
+    "subject": "pharmacognosy",
     "courses": [
       {
         "id": "PMPG_513",
@@ -176702,7 +176702,7 @@
     ]
   },
   "PMPR": {
-    "subject_name": "pharmacy practice",
+    "subject": "pharmacy practice",
     "courses": [
       {
         "id": "PMPR_300",
@@ -177927,7 +177927,7 @@
     ]
   },
   "POL": {
-    "subject_name": "polish",
+    "subject": "polish",
     "courses": [
       {
         "id": "POL__101",
@@ -178637,7 +178637,7 @@
     ]
   },
   "POLS": {
-    "subject_name": "political science",
+    "subject": "political science",
     "courses": [
       {
         "id": "POLS_101",
@@ -181417,7 +181417,7 @@
     ]
   },
   "PORT": {
-    "subject_name": "portuguese",
+    "subject": "portuguese",
     "courses": [
       {
         "id": "PORT_201",
@@ -181490,7 +181490,7 @@
     ]
   },
   "PPA": {
-    "subject_name": "public policy analysis",
+    "subject": "public policy analysis",
     "courses": [
       {
         "id": "PPA__401",
@@ -181533,7 +181533,7 @@
     ]
   },
   "PPOL": {
-    "subject_name": "public policy",
+    "subject": "public policy",
     "courses": [
       {
         "id": "PPOL_100",
@@ -182327,7 +182327,7 @@
     ]
   },
   "PROS": {
-    "subject_name": "prosthodontics",
+    "subject": "prosthodontics",
     "courses": [
       {
         "id": "PROS_532",
@@ -182690,7 +182690,7 @@
     ]
   },
   "PSCH": {
-    "subject_name": "psychology",
+    "subject": "psychology",
     "courses": [
       {
         "id": "PSCH_100",
@@ -185952,7 +185952,7 @@
     ]
   },
   "PSCI": {
-    "subject_name": "pharmaceutical sciences",
+    "subject": "pharmaceutical sciences",
     "courses": [
       {
         "id": "PSCI_300",
@@ -186625,7 +186625,7 @@
     ]
   },
   "PSL": {
-    "subject_name": "patient safety leadership",
+    "subject": "patient safety leadership",
     "courses": [
       {
         "id": "PSL__402",
@@ -186884,7 +186884,7 @@
     ]
   },
   "PSOP": {
-    "subject_name": "pharmacy syst,outcomes &policy",
+    "subject": "pharmacy syst,outcomes &policy",
     "courses": [
       {
         "id": "PSOP_300",
@@ -187686,7 +187686,7 @@
     ]
   },
   "PT": {
-    "subject_name": "physical therapy",
+    "subject": "physical therapy",
     "courses": [
       {
         "id": "PT___350",
@@ -188828,7 +188828,7 @@
     ]
   },
   "PTL": {
-    "subject_name": "privacy and technology law",
+    "subject": "privacy and technology law",
     "courses": [
       {
         "id": "PTL__409",
@@ -189321,7 +189321,7 @@
     ]
   },
   "PUBH": {
-    "subject_name": "public health",
+    "subject": "public health",
     "courses": [
       {
         "id": "PUBH_100",
@@ -189966,7 +189966,7 @@
     ]
   },
   "RE": {
-    "subject_name": "real estate",
+    "subject": "real estate",
     "courses": [
       {
         "id": "RE___426",
@@ -190579,7 +190579,7 @@
     ]
   },
   "RELE": {
-    "subject_name": "clerkship electives-rockford",
+    "subject": "clerkship electives-rockford",
     "courses": [
       {
         "id": "RELE_621",
@@ -190655,7 +190655,7 @@
     ]
   },
   "RELS": {
-    "subject_name": "religious studies",
+    "subject": "religious studies",
     "courses": [
       {
         "id": "RELS_100",
@@ -191570,7 +191570,7 @@
     ]
   },
   "RES": {
-    "subject_name": "real estate studies",
+    "subject": "real estate studies",
     "courses": [
       {
         "id": "RES__250",
@@ -191937,7 +191937,7 @@
     ]
   },
   "RUSS": {
-    "subject_name": "russian",
+    "subject": "russian",
     "courses": [
       {
         "id": "RUSS_101",
@@ -192668,7 +192668,7 @@
     ]
   },
   "SJ": {
-    "subject_name": "social justice",
+    "subject": "social justice",
     "courses": [
       {
         "id": "SJ___101",
@@ -192778,7 +192778,7 @@
     ]
   },
   "SLAV": {
-    "subject_name": "slavic & baltic languages &lit",
+    "subject": "slavic & baltic languages &lit",
     "courses": [
       {
         "id": "SLAV_460",
@@ -192836,7 +192836,7 @@
     ]
   },
   "SOC": {
-    "subject_name": "sociology",
+    "subject": "sociology",
     "courses": [
       {
         "id": "SOC__100",
@@ -195249,7 +195249,7 @@
     ]
   },
   "SOCW": {
-    "subject_name": "social work",
+    "subject": "social work",
     "courses": [
       {
         "id": "SOCW_410",
@@ -197793,7 +197793,7 @@
     ]
   },
   "SPAN": {
-    "subject_name": "spanish",
+    "subject": "spanish",
     "courses": [
       {
         "id": "SPAN_101",
@@ -202102,7 +202102,7 @@
     ]
   },
   "SPED": {
-    "subject_name": "special education",
+    "subject": "special education",
     "courses": [
       {
         "id": "SPED_201",
@@ -203216,7 +203216,7 @@
     ]
   },
   "STAT": {
-    "subject_name": "statistics",
+    "subject": "statistics",
     "courses": [
       {
         "id": "STAT_101",
@@ -204835,7 +204835,7 @@
     ]
   },
   "SURG": {
-    "subject_name": "surgery",
+    "subject": "surgery",
     "courses": [
       {
         "id": "SURG_597",
@@ -204934,7 +204934,7 @@
     ]
   },
   "TADR": {
-    "subject_name": "trial advocacy & dispute resol",
+    "subject": "trial advocacy & dispute resol",
     "courses": [
       {
         "id": "TADR_411",
@@ -205817,7 +205817,7 @@
     ]
   },
   "THTR": {
-    "subject_name": "theatre",
+    "subject": "theatre",
     "courses": [
       {
         "id": "THTR_101",
@@ -208195,7 +208195,7 @@
     ]
   },
   "TX": {
-    "subject_name": "taxation",
+    "subject": "taxation",
     "courses": [
       {
         "id": "TX___470",
@@ -208489,7 +208489,7 @@
     ]
   },
   "UPA": {
-    "subject_name": "urban and public affairs",
+    "subject": "urban and public affairs",
     "courses": [
       {
         "id": "UPA__120",
@@ -208563,7 +208563,7 @@
     ]
   },
   "UPP": {
-    "subject_name": "urban planning and policy",
+    "subject": "urban planning and policy",
     "courses": [
       {
         "id": "UPP__403",
@@ -210231,7 +210231,7 @@
     ]
   },
   "US": {
-    "subject_name": "urban studies",
+    "subject": "urban studies",
     "courses": [
       {
         "id": "US___100",

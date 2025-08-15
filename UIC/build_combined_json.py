@@ -226,7 +226,7 @@ def build_combined_json():
 
         # ⬅️ NEW: store subject_name at the subject header level
         combined[subject] = {
-            "subject_name": subject_name,
+            "subject": subject_name,
             "courses": course_array
         }
         print(f"✅ Processed {subject} ({subject_name}) → {len(course_array)} courses")

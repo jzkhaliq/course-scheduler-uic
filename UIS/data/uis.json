@@ -1,6 +1,6 @@
 {
   "AAS": {
-    "subject_name": "african-\u200bamerican studies",
+    "subject": "african-\u200bamerican studies",
     "courses": [
       {
         "id": "AAS__239",
@@ -258,7 +258,7 @@
     ]
   },
   "ACC": {
-    "subject_name": "accounting",
+    "subject": "accounting",
     "courses": [
       {
         "id": "ACC__211",
@@ -932,7 +932,7 @@
     ]
   },
   "ART": {
-    "subject_name": "visual arts",
+    "subject": "visual arts",
     "courses": [
       {
         "id": "ART__101",
@@ -2232,7 +2232,7 @@
     ]
   },
   "ASP": {
-    "subject_name": "astronomy-\u200bphysics",
+    "subject": "astronomy-\u200bphysics",
     "courses": [
       {
         "id": "ASP__101",
@@ -2380,7 +2380,7 @@
     ]
   },
   "ATH": {
-    "subject_name": "athletic training",
+    "subject": "athletic training",
     "courses": [
       {
         "id": "ATH__511",
@@ -3001,7 +3001,7 @@
     ]
   },
   "BIO": {
-    "subject_name": "biology",
+    "subject": "biology",
     "courses": [
       {
         "id": "BIO__106",
@@ -4343,7 +4343,7 @@
     ]
   },
   "BUS": {
-    "subject_name": "business administration",
+    "subject": "business administration",
     "courses": [
       {
         "id": "BUS__310",
@@ -5719,7 +5719,7 @@
     ]
   },
   "CAP": {
-    "subject_name": "capital scholars",
+    "subject": "capital scholars",
     "courses": [
       {
         "id": "CAP__102",
@@ -6366,7 +6366,7 @@
     ]
   },
   "CCJ": {
-    "subject_name": "criminology and criminal justice",
+    "subject": "criminology and criminal justice",
     "courses": [
       {
         "id": "CCJ__221",
@@ -6944,7 +6944,7 @@
     ]
   },
   "CHE": {
-    "subject_name": "chemistry",
+    "subject": "chemistry",
     "courses": [
       {
         "id": "CHE__124",
@@ -7962,7 +7962,7 @@
     ]
   },
   "COM": {
-    "subject_name": "communication",
+    "subject": "communication",
     "courses": [
       {
         "id": "COM__101",
@@ -9553,7 +9553,7 @@
     ]
   },
   "CSC": {
-    "subject_name": "computer science",
+    "subject": "computer science",
     "courses": [
       {
         "id": "CSC__225",
@@ -11802,7 +11802,7 @@
     ]
   },
   "DAT": {
-    "subject_name": "data analytics",
+    "subject": "data analytics",
     "courses": [
       {
         "id": "DAT__502",
@@ -11933,7 +11933,7 @@
     ]
   },
   "ECO": {
-    "subject_name": "economics",
+    "subject": "economics",
     "courses": [
       {
         "id": "ECO__201",
@@ -12421,7 +12421,7 @@
     ]
   },
   "EDL": {
-    "subject_name": "educational leadership",
+    "subject": "educational leadership",
     "courses": [
       {
         "id": "EDL__456",
@@ -13489,7 +13489,7 @@
     ]
   },
   "ENG": {
-    "subject_name": "english",
+    "subject": "english",
     "courses": [
       {
         "id": "ENG__091",
@@ -15571,7 +15571,7 @@
     ]
   },
   "ENS": {
-    "subject_name": "environmental studies",
+    "subject": "environmental studies",
     "courses": [
       {
         "id": "ENS__101",
@@ -16682,7 +16682,7 @@
     ]
   },
   "EXR": {
-    "subject_name": "exercise science",
+    "subject": "exercise science",
     "courses": [
       {
         "id": "EXR__101",
@@ -17337,7 +17337,7 @@
     ]
   },
   "FIN": {
-    "subject_name": "finance",
+    "subject": "finance",
     "courses": [
       {
         "id": "FIN__302",
@@ -17996,7 +17996,7 @@
     ]
   },
   "HCI": {
-    "subject_name": "healthcare informatics",
+    "subject": "healthcare informatics",
     "courses": [
       {
         "id": "HCI__513",
@@ -18266,7 +18266,7 @@
     ]
   },
   "HDC": {
-    "subject_name": "human development counseling",
+    "subject": "human development counseling",
     "courses": [
       {
         "id": "HDC__446",
@@ -19136,7 +19136,7 @@
     ]
   },
   "HIS": {
-    "subject_name": "history",
+    "subject": "history",
     "courses": [
       {
         "id": "HIS__106",
@@ -20914,7 +20914,7 @@
     ]
   },
   "HMS": {
-    "subject_name": "human services",
+    "subject": "human services",
     "courses": [
       {
         "id": "HMS__499",
@@ -21459,7 +21459,7 @@
     ]
   },
   "IGS": {
-    "subject_name": "international and global studies",
+    "subject": "international and global studies",
     "courses": [
       {
         "id": "IGS__101",
@@ -21621,7 +21621,7 @@
     ]
   },
   "IPL": {
-    "subject_name": "internships and prior learning",
+    "subject": "internships and prior learning",
     "courses": [
       {
         "id": "IPL__201",
@@ -21790,7 +21790,7 @@
     ]
   },
   "LES": {
-    "subject_name": "legal studies",
+    "subject": "legal studies",
     "courses": [
       {
         "id": "LES__201",
@@ -23010,7 +23010,7 @@
     ]
   },
   "LIS": {
-    "subject_name": "liberal studies",
+    "subject": "liberal studies",
     "courses": [
       {
         "id": "LIS__101",
@@ -23643,7 +23643,7 @@
     ]
   },
   "LNG": {
-    "subject_name": "modern languages",
+    "subject": "modern languages",
     "courses": [
       {
         "id": "LNG__102",
@@ -23821,7 +23821,7 @@
     ]
   },
   "LNT": {
-    "subject_name": "liberal and integrative studies",
+    "subject": "liberal and integrative studies",
     "courses": [
       {
         "id": "LNT__501",
@@ -23969,7 +23969,7 @@
     ]
   },
   "MAT": {
-    "subject_name": "mathematical sciences",
+    "subject": "mathematical sciences",
     "courses": [
       {
         "id": "MAT__092",
@@ -24910,7 +24910,7 @@
     ]
   },
   "MGT": {
-    "subject_name": "management",
+    "subject": "management",
     "courses": [
       {
         "id": "MGT__310",
@@ -26334,7 +26334,7 @@
     ]
   },
   "MIS": {
-    "subject_name": "management information systems",
+    "subject": "management information systems",
     "courses": [
       {
         "id": "MIS__323",
@@ -28547,7 +28547,7 @@
     ]
   },
   "MKT": {
-    "subject_name": "marketing",
+    "subject": "marketing",
     "courses": [
       {
         "id": "MKT__378",
@@ -28820,7 +28820,7 @@
     ]
   },
   "MLS": {
-    "subject_name": "medical laboratory science",
+    "subject": "medical laboratory science",
     "courses": [
       {
         "id": "MLS__115",
@@ -29529,7 +29529,7 @@
     ]
   },
   "MPH": {
-    "subject_name": "public health",
+    "subject": "public health",
     "courses": [
       {
         "id": "MPH__221",
@@ -30437,7 +30437,7 @@
     ]
   },
   "MUS": {
-    "subject_name": "music",
+    "subject": "music",
     "courses": [
       {
         "id": "MUS__101",
@@ -31414,7 +31414,7 @@
     ]
   },
   "PAD": {
-    "subject_name": "public administration",
+    "subject": "public administration",
     "courses": [
       {
         "id": "PAD__301",
@@ -33257,7 +33257,7 @@
     ]
   },
   "PAR": {
-    "subject_name": "public affairs reporting",
+    "subject": "public affairs reporting",
     "courses": [
       {
         "id": "PAR__404",
@@ -33391,7 +33391,7 @@
     ]
   },
   "PHI": {
-    "subject_name": "philosophy",
+    "subject": "philosophy",
     "courses": [
       {
         "id": "PHI__101",
@@ -34065,7 +34065,7 @@
     ]
   },
   "PSC": {
-    "subject_name": "political science",
+    "subject": "political science",
     "courses": [
       {
         "id": "PSC__101",
@@ -36124,7 +36124,7 @@
     ]
   },
   "PSY": {
-    "subject_name": "psychology",
+    "subject": "psychology",
     "courses": [
       {
         "id": "PSY__101",
@@ -37490,7 +37490,7 @@
     ]
   },
   "SOA": {
-    "subject_name": "sociology/\u200banthropology",
+    "subject": "sociology/\u200banthropology",
     "courses": [
       {
         "id": "SOA__101",
@@ -38308,7 +38308,7 @@
     ]
   },
   "SPM": {
-    "subject_name": "sport management",
+    "subject": "sport management",
     "courses": [
       {
         "id": "SPM__430",
@@ -38421,7 +38421,7 @@
     ]
   },
   "SWK": {
-    "subject_name": "social work",
+    "subject": "social work",
     "courses": [
       {
         "id": "SWK__322",
@@ -39060,7 +39060,7 @@
     ]
   },
   "TEP": {
-    "subject_name": "teacher education",
+    "subject": "teacher education",
     "courses": [
       {
         "id": "TEP__189",
@@ -40420,7 +40420,7 @@
     ]
   },
   "THE": {
-    "subject_name": "theatre",
+    "subject": "theatre",
     "courses": [
       {
         "id": "THE__108",
@@ -40899,7 +40899,7 @@
     ]
   },
   "UNI": {
-    "subject_name": "university courses",
+    "subject": "university courses",
     "courses": [
       {
         "id": "UNI__101",
@@ -41328,7 +41328,7 @@
     ]
   },
   "WGS": {
-    "subject_name": "women and gender studies",
+    "subject": "women and gender studies",
     "courses": [
       {
         "id": "WGS__133",

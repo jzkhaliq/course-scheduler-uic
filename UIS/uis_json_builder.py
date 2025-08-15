@@ -248,7 +248,7 @@ def build_combined_json_uis():
             course_array.append(course_data)
 
         combined[subject] = {
-            "subject_name": subject_name,  # ⬅️ added (lowercase)
+            "subject": subject_name,  # ⬅️ added (lowercase)
             "courses": course_array
         }
         print(f"✅ Processed {subject} ({subject_name}) → {len(course_array)} courses")
